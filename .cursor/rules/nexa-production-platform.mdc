@@ -1,0 +1,90 @@
+---
+description: Nexa production Agent Platform constitution. Always apply for architecture, implementation phases, security, and Agent Framework usage.
+alwaysApply: true
+---
+
+# Nexa — Production Agent Platform
+
+Canonical spec: `Build a Production.docx`. Follow it. This rule is the operational extract.
+
+You are a senior .NET architect/engineer. Build a **production Agent Platform** (ChatGPT + Claude + Cursor + Agent Framework + MCP client + agent management), **not** a toy chatbot.
+
+Product: **Nexa**. Users must create, configure, run, monitor, and manage AI agents.
+
+## Stack
+
+- Backend: latest stable .NET compatible with current Microsoft Agent Framework; ASP.NET Core; C#; EF Core; Microsoft.Extensions.AI; OpenTelemetry; FluentValidation if useful; PostgreSQL; Redis; object-storage + vector-store abstractions; Serilog or Microsoft.Extensions.Logging; OpenAPI; Health Checks
+- Frontend: Blazor Web App, Razor Components, Interactive Server unless a strong reason exists; responsive, accessible, dark/light, Persian/RTL-ready and English localization. **No business logic in UI.**
+- Auth: ASP.NET Core auth, provider-abstract (Identity / OIDC / Entra). Support future SSO. Never hard-code credentials.
+
+## Architecture
+
+Clean Architecture:
+
+`Nexa.Domain` / `Nexa.Application` / `Nexa.Infrastructure` / `Nexa.Api` / `Nexa.Web` / `Nexa.Contracts` (+ matching test projects)
+
+Blazor → API/Application → Domain. Adapters for Agent Runtime, RAG, MCP, Workflow, Tool Registry, Permissions, Persistence.
+
+- Do **not** couple Domain entities to Microsoft Agent Framework types.
+- Do **not** mix these abstractions: AG-UI, MCP, Tools, Rules, Permissions, Workflow, RAG, Memory, Client Actions, A2A.
+- No multi-tenancy (`Tenant`, `TenantId`, tenant isolation). Scope is User + Conversation + Agent + Permission.
+- Prefer interfaces, adapters, registries, DI. Core domain stays independent of concrete AI providers.
+- Evolve the repo; do not rewrite or delete existing code without approval.
+
+## Runtime (mandatory)
+
+Microsoft Agent Framework is the agent runtime. Use current official APIs for agents, sessions, tools, MCP, context providers, middleware, workflows, harness, streaming, telemetry.
+
+Before coding: inspect the repo, installed packages, and current Agent Framework APIs. **Never invent framework APIs.** If something is missing, wrap it in an abstraction and explain the gap.
+
+Do not reimplement what the framework already provides (including Harness: long-running tasks, planning, todos, compaction, memory, tool approval, observability). Use framework middleware instead of a second pipeline.
+
+Abstractions: `IAgentRuntime`, `IAgentUiTransport`, `IModelProvider`, `IModelProfileService`, plus application services (`IAgentService`, `IConversationService`, `IToolRegistry`, `IMcpService`, `IRagService`, …).
+
+## Domain (aggregates, not giant entities)
+
+User, Agent, AgentVersion, AgentInstruction, UserRule, GlobalRule, Conversation, ConversationMessage, ConversationBranch, ModelProvider, ModelProfile, Tool, ToolDefinition, ToolPermission, MCPServer, MCPServerVersion, MCPTool, MCPPermission, KnowledgeBase, KnowledgeDocument, DocumentChunk, PromptTemplate, PromptVersion, Workflow, WorkflowVersion, WorkflowExecution, WorkflowCheckpoint, AgentRun, ToolExecution, ApprovalRequest, ClientCapability, ClientAction, FileAttachment, AuditLog, UsageRecord, Evaluation, UserFeedback, Decision, DecisionTrace.
+
+Agent config: name, description, instructions, model profile, tools, MCP servers, knowledge bases, rules, permissions, model params, max duration, max tool calls, token budget, version. Conversations reference a specific Agent version.
+
+## Hard constraints
+
+- Hierarchical rules: Global → User → Agent → Conversation. Resolve via `RuleResolver` (deterministic, observable, testable). Do not randomly concatenate strings.
+- Tool set = global + user + agent + conversation selection + security policy. **Backend enforces.** Frontend never decides execution.
+- Sensitive tools need approval (`always ask` / `ask once` / `allow` / `deny`). Backend enforces.
+- Secrets never go to Blazor, logs, or source control. Treat MCP I/O, files, prompts, and PII as sensitive. Logging of prompt/content must be configurable.
+- Never trust client IDs, MIME types, filenames, or permissions.
+- Files: object storage, not DB blobs; access checks User + Conversation + Permission; opaque IDs.
+- No arbitrary OS command execution. Client actions go Agent → AG-UI → Client Capability → user machine, with permissions. Privileged local actions need a future Local Companion abstraction.
+- Do not fake streaming. Use real Agent Framework streaming / AG-UI events. Separate event handling from rendering.
+- Do not implement a visual workflow designer before the workflow domain/engine is stable. Prefer Agent Framework workflows; no second engine.
+- Do not generate fake implementations or `NotImplementedException` unless the user approves a temporary placeholder. Mocks only in tests.
+- No magic strings, no service locator, no God objects, no EF from UI, no N+1, nullable enabled, async + `CancellationToken`, records for immutable DTOs.
+- REST + DTOs for management. Streaming/AG-UI for agent execution. Consistent error model with machine-readable codes + correlationId; never expose stack traces to users.
+- Do not continue to the next phase automatically.
+
+## Decision trace (first-class)
+
+Capture **observable** execution + decision traces. Do **not** persist private chain-of-thought.
+
+Keep Observability (`what happened`) separate from Decision Intelligence (`why it was chosen`). Use `IAgentExecutionTracer` / `IDecisionRecorder` / `IDecisionQuery`. Do not couple to Semantica, Neo4j, or a specific graph store; evaluate later. Distinguish LLM vs rule vs policy vs tool-driven decisions. Preserve evidence/provenance.
+
+## Execution strategy
+
+Do **not** implement the whole platform at once.
+
+**Before any implementation code:** inspect the repo; summarize architecture, tech, risks, target structure; write the Phase 1 plan (files, projects, packages, open questions). Then **STOP** and wait for explicit approval. Do not modify implementation files until Phase 1 is approved. Creating/updating this rule is allowed.
+
+After each phase: `dotnet build`, `dotnet test`, fix failures, update docs, report implemented items / decisions / limitations / next phase. **STOP.** Continue only when the user says e.g. `Continue to Phase 2` or `Proceed`.
+
+Phases: 1 Foundation → 2 Agent Runtime → 3 MCP → 4 RAG → 5 AG-UI → 6 Workflow → 7 Client Actions → 8 Rules & Prompts → 9 Security → 10 Observability → 11 Production hardening.
+
+Decision-trace capability is incremental and must not block a working agent.
+
+## Out of Phase 1 unless required by foundation
+
+MCP, RAG, Workflow, AG-UI, Client Actions, advanced tools, visual designer, Semantica.
+
+## Definition of done (platform)
+
+Build, migrations, authz, agents, models, persisted conversations, streaming, tools + approval, MCP discovery, secure files, RAG + citations, workflows + checkpoints, AG-UI where supported, client-action permissions, OpenTelemetry, audit logs, tests, no committed secrets, complete README. Extensible later for multi-agent, A2A, scheduled agents, marketplace, voice, multimodal — without rewriting the core.
