@@ -1,0 +1,1052 @@
+Date: Mon, 17 Aug 2026 18:23:22 +0330 (GMT+03:30)
+Message-ID: <1341711194.197.1786978402813@AppServer.sadgan.int>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_196_587457687.1786978402812"
+
+------=_Part_196_587457687.1786978402812
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>=D9=82=D8=A7=D9=84=D8=A8 =DA=86=D8=AA =D8=AF=D8=B1 =D8=B2=D8=A8=
+=D8=A7=D9=86 =D9=87=D8=A7=DB=8C =D8=A8=D8=B2=D8=B1=DA=AF Chat template in L=
+LMs</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>=D9=82=D8=A7=D9=84=D8=A8 =DA=86=D8=AA =D8=AF=D8=B1 =D8=B2=D8=A8=D8=
+=A7=D9=86 =D9=87=D8=A7=DB=8C =D8=A8=D8=B2=D8=B1=DA=AF Chat template in LLMs=
+</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" alt=3D"Apply Chat Template - a Huggin=
+g Face Space by alonsosilva" width=3D"1080" src=3D"https://cdn-thumbnails.h=
+uggingface.co/social-thumbnails/spaces/alonsosilva/apply_chat_template.png"=
+ data-image-src=3D"https://cdn-thumbnails.huggingface.co/social-thumbnails/=
+spaces/alonsosilva/apply_chat_template.png"></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=82=D8=A7=D9=84=D8=A8=DA=86=D8=AA=D8=AF=D8=B1=D8=B2=D8=A8=
+=D8=A7=D9=86=D9=87=D8=A7=DB=8C=D8=A8=D8=B2=D8=B1=DA=AFChattemplateinLLMs-=
+=D9=82=D8=A7=D9=84=D8=A8=DA=86=D8=AAChattemplate=DA=86=DB=8C=D8=B3=D8=AA=D8=
+=9F"><span style=3D"color: rgb(153,51,102);"><strong>=D9=82=D8=A7=D9=84=D8=
+=A8 =DA=86=D8=AA Chat template =DA=86=DB=8C=D8=B3=D8=AA=D8=9F</strong></spa=
+n></h2>
+<p><strong>Chat template</strong> =DB=8C=DA=A9 =D8=B3=D8=A7=D8=AE=D8=AA=D8=
+=A7=D8=B1 =D9=85=D8=B4=D8=AE=D8=B5 =D9=88 =D8=A7=D8=B2 =D9=BE=DB=8C=D8=B4 =
+=D8=AA=D8=B9=D8=B1=DB=8C=D9=81=E2=80=8C=D8=B4=D8=AF=D9=87 =D8=A7=D8=B3=D8=
+=AA =DA=A9=D9=87 =D8=A8=D9=87 =D9=85=D8=A7 =D8=A7=D8=AC=D8=A7=D8=B2=D9=87 =
+=D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF =D9=86=D8=AD=D9=88=D9=87 =D8=B3=D8=
+=A7=D8=B2=D9=85=D8=A7=D9=86=D8=AF=D9=87=DB=8C =D9=85=DA=A9=D8=A7=D9=84=D9=
+=85=D8=A7=D8=AA =D8=A8=D8=A7 =D9=85=D8=AF=D9=84 =D8=B2=D8=A8=D8=A7=D9=86=DB=
+=8C =D8=B1=D8=A7 =D8=AA=D8=B9=DB=8C=DB=8C=D9=86 =DA=A9=D9=86=DB=8C=D9=85. =
+=D8=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=84=D8=A8 =D8=A8=D9=87 =D9=BE=DB=8C=DA=A9=
+=D8=B1=D8=A8=D9=86=D8=AF=DB=8C =D9=88=D8=B1=D9=88=D8=AF=DB=8C=E2=80=8C=D9=
+=87=D8=A7 =D9=88 =D9=86=D9=82=D8=B4=E2=80=8C=D9=87=D8=A7 =DA=A9=D9=85=DA=A9=
+ =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF =D9=88 =D8=A8=D8=A7=D8=B9=D8=AB =
+=D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF =D9=85=D8=AF=D9=84 =D8=B2=D8=A8=D8=
+=A7=D9=86 =D8=A8=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D9=85=DA=A9=D8=A7=D9=84=D9=
+=85=D8=A7=D8=AA =DA=86=D9=86=D8=AF=D9=85=D8=B1=D8=AD=D9=84=D9=87=E2=80=8C=
+=D8=A7=DB=8C (Multi-Turn Conversations) =D8=B1=D8=A7 =D8=A8=D9=87 =D8=AF=D8=
+=B1=D8=B3=D8=AA=DB=8C =D8=AF=D8=B1=DA=A9 =D9=88 =D9=85=D8=AF=DB=8C=D8=B1=DB=
+=8C=D8=AA =DA=A9=D9=86=D8=AF.</p>
+<p>=D8=AF=D8=B1 =DA=86=D8=AA=E2=80=8C=D8=A8=D8=A7=D8=AA=E2=80=8C=D9=87=D8=
+=A7 =D9=88 =D9=85=D8=AF=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=DA=A9=D8=A7=
+=D9=84=D9=85=D9=87=E2=80=8C=D8=A7=DB=8C=D8=8C =D9=82=D8=A7=D9=84=D8=A8 =DA=
+=86=D8=AA =D8=A8=D9=87 =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D8=AA=D8=AC=D8=B1=D8=
+=A8=D9=87 =D8=B1=D9=88=D8=A7=D9=86=E2=80=8C=D8=AA=D8=B1=D8=8C =D9=85=D9=86=
+=D8=B3=D8=AC=D9=85=E2=80=8C=D8=AA=D8=B1 =D9=88 =D8=AF=D9=82=DB=8C=D9=82=E2=
+=80=8C=D8=AA=D8=B1=DB=8C =DA=A9=D9=85=DA=A9 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=
+=86=D8=AF.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D9=82=D8=A7=D9=84=D8=A8=DA=86=D8=AA=D8=AF=D8=B1=D8=B2=D8=A8=
+=D8=A7=D9=86=D9=87=D8=A7=DB=8C=D8=A8=D8=B2=D8=B1=DA=AFChattemplateinLLMs-=
+=D8=A7=D8=AC=D8=B2=D8=A7=DB=8C=D8=A7=D8=B5=D9=84=DB=8C=DB=8C=DA=A9=D9=82=D8=
+=A7=D9=84=D8=A8=DA=86=D8=AA"><span style=3D"color: rgb(153,51,102);">=D8=A7=
+=D8=AC=D8=B2=D8=A7=DB=8C =D8=A7=D8=B5=D9=84=DB=8C =DB=8C=DA=A9 =D9=82=D8=A7=
+=D9=84=D8=A8 =DA=86=D8=AA</span></h3>
+<p>=D8=A8=D8=B1=D8=A7=DB=8C =D8=B7=D8=B1=D8=A7=D8=AD=DB=8C =DB=8C=DA=A9 =D9=
+=82=D8=A7=D9=84=D8=A8 =D8=AE=D9=88=D8=A8=D8=8C =DA=86=D9=86=D8=AF =D9=85=D8=
+=A4=D9=84=D9=81=D9=87 =D8=A7=D8=B5=D9=84=DB=8C =D9=88=D8=AC=D9=88=D8=AF =D8=
+=AF=D8=A7=D8=B1=D8=AF =DA=A9=D9=87 =D8=A8=D8=A7=DB=8C=D8=AF =D8=A8=D9=87 =
+=D8=A2=D9=86=E2=80=8C=D9=87=D8=A7 =D8=AA=D9=88=D8=AC=D9=87 =D8=B4=D9=88=D8=
+=AF:</p>
+<ol>
+<li><span style=3D"color: rgb(51,102,255);"><strong style=3D"text-indent: 1=
+.0em;letter-spacing: 0.0px;text-align: left;">=D8=AA=D8=B9=D8=B1=DB=8C=D9=
+=81 =D9=86=D9=82=D8=B4=E2=80=8C=D9=87=D8=A7 (Roles)</strong></span></li>
+</ol>
+<p>=D8=AF=D8=B1 =D9=87=D8=B1 =D9=85=DA=A9=D8=A7=D9=84=D9=85=D9=87=D8=8C =D9=
+=85=D8=B9=D9=85=D9=88=D9=84=D8=A7=D9=8B =D8=AF=D9=88 =DB=8C=D8=A7 =D8=B3=D9=
+=87 =D9=86=D9=82=D8=B4 =D8=A7=D8=B5=D9=84=DB=8C =D9=88=D8=AC=D9=88=D8=AF =
+=D8=AF=D8=A7=D8=B1=D8=AF:</p>
+<ul>
+<li><strong>=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1 (User): </strong>=DA=A9=D8=B3=DB=
+=8C =DA=A9=D9=87 =D8=B3=D9=88=D8=A7=D9=84 =D9=85=DB=8C=E2=80=8C=D9=BE=D8=B1=
+=D8=B3=D8=AF =DB=8C=D8=A7 =D8=AF=D8=B1=D8=AE=D9=88=D8=A7=D8=B3=D8=AA =D9=85=
+=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF<span style=3D"text-align: left;text-inden=
+t: 1.0em;letter-spacing: 0.0px;">.</span></li>
+<li><strong>=D8=AF=D8=B3=D8=AA=DB=8C=D8=A7=D8=B1 (Assistant): </strong>=D9=
+=85=D8=AF=D9=84=DB=8C =DA=A9=D9=87 =D9=BE=D8=A7=D8=B3=D8=AE =D9=85=DB=8C=E2=
+=80=8C=D8=AF=D9=87=D8=AF =DB=8C=D8=A7 =D9=85=D8=B4=DA=A9=D9=84=DB=8C =D8=B1=
+=D8=A7 =D8=AD=D9=84 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF.</li>
+<li><strong>=D8=B3=DB=8C=D8=B3=D8=AA=D9=85 (System):</strong> =D9=BE=DB=8C=
+=D8=A7=D9=85=DB=8C =DA=A9=D9=87 =D8=B1=D9=81=D8=AA=D8=A7=D8=B1 =D9=88 =D9=
+=86=D9=82=D8=B4 =D9=85=D8=AF=D9=84 =D8=B1=D8=A7 =D8=AA=D8=B9=D8=B1=DB=8C=D9=
+=81 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF.</li>
+</ul>
+<p><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">system:=
+ =D8=B4=D9=85=D8=A7 =DB=8C=DA=A9 =D8=AF=D8=B3=D8=AA=DB=8C=D8=A7=D8=B1 =D9=
+=85=D9=81=DB=8C=D8=AF =D9=88 =D9=85=D9=87=D8=B1=D8=A8=D8=A7=D9=86 =D9=87=D8=
+=B3=D8=AA=DB=8C=D8=AF.
+user: =D9=BE=D8=A7=DB=8C=D8=AA=D8=AE=D8=AA =D9=81=D8=B1=D8=A7=D9=86=D8=B3=
+=D9=87 =DA=A9=D8=AC=D8=A7=D8=B3=D8=AA=D8=9F
+assistant: =D9=BE=D8=A7=D8=B1=DB=8C=D8=B3 =D9=BE=D8=A7=DB=8C=D8=AA=D8=AE=D8=
+=AA =D9=81=D8=B1=D8=A7=D9=86=D8=B3=D9=87 =D8=A7=D8=B3=D8=AA.</pre>=20
+</div>
+</div>
+<p><strong>2.&nbsp; <span style=3D"color: rgb(51,102,255);">=D8=B3=D8=A7=D8=
+=AE=D8=AA=D8=A7=D8=B1 =D9=86=D9=88=D8=A8=D8=AA=DB=8C (Turn-by-Turn)</span><=
+/strong></p>
+<p>=D9=87=D8=B1 =D9=85=DA=A9=D8=A7=D9=84=D9=85=D9=87 =D8=A8=D9=87 =D8=B5=D9=
+=88=D8=B1=D8=AA =D9=86=D9=88=D8=A8=D8=AA=DB=8C =D9=85=DB=8C=D8=A7=D9=86 =DA=
+=A9=D8=A7=D8=B1=D8=A8=D8=B1 =D9=88 =D8=AF=D8=B3=D8=AA=DB=8C=D8=A7=D8=B1 =D8=
+=AA=D8=A8=D8=A7=D8=AF=D9=84 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF. =D9=87=
+=D8=B1 "=D9=86=D9=88=D8=A8=D8=AA" =D8=B4=D8=A7=D9=85=D9=84 =D8=B3=D8=A4=D8=
+=A7=D9=84 =DB=8C=D8=A7 =D9=BE=DB=8C=D8=A7=D9=85 =D8=A7=D8=B2 =DB=8C=DA=A9=
+=DB=8C =D8=A7=D8=B2 =D9=86=D9=82=D8=B4=E2=80=8C=D9=87=D8=A7 =D9=88 =D9=BE=
+=D8=A7=D8=B3=D8=AE =D9=85=D9=86=D8=A7=D8=B3=D8=A8 =D8=A7=D8=B2 =D9=86=D9=82=
+=D8=B4 =D8=AF=DB=8C=DA=AF=D8=B1 =D8=A7=D8=B3=D8=AA.</p>
+<p><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">user: =
+=D8=AD=D8=A7=D9=84=D8=AA =DA=86=D8=B7=D9=88=D8=B1=D9=87=D8=9F
+assistant: =D9=85=D9=86 =DB=8C=DA=A9 =D8=A8=D8=B1=D9=86=D8=A7=D9=85=D9=87 =
+=D9=87=D8=B3=D8=AA=D9=85 =D9=88 =D8=A7=D8=AD=D8=B3=D8=A7=D8=B3=D8=A7=D8=AA =
+=D9=86=D8=AF=D8=A7=D8=B1=D9=85=D8=8C =D9=88=D9=84=DB=8C =D8=A7=D8=B2 =D8=B4=
+=D9=85=D8=A7 =D9=85=D8=AA=D8=B4=DA=A9=D8=B1=D9=85! =DA=86=D8=B7=D9=88=D8=B1=
+ =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=D9=85 =DA=A9=D9=85=DA=A9 =DA=
+=A9=D9=86=D9=85=D8=9F</pre>=20
+</div>
+</div>
+<p><span style=3D"text-align: left;text-indent: 1.0em;letter-spacing: 0.0px=
+;"><strong>3.&nbsp; <span style=3D"color: rgb(51,102,255);">=D9=BE=DB=8C=D8=
+=A7=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B3=DB=8C=D8=B3=D8=AA=D9=85=DB=8C (=
+System Messages)</span></strong></span></p>
+<p>=D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B3=DB=8C=D8=B3=
+=D8=AA=D9=85=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D9=86=D8=B8=DB=8C=D9=85 =
+=D8=AF=D8=B3=D8=AA=D9=88=D8=B1=D8=A7=D9=84=D8=B9=D9=85=D9=84=E2=80=8C=D9=87=
+=D8=A7=DB=8C=DB=8C =DA=A9=D9=87 =DA=86=DA=AF=D9=88=D9=86=DA=AF=DB=8C =D8=B1=
+=D9=81=D8=AA=D8=A7=D8=B1 =D9=85=D8=AF=D9=84 =D8=B1=D8=A7 =D9=85=D8=B4=D8=AE=
+=D8=B5 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF=D8=8C =D8=A7=D8=B3=D8=
+=AA=D9=81=D8=A7=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D9=86=D8=AF. =
+=D8=A7=DB=8C=D9=86 =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7 =D8=AF=D8=
+=B1 =D8=A7=D8=A8=D8=AA=D8=AF=D8=A7=DB=8C =D9=85=DA=A9=D8=A7=D9=84=D9=85=D9=
+=87 =D8=A2=D9=85=D8=AF=D9=87 =D9=88 =D9=85=D8=B3=DB=8C=D8=B1 =DA=A9=D9=84=
+=DB=8C =D8=AA=D8=B9=D8=A7=D9=85=D9=84=D8=A7=D8=AA =D8=B1=D8=A7 =D8=AA=D8=B9=
+=DB=8C=DB=8C=D9=86 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF.</p>
+<p><strong style=3D"text-align: left;text-indent: 1.0em;letter-spacing: 0.0=
+px;">=D9=85=D8=AB=D8=A7=D9=84:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">system:=
+ =D8=B4=D9=85=D8=A7 =DB=8C=DA=A9 =D8=AF=D8=B3=D8=AA=DB=8C=D8=A7=D8=B1 =D8=
+=AF=D9=82=DB=8C=D9=82 =D9=88 =D8=AD=D8=B1=D9=81=D9=87=E2=80=8C=D8=A7=DB=8C =
+=D9=87=D8=B3=D8=AA=DB=8C=D8=AF =DA=A9=D9=87 =D8=A8=D8=A7=DB=8C=D8=AF =D9=BE=
+=D8=A7=D8=B3=D8=AE=E2=80=8C=D9=87=D8=A7=DB=8C =DA=A9=D9=88=D8=AA=D8=A7=D9=
+=87 =D9=88 =D9=88=D8=A7=D8=B6=D8=AD =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D8=AF=
+=D9=87=DB=8C=D8=AF.
+user: =D8=A2=DB=8C=D8=A7 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=DB=
+=8C=D8=AF =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA=DB=8C =D8=AF=D8=B1=D8=
+=A8=D8=A7=D8=B1=D9=87 =D9=BE=D8=A7=DB=8C=D8=AA=D9=88=D9=86 =D8=A8=D9=87 =D9=
+=85=D9=86 =D8=A8=D8=AF=D9=87=DB=8C=D8=AF=D8=9F
+assistant: =D9=BE=D8=A7=DB=8C=D8=AA=D9=88=D9=86 =DB=8C=DA=A9 =D8=B2=D8=A8=
+=D8=A7=D9=86 =D8=A8=D8=B1=D9=86=D8=A7=D9=85=D9=87=E2=80=8C=D9=86=D9=88=DB=
+=8C=D8=B3=DB=8C =D8=B3=D8=A7=D8=AF=D9=87 =D9=88 =D9=85=D8=AD=D8=A8=D9=88=D8=
+=A8 =D8=A7=D8=B3=D8=AA.</pre>=20
+</div>
+</div>
+<p><strong>4.&nbsp; <span style=3D"color: rgb(51,102,255);">=D8=A7=D8=B3=D8=
+=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D8=B9=D9=84=D8=A7=D8=A6=D9=85 =DB=
+=8C=D8=A7 =D8=AA=D9=88=DA=A9=D9=86=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AE=D8=A7=
+=D8=B5 (Special Tokens)</span></strong></p>
+<p>=D8=AF=D8=B1 =D8=A8=D8=B9=D8=B6=DB=8C =D9=85=D9=88=D8=A7=D8=B1=D8=AF=D8=
+=8C =D8=A7=D8=B2 =D8=B9=D9=84=D8=A7=D8=A6=D9=85 =D9=88=DB=8C=DA=98=D9=87=E2=
+=80=8C=D8=A7=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=AC=D8=AF=D8=A7=D8=B3=D8=A7=
+=D8=B2=DB=8C =D9=86=D9=82=D8=B4=E2=80=8C=D9=87=D8=A7 =DB=8C=D8=A7 =D9=86=D9=
+=88=D8=A8=D8=AA=E2=80=8C=D9=87=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=
+=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF. =D8=A7=DB=8C=D9=86 =D8=B1=
+=D9=88=D8=B4 =D8=A8=D9=87 =D9=85=D8=AF=D9=84 =DA=A9=D9=85=DA=A9 =D9=85=DB=
+=8C=E2=80=8C=DA=A9=D9=86=D8=AF =D8=AA=D8=A7 =D8=B1=D8=A7=D8=AD=D8=AA=E2=80=
+=8C=D8=AA=D8=B1 =D9=85=D8=AA=D9=86 =D8=B1=D8=A7 =D9=BE=D8=B1=D8=AF=D8=A7=D8=
+=B2=D8=B4 =DA=A9=D9=86=D8=AF.</p>
+<p>=D9=85=D8=AB=D8=A7=D9=84:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">&lt;|us=
+er|&gt; =D8=B3=D8=A7=D8=B9=D8=AA =DA=86=D9=86=D8=AF=D9=87=D8=9F
+&lt;|assistant|&gt; =D9=85=D9=86 =D9=86=D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=
+=A7=D9=86=D9=85 =D8=B2=D9=85=D8=A7=D9=86 =D9=88=D8=A7=D9=82=D8=B9=DB=8C =D8=
+=B1=D8=A7 =D8=A8=D9=87 =D8=B4=D9=85=D8=A7 =D8=A8=DA=AF=D9=88=DB=8C=D9=85.</=
+pre>=20
+</div>
+</div>
+<p><strong><span style=3D"text-align: left;text-indent: 1.0em;letter-spacin=
+g: 0.0px;">5.&nbsp; <span style=3D"color: rgb(51,102,255);">=D8=AD=D9=81=D8=
+=B8 =D8=B2=D9=85=DB=8C=D9=86=D9=87 =D9=85=DA=A9=D8=A7=D9=84=D9=85=D9=87 (Co=
+ntext Preservation)</span></span></strong></p>
+<p><span style=3D"text-align: left;text-indent: 1.0em;letter-spacing: 0.0px=
+;">=DB=8C=DA=A9=DB=8C =D8=A7=D8=B2 =D9=88=DB=8C=DA=98=DA=AF=DB=8C=E2=80=8C=
+=D9=87=D8=A7=DB=8C =D9=85=D9=87=D9=85 =D9=82=D8=A7=D9=84=D8=A8=E2=80=8C=D9=
+=87=D8=A7=DB=8C =DA=86=D8=AA =D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =D8=B2=D9=
+=85=DB=8C=D9=86=D9=87 (Context) =D8=A7=D8=B3=D8=AA. =D8=A8=D9=87 =D8=A7=DB=
+=8C=D9=86 =D9=85=D8=B9=D9=86=DB=8C =DA=A9=D9=87 =D9=85=D8=AF=D9=84 =D8=A8=
+=D8=A7=DB=8C=D8=AF =D8=A8=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=A7=D8=B7=D9=84=
+=D8=A7=D8=B9=D8=A7=D8=AA =D8=AA=D8=A8=D8=A7=D8=AF=D9=84=E2=80=8C=D8=B4=D8=
+=AF=D9=87 =D9=82=D8=A8=D9=84=DB=8C =D8=AF=D8=B1 =D9=85=DA=A9=D8=A7=D9=84=D9=
+=85=D9=87 =D8=B1=D8=A7 =D8=AF=D8=B1 =D8=B0=D9=87=D9=86 =D9=86=DA=AF=D9=87 =
+=D8=AF=D8=A7=D8=B1=D8=AF =D8=AA=D8=A7 =D9=BE=D8=A7=D8=B3=D8=AE =D9=85=D9=86=
+=D8=B3=D8=AC=D9=85=DB=8C =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D8=AF=D9=87=D8=AF.=
+</span></p>
+<p><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">user: =
+=DA=86=D9=87 =DA=A9=D8=B3=DB=8C =DA=A9=D8=AA=D8=A7=D8=A8 "=D8=BA=D8=B1=D9=
+=88=D8=B1 =D9=88 =D8=AA=D8=B9=D8=B5=D8=A8" =D8=B1=D8=A7 =D9=86=D9=88=D8=B4=
+=D8=AA=D9=87 =D8=A7=D8=B3=D8=AA=D8=9F
+assistant: =D8=AC=DB=8C=D9=86 =D8=A2=D8=B3=D8=AA=D9=86.
+user: =D8=A7=D9=88 =DA=86=D9=87 =DA=A9=D8=AA=D8=A7=D8=A8=E2=80=8C=D9=87=D8=
+=A7=DB=8C =D8=AF=DB=8C=DA=AF=D8=B1=DB=8C =D9=86=D9=88=D8=B4=D8=AA=D9=87 =D8=
+=A7=D8=B3=D8=AA=D8=9F
+assistant: =D8=A8=D8=B1=D8=AE=DB=8C =DA=A9=D8=AA=D8=A7=D8=A8=E2=80=8C=D9=87=
+=D8=A7=DB=8C =D8=AF=DB=8C=DA=AF=D8=B1 =D8=A7=D9=88 =D8=B4=D8=A7=D9=85=D9=84=
+ "=D8=B9=D9=82=D9=84 =D9=88 =D8=A7=D8=AD=D8=B3=D8=A7=D8=B3" =D9=88 "=D8=A7=
+=D9=85=D8=A7" =D9=87=D8=B3=D8=AA=D9=86=D8=AF.</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 style=3D"" id=3D"id-=D9=82=D8=A7=D9=84=D8=A8=DA=86=D8=AA=D8=AF=D8=B1=D8=
+=B2=D8=A8=D8=A7=D9=86=D9=87=D8=A7=DB=8C=D8=A8=D8=B2=D8=B1=DA=AFChattemplate=
+inLLMs-=DA=86=D8=B1=D8=A7=D9=82=D8=A7=D9=84=D8=A8=DA=86=D8=AA=D8=A7=D9=87=
+=D9=85=DB=8C=D8=AA=D8=AF=D8=A7=D8=B1=D8=AF=D8=9F"><span style=3D"color: rgb=
+(153,51,102);"><strong>=DA=86=D8=B1=D8=A7 =D9=82=D8=A7=D9=84=D8=A8 =DA=86=
+=D8=AA =D8=A7=D9=87=D9=85=DB=8C=D8=AA =D8=AF=D8=A7=D8=B1=D8=AF=D8=9F</stron=
+g></span></h3>
+<ul style=3D"">
+<li><strong>=D8=AB=D8=A8=D8=A7=D8=AA =D8=AF=D8=B1 =D9=BE=D8=A7=D8=B3=D8=AE=
+=E2=80=8C=D9=87=D8=A7: </strong>=D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=
+=D8=AF=D9=87 =D8=A7=D8=B2 =D9=82=D8=A7=D9=84=D8=A8 =DA=86=D8=AA=D8=8C =D9=
+=85=DA=A9=D8=A7=D9=84=D9=85=D8=A7=D8=AA =DA=86=D8=A7=D8=B1=DA=86=D9=88=D8=
+=A8=DB=8C =D9=85=D9=86=D8=B8=D9=85 =D9=BE=DB=8C=D8=AF=D8=A7 =D9=85=DB=8C=E2=
+=80=8C=DA=A9=D9=86=D9=86=D8=AF =DA=A9=D9=87 =D8=A8=D9=87 =D9=85=D8=AF=D9=84=
+ =DA=A9=D9=85=DA=A9 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF =D8=B3=D8=A7=D8=
+=AE=D8=AA=D8=A7=D8=B1 =D9=88 =D8=A7=D9=86=D8=AA=D8=B8=D8=A7=D8=B1=D8=A7=D8=
+=AA =D8=AA=D8=B9=D8=A7=D9=85=D9=84 =D8=B1=D8=A7 =D8=A8=D9=87=D8=AA=D8=B1 =
+=D8=AF=D8=B1=DA=A9 =DA=A9=D9=86=D8=AF.</li>
+<li><strong>=D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =D8=B2=D9=85=DB=8C=D9=86=
+=D9=87: </strong>=D9=85=D8=AF=D9=84 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=
+=D9=86=D8=AF =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =D9=82=D8=A8=D9=84=
+=DB=8C =D8=B1=D8=A7 =D8=AD=D9=81=D8=B8 =DA=A9=D9=86=D8=AF =D9=88 =D8=A8=D9=
+=87 =D8=B5=D9=88=D8=B1=D8=AA =D8=B7=D8=A8=DB=8C=D8=B9=DB=8C =D9=88 =D8=B1=
+=D9=88=D8=A7=D9=86 =D8=A8=D9=87 =D9=85=DA=A9=D8=A7=D9=84=D9=85=D9=87 =D8=A7=
+=D8=AF=D8=A7=D9=85=D9=87 =D8=AF=D9=87=D8=AF.</li>
+<li><strong>=D8=AA=D9=81=DA=A9=DB=8C=DA=A9 =D9=86=D9=82=D8=B4=E2=80=8C=D9=
+=87=D8=A7: </strong>=D9=86=D9=82=D8=B4 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=8C=
+ =D8=AF=D8=B3=D8=AA=DB=8C=D8=A7=D8=B1 =D9=88 =D8=B3=DB=8C=D8=B3=D8=AA=D9=85=
+ =D8=A8=D9=87 =D9=88=D8=B6=D9=88=D8=AD =D9=85=D8=B4=D8=AE=D8=B5 =D9=85=DB=
+=8C=E2=80=8C=D8=B4=D9=88=D8=AF.</li>
+<li><strong>=D8=B4=D8=AE=D8=B5=DB=8C=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=
+=B1=D9=81=D8=AA=D8=A7=D8=B1 =D9=85=D8=AF=D9=84: </strong>=D9=82=D8=A7=D9=84=
+=D8=A8=E2=80=8C=D9=87=D8=A7 =D8=A8=D9=87 =D8=AA=D9=88=D8=B3=D8=B9=D9=87=E2=
+=80=8C=D8=AF=D9=87=D9=86=D8=AF=DA=AF=D8=A7=D9=86 =D8=A7=D8=AC=D8=A7=D8=B2=
+=D9=87 =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D9=86=D8=AF =D8=B1=D9=81=D8=AA=D8=
+=A7=D8=B1 =D9=85=D8=AF=D9=84 =D8=B1=D8=A7 =D8=A8=D8=B1=D8=A7=DB=8C =D9=86=
+=DB=8C=D8=A7=D8=B2=D9=87=D8=A7=DB=8C =D8=AE=D8=A7=D8=B5 =D8=AA=D9=86=D8=B8=
+=DB=8C=D9=85 =DA=A9=D9=86=D9=86=D8=AF.</li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 style=3D"" id=3D"id-=D9=82=D8=A7=D9=84=D8=A8=DA=86=D8=AA=D8=AF=D8=B1=D8=
+=B2=D8=A8=D8=A7=D9=86=D9=87=D8=A7=DB=8C=D8=A8=D8=B2=D8=B1=DA=AFChattemplate=
+inLLMs-=D9=85=D8=AB=D8=A7=D9=84=DA=A9=D8=A7=D9=85=D9=84=D8=A7=D8=B2=DB=8C=
+=DA=A9=D9=82=D8=A7=D9=84=D8=A8=DA=86=D8=AA"><span style=3D"color: rgb(153,5=
+1,102);"><strong>=D9=85=D8=AB=D8=A7=D9=84 =DA=A9=D8=A7=D9=85=D9=84 =D8=A7=
+=D8=B2 =DB=8C=DA=A9 =D9=82=D8=A7=D9=84=D8=A8 =DA=86=D8=AA</strong></span></=
+h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">system:=
+ =D8=B4=D9=85=D8=A7 =DB=8C=DA=A9 =D8=AF=D8=B3=D8=AA=DB=8C=D8=A7=D8=B1 =D9=
+=85=D9=88=D8=AF=D8=A8 =D9=88 =D8=AE=D9=88=D8=B4=E2=80=8C=D8=A8=D8=B1=D8=AE=
+=D9=88=D8=B1=D8=AF =D9=87=D8=B3=D8=AA=DB=8C=D8=AF.
+user: =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=DB=8C =D8=A8=D8=B1=D8=
+=A7=DB=8C=D9=85 =DB=8C=DA=A9 =D8=AC=D9=88=DA=A9 =D8=AA=D8=B9=D8=B1=DB=8C=D9=
+=81 =DA=A9=D9=86=DB=8C=D8=9F
+assistant: =D8=AD=D8=AA=D9=85=D8=A7=D9=8B! =DA=86=D8=B1=D8=A7 =D8=AF=D8=A7=
+=D9=86=D8=B4=D9=85=D9=86=D8=AF=D8=A7=D9=86 =D8=A8=D9=87 =D8=A7=D8=AA=D9=85=
+=E2=80=8C=D9=87=D8=A7 =D8=A7=D8=B9=D8=AA=D9=85=D8=A7=D8=AF =D9=86=D9=85=DB=
+=8C=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF=D8=9F =DA=86=D9=88=D9=86 =D9=87=D9=85=
+=D9=87 =DA=86=DB=8C=D8=B2 =D8=B1=D8=A7 =D9=85=DB=8C=E2=80=8C=D8=B3=D8=A7=D8=
+=B2=D9=86=D8=AF!
+user: =D8=AE=D9=86=D8=AF=D9=87=E2=80=8C=D8=AF=D8=A7=D8=B1 =D8=A8=D9=88=D8=
+=AF! =D8=AD=D8=A7=D9=84=D8=A7 =D8=A8=DA=AF=D9=88 =D9=BE=D8=A7=DB=8C=D8=AA=
+=D8=AE=D8=AA =D8=A7=DB=8C=D8=AA=D8=A7=D9=84=DB=8C=D8=A7 =DA=A9=D8=AC=D8=A7=
+=D8=B3=D8=AA=D8=9F
+assistant: =D9=BE=D8=A7=DB=8C=D8=AA=D8=AE=D8=AA =D8=A7=DB=8C=D8=AA=D8=A7=D9=
+=84=DB=8C=D8=A7 =D8=B1=D9=85 =D8=A7=D8=B3=D8=AA.</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D9=82=D8=A7=D9=84=D8=A8=DA=86=D8=AA=D8=AF=D8=B1=D8=B2=D8=A8=
+=D8=A7=D9=86=D9=87=D8=A7=DB=8C=D8=A8=D8=B2=D8=B1=DA=AFChattemplateinLLMs-=
+=D8=A7=D9=86=D9=88=D8=A7=D8=B9=D9=82=D8=A7=D9=84=D8=A8=E2=80=8C=D9=87=D8=A7=
+=DB=8C=DA=86=D8=AA(ChatTemplates)"><span style=3D"color: rgb(153,51,102);">=
+<strong style=3D"">=D8=A7=D9=86=D9=88=D8=A7=D8=B9 =D9=82=D8=A7=D9=84=D8=A8=
+=E2=80=8C=D9=87=D8=A7=DB=8C =DA=86=D8=AA (Chat Templates)</strong></span></=
+h3>
+<p>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=A8=D8=AE=D8=B4 =D8=A8=D9=87 =D8=A8=
+=D8=B1=D8=B1=D8=B3=DB=8C <strong>=D8=A7=D9=86=D9=88=D8=A7=D8=B9 =D9=82=D8=
+=A7=D9=84=D8=A8=E2=80=8C=D9=87=D8=A7=DB=8C =DA=86=D8=AA (Chat Templates)</s=
+trong>&nbsp;=D8=AF=D8=B1 =D8=B2=D9=85=DB=8C=D9=86=D9=87 =D9=85=D8=AF=D9=84=
+=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B2=D8=A8=D8=A7=D9=86=DB=8C =D8=A8=D8=B2=D8=
+=B1=DA=AF (LLMs) =D9=85=DB=8C=E2=80=8C=D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=DB=8C=
+=D9=85. =D8=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=84=D8=A8=E2=80=8C=D9=87=D8=A7 =
+=D8=A8=D8=B3=D8=AA=D9=87 =D8=A8=D9=87 =D9=86=D9=88=D8=B9 =DA=A9=D8=A7=D8=B1=
+=D8=A8=D8=B1=D8=AF=D8=8C =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1 =D9=85=D8=AF=
+=D9=84 =D9=88 =D8=B3=D8=B7=D8=AD =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=DA=AF=DB=8C=
+ =D9=85=D9=88=D8=B1=D8=AF =D9=86=DB=8C=D8=A7=D8=B2=D8=8C =D9=85=D8=AA=D9=86=
+=D9=88=D8=B9 =D9=87=D8=B3=D8=AA=D9=86=D8=AF. =D9=87=D8=B1 =D9=82=D8=A7=D9=
+=84=D8=A8 =D8=A8=D8=B1=D8=A7=DB=8C =D9=87=D8=AF=D9=81 =D8=AE=D8=A7=D8=B5=DB=
+=8C =D8=B7=D8=B1=D8=A7=D8=AD=DB=8C =D8=B4=D8=AF=D9=87 =D9=88 =D8=A8=D9=87 =
+=D8=AA=D9=86=D8=B8=DB=8C=D9=85 =D9=85=DA=A9=D8=A7=D9=84=D9=85=D8=A7=D8=AA =
+=D8=A8=D8=A7 =D9=85=D8=AF=D9=84 =DA=A9=D9=85=DA=A9 =D9=85=DB=8C=E2=80=8C=DA=
+=A9=D9=86=D8=AF. =D8=AF=D8=B1 =D8=A7=D8=AF=D8=A7=D9=85=D9=87=D8=8C =D8=A7=
+=D9=86=D9=88=D8=A7=D8=B9 =D9=85=D8=AE=D8=AA=D9=84=D9=81 =D8=A7=DB=8C=D9=86 =
+=D9=82=D8=A7=D9=84=D8=A8=E2=80=8C=D9=87=D8=A7 =D8=A8=D9=87 =D9=87=D9=85=D8=
+=B1=D8=A7=D9=87 =D9=85=D8=AB=D8=A7=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B3=
+=D8=A7=D8=AF=D9=87 =D9=88 =D9=82=D8=A7=D8=A8=D9=84=E2=80=8C=D9=81=D9=87=D9=
+=85 =D8=AA=D9=88=D8=B6=DB=8C=D8=AD =D8=AF=D8=A7=D8=AF=D9=87 =D8=B4=D8=AF=D9=
+=87=E2=80=8C=D8=A7=D9=86=D8=AF.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-equal" data-layout=3D"two-equal">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<ol>
+<li><p class=3D"auto-cursor-target"><span style=3D"color: rgb(0,128,128);">=
+<strong><strong>=D9=82=D8=A7=D9=84=D8=A8 =DA=86=D8=AA =D8=AA=DA=A9=E2=80=8C=
+=D9=BE=D8=A7=D8=B3=D8=AE=D9=87 (Single-Turn Chat Template)</strong></strong=
+></span></p><p style=3D"">=D8=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=84=D8=A8 =D8=
+=A8=D8=B1=D8=A7=DB=8C =D8=AA=D8=B9=D8=A7=D9=85=D9=84=D8=A7=D8=AA =D8=B3=D8=
+=A7=D8=AF=D9=87 =D9=88 =D8=AA=DA=A9=E2=80=8C=D9=BE=D8=A7=D8=B3=D8=AE=D9=87 =
+=D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=
+=88=D8=AF=D8=8C =D8=AC=D8=A7=DB=8C=DB=8C =DA=A9=D9=87 =D9=85=D8=AF=D9=84 =
+=D8=AA=D9=86=D9=87=D8=A7 =D8=A8=D9=87 =DB=8C=DA=A9 =D9=88=D8=B1=D9=88=D8=AF=
+=DB=8C =D8=A7=D8=B2 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1 =D9=BE=D8=A7=D8=B3=D8=AE=
+ =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF =D9=88 =D9=86=DB=8C=D8=A7=D8=B2=DB=
+=8C =D8=A8=D9=87 =D8=AD=D9=81=D8=B8 =D8=B2=D9=85=DB=8C=D9=86=D9=87 =D9=86=
+=D8=AF=D8=A7=D8=B1=D8=AF.<br><br></p><br>
+<hr></li>
+<li><p class=3D"auto-cursor-target"><span style=3D"color: rgb(0,128,128);">=
+<strong><strong>=D9=82=D8=A7=D9=84=D8=A8 =DA=86=D8=AA =DA=86=D9=86=D8=AF=D9=
+=85=D8=B1=D8=AD=D9=84=D9=87=E2=80=8C=D8=A7=DB=8C (Multi-Turn Chat Template)=
+</strong></strong></span></p><p class=3D"auto-cursor-target">=D8=AF=D8=B1 =
+=D8=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=84=D8=A8=D8=8C =D8=AA=D8=B9=D8=A7=D9=85=
+=D9=84=D8=A7=D8=AA =DA=86=D9=86=D8=AF=D9=85=D8=B1=D8=AD=D9=84=D9=87=E2=80=
+=8C=D8=A7=DB=8C (Multi-Turn) =D8=AA=D8=B9=D8=B1=DB=8C=D9=81 =D8=B4=D8=AF=D9=
+=87=E2=80=8C=D8=A7=D9=86=D8=AF=D8=8C =D8=AC=D8=A7=DB=8C=DB=8C =DA=A9=D9=87 =
+=D9=85=D8=AF=D9=84 =D8=A8=D8=A7=DB=8C=D8=AF =D8=B2=D9=85=DB=8C=D9=86=D9=87 =
+=D9=85=DA=A9=D8=A7=D9=84=D9=85=D9=87 =D8=B1=D8=A7 =D8=A8=D9=87 =D8=AE=D8=A7=
+=D8=B7=D8=B1 =D8=A8=D8=B3=D9=BE=D8=A7=D8=B1=D8=AF =D8=AA=D8=A7 =D8=AF=D8=B1=
+ =D9=BE=D8=A7=D8=B3=D8=AE =D8=A8=D9=87 =D8=B3=D9=88=D8=A7=D9=84=D8=A7=D8=AA=
+ =D8=A8=D8=B9=D8=AF=DB=8C =D8=AF=D9=82=DB=8C=D9=82=E2=80=8C=D8=AA=D8=B1 =D8=
+=B9=D9=85=D9=84 =DA=A9=D9=86=D8=AF.&nbsp;</p><br><br>
+<hr></li>
+<li><p class=3D"auto-cursor-target"><span style=3D"color: rgb(0,128,128);">=
+<strong><strong>=D9=82=D8=A7=D9=84=D8=A8 =DA=86=D8=AA =D9=85=D8=A8=D8=AA=D9=
+=86=DB=8C =D8=A8=D8=B1 =D9=86=D9=82=D8=B4 (Role-Based Chat Template)</stron=
+g></strong></span></p><p class=3D"auto-cursor-target">=D8=A7=DB=8C=D9=86 =
+=D9=82=D8=A7=D9=84=D8=A8 =D9=86=D9=82=D8=B4=E2=80=8C=D9=87=D8=A7 =D8=B1=D8=
+=A7 (=D9=85=D8=A7=D9=86=D9=86=D8=AF `=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1`=D8=8C =
+`=D8=AF=D8=B3=D8=AA=DB=8C=D8=A7=D8=B1` =D9=88 `=D8=B3=DB=8C=D8=B3=D8=AA=D9=
+=85`) =D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=AA =D9=88=D8=A7=D8=B6=D8=AD =D8=AA=
+=D8=B9=D8=B1=DB=8C=D9=81 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF =D8=AA=D8=
+=A7 =D9=85=D8=B4=D8=AE=D8=B5 =D8=A8=D8=A7=D8=B4=D8=AF =DA=A9=D9=87 =D9=87=
+=D8=B1 =D9=BE=DB=8C=D8=A7=D9=85 =D8=A7=D8=B2 =D8=B3=D9=88=DB=8C =DA=A9=D8=
+=AF=D8=A7=D9=85 =D9=86=D9=82=D8=B4 =D8=A7=D8=B1=D8=B3=D8=A7=D9=84 =D8=B4=D8=
+=AF=D9=87 =D8=A7=D8=B3=D8=AA. &nbsp;</p><br>
+<hr></li>
+<li><strong><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=
+=84=D8=A8 =DA=86=D8=AA =D9=85=D8=A8=D8=AA=D9=86=DB=8C =D8=A8=D8=B1 =D8=AF=
+=D8=B3=D8=AA=D9=88=D8=B1=D8=A7=D9=84=D8=B9=D9=85=D9=84 (Instruction-Followi=
+ng Chat Template)</span><br><br></strong></strong>=D8=A7=DB=8C=D9=86 =D9=82=
+=D8=A7=D9=84=D8=A8 =D8=A8=D8=B1=D8=A7=DB=8C =D9=88=D8=B8=D8=A7=DB=8C=D9=81=
+=DB=8C =D8=B7=D8=B1=D8=A7=D8=AD=DB=8C =D8=B4=D8=AF=D9=87 =DA=A9=D9=87 =D9=
+=86=DB=8C=D8=A7=D8=B2=D9=85=D9=86=D8=AF =D9=BE=DB=8C=D8=B1=D9=88=DB=8C =D8=
+=AF=D9=82=DB=8C=D9=82 =D8=A7=D8=B2 =D8=AF=D8=B3=D8=AA=D9=88=D8=B1=D8=A7=D9=
+=84=D8=B9=D9=85=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =DA=A9=D8=A7=D8=B1=D8=A8=
+=D8=B1 =DB=8C=D8=A7 =D8=B3=DB=8C=D8=B3=D8=AA=D9=85 =D9=87=D8=B3=D8=AA=D9=86=
+=D8=AF.&nbsp;<strong><strong><br><br><br><br></strong></strong>
+<hr></li>
+<li><strong><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=
+=84=D8=A8 =DA=86=D8=AA =D9=88=D8=B8=DB=8C=D9=81=D9=87=E2=80=8C=D9=85=D8=AD=
+=D9=88=D8=B1 (Task-Specific Chat Template)</span><br></strong></strong><br>=
+=D8=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=84=D8=A8 =D8=A8=D8=B1=D8=A7=DB=8C =D9=88=
+=D8=B8=D8=A7=DB=8C=D9=81 =D8=AE=D8=A7=D8=B5 =D9=85=D8=A7=D9=86=D9=86=D8=AF =
+=D8=A8=D8=B1=D9=86=D8=A7=D9=85=D9=87=E2=80=8C=D9=86=D9=88=DB=8C=D8=B3=DB=8C=
+=D8=8C =D9=BE=D8=B4=D8=AA=DB=8C=D8=A8=D8=A7=D9=86=DB=8C =D9=85=D8=B4=D8=AA=
+=D8=B1=DB=8C =DB=8C=D8=A7 =D9=86=DA=AF=D8=A7=D8=B1=D8=B4 =D8=AE=D9=84=D8=A7=
+=D9=82=D8=A7=D9=86=D9=87 =D8=AA=D9=86=D8=B8=DB=8C=D9=85 =D8=B4=D8=AF=D9=87 =
+=D8=A7=D8=B3=D8=AA. &nbsp;<strong><strong><br><br><br><br><br><br><br><br><=
+/strong></strong>
+<hr></li>
+<li><strong><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=
+=84=D8=A8 =DA=86=D8=AA =D9=85=D8=A8=D8=AA=D9=86=DB=8C =D8=A8=D8=B1 =D8=AC=
+=D8=AF=D8=A7=D8=B3=D8=A7=D8=B2 (Delimiter-Based Chat Template)</span><br><b=
+r></strong></strong>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=84=D8=
+=A8 =D8=A7=D8=B2 =D8=B9=D9=84=D8=A7=D8=A6=D9=85 =DB=8C=D8=A7 =D8=AA=D9=88=
+=DA=A9=D9=86=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AE=D8=A7=D8=B5=DB=8C =D8=A8=D8=
+=B1=D8=A7=DB=8C =D8=AC=D8=AF=D8=A7=D8=B3=D8=A7=D8=B2=DB=8C =D9=86=D9=82=D8=
+=B4=E2=80=8C=D9=87=D8=A7 =DB=8C=D8=A7 =D9=86=D9=88=D8=A8=D8=AA=E2=80=8C=D9=
+=87=D8=A7=DB=8C =D9=85=DA=A9=D8=A7=D9=84=D9=85=D9=87 =D8=A7=D8=B3=D8=AA=D9=
+=81=D8=A7=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF.&nbsp;&nbsp;<=
+strong><strong><br><br><br></strong></strong>
+<hr></li>
+<li><strong><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=
+=84=D8=A8 =DA=86=D8=AA =D8=B2=D9=85=DB=8C=D9=86=D9=87=E2=80=8C=D9=85=D8=AD=
+=D9=88=D8=B1 (Contextual Chat Template)</span><br><br></strong></strong>=D8=
+=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=84=D8=A8 =D8=B4=D8=A7=D9=85=D9=84 =D8=A7=D8=
+=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =D9=88 =D8=A8=D8=A7=D9=81=D8=AA =D8=A7=D8=
+=B6=D8=A7=D9=81=DB=8C (=D9=85=D8=A7=D9=86=D9=86=D8=AF =D8=AF=D8=B3=D8=AA=D9=
+=88=D8=B1=D8=A7=D9=84=D8=B9=D9=85=D9=84=E2=80=8C=D9=87=D8=A7 =DB=8C=D8=A7 =
+=D9=BE=D8=B3=E2=80=8C=D8=B2=D9=85=DB=8C=D9=86=D9=87) =D8=A7=D8=B3=D8=AA =DA=
+=A9=D9=87 =D8=B1=D9=81=D8=AA=D8=A7=D8=B1 =DB=8C=D8=A7 =D9=BE=D8=A7=D8=B3=D8=
+=AE=E2=80=8C=D8=AF=D9=87=DB=8C =D9=85=D8=AF=D9=84 =D8=B1=D8=A7 =D9=87=D8=AF=
+=D8=A7=DB=8C=D8=AA =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF.&nbsp;&nbsp;<str=
+ong><strong><br><br><br></strong></strong>
+<hr></li>
+<li><strong><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=
+=84=D8=A8 =DA=86=D8=AA =D8=A8=D8=A7 =D9=86=D9=85=D9=88=D9=86=D9=87 (Few-Sho=
+t Chat Template)</span><br><br></strong></strong>=D8=A7=DB=8C=D9=86 =D9=82=
+=D8=A7=D9=84=D8=A8 =D8=B4=D8=A7=D9=85=D9=84 =DA=86=D9=86=D8=AF =D9=86=D9=85=
+=D9=88=D9=86=D9=87 =D8=A7=D8=B2 =D9=85=DA=A9=D8=A7=D9=84=D9=85=D8=A7=D8=AA =
+=D8=A8=D8=B1=D8=A7=DB=8C =D9=87=D8=AF=D8=A7=DB=8C=D8=AA =D8=B1=D9=81=D8=AA=
+=D8=A7=D8=B1 =D9=85=D8=AF=D9=84 =D9=88 =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D8=
+=A7=D9=84=DA=AF=D9=88=D9=87=D8=A7=DB=8C =DB=8C=D8=A7=D8=AF=DA=AF=DB=8C=D8=
+=B1=DB=8C =D8=A7=D8=B3=D8=AA.&nbsp;&nbsp;<strong><strong><br><br><br><br><b=
+r><br><br></strong></strong>
+<hr></li>
+<li><strong><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=
+=84=D8=A8 =DA=86=D8=AA =D8=A2=D8=B2=D8=A7=D8=AF (Open-Ended Chat Template)<=
+/span><br><br></strong></strong>=D8=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=84=D8=A8=
+ =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=DA=A9=D8=A7=D9=84=D9=85=D8=A7=D8=AA =D8=A2=
+=D8=B2=D8=A7=D8=AF =D9=88 =D8=AE=D9=84=D8=A7=D9=82=D8=A7=D9=86=D9=87 =D8=B7=
+=D8=B1=D8=A7=D8=AD=DB=8C =D8=B4=D8=AF=D9=87 =DA=A9=D9=87 =D9=86=DB=8C=D8=A7=
+=D8=B2=D9=85=D9=86=D8=AF =D9=BE=D8=A7=D8=B3=D8=AE=E2=80=8C=D9=87=D8=A7=DB=
+=8C =D8=A8=D8=A7=D8=B2 =D9=88 =D8=A8=D8=AF=D9=88=D9=86 =D9=85=D8=AD=D8=AF=
+=D9=88=D8=AF=DB=8C=D8=AA =D9=87=D8=B3=D8=AA=D9=86=D8=AF.&nbsp;<strong><stro=
+ng><br><br><br><br></strong></strong>
+<hr></li>
+<li><strong><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=
+=84=D8=A8 =DA=86=D8=AA =D8=AA=D8=B1=DA=A9=DB=8C=D8=A8=DB=8C (Hybrid Chat Te=
+mplate)</span><br><br></strong></strong>=D8=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=
+=84=D8=A8 =D8=AA=D8=B1=DA=A9=DB=8C=D8=A8=DB=8C =D8=A7=D8=B2 =DA=86=D9=86=D8=
+=AF =D9=86=D9=88=D8=B9 =D9=82=D8=A7=D9=84=D8=A8 =D8=A7=D8=B3=D8=AA =D9=88 =
+=D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D9=88=D8=A7=D8=B1=D8=AF =D9=BE=DB=8C=DA=86=
+=DB=8C=D8=AF=D9=87=E2=80=8C=D8=AA=D8=B1 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=
+=AF=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF.<strong><strong><br><br><=
+br><br><br><br></strong></strong>
+<hr></li>
+<li><strong><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=
+=84=D8=A8 =DA=86=D8=AA =D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87 =D8=A7=D8=B3=D8=
+=AA=D8=AF=D9=84=D8=A7=D9=84 (Chain-of-Thought Chat Template)</span><br><br>=
+</strong></strong>=D8=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=84=D8=A8 =D9=85=D8=AF=
+=D9=84 =D8=B1=D8=A7 =D8=AA=D8=B4=D9=88=DB=8C=D9=82 =D9=85=DB=8C=E2=80=8C=DA=
+=A9=D9=86=D8=AF =D8=AA=D8=A7 =D9=81=D8=B1=D8=A2=DB=8C=D9=86=D8=AF =D8=A7=D8=
+=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D8=AE=D9=88=D8=AF =D8=B1=D8=A7 =D8=A8=D9=
+=87 =D8=B5=D9=88=D8=B1=D8=AA =D9=85=D8=B1=D8=AD=D9=84=D9=87=E2=80=8C=D8=A7=
+=DB=8C =D8=AA=D9=88=D8=B6=DB=8C=D8=AD =D8=AF=D9=87=D8=AF.&nbsp;&nbsp;<stron=
+g><strong><br><br><br><br><br><br></strong></strong>
+<hr></li>
+<li><strong><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=
+=84=D8=A8 =DA=86=D8=AA =D8=A7=D8=AD=D8=B3=D8=A7=D8=B3=DB=8C (Emotion-Aware =
+Chat Template)</span><br><br></strong></strong>=D8=A7=DB=8C=D9=86 =D9=82=D8=
+=A7=D9=84=D8=A8 =D8=A8=D9=87 =D9=85=D8=AF=D9=84 =D8=A7=D9=85=DA=A9=D8=A7=D9=
+=86 =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF =D8=A7=D8=AD=D8=B3=D8=A7=D8=B3=
+=D8=A7=D8=AA =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=A7=D9=86 =D8=B1=D8=A7 =D8=B4=
+=D9=86=D8=A7=D8=B3=D8=A7=DB=8C=DB=8C =DA=A9=D8=B1=D8=AF=D9=87 =D9=88 =D8=AF=
+=D8=B1 =D9=BE=D8=A7=D8=B3=D8=AE=E2=80=8C=D8=AF=D9=87=DB=8C =D8=AE=D9=88=D8=
+=AF =D8=A7=D8=B2 =D8=A2=D9=86 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =
+=DA=A9=D9=86=D8=AF.&nbsp;<strong><strong><br><br><br><br></strong></strong>
+<hr></li>
+<li><strong><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=
+=84=D8=A8 =DA=86=D8=AA =DA=86=D9=86=D8=AF=D8=B9=D8=A7=D9=85=D9=84=DB=8C (Mu=
+lti-Agent Chat Template)</span><br><br></strong></strong>=D8=A7=DB=8C=D9=86=
+ =D9=82=D8=A7=D9=84=D8=A8 =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=DA=A9=D8=A7=D9=84=
+=D9=85=D8=A7=D8=AA =D8=A8=D8=A7 =DA=86=D9=86=D8=AF =D8=B9=D8=A7=D9=85=D9=84=
+ (=D9=85=D8=A7=D9=86=D9=86=D8=AF =DA=86=D9=86=D8=AF =D8=B4=D8=AE=D8=B5=DB=
+=8C=D8=AA =DB=8C=D8=A7 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1) =D8=A7=D8=B3=D8=AA=
+=D9=81=D8=A7=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF.&nbsp;&nbs=
+p;<strong><strong><br><br><br><br></strong></strong>
+<hr></li>
+<li><strong><span style=3D"color: rgb(0,128,128);">=D9=82=D8=A7=D9=84=D8=A8=
+ =DA=86=D8=AA =D8=A7=D8=AE=D8=AA=D8=B5=D8=A7=D8=B5=DB=8C =D8=AF=D8=A7=D9=85=
+=D9=86=D9=87=E2=80=8C=D9=85=D8=AD=D9=88=D8=B1 (Custom Domain-Specific Chat =
+Template)</span><br><br></strong>=D8=A7=DB=8C=D9=86 =D9=82=D8=A7=D9=84=D8=
+=A8 =D8=A8=D8=B1=D8=A7=DB=8C =D8=AD=D9=88=D8=B2=D9=87=E2=80=8C=D9=87=D8=A7=
+=DB=8C =D8=AE=D8=A7=D8=B5 (=D9=85=D8=A7=D9=86=D9=86=D8=AF =D8=A8=D9=87=D8=
+=AF=D8=A7=D8=B4=D8=AA=D8=8C =D9=85=D8=A7=D9=84=DB=8C =DB=8C=D8=A7 =D8=AD=D9=
+=82=D9=88=D9=82=DB=8C) =D8=B7=D8=B1=D8=A7=D8=AD=DB=8C =D8=B4=D8=AF=D9=87 =
+=D8=A7=D8=B3=D8=AA.&nbsp;</li>
+</ol>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p style=3D""><strong style=3D"text-indent: 1.0em;letter-spacing: 0.0px;">=
+=D9=85=D8=AB=D8=A7=D9=84:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">user: =
+=D8=B1=DB=8C=D8=B4=D9=87 =D8=AF=D9=88=D9=85 =D8=B9=D8=AF=D8=AF =DB=B6=DB=B4=
+ =DA=86=DB=8C=D8=B3=D8=AA=D8=9F
+assistant: =D8=B1=DB=8C=D8=B4=D9=87 =D8=AF=D9=88=D9=85 =D8=B9=D8=AF=D8=AF =
+=DB=B6=DB=B4 =D8=A8=D8=B1=D8=A7=D8=A8=D8=B1 =D8=A8=D8=A7 =DB=B8 =D8=A7=D8=
+=B3=D8=AA.</pre>=20
+</div>
+</div>
+<hr class=3D"auto-cursor-target">
+<p><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">user: =
+=DA=86=D9=87 =DA=A9=D8=B3=DB=8C =DA=A9=D8=AA=D8=A7=D8=A8 "=DB=B1=DB=B9=DB=
+=B8=DB=B4" =D8=B1=D8=A7 =D9=86=D9=88=D8=B4=D8=AA=D9=87 =D8=A7=D8=B3=D8=AA=
+=D8=9F =20
+assistant: =D8=AC=D9=88=D8=B1=D8=AC =D8=A7=D9=88=D8=B1=D9=88=D9=84 =D8=A7=
+=DB=8C=D9=86 =DA=A9=D8=AA=D8=A7=D8=A8 =D8=B1=D8=A7 =D9=86=D9=88=D8=B4=D8=AA=
+=D9=87 =D8=A7=D8=B3=D8=AA. =20
+user: =DA=86=D9=87 =DA=A9=D8=AA=D8=A7=D8=A8=E2=80=8C=D9=87=D8=A7=DB=8C =D8=
+=AF=DB=8C=DA=AF=D8=B1=DB=8C =D8=A7=D8=B2 =D8=A7=D9=88 =D9=85=D9=86=D8=AA=D8=
+=B4=D8=B1 =D8=B4=D8=AF=D9=87 =D8=A7=D8=B3=D8=AA=D8=9F =20
+assistant: =D8=A8=D8=B1=D8=AE=DB=8C =D8=A2=D8=AB=D8=A7=D8=B1 =D8=AF=DB=8C=
+=DA=AF=D8=B1 =D8=A7=D9=88 =D8=B4=D8=A7=D9=85=D9=84 "=D9=82=D9=84=D8=B9=D9=
+=87 =D8=AD=DB=8C=D9=88=D8=A7=D9=86=D8=A7=D8=AA" =D9=88 "=D8=A8=D9=87 =DB=8C=
+=D8=A7=D8=AF =DA=A9=D8=A7=D8=AA=D8=A7=D9=84=D9=88=D9=86=DB=8C=D8=A7" =D9=87=
+=D8=B3=D8=AA=D9=86=D8=AF.</pre>=20
+</div>
+</div>
+<hr class=3D"auto-cursor-target">
+<p><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">system:=
+ =D8=B4=D9=85=D8=A7 =DB=8C=DA=A9 =D8=AF=D8=B3=D8=AA=DB=8C=D8=A7=D8=B1 =D9=
+=85=D9=81=DB=8C=D8=AF =D9=88 =D8=AE=D9=88=D8=B4=E2=80=8C=D8=A8=D8=B1=D8=AE=
+=D9=88=D8=B1=D8=AF =D9=87=D8=B3=D8=AA=DB=8C=D8=AF. =20
+user: =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=DB=8C =D8=A8=D9=87 =D9=
+=85=D9=86 =D8=AF=D8=B1 =D8=B1=DB=8C=D8=A7=D8=B6=DB=8C =DA=A9=D9=85=DA=A9 =
+=DA=A9=D9=86=DB=8C=D8=9F =20
+assistant: =D8=A7=D9=84=D8=A8=D8=AA=D9=87! =DA=86=D9=87 =D8=B3=D9=88=D8=A7=
+=D9=84=DB=8C =D8=AF=D8=A7=D8=B1=DB=8C=D8=9F =20
+user: =DA=86=D9=86=D8=AF =D8=A8=D9=87 =D8=B9=D9=84=D8=A7=D9=88=D9=87 =D8=AF=
+=D9=88 =DA=86=D9=86=D8=AF =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF=D8=9F =20
+assistant: =D8=AF=D9=88 =D8=A8=D9=87 =D8=B9=D9=84=D8=A7=D9=88=D9=87 =D8=AF=
+=D9=88 =D8=A8=D8=B1=D8=A7=D8=A8=D8=B1 =D8=A8=D8=A7 =DB=B4 =D8=A7=D8=B3=D8=
+=AA.</pre>=20
+</div>
+</div>
+<hr>
+<p><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">system:=
+ =D9=85=D8=AA=D9=86 =D8=B2=DB=8C=D8=B1 =D8=B1=D8=A7 =D8=A8=D9=87 =D8=B2=D8=
+=A8=D8=A7=D9=86 =D9=81=D8=B1=D8=A7=D9=86=D8=B3=D9=88=DB=8C =D8=AA=D8=B1=D8=
+=AC=D9=85=D9=87 =DA=A9=D9=86. =20
+user: =D8=B3=D9=84=D8=A7=D9=85=D8=8C =D8=AD=D8=A7=D9=84=D8=AA =DA=86=D8=B7=
+=D9=88=D8=B1=D9=87=D8=9F =20
+assistant: Bonjour, comment =C3=A7a va?</pre>=20
+</div>
+</div>
+<hr>
+<p><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">user: =
+=DB=8C=DA=A9 =D8=AA=D8=A7=D8=A8=D8=B9 =D8=AF=D8=B1 =D9=BE=D8=A7=DB=8C=D8=AA=
+=D9=88=D9=86 =D8=A8=D9=86=D9=88=DB=8C=D8=B3 =DA=A9=D9=87 =D9=81=D8=A7=DA=A9=
+=D8=AA=D9=88=D8=B1=DB=8C=D9=84 =DB=8C=DA=A9 =D8=B9=D8=AF=D8=AF =D8=B1=D8=A7=
+ =D8=AD=D8=B3=D8=A7=D8=A8 =DA=A9=D9=86=D8=AF. =20
+assistant:  =20
+```python =20
+def factorial(n): =20
+    if n =3D=3D 0 or n =3D=3D 1: =20
+        return 1 =20
+    else: =20
+        return n * factorial(n - 1)</pre>=20
+</div>
+</div>
+<hr>
+<p class=3D"auto-cursor-target"><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">&lt;|us=
+er|&gt; =D9=BE=D8=A7=DB=8C=D8=AA=D8=AE=D8=AA =DA=98=D8=A7=D9=BE=D9=86 =DA=
+=A9=D8=AC=D8=A7=D8=B3=D8=AA=D8=9F =20
+&lt;|assistant|&gt; =D9=BE=D8=A7=DB=8C=D8=AA=D8=AE=D8=AA =DA=98=D8=A7=D9=BE=
+=D9=86 =D8=AA=D9=88=DA=A9=DB=8C=D9=88 =D8=A7=D8=B3=D8=AA.</pre>=20
+</div>
+</div>
+<hr>
+<p class=3D"auto-cursor-target"><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">system:=
+ =D8=B4=D9=85=D8=A7 =DB=8C=DA=A9 =D8=AA=D8=A7=D8=B1=DB=8C=D8=AE=E2=80=8C=D8=
+=AF=D8=A7=D9=86 =D9=85=D8=AA=D8=AE=D8=B5=D8=B5 =D8=AF=D8=B1 =D8=AA=D9=85=D8=
+=AF=D9=86=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A8=D8=A7=D8=B3=D8=AA=D8=A7=D9=86=
+=DB=8C =D9=87=D8=B3=D8=AA=DB=8C=D8=AF. =20
+user: =D8=AF=D8=B1=D8=A8=D8=A7=D8=B1=D9=87 =D8=A7=D9=87=D8=B1=D8=A7=D9=85 =
+=D9=85=D8=B5=D8=B1 =D8=A8=D9=87 =D9=85=D9=86 =D8=A8=DA=AF=D9=88. =20
+assistant: =D8=A7=D9=87=D8=B1=D8=A7=D9=85 =D9=85=D8=B5=D8=B1 =D8=A8=D9=87=
+=E2=80=8C=D8=B9=D9=86=D9=88=D8=A7=D9=86 =D9=85=D9=82=D8=A8=D8=B1=D9=87=E2=
+=80=8C=D9=87=D8=A7=DB=8C=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D9=81=D8=B1=D8=A7=
+=D8=B9=D9=86=D9=87 =D8=B3=D8=A7=D8=AE=D8=AA=D9=87 =D8=B4=D8=AF=D9=87=E2=80=
+=8C=D8=A7=D9=86=D8=AF =D9=88 =DB=8C=DA=A9=DB=8C =D8=A7=D8=B2 =D8=A8=D8=B1=
+=D8=AC=D8=B3=D8=AA=D9=87=E2=80=8C=D8=AA=D8=B1=DB=8C=D9=86 =D8=A8=D9=86=D8=
+=A7=D9=87=D8=A7=DB=8C =D8=AA=D9=85=D8=AF=D9=86 =D9=85=D8=B5=D8=B1 =D8=A8=D8=
+=A7=D8=B3=D8=AA=D8=A7=D9=86 =D9=87=D8=B3=D8=AA=D9=86=D8=AF.</pre>=20
+</div>
+</div>
+<hr>
+<p class=3D"auto-cursor-target"><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">system:=
+ =D8=B4=D9=85=D8=A7 =DB=8C=DA=A9 =D8=AF=D8=B3=D8=AA=DB=8C=D8=A7=D8=B1 =D9=
+=85=D9=81=DB=8C=D8=AF =D9=87=D8=B3=D8=AA=DB=8C=D8=AF. =20
+user: =D8=AF=D9=88 =D8=A8=D9=87 =D8=B9=D9=84=D8=A7=D9=88=D9=87 =D8=AF=D9=88=
+ =DA=86=D9=86=D8=AF =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF=D8=9F =20
+assistant: =D8=AF=D9=88 =D8=A8=D9=87 =D8=B9=D9=84=D8=A7=D9=88=D9=87 =D8=AF=
+=D9=88 =D8=A8=D8=B1=D8=A7=D8=A8=D8=B1 =D8=A8=D8=A7 =DB=B4 =D8=A7=D8=B3=D8=
+=AA. =20
+user: =D8=B3=D9=87 =D8=B6=D8=B1=D8=A8=E2=80=8C=D8=AF=D8=B1 =D8=B3=D9=87 =DA=
+=86=D9=86=D8=AF =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF=D8=9F =20
+assistant: =D8=B3=D9=87 =D8=B6=D8=B1=D8=A8=E2=80=8C=D8=AF=D8=B1 =D8=B3=D9=
+=87 =D8=A8=D8=B1=D8=A7=D8=A8=D8=B1 =D8=A8=D8=A7 =DB=B9 =D8=A7=D8=B3=D8=AA. =
+=20
+user: =DA=86=D9=87=D8=A7=D8=B1 =D8=AA=D9=82=D8=B3=DB=8C=D9=85 =D8=A8=D8=B1 =
+=D8=AF=D9=88 =DA=86=D9=86=D8=AF =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF=D8=
+=9F =20
+assistant: =DA=86=D9=87=D8=A7=D8=B1 =D8=AA=D9=82=D8=B3=DB=8C=D9=85 =D8=A8=
+=D8=B1 =D8=AF=D9=88 =D8=A8=D8=B1=D8=A7=D8=A8=D8=B1 =D8=A8=D8=A7 =DB=B2 =D8=
+=A7=D8=B3=D8=AA.</pre>=20
+</div>
+</div>
+<hr>
+<p class=3D"auto-cursor-target"><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">user: =
+=D8=A8=D8=B1=D8=A7=DB=8C=D9=85 =D8=AF=D8=A7=D8=B3=D8=AA=D8=A7=D9=86=DB=8C =
+=D8=AF=D8=B1 =D9=85=D9=88=D8=B1=D8=AF =D8=A7=DA=98=D8=AF=D9=87=D8=A7 =D8=AA=
+=D8=B9=D8=B1=DB=8C=D9=81 =DA=A9=D9=86. =20
+assistant: =D8=B1=D9=88=D8=B2=DB=8C =D8=B1=D9=88=D8=B2=DA=AF=D8=A7=D8=B1=DB=
+=8C=D8=8C =D8=AF=D8=B1 =D8=B3=D8=B1=D8=B2=D9=85=DB=8C=D9=86=DB=8C =D8=AF=D9=
+=88=D8=B1=D8=8C =D8=A7=DA=98=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C=DB=8C =
+=D9=82=D8=AF=D8=B1=D8=AA=D9=85=D9=86=D8=AF =D8=A8=D9=87 =D9=86=D8=A7=D9=85 =
+=D8=A7=D9=84=D8=AF=D8=B1=DB=8C=D9=86 =D8=B2=D9=86=D8=AF=DA=AF=DB=8C =D9=85=
+=DB=8C=E2=80=8C=DA=A9=D8=B1=D8=AF. =D8=A7=D9=88 =D8=A8=D9=87=E2=80=8C=D8=AE=
+=D8=A7=D8=B7=D8=B1 =D9=81=D9=84=D8=B3=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B7=D9=
+=84=D8=A7=DB=8C=DB=8C =D9=88 =D8=B9=D9=84=D8=A7=D9=82=D9=87=E2=80=8C=D8=A7=
+=D8=B4 =D8=A8=D9=87 =D9=85=D8=B9=D9=85=D8=A7=D9=87=D8=A7 =D9=85=D8=B9=D8=B1=
+=D9=88=D9=81 =D8=A8=D9=88=D8=AF...</pre>=20
+</div>
+</div>
+<hr>
+<p class=3D"auto-cursor-target"><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">&lt;|sy=
+stem|&gt; =D8=B4=D9=85=D8=A7 =DB=8C=DA=A9 =D8=AF=D8=B3=D8=AA=DB=8C=D8=A7=D8=
+=B1 =D9=85=D9=81=DB=8C=D8=AF =D9=88 =D8=AD=D8=B1=D9=81=D9=87=E2=80=8C=D8=A7=
+=DB=8C =D9=87=D8=B3=D8=AA=DB=8C=D8=AF. =20
+&lt;|user|&gt; =D8=A7=D9=85=D8=B1=D9=88=D8=B2 =D9=87=D9=88=D8=A7 =DA=86=D8=
+=B7=D9=88=D8=B1 =D8=A7=D8=B3=D8=AA=D8=9F =20
+&lt;|assistant|&gt; =D9=85=D8=AA=D8=A3=D8=B3=D9=81=D9=85=D8=8C =D9=86=D9=85=
+=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=D9=85 =D8=A7=D8=B7=D9=84=D8=A7=D8=
+=B9=D8=A7=D8=AA =D9=84=D8=AD=D8=B8=D9=87=E2=80=8C=D8=A7=DB=8C =D8=A2=D8=A8=
+=E2=80=8C=D9=88=D9=87=D9=88=D8=A7 =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D8=AF=D9=
+=87=D9=85. =20
+&lt;|user|&gt; =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=DB=8C =D8=A8=
+=D8=B1=D8=A7=DB=8C=D9=85 =DB=8C=DA=A9 =D8=AC=D9=88=DA=A9 =D8=A8=DA=AF=D9=88=
+=DB=8C=DB=8C=D8=9F =20
+&lt;|assistant|&gt; =D8=AD=D8=AA=D9=85=D8=A7=D9=8B! =DA=86=D8=B1=D8=A7 =D8=
+=A7=D8=B3=DA=A9=D9=84=D8=AA=E2=80=8C=D9=87=D8=A7 =D8=A8=D8=A7 =DB=8C=DA=A9=
+=D8=AF=DB=8C=DA=AF=D8=B1 =D9=86=D9=85=DB=8C=E2=80=8C=D8=AC=D9=86=DA=AF=D9=
+=86=D8=AF=D8=9F =DA=86=D9=88=D9=86 "=D8=AC=D8=B1=D8=A6=D8=AA" =D8=A7=DB=8C=
+=D9=86 =DA=A9=D8=A7=D8=B1 =D8=B1=D8=A7 =D9=86=D8=AF=D8=A7=D8=B1=D9=86=D8=AF=
+!</pre>=20
+</div>
+</div>
+<hr>
+<p class=3D"auto-cursor-target"><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">user: =
+=D8=A7=DA=AF=D8=B1 =DB=B3 =D8=B3=DB=8C=D8=A8 =D8=AF=D8=A7=D8=B4=D8=AA=D9=87=
+ =D8=A8=D8=A7=D8=B4=D9=85 =D9=88 =DB=B5 =D8=B3=DB=8C=D8=A8 =D8=AF=DB=8C=DA=
+=AF=D8=B1 =D8=A8=D8=AE=D8=B1=D9=85=D8=8C =DA=86=D9=86=D8=AF =D8=B3=DB=8C=D8=
+=A8 =D8=AF=D8=A7=D8=B1=D9=85=D8=9F =20
+assistant: =D8=A8=DB=8C=D8=A7 =D9=85=D8=B1=D8=AD=D9=84=D9=87 =D8=A8=D9=87 =
+=D9=85=D8=B1=D8=AD=D9=84=D9=87 =D8=AD=D9=84 =DA=A9=D9=86=DB=8C=D9=85: =20
+=DB=B1. =D8=B4=D9=85=D8=A7 =DB=B3 =D8=B3=DB=8C=D8=A8 =D8=AF=D8=A7=D8=B1=DB=
+=8C=D8=AF. =20
+=DB=B2. =DB=B5 =D8=B3=DB=8C=D8=A8 =D8=AF=DB=8C=DA=AF=D8=B1 =D9=85=DB=8C=E2=
+=80=8C=D8=AE=D8=B1=DB=8C=D8=AF. =20
+=DB=B3. =D8=AC=D9=85=D8=B9 =DA=A9=D8=B1=D8=AF=D9=86 =D8=A2=D9=86=E2=80=8C=
+=D9=87=D8=A7: =DB=B3 + =DB=B5 =3D =DB=B8. =20
+=D9=BE=D8=B3=D8=8C =D8=B4=D9=85=D8=A7 =D8=AF=D8=B1 =D9=85=D8=AC=D9=85=D9=88=
+=D8=B9 =DB=B8 =D8=B3=DB=8C=D8=A8 =D8=AF=D8=A7=D8=B1=DB=8C=D8=AF.</pre>=20
+</div>
+</div>
+<hr>
+<p class=3D"auto-cursor-target"><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">user: =
+=D8=A7=D9=85=D8=B1=D9=88=D8=B2 =D8=AE=DB=8C=D9=84=DB=8C =D8=BA=D9=85=DA=AF=
+=DB=8C=D9=86=D9=85. =20
+assistant: =D9=85=D8=AA=D8=A3=D8=B3=D9=81=D9=85 =DA=A9=D9=87 =D8=A7=DB=8C=
+=D9=86 =D8=B1=D8=A7 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=86=D9=88=D9=85. =D8=AF=
+=D9=88=D8=B3=D8=AA =D8=AF=D8=A7=D8=B1=DB=8C =D8=AF=D8=B1=D8=A8=D8=A7=D8=B1=
+=D9=87 =DA=86=DB=8C=D8=B2=DB=8C =DA=A9=D9=87 =D9=86=D8=A7=D8=B1=D8=A7=D8=AD=
+=D8=AA=D8=AA =DA=A9=D8=B1=D8=AF=D9=87 =D8=B5=D8=AD=D8=A8=D8=AA =DA=A9=D9=86=
+=DB=8C=D8=9F</pre>=20
+</div>
+</div>
+<hr>
+<p class=3D"auto-cursor-target"><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">agent1:=
+ =D8=A8=D8=B1=D9=86=D8=A7=D9=85=D9=87 =D8=A7=D9=85=D8=B1=D9=88=D8=B2 =DA=86=
+=DB=8C=D8=B3=D8=AA=D8=9F =20
+agent2: =D8=A8=D8=A7=DB=8C=D8=AF =D8=A7=D8=B2 =D8=A8=D8=B1=D8=B1=D8=B3=DB=
+=8C =D9=86=DB=8C=D8=A7=D8=B2=D9=85=D9=86=D8=AF=DB=8C=E2=80=8C=D9=87=D8=A7=
+=DB=8C =D9=BE=D8=B1=D9=88=DA=98=D9=87 =D8=B4=D8=B1=D9=88=D8=B9 =DA=A9=D9=86=
+=DB=8C=D9=85. =20
+agent1: =D9=85=D9=88=D8=A7=D9=81=D9=82=D9=85. =D8=A8=DB=8C=D8=A7=DB=8C=DB=
+=8C=D8=AF =D8=AC=D9=84=D8=B3=D9=87=E2=80=8C=D8=A7=DB=8C =D8=A8=D8=B1=D8=A7=
+=DB=8C =D8=B3=D8=A7=D8=B9=D8=AA =DB=B1=DB=B0 =D8=B5=D8=A8=D8=AD =D8=AA=D9=
+=86=D8=B8=DB=8C=D9=85 =DA=A9=D9=86=DB=8C=D9=85.</pre>=20
+</div>
+</div>
+<hr>
+<p class=3D"auto-cursor-target"><strong>=D9=85=D8=AB=D8=A7=D9=84:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">user: =
+=D8=B9=D9=84=D8=A7=D8=A6=D9=85 =D8=AF=DB=8C=D8=A7=D8=A8=D8=AA =DA=86=DB=8C=
+=D8=B3=D8=AA=D8=9F =20
+assistant: =D8=B9=D9=84=D8=A7=D8=A6=D9=85 =D8=B1=D8=A7=DB=8C=D8=AC =D8=AF=
+=DB=8C=D8=A7=D8=A8=D8=AA =D8=B4=D8=A7=D9=85=D9=84 =D8=AA=D8=B4=D9=86=DA=AF=
+=DB=8C =D8=A8=DB=8C=D8=B4 =D8=A7=D8=B2 =D8=AD=D8=AF=D8=8C =D8=AA=DA=A9=D8=
+=B1=D8=B1 =D8=A7=D8=AF=D8=B1=D8=A7=D8=B1=D8=8C =D8=AE=D8=B3=D8=AA=DA=AF=DB=
+=8C =D9=88 =D8=AA=D8=A7=D8=B1=DB=8C =D8=AF=DB=8C=D8=AF =D8=A7=D8=B3=D8=AA. =
+=D8=A8=D8=A7 =D8=A7=DB=8C=D9=86 =D8=AD=D8=A7=D9=84=D8=8C =D8=A8=D8=A7=DB=8C=
+=D8=AF =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D8=B4=D8=AE=DB=8C=D8=B5 =D8=AF=D9=82=
+=DB=8C=D9=82 =D8=A8=D9=87 =D9=BE=D8=B2=D8=B4=DA=A9 =D9=85=D8=B1=D8=A7=D8=AC=
+=D8=B9=D9=87 =DA=A9=D9=86=DB=8C=D8=AF.</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_196_587457687.1786978402812--

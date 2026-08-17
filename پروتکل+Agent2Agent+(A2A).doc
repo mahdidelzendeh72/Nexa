@@ -1,0 +1,1102 @@
+Date: Mon, 17 Aug 2026 14:48:34 +0330 (GMT+03:30)
+Message-ID: <1261411628.179.1786965514186@AppServer.sadgan.int>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_178_1224686183.1786965514185"
+
+------=_Part_178_1224686183.1786965514185
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 Agent2Agent (A2A)</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 Agent2Agent (A2A)</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" width=3D"1080" src=3D"https://cdn.pro=
+d.website-files.com/670cfc8b8f0c2eaaa871de4e/67f7200b606383a95683c048_A2A%2=
+0Protocol%20-%20Hero%20Image.jpg" data-image-src=3D"https://cdn.prod.websit=
+e-files.com/670cfc8b8f0c2eaaa871de4e/67f7200b606383a95683c048_A2A%20Protoco=
+l%20-%20Hero%20Image.jpg"></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D9=85=D8=
+=B9=D8=B1=D9=81=DB=8C=DA=A9=D9=84=DB=8C=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84=
+Agent-to-Agent(A2A)"><span style=3D"color: rgb(128,0,128);"><strong>=D9=85=
+=D8=B9=D8=B1=D9=81=DB=8C =DA=A9=D9=84=DB=8C =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=
+=D9=84 Agent-to-Agent (A2A)</strong></span></h2>
+<p>=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 <strong>Agent-to-Agent (A2A)</stron=
+g> =DB=8C=DA=A9=DB=8C =D8=A7=D8=B2 =D9=85=D8=A4=D9=84=D9=81=D9=87=E2=80=8C=
+=D9=87=D8=A7=DB=8C =D8=A7=D8=B5=D9=84=DB=8C =D8=AF=D8=B1 =D9=85=D8=B9=D9=85=
+=D8=A7=D8=B1=DB=8C <strong>=D9=87=D9=88=DB=8C=D8=AA =D8=BA=DB=8C=D8=B1=D9=
+=85=D8=AA=D9=85=D8=B1=DA=A9=D8=B2 (Decentralized Identity - DID)</strong> =
+=D9=88 =D8=B2=DB=8C=D8=B1=D8=B3=D8=A7=D8=AE=D8=AA <strong>Hyperledger Aries=
+</strong> =D8=A7=D8=B3=D8=AA =DA=A9=D9=87 =D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=
+=B7 =D8=A7=D9=85=D9=86=D8=8C =D9=85=D8=B3=D8=AA=D9=82=DB=8C=D9=85=D8=8C =D9=
+=88 peer-to-peer =D8=A8=DB=8C=D9=86 =D8=AF=D9=88 =D8=B9=D8=A7=D9=85=D9=84 (=
+Agent) =D8=B1=D8=A7 =D8=AA=D8=B9=D8=B1=DB=8C=D9=81 =D9=85=DB=8C=E2=80=8C=DA=
+=A9=D9=86=D8=AF.</p>
+<p>=D8=A7=DB=8C=D9=86 =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D8=A7=D9=85=DA=
+=A9=D8=A7=D9=86 =D8=AA=D8=A8=D8=A7=D8=AF=D9=84 =D9=BE=DB=8C=D8=A7=D9=85=D8=
+=8C =D8=A7=D8=AD=D8=B1=D8=A7=D8=B2 =D9=87=D9=88=DB=8C=D8=AA=D8=8C =D8=B5=D8=
+=AF=D9=88=D8=B1 =D9=88 =D8=AA=D8=A3=DB=8C=DB=8C=D8=AF =D8=A7=D8=B3=D9=86=D8=
+=A7=D8=AF =D8=AF=DB=8C=D8=AC=DB=8C=D8=AA=D8=A7=D9=84 (=D9=85=D8=A7=D9=86=D9=
+=86=D8=AF Credential=D9=87=D8=A7) =D9=88 =D8=AF=DB=8C=DA=AF=D8=B1 =D8=AA=D8=
+=B9=D8=A7=D9=85=D9=84=D8=A7=D8=AA =D9=85=D8=B1=D8=A8=D9=88=D8=B7 =D8=A8=D9=
+=87 =D9=87=D9=88=DB=8C=D8=AA =D8=B1=D8=A7 =D8=AF=D8=B1 =D8=A8=D8=B3=D8=AA=
+=D8=B1=DB=8C =DA=A9=D8=A7=D9=85=D9=84=D8=A7=D9=8B =D8=B1=D9=85=D8=B2=D9=86=
+=DA=AF=D8=A7=D8=B1=DB=8C=E2=80=8C=D8=B4=D8=AF=D9=87 =D9=88 =D9=85=D8=B3=D8=
+=AA=D9=82=D9=84 =D9=81=D8=B1=D8=A7=D9=87=D9=85 =D9=85=DB=8C=E2=80=8C=DA=A9=
+=D9=86=D8=AF.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p>=D8=AF=D8=B1 =D8=A7=DA=A9=D9=88=D8=B3=DB=8C=D8=B3=D8=AA=D9=85 Self-Sover=
+eign Identity (SSI)=D8=8C =D8=B9=D8=A7=D9=85=D9=84 =DB=8C=D8=A7 Agent =D9=
+=86=D8=B1=D9=85=E2=80=8C=D8=A7=D9=81=D8=B2=D8=A7=D8=B1=DB=8C =D8=A7=D8=B3=
+=D8=AA =DA=A9=D9=87 =D8=A8=D9=87 =D9=86=D9=85=D8=A7=DB=8C=D9=86=D8=AF=DA=AF=
+=DB=8C =D8=A7=D8=B2 =DB=8C=DA=A9 =D9=81=D8=B1=D8=AF (=D9=81=D8=B1=D8=AF=DB=
+=8C =D9=88=D8=A7=D9=82=D8=B9=DB=8C)=D8=8C =D8=B3=D8=A7=D8=B2=D9=85=D8=A7=D9=
+=86=D8=8C =DB=8C=D8=A7 =D9=88=D8=B3=DB=8C=D9=84=D9=87 (=DA=86=DB=8C=D8=B2) =
+=D8=B9=D9=85=D9=84 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF. =D8=A7=DB=8C=D9=
+=86 =D8=B9=D9=88=D8=A7=D9=85=D9=84 =D9=88=D8=B8=D8=A7=DB=8C=D9=81 =D9=85=D8=
+=AA=D8=B9=D8=AF=D8=AF=DB=8C =D8=B4=D8=A7=D9=85=D9=84 =D9=85=D8=AF=DB=8C=D8=
+=B1=DB=8C=D8=AA DID=D9=87=D8=A7=D8=8C =D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =
+=DA=A9=DB=8C=D9=81 =D9=BE=D9=88=D9=84 =D8=AF=DB=8C=D8=AC=DB=8C=D8=AA=D8=A7=
+=D9=84=D8=8C =D8=A7=D8=B1=D8=B3=D8=A7=D9=84/=D8=AF=D8=B1=DB=8C=D8=A7=D9=81=
+=D8=AA =D9=85=D8=AF=D8=A7=D8=B1=DA=A9 =D9=82=D8=A7=D8=A8=D9=84 =D8=A7=D8=B9=
+=D8=AA=D8=A8=D8=A7=D8=B1=D8=B3=D9=86=D8=AC=DB=8C (Verifiable Credentials)=
+=D8=8C =D9=85=D8=B0=D8=A7=DA=A9=D8=B1=D9=87 =D8=A8=D8=B1 =D8=B3=D8=B1 =D8=
+=B3=DB=8C=D8=A7=D8=B3=D8=AA=E2=80=8C=D9=87=D8=A7=D8=8C =D9=BE=D8=B1=D9=88=
+=D8=AA=DA=A9=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AA=D8=A7=DB=8C=DB=8C=D8=
+=AF =D9=87=D9=88=DB=8C=D8=AA =D9=88 =D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =
+=D8=AA=D8=B9=D8=A7=D9=85=D9=84=D8=A7=D8=AA =D8=B1=D8=A7 =D8=A8=D8=B1 =D8=B9=
+=D9=87=D8=AF=D9=87 =D8=AF=D8=A7=D8=B1=D9=86=D8=AF.</p>
+<p>=D8=B9=D9=88=D8=A7=D9=85=D9=84 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=
+=D9=86=D9=86=D8=AF =D8=A8=D9=87 =D8=AF=D9=88 =D8=AF=D8=B3=D8=AA=D9=87 =D8=
+=AA=D9=82=D8=B3=DB=8C=D9=85 =D8=B4=D9=88=D9=86=D8=AF:</p>
+<ul>
+<li>Edge Agents (=D8=B9=D9=88=D8=A7=D9=85=D9=84 =D8=B3=D9=85=D8=AA =DA=A9=
+=D8=A7=D8=B1=D8=A8=D8=B1): =D8=A8=D8=B1 =D8=B1=D9=88=DB=8C =D8=AF=D8=B3=D8=
+=AA=DA=AF=D8=A7=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AA=D9=84=D9=81=D9=86 =
+=D9=87=D9=85=D8=B1=D8=A7=D9=87 =DB=8C=D8=A7 =D9=85=D8=B1=D9=88=D8=B1=DA=AF=
+=D8=B1 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1 =D8=A7=D8=AC=D8=B1=D8=A7 =D9=85=DB=8C=
+=E2=80=8C=D8=B4=D9=88=D9=86=D8=AF.</li>
+<li>Cloud Agents (=D8=B9=D9=88=D8=A7=D9=85=D9=84 =D8=A7=D8=A8=D8=B1=DB=8C =
+=DB=8C=D8=A7 =D8=B3=D8=B1=D9=88=D8=B1=DB=8C): =D8=AF=D8=B1 =D9=81=D8=B6=D8=
+=A7=DB=8C =D8=A7=D8=A8=D8=B1=DB=8C =DB=8C=D8=A7 =D8=AF=D8=B1 =D8=B3=D8=B1=
+=D9=88=D8=B1 =D8=A7=D8=AC=D8=B1=D8=A7 =D8=B4=D8=AF=D9=87 =D9=88 =D8=A8=D9=
+=87 =D8=B9=D9=86=D9=88=D8=A7=D9=86 =D9=86=D9=85=D8=A7=DB=8C=D9=86=D8=AF=D9=
+=87 =D9=82=D8=A7=D8=A8=D9=84 =D8=AF=D8=B3=D8=AA=D8=B1=D8=B3 =D8=B9=D9=85=D9=
+=88=D9=85=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C Edge Agent =D8=B9=D9=85=D9=84 =D9=
+=85=DB=8C=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF.</li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D8=A7=D9=
+=87=D8=AF=D8=A7=D9=81=D8=A7=D8=B5=D9=84=DB=8CA2A"><strong><span style=3D"co=
+lor: rgb(128,0,128);">=D8=A7=D9=87=D8=AF=D8=A7=D9=81 =D8=A7=D8=B5=D9=84=DB=
+=8C A2A</span></strong></h2>
+<ul>
+<li><p><strong>=D8=A7=DB=8C=D8=AC=D8=A7=D8=AF =D8=A7=D8=B1=D8=AA=D8=A8=D8=
+=A7=D8=B7 =D8=A7=D9=85=D9=86 =D9=88 =D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=A7=D8=
+=B1=DB=8C=E2=80=8C=D8=B4=D8=AF=D9=87 =D8=A8=DB=8C=D9=86 =D8=AF=D9=88 Agent<=
+/strong></p></li>
+<li><strong>=D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7 End-to-End =D8=A7=D9=85=D9=
+=86 =D8=A8=DB=8C=D9=86 agent=D9=87=D8=A7</strong></li>
+<li><p><strong>=D9=BE=D8=B4=D8=AA=DB=8C=D8=A8=D8=A7=D9=86=DB=8C =D8=A7=D8=
+=B2 =D8=AA=D8=A8=D8=A7=D8=AF=D9=84 =D9=BE=DB=8C=D8=A7=D9=85 =D8=A8=D8=AF=D9=
+=88=D9=86 =D9=88=D8=A7=D8=B3=D8=B7=D9=87 =D9=85=D8=B1=DA=A9=D8=B2=DB=8C</st=
+rong></p></li>
+<li><p><strong>=D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =DA=86=D8=B1=D8=AE=D9=
+=87 =D8=B9=D9=85=D8=B1 =D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7=D8=A7=D8=AA (co=
+nnection lifecycle)</strong></p></li>
+<li><p><strong>=D9=BE=D8=B4=D8=AA=DB=8C=D8=A8=D8=A7=D9=86=DB=8C =D8=A7=D8=
+=B2 =D8=AA=D8=B9=D8=A7=D9=85=D9=84=D8=A7=D8=AA =D9=85=D8=B1=D8=A8=D9=88=D8=
+=B7 =D8=A8=D9=87 =D9=87=D9=88=DB=8C=D8=AA =D8=AE=D9=88=D8=AF=D8=B3=D8=A7=D8=
+=AF=D8=B1 (Self-sovereign Identity - SSI)</strong></p></li>
+<li><strong>=D8=A7=D8=B3=D8=AA=D9=82=D9=84=D8=A7=D9=84 =D8=A7=D8=B2 =D8=A8=
+=D8=B3=D8=AA=D8=B1 =D8=A7=D9=86=D8=AA=D9=82=D8=A7=D9=84 (Transport Agnostic=
+)</strong></li>
+<li><strong>=D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D9=88 =D8=A7=
+=D9=85=D8=B6=D8=A7=DB=8C =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7 =D8=
+=A8=D8=B1 =D9=BE=D8=A7=DB=8C=D9=87 DID</strong></li>
+<li><strong>=D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA =D9=85=DB=8C=D8=A7=D9=86=
+=E2=80=8C=D8=B9=D8=A7=D9=85=D9=84=DB=8C (Interoperability)</strong></li>
+<li><strong>=D8=B3=D8=A7=D8=AF=DA=AF=DB=8C =D8=AF=D8=B1 =D8=AA=D9=88=D8=B3=
+=D8=B9=D9=87 =D9=88 =D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=
+=B2=DB=8C</strong></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D9=85=D8=
+=B9=D9=85=D8=A7=D8=B1=DB=8C=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84A2A"><span s=
+tyle=3D"color: rgb(128,0,128);"><strong>=D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=
+=8C =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 A2A</strong></span></h2>
+<h3 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D8=A7=D8=
+=AC=D8=B2=D8=A7=DB=8C=D8=A7=D8=B5=D9=84=DB=8C:"><span style=3D"color: rgb(1=
+02,102,153);">=D8=A7=D8=AC=D8=B2=D8=A7=DB=8C =D8=A7=D8=B5=D9=84=DB=8C:</spa=
+n></h3>
+<ol>
+<li><p><strong>Agent</strong><br>=D9=86=D9=85=D8=A7=DB=8C=D9=86=D8=AF=D9=87=
+=E2=80=8C=D8=A7=DB=8C =D9=86=D8=B1=D9=85=E2=80=8C=D8=A7=D9=81=D8=B2=D8=A7=
+=D8=B1=DB=8C =D8=A7=D8=B3=D8=AA =DA=A9=D9=87 =D8=A7=D8=B2 =D8=B7=D8=B1=D9=
+=81 =DB=8C=DA=A9 =D9=86=D9=87=D8=A7=D8=AF (=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=
+=D8=8C =D8=B3=D8=A7=D8=B2=D9=85=D8=A7=D9=86=D8=8C =DB=8C=D8=A7 =D8=AF=D8=B3=
+=D8=AA=DA=AF=D8=A7=D9=87) =D9=81=D8=B9=D8=A7=D9=84=DB=8C=D8=AA =D9=85=DB=8C=
+=E2=80=8C=DA=A9=D9=86=D8=AF =D9=88 =D9=88=D8=B8=DB=8C=D9=81=D9=87=E2=80=8C=
+=D8=A7=D8=B4 =D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =D8=A7=D8=B1=D8=AA=D8=A8=
+=D8=A7=D8=B7=D8=A7=D8=AA=D8=8C =D8=B0=D8=AE=DB=8C=D8=B1=D9=87=E2=80=8C=D8=
+=B3=D8=A7=D8=B2=DB=8C =DA=A9=D9=84=DB=8C=D8=AF=D9=87=D8=A7=DB=8C =D8=B1=D9=
+=85=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C=D8=8C =D9=88 =D8=A7=D8=AC=D8=B1=D8=
+=A7=DB=8C =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C D=
+IDComm =D8=A7=D8=B3=D8=AA.</p></li>
+<li><p><strong>Message Envelope</strong><br>=D9=BE=DB=8C=D8=A7=D9=85=E2=80=
+=8C=D9=87=D8=A7 =D8=AF=D8=B1 A2A =D8=A8=D9=87 =D8=B4=DA=A9=D9=84 =D8=B1=D9=
+=85=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C=E2=80=8C=D8=B4=D8=AF=D9=87=E2=80=8C=
+=D8=A7=DB=8C =DA=A9=D9=BE=D8=B3=D9=88=D9=84=D9=87 (pack) =D9=88 =D8=A8=D8=
+=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =DA=A9=D9=84=DB=
+=8C=D8=AF=D9=87=D8=A7=DB=8C =D8=B9=D9=85=D9=88=D9=85=DB=8C/=D8=AE=D8=B5=D9=
+=88=D8=B5=DB=8C =D8=B7=D8=B1=D9=81=DB=8C=D9=86 =D8=B1=D9=85=D8=B2=DA=AF=D8=
+=B4=D8=A7=DB=8C=DB=8C =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D9=86=D8=AF.</p></l=
+i>
+<li><p><strong>Transport Layer (=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D8=AD=
+=D9=85=D9=84)</strong><br>A2A =D8=AE=D9=88=D8=AF=D8=B4 =D8=B1=D9=88=DB=8C =
+=DB=8C=DA=A9 =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D8=AD=D9=85=D9=84 =D9=85=
+=D8=B3=D8=AA=D9=82=D9=84 =D9=82=D8=B1=D8=A7=D8=B1 =D9=85=DB=8C=E2=80=8C=DA=
+=AF=DB=8C=D8=B1=D8=AF (=D9=85=D8=AB=D9=84 HTTPS=D8=8C WebSockets=D8=8C AMQP=
+=D8=8C SMTP =D9=88 ...). =D9=85=D8=AD=D8=AA=D9=88=D8=A7 =D9=88=D8=A7=D8=A8=
+=D8=B3=D8=AA=D9=87 =D8=A8=D9=87 =D9=84=D8=A7=DB=8C=D9=87 =D8=AD=D9=85=D9=84=
+ =D9=86=DB=8C=D8=B3=D8=AA.</p></li>
+<li><p><strong>DIDComm Messaging</strong><br>=D9=BE=DB=8C=D8=A7=D9=85=E2=80=
+=8C=D9=87=D8=A7 =D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=
+=A7=D8=B2 =D8=A7=D8=B3=D8=AA=D8=A7=D9=86=D8=AF=D8=A7=D8=B1=D8=AF <strong>DI=
+DComm</strong> (=D9=86=D8=B3=D8=AE=D9=87 1 =DB=8C=D8=A7 2) =D8=A7=D8=B1=D8=
+=B3=D8=A7=D9=84 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=86. =D8=A7=DB=8C=D9=86 =D8=
+=A7=D8=B3=D8=AA=D8=A7=D9=86=D8=AF=D8=A7=D8=B1=D8=AF =DA=86=D8=A7=D8=B1=DA=
+=86=D9=88=D8=A8 =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D8=B1=D8=B3=D8=A7=D9=86=
+=DB=8C =D8=AF=D8=B1 =D8=AF=D9=86=DB=8C=D8=A7=DB=8C DID =D9=88 SSI =D9=87=D8=
+=B3=D8=AA.</p></li>
+</ol>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D9=81=D8=
+=B1=D8=A2=DB=8C=D9=86=D8=AF=D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7A2A(Connecti=
+onLifecycle)"><strong><span style=3D"color: rgb(128,0,128);">=D9=81=D8=B1=
+=D8=A2=DB=8C=D9=86=D8=AF =D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7 A2A (Connecti=
+on Lifecycle)</span></strong></h2>
+<ol>
+<li><p><span style=3D"color: rgb(204,153,255);"><strong>Connection Invitati=
+on</strong></span><br>=DB=8C=DA=A9=DB=8C =D8=A7=D8=B2 Agent=D9=87=D8=A7 =D8=
+=AF=D8=B9=D9=88=D8=AA=E2=80=8C=D9=86=D8=A7=D9=85=D9=87=E2=80=8C=D8=A7=DB=8C=
+ =D8=A8=D8=A7 DID =D9=88 endpoint =D8=A7=DB=8C=D8=AC=D8=A7=D8=AF =D9=85=DB=
+=8C=E2=80=8C=DA=A9=D9=86=D8=AF.</p></li>
+<li><p><span style=3D"color: rgb(204,153,255);"><strong>Connection Request<=
+/strong></span><br>=D8=B7=D8=B1=D9=81 =D9=85=D9=82=D8=A7=D8=A8=D9=84 =D8=A7=
+=DB=8C=D9=86 =D8=AF=D8=B9=D9=88=D8=AA=E2=80=8C=D9=86=D8=A7=D9=85=D9=87 =D8=
+=B1=D9=88 =D9=82=D8=A8=D9=88=D9=84 =D9=88 DID =D8=AE=D9=88=D8=AF=D8=B4 =D8=
+=B1=D9=88 =D9=85=D8=B9=D8=B1=D9=81=DB=8C =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=
+=D8=AF.</p></li>
+<li><p><span style=3D"color: rgb(204,153,255);"><strong>Connection Response=
+</strong></span><br>Agent =D8=AF=D8=B9=D9=88=D8=AA=E2=80=8C=DA=A9=D9=86=D9=
+=86=D8=AF=D9=87 =D9=87=D9=85 =D8=AA=D8=A3=DB=8C=DB=8C=D8=AF =D9=86=D9=87=D8=
+=A7=DB=8C=DB=8C =D8=A7=D9=86=D8=AC=D8=A7=D9=85 =D9=85=DB=8C=E2=80=8C=D8=AF=
+=D9=87=D8=AF.</p></li>
+<li><p><span style=3D"color: rgb(204,153,255);"><strong>Establish Secure Co=
+nnection</strong></span><br>=D8=AD=D8=A7=D9=84=D8=A7 =D8=AF=D9=88 Agent =DB=
+=8C=DA=A9 =D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7 =D8=B1=D9=85=D8=B2=D9=86=DA=
+=AF=D8=A7=D8=B1=DB=8C=E2=80=8C=D8=B4=D8=AF=D9=87 =D9=88 =D8=AF=D9=88=D8=B7=
+=D8=B1=D9=81=D9=87 =D8=AF=D8=A7=D8=B1=D9=86=D8=AF =D9=88 =D9=85=DB=8C=E2=80=
+=8C=D8=AA=D9=88=D8=A7=D9=86=D9=86=D8=AF =D9=BE=DB=8C=D8=A7=D9=85 =D8=B1=D8=
+=AF =D9=88 =D8=A8=D8=AF=D9=84 =DA=A9=D9=86=D9=86=D8=AF.</p></li>
+</ol>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D8=B3=D8=
+=A7=D8=AE=D8=AA=D8=A7=D8=B1=D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7=DB=8CA2A"><=
+span style=3D"color: rgb(102,102,153);">=D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=
+=B1 =D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7=DB=8C A2A</span></h3>
+<p>=D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7 A2A =D8=A8=D8=B1 =D9=BE=D8=A7=DB=8C=
+=D9=87 =D9=85=D8=AF=D9=84 Decentralized Identifiers =D8=A7=D8=B3=D9=86=D8=
+=A7=D8=AF (DID Documents) =D8=AA=D9=86=D8=B8=DB=8C=D9=85 =D9=85=DB=8C=E2=80=
+=8C=D8=B4=D9=88=D8=AF. =D9=87=D8=B1 agent =D8=AF=D8=A7=D8=B1=D8=A7=DB=8C =
+=DB=8C=DA=A9 =DB=8C=D8=A7 =DA=86=D9=86=D8=AF DID =D8=A7=D8=B3=D8=AA =D9=88 =
+=D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7 =D8=A8=D8=A7 agent =D8=AF=DB=8C=DA=AF=
+=D8=B1 =D8=A7=D8=B2 =D8=B7=D8=B1=DB=8C=D9=82 DID =D9=88 DID Document =D8=B5=
+=D9=88=D8=B1=D8=AA =D9=85=DB=8C=E2=80=8C=DA=AF=DB=8C=D8=B1=D8=AF.</p>
+<p><span style=3D"color: rgb(204,153,255);"><strong>=D8=B3=D9=87 =D9=85=D8=
+=B1=D8=AD=D9=84=D9=87 =D8=A7=D8=B5=D9=84=DB=8C =D8=AF=D8=B1 =D8=A7=D8=B1=D8=
+=AA=D8=A8=D8=A7=D8=B7 A2A:</strong></span></p>
+<ul>
+<li>=DA=A9=D8=B4=D9=81 =DB=8C=D8=A7 =D8=AA=D8=A8=D8=A7=D8=AF=D9=84 DID (=D9=
+=85=D8=AB=D9=84=D8=A7=D9=8B =D8=A7=D8=B2 =D8=B7=D8=B1=DB=8C=D9=82 =D8=AF=D8=
+=B9=D9=88=D8=AA=D9=86=D8=A7=D9=85=D9=87)</li>
+<li>=D8=AA=D8=A8=D8=A7=D8=AF=D9=84 =D9=88 =D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=
+=A7=D8=B1=DB=8C =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7 =D8=A8=D8=B1 =
+=D8=A7=D8=B3=D8=A7=D8=B3 =DA=A9=D9=84=DB=8C=D8=AF=D9=87=D8=A7=DB=8C =D8=A7=
+=D8=AD=D8=B1=D8=A7=D8=B2 =D9=87=D9=88=DB=8C=D8=AA =D9=88 =D8=B1=D9=85=D8=B2=
+=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D8=AF=D8=B1 DIDDoc</li>
+<li>=D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =D8=AC=D9=84=D8=B3=D8=A7=D8=AA (co=
+ntext) =D9=88 =DA=A9=D9=BE=D8=B3=D9=88=D9=84=D9=87=E2=80=8C=D8=B3=D8=A7=D8=
+=B2=DB=8C =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7 =D8=A8=D8=B1=D8=A7=
+=DB=8C =D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA =D8=AA=D8=B1=DA=A9=E2=80=8C=DB=
+=8C=D8=A7=D8=A8=DB=8C =D9=88 =D8=A7=D9=85=D9=86=DB=8C=D8=AA</li>
+</ul>
+<p><strong>Agent=D9=87=D8=A7 =D8=A7=D8=B2 =D8=B7=D8=B1=DB=8C=D9=82 DIDComm =
+=D8=A8=D8=A7 =D9=87=D9=85 =D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7 =D8=A8=D8=B1=
+=D9=82=D8=B1=D8=A7=D8=B1 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF =DA=
+=A9=D9=87 =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D8=B2=DB=8C=D8=B1=D8=A8=D9=
+=86=D8=A7=DB=8C=DB=8C =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D8=B1=D8=B3=D8=A7=
+=D9=86=DB=8C =D8=AF=D8=B1 A2A =D9=85=D8=AD=D8=B3=D9=88=D8=A8 =D9=85=DB=8C=
+=E2=80=8C=D8=B4=D9=88=D8=AF.</strong></p>
+<p><span style=3D"color: rgb(204,153,255);"><strong>=D8=A7=D8=AC=D8=B2=D8=
+=A7=DB=8C =D9=BE=DB=8C=D8=A7=D9=85 A2A</strong></span></p>
+<p>=D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C A2A =D8=AF=D8=A7=D8=
+=B1=D8=A7=DB=8C =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1 =D8=A7=D8=B3=D8=AA=D8=
+=A7=D9=86=D8=AF=D8=A7=D8=B1=D8=AF=DB=8C =D9=87=D8=B3=D8=AA=D9=86=D8=AF. =D8=
+=B9=D9=86=D8=A7=D8=B5=D8=B1 =D8=A7=D8=B5=D9=84=DB=8C =DB=8C=DA=A9 =D9=BE=DB=
+=8C=D8=A7=D9=85 =D8=A8=D9=87 =D8=B4=D8=B1=D8=AD =D8=B2=DB=8C=D8=B1 =D8=A7=
+=D8=B3=D8=AA:</p>
+<ul>
+<li><strong>id:</strong> =D8=B4=D9=86=D8=A7=D8=B3=D9=87 =D9=85=D9=86=D8=AD=
+=D8=B5=D8=B1 =D8=A8=D9=87 =D9=81=D8=B1=D8=AF =D9=BE=DB=8C=D8=A7=D9=85 (UUID=
+ usually)</li>
+<li><strong>type:</strong> =D9=86=D9=88=D8=B9 =D9=BE=DB=8C=D8=A7=D9=85 (=D8=
+=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=AB=D8=A7=D9=84: connection request, credent=
+ial offer, etc.)</li>
+<li><strong>body:</strong> =D8=A8=D8=AF=D9=86=D9=87 =D9=88=D8=A7=D9=82=D8=
+=B9=DB=8C =D9=BE=DB=8C=D8=A7=D9=85 =DA=A9=D9=87 =D8=B4=D8=A7=D9=85=D9=84 =
+=D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A7=D8=B5=D9=84=DB=
+=8C =DB=8C=D8=A7 payload =D8=A7=D8=B3=D8=AA</li>
+<li><strong>sender:</strong> DID =DB=8C=D8=A7 key =D9=81=D8=B1=D8=B3=D8=AA=
+=D9=86=D8=AF=D9=87</li>
+<li><strong>recipient:</strong> DID =DB=8C=D8=A7 key =DA=AF=DB=8C=D8=B1=D9=
+=86=D8=AF=D9=87</li>
+<li><strong>transport:</strong> =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =
+=D9=85=D8=B1=D8=A8=D9=88=D8=B7 =D8=A8=D9=87 =D9=86=D8=AD=D9=88=D9=87 =D8=A7=
+=D8=B1=D8=B3=D8=A7=D9=84 (transport decorators)</li>
+<li><strong>threading:</strong> =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =
+=D9=85=D8=AF=D9=84 =D9=85=D8=A8=D8=A7=D8=AD=D8=AB=D9=87 =D9=88 =D9=85=D9=88=
+=D8=B6=D9=88=D8=B9 (conversation threading)</li>
+</ul>
+<p>DIDComm =DB=8C=DA=A9 =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1 =D9=85=D8=B4=
+=D8=AE=D8=B5 =D8=A8=D8=B1=D8=A7=DB=8C =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=
+=87=D8=A7 =D8=AF=D8=A7=D8=B1=D8=AF =DA=A9=D9=87 =D8=B4=D8=A7=D9=85=D9=84 =
+=D8=AE=D8=A8=D8=B1=D8=AF=D9=87=DB=8C=E2=80=8C=D9=87=D8=A7 (notification)=D8=
+=8C =D9=BE=D8=B1=D8=B3=E2=80=8C=D9=88=D8=AC=D9=88=D9=87=D8=A7=D8=8C =D9=BE=
+=D8=A7=D8=B3=D8=AE=E2=80=8C=D9=87=D8=A7 =D9=88 =D9=BE=DB=8C=D8=A7=D9=85=E2=
+=80=8C=D9=87=D8=A7=DB=8C =D8=AA=D8=A3=DB=8C=DB=8C=D8=AF =D8=A7=D8=B3=D8=AA.=
+</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" alt=3D"None" width=3D"700" src=3D"htt=
+ps://miro.medium.com/v2/resize:fit:700/0*5z4m6GwAVcjPJJah.png" data-image-s=
+rc=3D"https://miro.medium.com/v2/resize:fit:700/0*5z4m6GwAVcjPJJah.png"></s=
+pan></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D8=A7=D8=
+=AF=D8=BA=D8=A7=D9=85=D8=A8=D8=A7Anthropic'sModelContextProtocol(MCP)"><spa=
+n style=3D"color: rgb(128,0,128);"><strong>=D8=A7=D8=AF=D8=BA=D8=A7=D9=85 =
+=D8=A8=D8=A7 Anthropic's Model Context Protocol (MCP)</strong></span></h2>
+<p><span style=3D"color: rgb(0,0,0);"><strong>A2A </strong>=D8=A8=D8=A7 =D9=
+=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D9=87=D8=A7=DB=8C =D8=AF=DB=8C=DA=AF=D8=
+=B1 =D9=85=D8=A7=D9=86=D9=86=D8=AF =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D8=
+=B2=D9=85=DB=8C=D9=86=D9=87 =D9=85=D8=AF=D9=84<strong> Anthropic (MCP)</str=
+ong> =D8=AF=D8=B1 =D9=87=D9=85 =D8=A7=D9=81=D8=B2=D8=A7=DB=8C=DB=8C =DA=A9=
+=D8=A7=D8=B1 =D9=85=DB=8C =DA=A9=D9=86=D8=AF =D8=8C =DA=A9=D9=87 =D8=AA=D8=
+=B9=D8=A7=D9=85=D9=84 =D8=B9=D8=A7=D9=85=D9=84 =D8=B1=D8=A7 =D8=A8=D8=A7 =
+=D8=AF=D8=A7=D9=86=D8=B4 =D9=85=D8=AA=D9=86=DB=8C =D8=BA=D9=86=DB=8C =D9=85=
+=DB=8C =DA=A9=D9=86=D8=AF. =D8=A8=D8=A7 =D9=87=D9=85 =D8=8C =D8=A7=DB=8C=D9=
+=86 =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D9=87=D8=A7 =D9=BE=D8=A7=DB=8C=D9=
+=87 =D9=88 =D8=A7=D8=B3=D8=A7=D8=B3 =D9=85=D8=AD=DA=A9=D9=85=DB=8C =D8=A8=
+=D8=B1=D8=A7=DB=8C =D8=B3=DB=8C=D8=B3=D8=AA=D9=85 =D9=87=D8=A7=DB=8C =DA=86=
+=D9=86=D8=AF =D8=B9=D8=A7=D9=85=D9=84 =D9=85=D9=82=DB=8C=D8=A7=D8=B3 =D9=BE=
+=D8=B0=DB=8C=D8=B1 =D9=88 =D9=87=D9=88=D8=B4=D9=85=D9=86=D8=AF =D8=A7=DB=8C=
+=D8=AC=D8=A7=D8=AF =D9=85=DB=8C =DA=A9=D9=86=D9=86=D8=AF.</span></p>
+<p><span style=3D"color: rgb(0,0,0);"><strong>A2A </strong>=D8=AF=D8=B1 =D8=
+=A7=D9=86=D8=B2=D9=88=D8=A7 =DA=A9=D8=A7=D8=B1 =D9=86=D9=85=DB=8C =DA=A9=D9=
+=86=D8=AF. =D8=B7=D8=B1=D8=A7=D8=AD=DB=8C =D8=B4=D8=AF=D9=87 =D8=A7=D8=B3=
+=D8=AA =D8=AA=D8=A7 =D8=A8=D8=A7 =D9=87=D9=85 (=D8=AF=D8=B1 =D9=87=D9=85 =
+=D8=A7=D9=81=D8=B2=D8=A7=DB=8C=DB=8C) =D8=A8=D8=A7 =D8=B3=D8=A7=DB=8C=D8=B1=
+ =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D9=87=D8=A7 =D8=8C =D8=A8=D9=87 =D9=
+=88=DB=8C=DA=98=D9=87 "=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D8=B2=D9=85=DB=
+=8C=D9=86=D9=87 =D9=85=D8=AF=D9=84" (MCP) =D8=A7=DB=8C=D8=AC=D8=A7=D8=AF =
+=D8=B4=D8=AF=D9=87 =D8=AA=D9=88=D8=B3=D8=B7 Anthropic =D9=87=D9=85=DA=A9=D8=
+=A7=D8=B1=DB=8C =DA=A9=D9=86=D8=AF.</span></p>
+<p><span style=3D"color: rgb(0,0,0);"><strong>MCP </strong>=D8=A7=D8=B7=D9=
+=84=D8=A7=D8=B9=D8=A7=D8=AA =D8=A7=D8=B1=D8=B2=D8=B4=D9=85=D9=86=D8=AF =D9=
+=BE=DB=8C=D8=B4 =D8=B2=D9=85=DB=8C=D9=86=D9=87 (=D8=AF=D8=A7=D9=86=D8=B4 =
+=D9=85=D8=AA=D9=86=DB=8C) =D8=B1=D8=A7 =D8=A8=D9=87 =D9=85=DA=A9=D8=A7=D9=
+=84=D9=85=D8=A7=D8=AA =D8=A8=DB=8C=D9=86 =D8=B9=D9=88=D8=A7=D9=85=D9=84 =D9=
+=87=D9=88=D8=B4 =D9=85=D8=B5=D9=86=D9=88=D8=B9=DB=8C =D8=A7=D8=B6=D8=A7=D9=
+=81=D9=87 =D9=85=DB=8C =DA=A9=D9=86=D8=AF. =D8=A8=D9=87 =D8=A7=DB=8C=D9=86 =
+=D9=81=DA=A9=D8=B1 =DA=A9=D9=86=DB=8C=D8=AF =DA=A9=D9=87 =D8=A8=D9=87 =D8=
+=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =D9=85=D8=B1=D8=A8=D9=88=D8=B7=D9=
+=87 =D8=A8=D8=B1=D8=A7=DB=8C =D8=A8=D8=AD=D8=AB =D9=87=D8=A7=DB=8C =D9=87=
+=D9=88=D8=B4=D9=85=D9=86=D8=AF=D8=A7=D9=86=D9=87 =D8=AA=D8=B1 =D9=88 =D8=A2=
+=DA=AF=D8=A7=D9=87=D8=A7=D9=86=D9=87 =D8=AA=D8=B1 =D8=8C =D8=A7=D8=B7=D9=84=
+=D8=A7=D8=B9=D8=A7=D8=AA =D9=85=D8=B1=D8=A8=D9=88=D8=B7=D9=87 =D8=B1=D8=A7 =
+=D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D8=AF=D9=87=DB=8C=D8=AF.</span></p>
+<p><span style=3D"color: rgb(0,0,0);">=D8=A8=D8=A7 =D8=AA=D8=B1=DA=A9=DB=8C=
+=D8=A8 A2A =D9=88 =E2=80=8B=E2=80=8BMCP =D8=8C =D8=AA=D9=88=D8=B3=D8=B9=D9=
+=87 =D8=AF=D9=87=D9=86=D8=AF=DA=AF=D8=A7=D9=86 =D9=85=DB=8C =D8=AA=D9=88=D8=
+=A7=D9=86=D9=86=D8=AF =D8=B3=DB=8C=D8=B3=D8=AA=D9=85 =D9=87=D8=A7=DB=8C =DA=
+=86=D9=86=D8=AF =D8=B9=D8=A7=D9=85=D9=84 =D8=B1=D8=A7 =D8=A8=D8=B3=D8=A7=D8=
+=B2=D9=86=D8=AF =DA=A9=D9=87 =D8=B9=D8=A8=D8=A7=D8=B1=D8=AA=D9=86=D8=AF =D8=
+=A7=D8=B2:</span></p>
+<ul>
+<li><span style=3D"color: rgb(0,0,0);"><strong>=D9=85=D9=82=DB=8C=D8=A7=D8=
+=B3 =D9=BE=D8=B0=DB=8C=D8=B1:</strong> =D9=82=D8=A7=D8=AF=D8=B1 =D8=A8=D9=
+=87 =DA=A9=D9=86=D8=AA=D8=B1=D9=84 =D8=A8=D8=B3=DB=8C=D8=A7=D8=B1=DB=8C =D8=
+=A7=D8=B2 =D8=B9=D9=88=D8=A7=D9=85=D9=84 =D8=A8=D9=87 =D8=B7=D9=88=D8=B1 =
+=D9=87=D9=85=D8=B2=D9=85=D8=A7=D9=86 =D8=A7=D8=B3=D8=AA.</span></li>
+<li><span style=3D"color: rgb(0,0,0);"><strong>=D9=87=D9=88=D8=B4=D9=85=D9=
+=86=D8=AF:</strong> =D8=A8=D9=87 =D8=AF=D9=84=DB=8C=D9=84 =D8=B2=D9=85=DB=
+=8C=D9=86=D9=87 =D8=BA=D9=86=DB=8C =D8=B4=D8=AF=D9=87 =D8=8C =D9=82=D8=A7=
+=D8=AF=D8=B1 =D8=A8=D9=87 =D8=AA=D8=B9=D8=A7=D9=85=D9=84 =D9=BE=DB=8C=DA=86=
+=DB=8C=D8=AF=D9=87 =D8=AA=D8=B1 =D9=88 =D9=85=D8=B9=D9=86=DB=8C =D8=AF=D8=
+=A7=D8=B1 =D8=AA=D8=B1 =D8=A7=D8=B3=D8=AA.</span></li>
+</ul>
+<p><span style=3D"color: rgb(0,0,0);">=D8=A8=D9=87 =D8=B2=D8=A8=D8=A7=D9=86=
+ =D8=B3=D8=A7=D8=AF=D9=87 =D8=AA=D8=B1: </span><span style=3D"color: rgb(0,=
+0,0);">A2A =D9=86=D8=AD=D9=88=D9=87 =D8=B5=D8=AD=D8=A8=D8=AA =D9=86=D9=85=
+=D8=A7=DB=8C=D9=86=D8=AF=DA=AF=D8=A7=D9=86 =D9=87=D9=88=D8=B4 =D9=85=D8=B5=
+=D9=86=D9=88=D8=B9=DB=8C =D8=A8=D8=A7 =DB=8C=DA=A9=D8=AF=DB=8C=DA=AF=D8=B1 =
+=D8=B1=D8=A7 =D8=A7=D8=AF=D8=A7=D8=B1=D9=87 =D9=85=DB=8C =DA=A9=D9=86=D8=AF=
+. MCP =D8=A7=D8=B7=D9=85=DB=8C=D9=86=D8=A7=D9=86 =D9=85=DB=8C =D8=AF=D9=87=
+=D8=AF =DA=A9=D9=87 =D8=A2=D9=86=D9=87=D8=A7 =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=
+=D8=A7=D8=AA =D8=B5=D8=AD=DB=8C=D8=AD=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=B5=
+=D8=AD=D8=A8=D8=AA =D9=87=D9=88=D8=B4=D9=85=D9=86=D8=AF=D8=A7=D9=86=D9=87 =
+=D8=AF=D8=A7=D8=B1=D9=86=D8=AF. =D8=A2=D9=86=D9=87=D8=A7 =D8=A8=D8=A7 =D9=
+=87=D9=85 =DB=8C=DA=A9 =D9=BE=D8=A7=DB=8C=DA=AF=D8=A7=D9=87 =D9=82=D9=88=DB=
+=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=B3=D8=A7=D8=AE=D8=AA=D9=86 =DA=AF=D8=B1=D9=
+=88=D9=87 =D9=87=D8=A7=DB=8C =D8=A8=D8=B2=D8=B1=DA=AF =D9=88 =D9=87=D9=88=
+=D8=B4=D9=85=D9=86=D8=AF =D8=A7=D8=B2 =D8=B9=D9=88=D8=A7=D9=85=D9=84 =D9=87=
+=D9=88=D8=B4 =D9=85=D8=B5=D9=86=D9=88=D8=B9=DB=8C =D8=A7=DB=8C=D8=AC=D8=A7=
+=D8=AF =D9=85=DB=8C =DA=A9=D9=86=D9=86=D8=AF.</span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper"><i=
+mg class=3D"confluence-embedded-image confluence-external-resource image-ce=
+nter" alt=3D"None" src=3D"https://miro.medium.com/v2/resize:fit:700/0*l_KMS=
+tqh6al1-s10.png" data-image-src=3D"https://miro.medium.com/v2/resize:fit:70=
+0/0*l_KMStqh6al1-s10.png"></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-AgentCard=
+=D8=AF=D8=B1A2A"><span style=3D"color: rgb(128,0,128);"><strong>Agent Card =
+=D8=AF=D8=B1 A2A</strong></span></h2>
+<p>=D8=AF=D8=B1 =D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C <strong>A2A (Agent-to-=
+Agent)</strong>=D8=8C =DA=A9=D9=87 =D9=85=D8=B9=D9=85=D9=88=D9=84=D8=A7=D9=
+=8B =D8=AF=D8=B1 =D8=B3=DB=8C=D8=B3=D8=AA=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C =
+=D9=85=D8=A8=D8=AA=D9=86=DB=8C =D8=A8=D8=B1 =D9=87=D9=88=DB=8C=D8=AA =D8=AE=
+=D9=88=D8=AF=D9=85=D8=AE=D8=AA=D8=A7=D8=B1 (Self-Sovereign Identity =DB=8C=
+=D8=A7 SSI) =D9=85=D8=AB=D9=84 <strong>Hyperledger Aries</strong> =D8=A7=D8=
+=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF=
+=D8=8C =DB=8C=DA=A9 <strong>Agent Card</strong> =DB=8C=D8=A7 "=DA=A9=D8=A7=
+=D8=B1=D8=AA =D8=A7=DB=8C=D8=AC=D9=86=D8=AA" =D9=86=D9=88=D8=B9=DB=8C =D8=
+=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1 =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=
+=AA=DB=8C =D8=A7=D8=B3=D8=AA =DA=A9=D9=87 =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=
+=D9=88=D8=B5=DB=8C=D9=81 =DB=8C=DA=A9 =D8=A7=DB=8C=D8=AC=D9=86=D8=AA =D8=AE=
+=D8=A7=D8=B5 =D9=88 =D9=85=D8=B4=D8=AE=D8=B5=D8=A7=D8=AA =D8=A7=D8=B1=D8=AA=
+=D8=A8=D8=A7=D8=B7=DB=8C =D8=A2=D9=86 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=
+=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF.</p>
+<h3 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-AgentCard=
+=DA=86=DB=8C=D8=B3=D8=AA=D8=9F"><span style=3D"color: rgb(102,102,153);">Ag=
+ent Card =DA=86=DB=8C=D8=B3=D8=AA=D8=9F</span></h3>
+<p><strong>Agent Card</strong> =D8=B4=D8=A7=D9=85=D9=84 =D8=A7=D8=B7=D9=84=
+=D8=A7=D8=B9=D8=A7=D8=AA=DB=8C =D8=A7=D8=B3=D8=AA =DA=A9=D9=87 =D8=A8=D8=B1=
+=D8=A7=DB=8C =D8=A8=D8=B1=D9=82=D8=B1=D8=A7=D8=B1=DB=8C =D8=A7=D8=B1=D8=AA=
+=D8=A8=D8=A7=D8=B7 =D8=A7=D9=85=D9=86 =D8=A8=DB=8C=D9=86 =D8=A7=DB=8C=D8=AC=
+=D9=86=D8=AA=E2=80=8C=D9=87=D8=A7 (Agents) =D8=B6=D8=B1=D9=88=D8=B1=DB=8C =
+=D8=A7=D8=B3=D8=AA. =D8=A7=DB=8C=D9=86 =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=
+=D8=AA =D8=A8=D9=87 =D8=AF=DB=8C=DA=AF=D8=B1 =D8=A7=DB=8C=D8=AC=D9=86=D8=AA=
+=E2=80=8C=D9=87=D8=A7 =DA=A9=D9=85=DA=A9 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=
+=D8=AF =D8=AA=D8=A7 =D8=A8=D8=AA=D9=88=D8=A7=D9=86=D9=86=D8=AF:</p>
+<ul>
+<li><p>=D8=A7=DB=8C=D8=AC=D9=86=D8=AA =D9=85=D9=88=D8=B1=D8=AF =D9=86=D8=B8=
+=D8=B1 =D8=B1=D8=A7 =D8=B4=D9=86=D8=A7=D8=B3=D8=A7=DB=8C=DB=8C =DA=A9=D9=86=
+=D9=86=D8=AF.</p></li>
+<li><p>=D8=A8=D8=A7 =D8=A7=D9=88 =D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7 =D8=
+=A7=D9=85=D9=86 =D8=A8=D8=B1=D9=82=D8=B1=D8=A7=D8=B1 =DA=A9=D9=86=D9=86=D8=
+=AF.</p></li>
+<li><p>=D8=B3=DB=8C=D8=A7=D8=B3=D8=AA=E2=80=8C=D9=87=D8=A7 =D9=88 =D9=82=D8=
+=A7=D8=A8=D9=84=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A2=D9=86 =D8=B1=
+=D8=A7 =D8=A8=D8=AF=D8=A7=D9=86=D9=86=D8=AF.</p></li>
+</ul>
+<h3 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D9=85=D8=
+=AD=D8=AA=D9=88=D8=A7=DB=8C=D9=85=D8=B9=D9=85=D9=88=D9=84AgentCard=DA=86=DB=
+=8C=D8=B3=D8=AA=D8=9F"><span style=3D"color: rgb(102,102,153);">=D9=85=D8=
+=AD=D8=AA=D9=88=D8=A7=DB=8C =D9=85=D8=B9=D9=85=D9=88=D9=84 Agent Card =DA=
+=86=DB=8C=D8=B3=D8=AA=D8=9F</span></h3>
+<p>=DB=8C=DA=A9 Agent Card =D9=85=D8=B9=D9=85=D9=88=D9=84=D8=A7=D9=8B =D8=
+=B4=D8=A7=D9=85=D9=84 =D8=A7=DB=8C=D9=86 =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=
+=A7=D8=AA =D8=A7=D8=B3=D8=AA:</p>
+<p><br></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable" style=3D"margin-left: auto;margin-=
+right: auto;direction: ltr;text-align: left;">
+<thead style=3D"direction: ltr;text-align: left;">
+<tr style=3D"direction: ltr;text-align: left;">
+<th style=3D"direction: ltr;text-align: left;" class=3D"confluenceTh">=D9=
+=81=DB=8C=D9=84=D8=AF</th>
+<th style=3D"direction: ltr;text-align: left;" class=3D"confluenceTh">=D8=
+=AA=D9=88=D8=B6=DB=8C=D8=AD</th>
+</tr>
+</thead>
+<tbody style=3D"direction: ltr;text-align: left;">
+<tr style=3D"direction: ltr;text-align: left;">
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd"><stro=
+ng>Agent DID</strong></td>
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">=D8=
+=B4=D9=86=D8=A7=D8=B3=D9=87 =D8=BA=DB=8C=D8=B1=D9=85=D8=AA=D9=85=D8=B1=DA=
+=A9=D8=B2 =D8=A7=DB=8C=D8=AC=D9=86=D8=AA</td>
+</tr>
+<tr style=3D"direction: ltr;text-align: left;">
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd"><stro=
+ng>Endpoint</strong></td>
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">=D8=
+=A2=D8=AF=D8=B1=D8=B3 =D8=B4=D8=A8=DA=A9=D9=87=E2=80=8C=D8=A7=DB=8C =D8=A8=
+=D8=B1=D8=A7=DB=8C =D8=A7=D8=B1=D8=B3=D8=A7=D9=84 =D9=BE=DB=8C=D8=A7=D9=85 =
+(=D9=85=D8=AB=D9=84=D8=A7=D9=8B URL =DB=8C=D8=A7 IP =D9=88 =D9=BE=D9=88=D8=
+=B1=D8=AA)</td>
+</tr>
+<tr style=3D"direction: ltr;text-align: left;">
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd"><stro=
+ng>Routing Keys</strong></td>
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">=DA=
+=A9=D9=84=DB=8C=D8=AF=D9=87=D8=A7=DB=8C =D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=
+=A7=D8=B1=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=B3=DB=8C=D8=B1=DB=8C=D8=
+=A7=D8=A8=DB=8C =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7</td>
+</tr>
+<tr style=3D"direction: ltr;text-align: left;">
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd"><stro=
+ng>Public Key(s)</strong></td>
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">=DA=
+=A9=D9=84=DB=8C=D8=AF =D8=B9=D9=85=D9=88=D9=85=DB=8C =D8=A8=D8=B1=D8=A7=DB=
+=8C =D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D9=88 =D8=A7=D9=85=D8=
+=B6=D8=A7=DB=8C =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7</td>
+</tr>
+<tr style=3D"direction: ltr;text-align: left;">
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd"><stro=
+ng>Agent Type</strong></td>
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">=D9=
+=86=D9=88=D8=B9 =D8=A7=DB=8C=D8=AC=D9=86=D8=AA (=D9=85=D8=AB=D9=84=D8=A7=D9=
+=8B Cloud Agent=D8=8C Edge Agent)</td>
+</tr>
+<tr style=3D"direction: ltr;text-align: left;">
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd"><stro=
+ng>Policy Info</strong></td>
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">=D8=
+=B3=DB=8C=D8=A7=D8=B3=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A7=D8=B1=D8=AA=
+=D8=A8=D8=A7=D8=B7=DB=8C =DB=8C=D8=A7 =D8=A7=D9=85=D9=86=DB=8C=D8=AA=DB=8C =
+(=D8=AF=D8=B1 =D8=B5=D9=88=D8=B1=D8=AA =D9=86=DB=8C=D8=A7=D8=B2)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=DA=A9=D8=
+=A7=D8=B1=D8=A8=D8=B1=D8=AFAgentCard"><span style=3D"color: rgb(204,153,255=
+);">=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF Agent Card</span></h3>
+<ul>
+<li><p><strong>=D8=AF=D8=B1 =D8=B2=D9=85=D8=A7=D9=86 Establish =DA=A9=D8=B1=
+=D8=AF=D9=86 Connection</strong>: =D9=88=D9=82=D8=AA=DB=8C =D8=AF=D9=88 =D8=
+=A7=DB=8C=D8=AC=D9=86=D8=AA =D9=85=DB=8C=E2=80=8C=D8=AE=D9=88=D8=A7=D9=87=
+=D9=86=D8=AF =D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7 =D8=A8=D8=B1=D9=82=D8=B1=
+=D8=A7=D8=B1 =DA=A9=D9=86=D9=86=D8=AF=D8=8C =D8=A7=D8=A8=D8=AA=D8=AF=D8=A7 =
+Agent Card =D8=B1=D8=A7 =D8=AA=D8=A8=D8=A7=D8=AF=D9=84 =D9=85=DB=8C=E2=80=
+=8C=DA=A9=D9=86=D9=86=D8=AF.</p></li>
+<li><p><strong>=D9=85=D8=B3=DB=8C=D8=B1=DB=8C=D8=A7=D8=A8=DB=8C =D9=BE=DB=
+=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7</strong>: =D8=A7=D8=B7=D9=84=D8=A7=D8=
+=B9=D8=A7=D8=AA =D9=85=D9=88=D8=AC=D9=88=D8=AF =D8=AF=D8=B1 Agent Card =D8=
+=A8=D9=87 =D8=B3=DB=8C=D8=B3=D8=AA=D9=85=E2=80=8C=D9=87=D8=A7 =DA=A9=D9=85=
+=DA=A9 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF =D8=AA=D8=A7 =D9=BE=DB=8C=D8=
+=A7=D9=85=E2=80=8C=D9=87=D8=A7 =D8=B1=D8=A7 =D8=A8=D9=87 =D8=A7=DB=8C=D8=AC=
+=D9=86=D8=AA =D8=AF=D8=B1=D8=B3=D8=AA =D8=A7=D8=B1=D8=B3=D8=A7=D9=84 =DA=A9=
+=D9=86=D9=86=D8=AF.</p></li>
+<li><p><strong>=D8=A7=D9=85=D9=86=DB=8C=D8=AA =D9=88 =D8=A7=D8=AD=D8=B1=D8=
+=A7=D8=B2 =D9=87=D9=88=DB=8C=D8=AA</strong>: =DA=A9=D9=84=DB=8C=D8=AF=D9=87=
+=D8=A7=DB=8C =D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D8=AF=D8=A7=
+=D8=AE=D9=84 Agent Card =D8=A7=D9=85=DA=A9=D8=A7=D9=86 =D8=B1=D9=85=D8=B2=
+=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D9=88 =D8=A7=D9=85=D8=B6=D8=A7=DB=8C =D8=AF=
+=DB=8C=D8=AC=DB=8C=D8=AA=D8=A7=D9=84 =D8=B1=D8=A7 =D9=81=D8=B1=D8=A7=D9=87=
+=D9=85 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF.</p></li>
+</ul>
+<h3 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D8=AA=D8=
+=B4=D8=A8=DB=8C=D9=87=D8=B3=D8=A7=D8=AF=D9=87:">=D8=AA=D8=B4=D8=A8=DB=8C=D9=
+=87 =D8=B3=D8=A7=D8=AF=D9=87:</h3>
+<p>=D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86 =DA=AF=D9=81=D8=AA Agent C=
+ard =D9=85=D8=AB=D9=84 "=DA=A9=D8=A7=D8=B1=D8=AA =D9=88=DB=8C=D8=B2=DB=8C=
+=D8=AA =D8=AF=DB=8C=D8=AC=DB=8C=D8=AA=D8=A7=D9=84" =D8=A7=DB=8C=D8=AC=D9=86=
+=D8=AA =D8=A7=D8=B3=D8=AA=D8=8C =D8=A8=D8=A7 =D8=A7=DB=8C=D9=86 =D8=AA=D9=
+=81=D8=A7=D9=88=D8=AA =DA=A9=D9=87 =D8=B4=D8=A7=D9=85=D9=84 =D8=A7=D8=B7=D9=
+=84=D8=A7=D8=B9=D8=A7=D8=AA =D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=
+=8C=E2=80=8C=D8=B4=D8=AF=D9=87 =D9=88 =D9=82=D8=A7=D8=A8=D9=84 =D8=A7=D8=B7=
+=D9=85=DB=8C=D9=86=D8=A7=D9=86 =D8=A8=D8=B1=D8=A7=DB=8C =D8=A7=D8=B1=D8=AA=
+=D8=A8=D8=A7=D8=B7 =D8=A7=D9=85=D9=86 =D8=A7=D8=B3=D8=AA.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" width=3D"700" src=3D"https://pbs.twim=
+g.com/media/GoGywSWWsAA0mr0.jpg" data-image-src=3D"https://pbs.twimg.com/me=
+dia/GoGywSWWsAA0mr0.jpg"></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D8=A7=D9=
+=85=D9=86=DB=8C=D8=AA=D8=AF=D8=B1A2A"><span style=3D"color: rgb(128,0,128);=
+"><strong>=D8=A7=D9=85=D9=86=DB=8C=D8=AA =D8=AF=D8=B1 A2A</strong></span></=
+h2>
+<ul>
+<li><p>=D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D8=B1=D9=85=
+=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D8=BA=DB=8C=D8=B1=D9=85=D8=AA=D9=82=
+=D8=A7=D8=B1=D9=86 (asymmetric encryption) =D8=A8=D8=B1=D8=A7=DB=8C =D8=B1=
+=D9=85=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D9=BE=DB=8C=D8=A7=D9=85=E2=80=
+=8C=D9=87=D8=A7 (Pack/Unpack)</p></li>
+<li><p>=D8=A7=D9=85=D8=B6=D8=A7=DB=8C =D8=AF=DB=8C=D8=AC=DB=8C=D8=AA=D8=A7=
+=D9=84 =D8=A8=D8=B1=D8=A7=DB=8C =D8=A7=D8=B9=D8=AA=D8=A8=D8=A7=D8=B1=D8=B3=
+=D9=86=D8=AC=DB=8C =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7</p></li>
+<li><p>=D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 <strong>DID<=
+/strong> (Decentralized Identifier) =D8=A8=D9=87=E2=80=8C=D8=AC=D8=A7=DB=8C=
+ =D8=B4=D9=86=D8=A7=D8=B3=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=AA=D9=
+=85=D8=B1=DA=A9=D8=B2</p></li>
+<li><p>=D9=BE=D8=B4=D8=AA=DB=8C=D8=A8=D8=A7=D9=86=DB=8C =D8=A7=D8=B2 =D8=A7=
+=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7=D8=A7=D8=AA =D8=A8=D8=AF=D9=88=D9=86 =D9=86=
+=DB=8C=D8=A7=D8=B2 =D8=A8=D9=87 TLS =D8=A8=D8=A7 =D8=A7=D8=AA=DA=A9=D8=A7=
+=DB=8C =DA=A9=D8=A7=D9=85=D9=84 =D8=A8=D9=87 =D8=B1=D9=85=D8=B2=D9=86=DA=AF=
+=D8=A7=D8=B1=DB=8C =D8=B3=D8=B7=D8=AD =D9=BE=DB=8C=D8=A7=D9=85</p></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D8=B1=D9=
+=85=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C=D8=AF=D8=B1A2A(DIDComm)"><span styl=
+e=3D"color: rgb(102,102,153);"><strong>=D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=A7=
+=D8=B1=DB=8C =D8=AF=D8=B1 A2A (DIDComm)</strong></span></h3>
+<p>DIDComm =DB=8C=DA=A9 =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D9=BE=DB=8C=
+=D8=A7=D9=85=E2=80=8C=D8=B1=D8=B3=D8=A7=D9=86=DB=8C =D8=A7=D8=B3=D8=AA =DA=
+=A9=D9=87 =D8=AF=D8=B1 =D8=AF=D9=84 =D8=A2=D9=86 =D8=B1=D9=85=D8=B2=D9=86=
+=DA=AF=D8=A7=D8=B1=DB=8C =D8=B3=D8=B1=D8=AA=D8=A7=D8=B3=D8=B1=DB=8C (End-to=
+-End Encryption) =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D8=A8=D8=A7=D8=AF=D9=84 =
+=D8=A8=DB=8C=D9=86 =D8=B9=D8=A7=D9=85=D9=84=E2=80=8C=D9=87=D8=A7 =D9=BE=DB=
+=8C=D8=B4=E2=80=8C=D8=A8=DB=8C=D9=86=DB=8C =D8=B4=D8=AF=D9=87. =D8=B1=D9=85=
+=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D8=AF=D8=B1 =D8=B3=D9=87 =D8=B3=D8=B7=
+=D8=AD =D8=A7=D9=86=D8=AC=D8=A7=D9=85 =D9=85=DB=8C=E2=80=8C=D9=BE=D8=B0=DB=
+=8C=D8=B1=D8=AF:</p>
+<p><strong><span style=3D"color: rgb(204,153,255);">=D8=B3=D8=B7=D8=AD =DB=
+=B1 - Signing (=D8=A7=D9=85=D8=B6=D8=A7):</span></strong> =D8=A7=D8=AD=D8=
+=B1=D8=A7=D8=B2 =D8=A7=D8=B5=D8=A7=D9=84=D8=AA =D9=BE=DB=8C=D8=A7=D9=85 =D8=
+=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =DA=A9=D9=
+=84=DB=8C=D8=AF =D8=AE=D8=B5=D9=88=D8=B5=DB=8C =D8=A7=D9=85=D8=B6=D8=A7=DA=
+=A9=D9=86=D9=86=D8=AF=D9=87 =D8=A7=D9=86=D8=AC=D8=A7=D9=85 =D9=85=DB=8C=E2=
+=80=8C=D8=B4=D9=88=D8=AF. =DA=AF=DB=8C=D8=B1=D9=86=D8=AF=D9=87 =D8=A8=D8=A7=
+ =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =DA=A9=D9=84=DB=8C=
+=D8=AF =D8=B9=D9=85=D9=88=D9=85=DB=8C =D9=85=D8=B1=D8=A8=D9=88=D8=B7 =D8=A8=
+=D9=87 DID =D8=A7=D9=85=D8=B6=D8=A7 =D8=B1=D8=A7 =D8=A7=D8=B9=D8=AA=D8=A8=
+=D8=A7=D8=B1=D8=B3=D9=86=D8=AC=DB=8C =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=
+=AF.</p>
+<p><span style=3D"color: rgb(204,153,255);"><strong>=D8=B3=D8=B7=D8=AD =DB=
+=B2 - Encryption (=D8=B1=D9=85=D8=B2 =DA=A9=D8=B1=D8=AF=D9=86 =D9=85=D8=AD=
+=D8=AA=D9=88=D8=A7):</strong></span> =D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=A7=
+=D8=B1=DB=8C =D9=85=D8=AD=D8=AA=D9=88=DB=8C=D8=A7=D8=AA message=E2=80=8C=D8=
+=A7=DB=8C =DA=A9=D9=87 =D8=A8=D8=A7=DB=8C=D8=AF =D9=85=D8=AD=D8=B1=D9=85=D8=
+=A7=D9=86=D9=87 =D8=A8=D8=A7=D8=B4=D8=AF. =D8=A7=DB=8C=D9=86 =D8=B1=D9=85=
+=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D9=85=D8=B9=D9=85=D9=88=D9=84=D8=A7=
+=D9=8B =D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2=
+ =DA=A9=D9=84=DB=8C=D8=AF =D8=B9=D9=85=D9=88=D9=85=DB=8C =DA=AF=DB=8C=D8=B1=
+=D9=86=D8=AF=D9=87 =D8=A7=D9=86=D8=AC=D8=A7=D9=85 =D9=85=DB=8C=E2=80=8C=D8=
+=B4=D9=88=D8=AF.</p>
+<p><span style=3D"color: rgb(204,153,255);"><strong>=D8=B3=D8=B7=D8=AD =DB=
+=B3 - Forwarding (=D9=87=D8=AF=D8=A7=DB=8C=D8=AA =D9=88 Routing):</strong><=
+/span> =D8=AF=D8=B1 =D8=B2=D9=85=D8=A7=D9=86=DB=8C =DA=A9=D9=87 =D9=84=D8=
+=A7=D8=B2=D9=85=D9=87 =D9=BE=DB=8C=D8=A7=D9=85=E2=80=8C=D9=87=D8=A7 =D8=A7=
+=D8=B2 =D8=B7=D8=B1=DB=8C=D9=82 =D9=88=D8=A7=D8=B3=D8=B7=D9=87=E2=80=8C=D9=
+=87=D8=A7 =D8=B9=D8=A8=D9=88=D8=B1 =DA=A9=D9=86=D9=86=D8=AF (=D9=85=D8=AB=
+=D9=84=D8=A7=D9=8B via routing agents)=D8=8C =D9=84=D8=A7=DB=8C=D9=87 =D8=
+=A7=D8=B6=D8=A7=D9=81=D9=87=E2=80=8C=D8=A7=DB=8C =D8=A7=D8=B2 =D8=B1=D9=85=
+=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D8=A7=D8=B9=D9=85=D8=A7=D9=84 =D9=85=
+=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF =D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=
+=A7=D8=AF=D9=87 =D8=A7=D8=B2 esquema=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=
+=A7=D9=86=D9=86=D8=AF Authcrypt =DB=8C=D8=A7 Anoncrypt. =D8=A7=DB=8C=D9=86 =
+=D8=A8=D9=87 "packaging" =D9=87=D8=A7=DB=8C =DA=86=D9=86=D8=AF=DA=AF=D8=A7=
+=D9=86=D9=87 =D9=85=D9=86=D8=AC=D8=B1 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=
+=AF.</p>
+<p>=D8=AF=D8=B1 DIDComm =D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C =D8=A8=D8=B1=
+=D8=A7=DB=8C =D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=
+=8C routing =D9=88 hiding =DA=A9=D9=87 nested envelope=D9=87=D8=A7 =D8=B1=
+=D8=A7 =D8=A7=DB=8C=D8=AC=D8=A7=D8=AF =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=
+=AF =D8=A8=D9=87 =DA=A9=D8=A7=D8=B1 =D9=85=DB=8C=E2=80=8C=D8=B1=D9=88=D8=AF=
+.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D8=A7=D8=
+=B1=D8=AA=D8=A8=D8=A7=D8=B7A2A=D8=A8=D9=87=D8=AF=D9=88=D8=B5=D9=88=D8=B1=D8=
+=AA=D8=A7=D9=85=DA=A9=D8=A7=D9=86=E2=80=8C=D9=BE=D8=B0=DB=8C=D8=B1=D8=A7=D8=
+=B3=D8=AA:"><strong><span style=3D"color: rgb(102,102,153);">=D8=A7=D8=B1=
+=D8=AA=D8=A8=D8=A7=D8=B7 A2A =D8=A8=D9=87 =D8=AF=D9=88 =D8=B5=D9=88=D8=B1=
+=D8=AA =D8=A7=D9=85=DA=A9=D8=A7=D9=86=E2=80=8C=D9=BE=D8=B0=DB=8C=D8=B1 =D8=
+=A7=D8=B3=D8=AA:</span></strong></h3>
+<ul>
+<li><span style=3D"color: rgb(204,153,255);"><strong>In-band:</strong></spa=
+n> =D8=A7=D8=B2 =D8=B7=D8=B1=DB=8C=D9=82 =DA=A9=D8=A7=D9=86=D8=A7=D9=84 =D8=
+=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7=DB=8C =D9=81=D8=B9=D8=A7=D9=84 =D8=A8=DB=
+=8C=D9=86 =D8=AF=D9=88 agent (e.g. Web socket =DB=8C=D8=A7 HTTP endpoint =
+=D9=85=D9=88=D8=AC=D9=88=D8=AF)</li>
+<li><strong><span style=3D"color: rgb(204,153,255);">Out-of-Band:</span></s=
+trong> =D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7 =D8=A7=D8=B2 =D8=B7=D8=B1=DB=8C=
+=D9=82 =D8=AA=D8=A8=D8=A7=D8=AF=D9=84 =D8=A7=D9=88=D9=84=DB=8C=D9=87 =D8=AF=
+=D8=B9=D9=88=D8=AA=E2=80=8C=D9=86=D8=A7=D9=85=D9=87 (Invitation) =DA=A9=D9=
+=87 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=AE=D8=A7=D8=B1=
+=D8=AC =D8=A7=D8=B2 =DA=A9=D8=A7=D9=86=D8=A7=D9=84 =D9=BE=DB=8C=D8=A7=D9=85=
+=E2=80=8C=D8=B1=D8=B3=D8=A7=D9=86=DB=8C =D8=A7=D9=88=D9=84=DB=8C=D9=87 =D8=
+=A8=D8=A7=D8=B4=D8=AF. OOB =D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA =D8=A7=D8=
+=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 QR code=D8=8C =D8=A7=DB=8C=
+=D9=85=DB=8C=D9=84=D8=8C NFC =D9=88... =D8=B1=D8=A7 =D8=AF=D8=A7=D8=B1=D8=
+=AF.</li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=DA=A9=D8=
+=A7=D8=B1=D8=A8=D8=B1=D8=AF=D9=87=D8=A7=DB=8CA2A"><span style=3D"color: rgb=
+(128,0,128);"><strong>=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF=D9=87=D8=A7=DB=
+=8C A2A</strong></span></h2>
+<ul>
+<li><p>=D8=A7=D8=AD=D8=B1=D8=A7=D8=B2 =D9=87=D9=88=DB=8C=D8=AA =D8=AF=DB=8C=
+=D8=AC=DB=8C=D8=AA=D8=A7=D9=84 =D8=A8=DB=8C=D9=86 =D9=86=D9=87=D8=A7=D8=AF=
+=D9=87=D8=A7</p></li>
+<li><p>=D8=B5=D8=AF=D9=88=D8=B1 =D9=88 =D8=A7=D8=B1=D8=A7=D8=A6=D9=87=E2=80=
+=8C=DB=8C Credential=D9=87=D8=A7</p></li>
+<li><p>=D8=AA=D8=A3=DB=8C=DB=8C=D8=AF =D9=85=D8=AF=D8=A7=D8=B1=DA=A9 =D8=AF=
+=DB=8C=D8=AC=DB=8C=D8=AA=D8=A7=D9=84 (Verifiable Credentials)</p></li>
+<li><p>=D8=AA=D8=B9=D8=A7=D9=85=D9=84 =D8=A8=DB=8C=D9=86 =DA=A9=DB=8C=D9=81=
+=E2=80=8C=D9=BE=D9=88=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=DB=8C=D8=AC=
+=DB=8C=D8=AA=D8=A7=D9=84 =D9=88 =D8=B3=D8=A7=D8=B2=D9=85=D8=A7=D9=86=E2=80=
+=8C=D9=87=D8=A7</p></li>
+<li><p>=D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7=D8=A7=D8=AA =D9=85=D8=A7=D8=B4=
+=DB=8C=D9=86 =D8=A8=D9=87 =D9=85=D8=A7=D8=B4=DB=8C=D9=86 (M2M)</p></li>
+<li><p>=D9=87=D9=88=DB=8C=D8=AA =D9=82=D8=A7=D8=A8=D9=84 =D8=AD=D9=85=D9=84=
+ =D8=A8=D8=B1=D8=A7=DB=8C =D8=A7=D9=81=D8=B1=D8=A7=D8=AF =D9=88 =D8=A7=D8=
+=B4=DB=8C=D8=A7=D8=A1 (IoT)</p></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D9=85=D8=
+=B2=D8=A7=DB=8C=D8=A7=DB=8C=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84A2A"><span s=
+tyle=3D"color: rgb(128,0,128);"><strong>=D9=85=D8=B2=D8=A7=DB=8C=D8=A7=DB=
+=8C =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 A2A</strong></span></h2>
+<ul>
+<li><p>=D8=A7=D8=B3=D8=AA=D9=82=D9=84=D8=A7=D9=84 =DA=A9=D8=A7=D9=85=D9=84 =
+=D8=A7=D8=B2 =D8=B3=D8=B1=D9=88=D8=B1 =D9=85=D8=B1=DA=A9=D8=B2=DB=8C</p></l=
+i>
+<li><p>=D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA =D8=A7=D8=AD=D8=B1=D8=A7=D8=B2 =
+=D9=87=D9=88=DB=8C=D8=AA =D9=88 =D8=AA=D8=A8=D8=A7=D8=AF=D9=84 =D8=A7=D8=B7=
+=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =D8=A8=D8=AF=D9=88=D9=86 =D9=88=D8=A7=D8=B3=
+=D8=B7=D9=87</p></li>
+<li><p>=D8=A7=D9=85=D9=86=DB=8C=D8=AA =D8=A8=D8=A7=D9=84=D8=A7 =D8=A8=D9=87=
+ =D9=84=D8=B7=D9=81 =D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=A7=D8=B1=DB=8C =D8=B3=
+=D8=B7=D8=AD =D9=BE=DB=8C=D8=A7=D9=85</p></li>
+<li><p>=D8=B3=D8=A7=D8=B2=DA=AF=D8=A7=D8=B1=DB=8C =D8=A8=D8=A7 =D9=85=D8=B9=
+=D9=85=D8=A7=D8=B1=DB=8C=E2=80=8C=D9=87=D8=A7=DB=8C SSI =D9=88 DID</p></li>
+<li><p>=D8=AA=D9=88=D8=B3=D8=B9=D9=87=E2=80=8C=D9=BE=D8=B0=DB=8C=D8=B1 =D9=
+=88 =D9=82=D8=A7=D8=A8=D9=84 =D8=AA=D8=B1=DA=A9=DB=8C=D8=A8 =D8=A8=D8=A7 =
+=D8=A7=D9=86=D9=88=D8=A7=D8=B9 =D8=A7=D9=BE=D9=84=DB=8C=DA=A9=DB=8C=D8=B4=
+=D9=86=E2=80=8C=D9=87=D8=A7</p></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=DA=86=D8=
+=A7=D9=84=D8=B4=E2=80=8C=D9=87=D8=A7=D9=88=D9=86=DA=A9=D8=A7=D8=AA=D9=BE=DB=
+=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C"><span style=3D"colo=
+r: rgb(128,0,128);"><strong>=DA=86=D8=A7=D9=84=D8=B4=E2=80=8C=D9=87=D8=A7 =
+=D9=88 =D9=86=DA=A9=D8=A7=D8=AA =D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=
+=B3=D8=A7=D8=B2=DB=8C</strong></span></h2>
+<ul>
+<li><p>=D9=BE=DB=8C=DA=86=DB=8C=D8=AF=DA=AF=DB=8C =D8=AF=D8=B1 =D9=85=D8=AF=
+=DB=8C=D8=B1=DB=8C=D8=AA =DA=A9=D9=84=DB=8C=D8=AF=D9=87=D8=A7 =D9=88 DID=D9=
+=87=D8=A7</p></li>
+<li><p>=D9=86=DB=8C=D8=A7=D8=B2 =D8=A8=D9=87 =D9=87=D9=85=E2=80=8C=D8=B2=D9=
+=85=D8=A7=D9=86=DB=8C =D8=AF=D8=B1 =DA=86=D8=B1=D8=AE=D9=87 =D8=A7=D8=B1=D8=
+=AA=D8=A8=D8=A7=D8=B7</p></li>
+<li><p>=D8=A7=D9=86=D8=AA=D8=AE=D8=A7=D8=A8 =D9=85=D9=86=D8=A7=D8=B3=D8=A8 =
+=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84 =D8=AD=D9=85=D9=84 =D8=A8=D8=B1=D8=A7=
+=DB=8C =D8=B9=D9=85=D9=84=DA=A9=D8=B1=D8=AF =D8=A8=D9=87=DB=8C=D9=86=D9=87<=
+/p></li>
+<li><p>=D9=BE=D8=B4=D8=AA=DB=8C=D8=A8=D8=A7=D9=86=DB=8C =D8=A7=D8=B2 =D9=86=
+=D8=B3=D8=AE=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=AE=D8=AA=D9=84=D9=
+=81 DIDComm (=D8=AA=D9=81=D8=A7=D9=88=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D9=
+=86=D8=B3=D8=AE=D9=87 1 =D9=88 2)</p></li>
+<li><p>=D8=B0=D8=AE=DB=8C=D8=B1=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D9=
+=88 =D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =D8=A7=D9=85=D9=86 =D9=BE=DB=8C=D8=
+=A7=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B1=D9=85=D8=B2=D9=86=DA=AF=D8=A7=
+=D8=B1=DB=8C=E2=80=8C=D8=B4=D8=AF=D9=87</p></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<span style=3D"color: rgb(128,0,128);"><strong style=3D"font-size: 20.0px;l=
+etter-spacing: -0.008em;text-align: left;text-indent: 1.0em;">=D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1=D9=87=D8=A7 =D9=88 =D9=81=D8=B1=DB=8C=D9=85=E2=80=8C=D9=
+=88=D8=B1=DA=A9=E2=80=8C=D9=87=D8=A7</strong></span>
+<ul>
+<li><p><strong>Hyperledger Aries</strong><br>=D9=81=D8=B1=DB=8C=D9=85=E2=80=
+=8C=D9=88=D8=B1=DA=A9 =D8=A7=D8=B5=D9=84=DB=8C =D9=BE=DB=8C=D8=A7=D8=AF=D9=
+=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C A2A (=D8=A8=D9=87 =D8=B2=D8=A8=D8=A7=
+=D9=86=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=AE=D8=AA=D9=84=D9=81: Python=D8=
+=8C Go=D8=8C JS)</p></li>
+<li><p><strong>Aries Cloud Agent - Python (ACA-Py)</strong><br>Agent =DA=A9=
+=D8=A7=D9=85=D9=84 =D8=A8=D8=B1=D8=A7=DB=8C =D8=A7=D8=AC=D8=B1=D8=A7=DB=8C =
+DIDComm =D9=88 =D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84=E2=80=8C=D9=87=D8=A7=DB=
+=8C A2A</p></li>
+<li><p><strong>Aries Framework JavaScript (AFJ)</strong><br>=D8=A8=D8=B1=D8=
+=A7=DB=8C =D8=A7=D9=BE=D9=84=DB=8C=DA=A9=DB=8C=D8=B4=D9=86=E2=80=8C=D9=87=
+=D8=A7=DB=8C =D9=88=D8=A8 =D9=88 =D9=85=D9=88=D8=A8=D8=A7=DB=8C=D9=84</p></=
+li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=BE=D8=B1=D9=88=D8=AA=DA=A9=D9=84Agent2Agent(A2A)-=D9=85=D9=
+=86=D8=A7=D8=A8=D8=B9"><span style=3D"color: rgb(128,0,128);"><strong>=D9=
+=85=D9=86=D8=A7=D8=A8=D8=B9</strong></span></h2>
+<p><span style=3D"color: rgb(0,0,0);"><strong><a href=3D"https://developers=
+.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/" class=3D"exter=
+nal-link" rel=3D"nofollow">=D9=88=D8=A8 =D8=B3=D8=A7=DB=8C=D8=AA =D8=B1=D8=
+=B3=D9=85=DB=8C Agent2Agent</a></strong></span></p>
+<p><span style=3D"color: rgb(0,0,0);"><strong><a href=3D"https://github.com=
+/google/A2A/tree/main" class=3D"external-link" rel=3D"nofollow">=DA=AF=DB=
+=8C=D8=AA =D9=87=D8=A7=D8=A8 =D8=B1=D8=B3=D9=85=DB=8C Agent2Agent</a></stro=
+ng></span></p>
+<p><span style=3D"color: rgb(0,0,0);"><strong><a href=3D"https://medium.com=
+/search?q=3DAgent2Agent+" class=3D"external-link" rel=3D"nofollow">=D9=88=
+=D8=A8 =D8=B3=D8=A7=DB=8C=D8=AA Medium</a></strong></span></p>
+<p><span style=3D"color: rgb(0,0,0);"><strong><a href=3D"https://freedium.c=
+fd/https://medium.com/@sahin.samia/googles-agent2agent-a2a-protocol-a-new-e=
+ra-of-agent-interoperability-fde7f37760bc" class=3D"external-link" rel=3D"n=
+ofollow">=D9=88=D8=A8 =D8=B3=D8=A7=DB=8C=D8=AA Freedium</a></strong></span>=
+</p>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div style=3D"">
+<br>
+</div>
+<div style=3D"">
+<br>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_178_1224686183.1786965514185--

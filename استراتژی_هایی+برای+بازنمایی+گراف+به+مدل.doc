@@ -1,0 +1,1534 @@
+Date: Mon, 17 Aug 2026 18:05:54 +0330 (GMT+03:30)
+Message-ID: <1046902522.189.1786977354772@AppServer.sadgan.int>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_188_1408991721.1786977354771"
+
+------=_Part_188_1408991721.1786977354771
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=87=
+=D8=A7=DB=8C=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =D9=85=D8=AF=D9=84=
+</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=87=D8=
+=A7=DB=8C=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=A8=D8=A7=D8=B2=D9=86=D9=85=D8=
+=A7=DB=8C=DB=8C =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =D9=85=D8=AF=D9=84</h=
+1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" width=3D"800" src=3D"https://studygla=
+nce.in/ds/images/Adjacency-Matrix.jpg" data-image-src=3D"https://studyglanc=
+e.in/ds/images/Adjacency-Matrix.jpg"></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p>=D8=A8=D8=B1=D8=A7=DB=8C =D8=A8=D8=A7=D8=B2=D9=86=D9=85=D8=A7=DB=8C=DB=
+=8C =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =D9=85=D8=AF=D9=84 =D8=B2=D8=A8=
+=D8=A7=D9=86=DB=8C (LLM) =DA=86=D9=86=D8=AF=DB=8C=D9=86 <strong>=D8=A7=D8=
+=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C =D9=85=D8=A4=D8=AB=D8=B1</strong> =
+=D9=88=D8=AC=D9=88=D8=AF =D8=AF=D8=A7=D8=B1=D8=AF =DA=A9=D9=87 =D8=A8=D8=B3=
+=D8=AA=D9=87 =D8=A8=D9=87 =D9=86=D9=88=D8=B9 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=
+=8C=D9=87=D8=A7 =D9=88 =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1 =DA=AF=D8=B1=D8=
+=A7=D9=81 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86 =D8=A7=D8=B2 =D8=A2=
+=D9=86=E2=80=8C=D9=87=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =DA=
+=A9=D8=B1=D8=AF. =D8=AF=D8=B1 =D8=A7=D8=AF=D8=A7=D9=85=D9=87 =D8=B1=D9=88=
+=D8=B4=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=AE=D8=AA=D9=84=D9=81 =D9=87=D9=
+=85=D8=B1=D8=A7=D9=87 =D8=A8=D8=A7 <strong>=D9=85=D8=AB=D8=A7=D9=84 =D9=88 =
+=DA=A9=D8=AF =D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=
+=8C</strong> =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D8=B4=D8=AF=D9=87 =D8=A7=D8=B3=
+=D8=AA.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=94=B9=DB=B1.=D8=AA=D8=A8=D8=AF=DB=8C=D9=84=D9=85=D8=B3=D8=AA=D9=82=
+=DB=8C=D9=85=DA=AF=D8=B1=D9=87=E2=80=8C=D9=87=D8=A7=D9=88=DB=8C=D8=A7=D9=84=
+=E2=80=8C=D9=87=D8=A7=D8=A8=D9=87=D9=85=D8=AA=D9=86(Node-EdgeTextRepresenta=
+tion)"><strong style=3D"color: rgb(51,102,255);letter-spacing: -0.008em;tex=
+t-align: left;text-indent: 1.0em;">=F0=9F=94=B9 =DB=B1. =D8=AA=D8=A8=D8=AF=
+=DB=8C=D9=84 =D9=85=D8=B3=D8=AA=D9=82=DB=8C=D9=85 =DA=AF=D8=B1=D9=87=E2=80=
+=8C=D9=87=D8=A7 =D9=88 =DB=8C=D8=A7=D9=84=E2=80=8C=D9=87=D8=A7 =D8=A8=D9=87=
+ =D9=85=D8=AA=D9=86 (Node-Edge Text Representation)</strong></h2>
+<p>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4=D8=8C =DA=AF=D8=B1=D9=
+=87=E2=80=8C=D9=87=D8=A7 =D9=88 =DB=8C=D8=A7=D9=84=E2=80=8C=D9=87=D8=A7 =D8=
+=A8=D9=87 =DB=8C=DA=A9 =D9=82=D8=A7=D9=84=D8=A8 =D9=85=D8=AA=D9=86=DB=8C =
+=D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D9=86=D8=
+=AF =DA=A9=D9=87 =D9=85=D8=AF=D9=84 =D8=B2=D8=A8=D8=A7=D9=86=DB=8C =D8=A8=
+=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=A2=D9=86 =D8=B1=D8=A7 =D9=BE=D8=B1=D8=AF=
+=D8=A7=D8=B2=D8=B4 =DA=A9=D9=86=D8=AF.</p>
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=D9=82=D8=A7=D9=84=D8=A8=D9=BE=DB=8C=D8=B4=D9=86=D9=87=D8=A7=D8=AF=
+=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D9=86=D9=85=D8=A7=DB=8C=D8=B4=DA=AF=D8=B1=D8=
+=A7=D9=81=D8=AF=D8=B1=D9=85=D8=AA=D9=86"><span style=3D"color: rgb(255,102,=
+0);"><strong>=E2=9C=85 =D9=82=D8=A7=D9=84=D8=A8 =D9=BE=DB=8C=D8=B4=D9=86=D9=
+=87=D8=A7=D8=AF=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D9=86=D9=85=D8=A7=DB=8C=D8=
+=B4 =DA=AF=D8=B1=D8=A7=D9=81 =D8=AF=D8=B1 =D9=85=D8=AA=D9=86</strong></span=
+></h3>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(51,=
+153,102);"><strong><code>[Entity1] is related to [Entity2] via [Relation].<=
+/code></strong></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C =D9=85=D8=AB=D8=A7=D9=84:</strong><br>=DA=AF=D8=B1=
+=D8=A7=D9=81 =D8=B2=DB=8C=D8=B1 =D8=B1=D8=A7 =D8=AF=D8=B1 =D9=86=D8=B8=D8=
+=B1 =D8=A8=DA=AF=DB=8C=D8=B1:</p>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">{
+  "nodes": ["Einstein", "Theory of Relativity"],
+  "edges": [{"source": "Einstein", "relation": "developed", "target": "Theo=
+ry of Relativity"}]
+}</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<pre><span>=D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86 =D8=A2=D9=86 =D8=
+=B1=D8=A7 =D8=A8=D9=87 =D9=85=D8=AA=D9=86 =D8=B2=DB=8C=D8=B1 =D8=AA=D8=A8=
+=D8=AF=DB=8C=D9=84 =DA=A9=D8=B1=D8=AF:<br></span></pre>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(51,=
+153,102);"><strong><code>Albert Einstein developed the Theory of Relativity=
+.</code></strong></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<span style=3D"color: rgb(255,102,0);"> </span>
+<p><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =DA=A9=D8=AF =
+=D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=AF=D8=
+=B1 =D9=BE=D8=A7=DB=8C=D8=AA=D9=88=D9=86</strong></span></p>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Midnight" data-theme=3D"Midnight">def graph_to_=
+text(graph):
+    sentences =3D []
+    for edge in graph["edges"]:
+        sentence =3D f"{edge['source']} {edge['relation']} {edge['target']}=
+."
+        sentences.append(sentence)
+    return " ".join(sentences)
+
+# =D9=86=D9=85=D9=88=D9=86=D9=87 =DA=AF=D8=B1=D8=A7=D9=81
+graph_data =3D {
+    "nodes": ["Einstein", "Theory of Relativity"],
+    "edges": [{"source": "Einstein", "relation": "developed", "target": "Th=
+eory of Relativity"}]
+}
+
+# =D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =D9=
+=85=D8=AA=D9=86
+text_representation =3D graph_to_text(graph_data)
+print(text_representation) =20
+# =D8=AE=D8=B1=D9=88=D8=AC=DB=8C: "Einstein developed Theory of Relativity.=
+"
+
+</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF:</strong></p>
+<ul>
+<li>=D8=B2=D9=85=D8=A7=D9=86=DB=8C =DA=A9=D9=87 =DA=AF=D8=B1=D8=A7=D9=81 =
+=D8=B3=D8=A7=D8=AF=D9=87 =D8=A7=D8=B3=D8=AA =D9=88 =D8=B4=D8=A7=D9=85=D9=84=
+ <strong>=D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7=D8=A7=D8=AA =D9=85=D8=B3=D8=
+=AA=D9=82=DB=8C=D9=85</strong> =D8=A8=DB=8C=D9=86 =D9=85=D9=88=D8=AC=D9=88=
+=D8=AF=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=
+=D8=AF.</li>
+<li>=D9=85=D9=86=D8=A7=D8=B3=D8=A8 =D8=A8=D8=B1=D8=A7=DB=8C <strong>=D9=BE=
+=D8=A7=DB=8C=DA=AF=D8=A7=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=D8=A7=D9=
+=86=D8=B4</strong> (Knowledge Bases) =D9=88 =D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =
+=D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C <strong>RDF</strong> =
+=D8=A8=D9=87 =D9=85=D8=AA=D9=86.</li>
+<li>=D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4 =D8=AF=D8=B1 =D9=85=D8=AF=D9=84=E2=
+=80=8C=D9=87=D8=A7=DB=8C LLM =DA=A9=D9=87 =D9=86=DB=8C=D8=A7=D8=B2 =D8=A8=
+=D9=87 =D9=86=D9=85=D8=A7=DB=8C=D8=B4 =D8=B1=D8=A7=D8=A8=D8=B7=D9=87=E2=80=
+=8C=D8=A7=DB=8C =D8=A8=DB=8C=D9=86 =D9=85=D9=81=D8=A7=D9=87=DB=8C=D9=85 =D8=
+=AF=D8=A7=D8=B1=D9=86=D8=AF.</li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=94=B9=DB=B2.=D9=86=D9=85=D8=A7=DB=8C=D8=B4=DA=AF=D8=B1=D8=A7=D9=81=
+=D8=A8=D9=87=D8=B5=D9=88=D8=B1=D8=AA=D9=84=DB=8C=D8=B3=D8=AA=D8=B3=D9=84=D8=
+=B3=D9=84=D9=87=E2=80=8C=D9=85=D8=B1=D8=A7=D8=AA=D8=A8=DB=8C(HierarchicalLi=
+st)"><span style=3D"color: rgb(51,102,255);"><strong>=F0=9F=94=B9 =DB=B2. =
+=D9=86=D9=85=D8=A7=DB=8C=D8=B4 =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =D8=B5=
+=D9=88=D8=B1=D8=AA =D9=84=DB=8C=D8=B3=D8=AA =D8=B3=D9=84=D8=B3=D9=84=D9=87=
+=E2=80=8C=D9=85=D8=B1=D8=A7=D8=AA=D8=A8=DB=8C (Hierarchical List)</strong><=
+/span></h2>
+<p>=D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4 =DA=AF=D8=B1=D9=87=E2=80=8C=D9=87=
+=D8=A7 =D9=88 =D8=B1=D9=88=D8=A7=D8=A8=D8=B7 =D8=B1=D8=A7 =D8=A8=D9=87 =D8=
+=B5=D9=88=D8=B1=D8=AA =DB=8C=DA=A9 =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1 =D8=
+=AA=D9=88=D8=B5=DB=8C=D9=81=DB=8C =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D9=85=DB=
+=8C=E2=80=8C=D8=AF=D9=87=D8=AF.</p>
+<h3 style=3D"direction: ltr;" id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=
+=DA=98=DB=8C=E2=80=8C=D9=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=
+=D8=A7=D8=B2=D9=86=D9=85=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=
+=87=D9=85=D8=AF=D9=84-=E2=9C=85=D9=82=D8=A7=D9=84=D8=A8=D9=BE=DB=8C=D8=B4=
+=D9=86=D9=87=D8=A7=D8=AF=DB=8C"><span style=3D"color: rgb(255,102,0);"><str=
+ong>=E2=9C=85 =D9=82=D8=A7=D9=84=D8=A8 =D9=BE=DB=8C=D8=B4=D9=86=D9=87=D8=A7=
+=D8=AF=DB=8C</strong></span></h3>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong><code><span class=3D"hljs-selector-tag">-</span> <span cl=
+ass=3D"hljs-selector-tag">Entity</span>: <span class=3D"hljs-selector-attr"=
+>[Node]</span> </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong><code><span class=3D"hljs-selector-tag">&nbsp; &nbsp;-</s=
+pan> <span class=3D"hljs-selector-tag">Related</span> <span class=3D"hljs-s=
+elector-tag">to</span>: <span class=3D"hljs-selector-attr">[Target Node]</s=
+pan> <span class=3D"hljs-selector-tag">via</span> <span class=3D"hljs-selec=
+tor-attr">[Relation]</span> </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><br></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C =D9=85=D8=AB=D8=A7=D9=84 =D8=AE=D8=B1=D9=88=D8=AC=
+=DB=8C:</strong></p>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">- Entity: E=
+instein
+  - Related to: Theory of Relativity via developed</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<p><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =DA=A9=D8=AF =
+=D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=AF=D8=
+=B1 =D9=BE=D8=A7=DB=8C=D8=AA=D9=88=D9=86</strong></span></p>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Midnight" data-theme=3D"Midnight">def graph_to_=
+list_format(graph):
+    text_representation =3D []
+    for edge in graph["edges"]:
+        text_representation.append(f"- Entity: {edge['source']}\n  - Relate=
+d to: {edge['target']} via {edge['relation']}")
+    return "\n".join(text_representation)
+
+# =D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =D9=
+=86=D9=85=D8=A7=DB=8C=D8=B4 =D8=B3=D9=84=D8=B3=D9=84=D9=87=E2=80=8C=D9=85=
+=D8=B1=D8=A7=D8=AA=D8=A8=DB=8C
+print(graph_to_list_format(graph_data)) &nbsp;</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C </strong><strong style=3D"text-align: left;text-ind=
+ent: 1.0em;letter-spacing: 0.0px;">=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF:</s=
+trong></p>
+<ul>
+<li>=D8=A8=D8=B1=D8=A7=DB=8C =D9=86=D9=85=D8=A7=DB=8C=D8=B4 <strong>=D8=A7=
+=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7=D8=A7=D8=AA =D8=B3=D9=84=D8=B3=D9=84=D9=87=
+=E2=80=8C=D9=85=D8=B1=D8=A7=D8=AA=D8=A8=DB=8C</strong> =D8=A8=DB=8C=D9=86 =
+=D9=85=D9=81=D8=A7=D9=87=DB=8C=D9=85 =D8=AF=D8=B1 =D9=85=D8=AF=D9=84=E2=80=
+=8C=D9=87=D8=A7=DB=8C =D8=B2=D8=A8=D8=A7=D9=86=DB=8C.</li>
+<li>=D9=85=D9=81=DB=8C=D8=AF =D8=AF=D8=B1 <strong>=D9=86=D9=85=D8=A7=DB=8C=
+=D8=B4 =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1 =D8=AF=D8=B1=D8=AE=D8=AA=DB=8C =
+=D8=AF=D8=A7=D9=86=D8=B4</strong> (=D9=85=D8=A7=D9=86=D9=86=D8=AF =D9=88=DB=
+=8C=DA=A9=DB=8C=E2=80=8C=D8=AF=D8=A7=D8=AF=D9=87 =DB=8C=D8=A7 DBpedia).</li=
+>
+<li>=D9=85=D9=86=D8=A7=D8=B3=D8=A8 =D8=A8=D8=B1=D8=A7=DB=8C <strong>=D9=85=
+=D8=AF=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C=DB=8C =DA=A9=D9=87 =D9=86=DB=8C=D8=
+=A7=D8=B2 =D8=A8=D9=87 =D9=86=D9=85=D8=A7=DB=8C=D8=B4 =D9=85=D9=86=D8=B8=D9=
+=85=E2=80=8C=D8=AA=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=
+=8C =DA=AF=D8=B1=D8=A7=D9=81=DB=8C =D8=AF=D8=A7=D8=B1=D9=86=D8=AF</strong>.=
+</li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=94=B9=DB=B3.=D9=86=D9=85=D8=A7=DB=8C=D8=B4=DA=AF=D8=B1=D8=A7=D9=81=
+=D8=A8=D8=A7=D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87=D8=A7=D8=B2JSON=D8=
+=A8=D9=87=D9=85=D8=AA=D9=86(StructuredTextRepresentation)"><span style=3D"c=
+olor: rgb(51,102,255);"><strong>=F0=9F=94=B9 =DB=B3. =D9=86=D9=85=D8=A7=DB=
+=8C=D8=B4 =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=
+=A7=D8=AF=D9=87 =D8=A7=D8=B2 JSON =D8=A8=D9=87 =D9=85=D8=AA=D9=86 (Structur=
+ed Text Representation)</strong></span></h2>
+<p>=D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4 =D8=A8=D8=B1=D8=A7=DB=8C =D9=BE=D8=
+=B1=D8=AF=D8=A7=D8=B2=D8=B4 =D9=85=D8=AF=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =
+=D8=B2=D8=A8=D8=A7=D9=86 =DA=A9=D9=87 =D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA =
+=D8=AE=D9=88=D8=A7=D9=86=D8=AF=D9=86 =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1=
+=D9=87=D8=A7=DB=8C <strong>=D9=86=DB=8C=D9=85=D9=87=E2=80=8C=D8=B3=D8=A7=D8=
+=AE=D8=AA=D8=A7=D8=B1=DB=8C=D8=A7=D9=81=D8=AA=D9=87</strong> =D8=B1=D8=A7 =
+=D8=AF=D8=A7=D8=B1=D9=86=D8=AF=D8=8C =D9=85=D9=81=DB=8C=D8=AF =D8=A7=D8=B3=
+=D8=AA.</p>
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=D9=82=D8=A7=D9=84=D8=A8=D9=BE=DB=8C=D8=B4=D9=86=D9=87=D8=A7=D8=AF=
+=DB=8C.1"><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =D9=82=
+=D8=A7=D9=84=D8=A8 =D9=BE=DB=8C=D8=B4=D9=86=D9=87=D8=A7=D8=AF=DB=8C</strong=
+></span></h3>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong><code>Graph Representation: </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong><code>Entities:</code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong><code><span class=3D"hljs-deletion">&nbsp; - Einstein</sp=
+an> </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong>&nbsp; &nbsp;<code><span class=3D"hljs-deletion">- Theory=
+ of Relativity</span> </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong><code>Relations: </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong><code><span class=3D"hljs-deletion">- (Einstein) develope=
+d (Theory of Relativity)</span> </code></strong></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<p><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =DA=A9=D8=AF =
+=D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=AF=D8=
+=B1 =D9=BE=D8=A7=DB=8C=D8=AA=D9=88=D9=86</strong></span></p>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Midnight" data-theme=3D"Midnight">def graph_to_=
+structured_text(graph):
+    entities_text =3D "Entities:\n" + "\n".join(f"- {node}" for node in gra=
+ph["nodes"])
+    relations_text =3D "Relations:\n" + "\n".join(f"- ({edge['source']}) {e=
+dge['relation']} ({edge['target']})" for edge in graph["edges"])
+    return f"Graph Representation:\n{entities_text}\n\n{relations_text}"
+
+print(graph_to_structured_text(graph_data))</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C </strong><strong style=3D"text-align: left;text-ind=
+ent: 1.0em;letter-spacing: 0.0px;">=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF:</s=
+trong></p>
+<ul>
+<li>=D8=A8=D8=B1=D8=A7=DB=8C =D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4=E2=80=8C=
+=D9=87=D8=A7=DB=8C <strong>LLM =DA=A9=D9=87 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=
+=8C=D9=87=D8=A7=DB=8C =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1=DB=8C=D8=A7=D9=
+=81=D8=AA=D9=87 =D8=B1=D8=A7 =D8=A8=D9=87=D8=AA=D8=B1 =D8=AF=D8=B1=DA=A9 =
+=D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF</strong>.</li>
+<li>=D9=82=D8=A7=D8=A8=D9=84 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=
+=AF=D8=B1 =D9=85=D8=AF=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C=DB=8C =DA=A9=D9=87 =
+=D8=A7=D8=B2 JSON =DB=8C=D8=A7 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=
+=A7=DB=8C =D8=B3=D8=A7=D8=B2=D9=85=D8=A7=D9=86=E2=80=8C=DB=8C=D8=A7=D9=81=
+=D8=AA=D9=87 =D9=BE=D8=B4=D8=AA=DB=8C=D8=A8=D8=A7=D9=86=DB=8C =D9=85=DB=8C=
+=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF.</li>
+<li>=D9=85=D9=86=D8=A7=D8=B3=D8=A8 =D8=A8=D8=B1=D8=A7=DB=8C <strong>=D9=88=
+=D8=B1=D9=88=D8=AF=DB=8C =D8=A8=D9=87 =D9=85=D8=AF=D9=84=E2=80=8C=D9=87=D8=
+=A7=DB=8C =D8=A7=D8=B3=D8=AA=D8=AE=D8=B1=D8=A7=D8=AC =D8=A7=D8=B7=D9=84=D8=
+=A7=D8=B9=D8=A7=D8=AA (IE)</strong>.</li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=94=B9=DB=B4.=D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87=D8=A7=D8=B2=
+=D8=AA=D8=B9=D8=A8=DB=8C=D9=87(Embedding)=DA=AF=D8=B1=D9=87=E2=80=8C=D9=87=
+=D8=A7=D9=88=DB=8C=D8=A7=D9=84=E2=80=8C=D9=87=D8=A7"><span style=3D"color: =
+rgb(51,102,255);"><strong>=F0=9F=94=B9 =DB=B4. =D8=A7=D8=B3=D8=AA=D9=81=D8=
+=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D8=AA=D8=B9=D8=A8=DB=8C=D9=87 (Embedding) =DA=
+=AF=D8=B1=D9=87=E2=80=8C=D9=87=D8=A7 =D9=88 =DB=8C=D8=A7=D9=84=E2=80=8C=D9=
+=87=D8=A7</strong></span></h2>
+<p>=D8=A7=DA=AF=D8=B1 =D8=A8=D8=AE=D9=88=D8=A7=D9=87=DB=8C=D8=AF =D8=A7=D8=
+=B2 =DA=AF=D8=B1=D8=A7=D9=81 =D8=AF=D8=B1 <strong>FAISS</strong> =DB=8C=D8=
+=A7 <strong>LLM-RAG</strong> =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =DA=
+=A9=D9=86=DB=8C=D8=AF=D8=8C =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86 =
+=D9=87=D8=B1 =DA=AF=D8=B1=D9=87 =D8=B1=D8=A7 =D8=A8=D9=87 =D8=A8=D8=B1=D8=
+=AF=D8=A7=D8=B1 =D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =DA=A9=D8=B1=D8=AF=D9=87 =D9=
+=88 =D8=B3=D9=BE=D8=B3 =D8=A2=D9=86 =D8=B1=D8=A7 =D8=A8=D9=87 =D9=85=D8=AF=
+=D9=84 =D9=88=D8=B1=D9=88=D8=AF=DB=8C =D8=AF=D8=A7=D8=AF.</p>
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=DA=A9=D9=84=DB=8C=
+:"><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =D8=A7=D8=B3=D8=
+=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C =DA=A9=D9=84=DB=8C:</strong></span></h3>
+<ol>
+<li><strong>=D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =D9=87=D8=B1 =DA=AF=D8=B1=D9=87 =
+=D8=A8=D9=87 =DB=8C=DA=A9 =D8=A8=D8=B1=D8=AF=D8=A7=D8=B1 embedding</strong>=
+ (=D9=85=D8=AB=D9=84=D8=A7=D9=8B =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87=
+ =D8=A7=D8=B2 <strong>OpenAI Embeddings</strong> =DB=8C=D8=A7 <strong>FAISS=
+</strong>)</li>
+<li><strong>=D8=AA=D8=AC=D9=85=DB=8C=D8=B9 =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=
+=D8=A7=D8=AA =DB=8C=D8=A7=D9=84=E2=80=8C=D9=87=D8=A7 =D8=AF=D8=B1 =D8=A8=D8=
+=B1=D8=AF=D8=A7=D8=B1 =DA=AF=D8=B1=D9=87=E2=80=8C=D9=87=D8=A7</strong></li>
+<li><strong>=D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D8=A7=
+=DB=8C=D9=86 =D8=A8=D8=B1=D8=AF=D8=A7=D8=B1=D9=87=D8=A7 =D8=A8=D8=B1=D8=A7=
+=DB=8C =D8=A8=D8=A7=D8=B2=DB=8C=D8=A7=D8=A8=DB=8C =D8=A7=D8=B7=D9=84=D8=A7=
+=D8=B9=D8=A7=D8=AA =D8=AF=D8=B1 RAG =DB=8C=D8=A7 =D8=AA=D9=88=D9=84=DB=8C=
+=D8=AF =D9=BE=D8=A7=D8=B3=D8=AE =D8=AF=D8=B1 LLM</strong></li>
+</ol>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=DA=A9=D8=AF=D9=86=D9=85=D9=88=D9=86=D9=87(=D8=AA=D8=A8=D8=AF=DB=
+=8C=D9=84=DA=AF=D8=B1=D9=87=E2=80=8C=D9=87=D8=A7=D8=A8=D9=87Embedding=D8=A8=
+=D8=A7Ollama)"><span style=3D"color: rgb(255,102,0);"><strong style=3D"lett=
+er-spacing: -0.006em;text-align: left;text-indent: 1.0em;">=E2=9C=85 =DA=A9=
+=D8=AF =D9=86=D9=85=D9=88=D9=86=D9=87 (=D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =DA=
+=AF=D8=B1=D9=87=E2=80=8C=D9=87=D8=A7 =D8=A8=D9=87 Embedding =D8=A8=D8=A7 Ol=
+lama)</strong></span></h3>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p class=3D"hidden-dir-p" style=3D"direction: ltr;text-align: left;"><br></=
+p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Midnight" data-theme=3D"Midnight">from llama_in=
+dex.embeddings.ollama import OllamaEmbedding
+
+ollama_url =3D "http://localhost:11434"  # =D8=A2=D8=AF=D8=B1=D8=B3 =D8=B3=
+=D8=B1=D9=88=D8=B1 Ollama
+embedding_model =3D "mistral"
+
+embedder =3D OllamaEmbedding(base_url=3Dollama_url, model_name=3Dembedding_=
+model)
+
+def node_to_embedding(node_text):
+    return embedder.get_text_embedding(node_text)
+
+# =D9=86=D9=85=D9=88=D9=86=D9=87 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87
+graph_nodes =3D ["Einstein", "Theory of Relativity"]
+node_embeddings =3D {node: node_to_embedding(node) for node in graph_nodes}
+print(node_embeddings)</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C </strong><strong style=3D"text-align: left;text-ind=
+ent: 1.0em;letter-spacing: 0.0px;">=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF:</s=
+trong></p>
+<ul>
+<li>=D8=A8=D8=B1=D8=A7=DB=8C =D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4 <strong>=
+=D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =DA=AF=D8=B1=D8=A7=D9=
+=81=DB=8C =D8=AF=D8=B1 =D8=B3=DB=8C=D8=B3=D8=AA=D9=85=E2=80=8C=D9=87=D8=A7=
+=DB=8C =D8=A8=D8=A7=D8=B2=DB=8C=D8=A7=D8=A8=DB=8C =D8=A7=D8=B7=D9=84=D8=A7=
+=D8=B9=D8=A7=D8=AA (RAG)</strong>.</li>
+<li>=D9=85=D9=86=D8=A7=D8=B3=D8=A8 =D8=A8=D8=B1=D8=A7=DB=8C <strong>LLM=D9=
+=87=D8=A7=DB=8C=DB=8C =DA=A9=D9=87 =D9=86=DB=8C=D8=A7=D8=B2 =D8=A8=D9=87 =
+=D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4 =D8=A8=D8=B1=D8=AF=D8=A7=D8=B1=DB=8C =
+=D8=AF=D8=A7=D8=B1=D9=86=D8=AF</strong>.</li>
+<li>=D9=85=D9=88=D8=B1=D8=AF =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=
+=AF=D8=B1 <strong>FAISS=D8=8C Pinecone =D9=88 =D8=B3=D8=A7=DB=8C=D8=B1 =D9=
+=BE=D8=A7=DB=8C=DA=AF=D8=A7=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=D8=A7=
+=D8=AF=D9=87 =D8=A8=D8=B1=D8=AF=D8=A7=D8=B1=DB=8C</strong>.</li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=94=B9=DB=B5.=D8=AA=D8=A8=D8=AF=DB=8C=D9=84=DA=AF=D8=B1=D8=A7=D9=81=
+=D8=A8=D9=87QueryContext=D8=A8=D8=B1=D8=A7=DB=8CLLM(Graph-RAG)"><span style=
+=3D"color: rgb(51,102,255);"><strong>=F0=9F=94=B9 =DB=B5. =D8=AA=D8=A8=D8=
+=AF=DB=8C=D9=84 =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 Query Context =D8=A8=
+=D8=B1=D8=A7=DB=8C LLM (Graph-RAG)</strong></span></h2>
+<p>=D8=AF=D8=B1 =D8=B3=DB=8C=D8=B3=D8=AA=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C <=
+strong>RAG (Retrieval-Augmented Generation)</strong>=D8=8C =D9=85=DB=8C=E2=
+=80=8C=D8=AA=D9=88=D8=A7=D9=86 =D8=A7=D8=A8=D8=AA=D8=AF=D8=A7 <strong>=D8=
+=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =DA=AF=D8=B1=D8=A7=D9=81 =D8=B1=D8=
+=A7 =D8=A8=D8=A7=D8=B2=DB=8C=D8=A7=D8=A8=DB=8C</strong> =DA=A9=D8=B1=D8=AF=
+=D9=87 =D9=88 =D8=B3=D9=BE=D8=B3 <strong>=D8=A2=D9=86 =D8=B1=D8=A7 =D8=A8=
+=D9=87 LLM =D8=A8=D9=87=E2=80=8C=D8=B9=D9=86=D9=88=D8=A7=D9=86 =D9=88=D8=B1=
+=D9=88=D8=AF=DB=8C =D8=AF=D8=A7=D8=AF</strong>.</p>
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=D9=BE=DB=8C=D8=B4=
+=D9=86=D9=87=D8=A7=D8=AF=DB=8C"><span style=3D"color: rgb(255,102,0);"><str=
+ong>=E2=9C=85 =D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C =D9=BE=DB=8C=
+=D8=B4=D9=86=D9=87=D8=A7=D8=AF=DB=8C</strong></span></h3>
+<ol>
+<li><strong>=D8=AC=D8=B3=D8=AA=D8=AC=D9=88 =D8=AF=D8=B1 FAISS/MongoDB</stro=
+ng> =E2=86=92 =D8=A8=D8=A7=D8=B2=DB=8C=D8=A7=D8=A8=DB=8C =D9=85=D8=B1=D8=AA=
+=D8=A8=D8=B7=E2=80=8C=D8=AA=D8=B1=DB=8C=D9=86 =DA=AF=D8=B1=D9=87=E2=80=8C=
+=D9=87=D8=A7 =D9=88 =DB=8C=D8=A7=D9=84=E2=80=8C=D9=87=D8=A7.</li>
+<li><strong>=D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =D9=86=D8=AA=D8=A7=DB=8C=D8=AC =
+=D8=A8=D8=A7=D8=B2=DB=8C=D8=A7=D8=A8=DB=8C=E2=80=8C=D8=B4=D8=AF=D9=87 =D8=
+=A8=D9=87 =D9=85=D8=AA=D9=86</strong> (=D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=
+=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D8=B1=D9=88=D8=B4=E2=80=8C=D9=87=D8=A7=
+=DB=8C =D9=82=D8=A8=D9=84).</li>
+<li><strong>=D9=88=D8=B1=D9=88=D8=AF =D9=85=D8=AA=D9=86 =D8=A8=D9=87 LLM =
+=D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D9=88=D9=84=DB=8C=D8=AF =D9=BE=D8=A7=D8=B3=
+=D8=AE =D8=A8=D9=87=DB=8C=D9=86=D9=87</strong>.</li>
+</ol>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=D9=86=D9=85=D9=88=D9=86=D9=87=D9=88=D8=B1=D9=88=D8=AF=DB=8C=D8=A8=
+=D9=87LLM"><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =D9=86=
+=D9=85=D9=88=D9=86=D9=87 =D9=88=D8=B1=D9=88=D8=AF=DB=8C =D8=A8=D9=87 LLM</s=
+trong></span></h3>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);"><code><span class=3D"hljs-keyword">User</span> Query: "Wh=
+at did Einstein develop?" </code></span></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);"><code>Context Retrieved <span class=3D"hljs-keyword">from=
+</span> Graph: </code></span></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);">&nbsp; &nbsp;<code><span class=3D"hljs-operator">-</span>=
+ "Einstein developed the Theory of Relativity." </code></span></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);"><code><span class=3D"hljs-keyword">Final</span> LLM Respo=
+nse: </code></span></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);">&nbsp; &nbsp;<code>"Albert Einstein is best known for dev=
+eloping the Theory of Relativity, which transformed modern physics." </code=
+></span></strong></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C</strong><strong style=3D"text-align: left;text-inde=
+nt: 1.0em;letter-spacing: 0.0px;">=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF:</st=
+rong></p>
+<ul>
+<li>=D8=B2=D9=85=D8=A7=D9=86=DB=8C =DA=A9=D9=87 =D9=86=DB=8C=D8=A7=D8=B2 =
+=D8=A8=D9=87 <strong>=D8=A8=D8=A7=D8=B2=DB=8C=D8=A7=D8=A8=DB=8C =D8=A7=D8=
+=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =D8=A7=D8=B2 =DA=AF=D8=B1=D8=A7=D9=81 =D9=
+=88 =D8=AA=D8=B1=DA=A9=DB=8C=D8=A8 =D8=A2=D9=86 =D8=A8=D8=A7 LLM</strong> =
+=D8=A8=D8=A7=D8=B4=D8=AF.</li>
+<li>=D8=A8=D8=B1=D8=A7=DB=8C =D8=B3=DB=8C=D8=B3=D8=AA=D9=85=E2=80=8C=D9=87=
+=D8=A7=DB=8C <strong>QA (=D9=BE=D8=B1=D8=B3=D8=B4 =D9=88 =D9=BE=D8=A7=D8=B3=
+=D8=AE) =DA=A9=D9=87 =D8=A7=D8=B2 =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=
+=AA =DA=AF=D8=B1=D8=A7=D9=81=DB=8C =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=
+=87 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF</strong>.</li>
+<li>=D9=85=D9=86=D8=A7=D8=B3=D8=A8 =D8=A8=D8=B1=D8=A7=DB=8C <strong>=D9=BE=
+=D8=A7=DB=8C=DA=AF=D8=A7=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=D8=A7=D9=
+=86=D8=B4 =DA=A9=D9=87 =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =DA=AF=D8=
+=B1=D8=A7=D9=81=DB=8C =D8=B1=D8=A7 =D8=A8=D9=87 =D9=85=D8=AA=D9=86 =D8=B7=
+=D8=A8=DB=8C=D8=B9=DB=8C =D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =D9=85=DB=8C=E2=80=
+=8C=DA=A9=D9=86=D9=86=D8=AF</strong>.</li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=94=B9=DB=B6.=D8=A8=D8=A7=D8=B2=D9=86=D9=85=D8=A7=DB=8C=DB=8C=DA=AF=
+=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D8=B5=D9=88=D8=B1=D8=AA=D9=85=D8=B3=DB=8C=D8=
+=B1=D9=87=D8=A7=DB=8C=D9=85=D8=AA=D9=86(Path-BasedRepresentation)"><span st=
+yle=3D"color: rgb(51,102,255);"><strong>=F0=9F=94=B9 =DB=B6. =D8=A8=D8=A7=
+=D8=B2=D9=86=D9=85=D8=A7=DB=8C=DB=8C =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =
+=D8=B5=D9=88=D8=B1=D8=AA =D9=85=D8=B3=DB=8C=D8=B1=D9=87=D8=A7=DB=8C =D9=85=
+=D8=AA=D9=86 (Path-Based Representation)</strong></span></h2>
+<p>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4=D8=8C <strong>=D9=85=
+=D8=B3=DB=8C=D8=B1=D9=87=D8=A7=DB=8C =D9=85=D9=85=DA=A9=D9=86 =D8=A8=DB=8C=
+=D9=86 =DA=AF=D8=B1=D9=87=E2=80=8C=D9=87=D8=A7</strong> =D8=A8=D9=87 =D8=B9=
+=D9=86=D9=88=D8=A7=D9=86 =D9=85=D8=AA=D9=86 =D8=AA=D9=88=D8=B5=DB=8C=D9=81=
+=DB=8C =D8=A7=D8=B3=D8=AA=D8=AE=D8=B1=D8=A7=D8=AC =D9=85=DB=8C=E2=80=8C=D8=
+=B4=D9=88=D9=86=D8=AF. =D8=A7=DB=8C=D9=86 =D8=AA=DA=A9=D9=86=DB=8C=DA=A9 =
+=D8=AF=D8=B1 =D8=B3=DB=8C=D8=B3=D8=AA=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C <str=
+ong>=DA=AF=D8=B1=D8=A7=D9=81=E2=80=8C=D9=85=D8=AD=D9=88=D8=B1 =D9=85=D8=A7=
+=D9=86=D9=86=D8=AF =D8=B4=D8=A8=DA=A9=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=
+=A7=D8=AC=D8=AA=D9=85=D8=A7=D8=B9=DB=8C =D9=88 =D9=BE=D8=A7=DB=8C=DA=AF=D8=
+=A7=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=D8=A7=D9=86=D8=B4</strong> =DA=
+=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF =D8=AF=D8=A7=D8=B1=D8=AF.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=93=8C=D9=85=D8=AB=D8=A7=D9=84=DA=AF=D8=B1=D8=A7=D9=81"><strong>=F0=
+=9F=93=8C =D9=85=D8=AB=D8=A7=D9=84 =DA=AF=D8=B1=D8=A7=D9=81</strong></h3>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);"><code><span class=3D"hljs-punctuation">{</span></code></s=
+pan></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);">&nbsp;&nbsp;<code> <span class=3D"hljs-attr">"nodes"</spa=
+n><span class=3D"hljs-punctuation">:</span> <span class=3D"hljs-punctuation=
+">[</span><span class=3D"hljs-string">"Einstein"</span><span class=3D"hljs-=
+punctuation">,</span> <span class=3D"hljs-string">"Physics"</span><span cla=
+ss=3D"hljs-punctuation">,</span> <span class=3D"hljs-string">"Theory of Rel=
+ativity"</span><span class=3D"hljs-punctuation">]</span><span class=3D"hljs=
+-punctuation">,</span> </code></span></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);">&nbsp;&nbsp;<code> <span class=3D"hljs-attr">"edges"</spa=
+n><span class=3D"hljs-punctuation">:</span> <span class=3D"hljs-punctuation=
+">[</span></code></span></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);">&nbsp; &nbsp;&nbsp; &nbsp;<code>&nbsp;<span class=3D"hljs=
+-punctuation">{</span><span class=3D"hljs-attr">"source"</span><span class=
+=3D"hljs-punctuation">:</span> <span class=3D"hljs-string">"Einstein"</span=
+><span class=3D"hljs-punctuation">,</span> <span class=3D"hljs-attr">"relat=
+ion"</span><span class=3D"hljs-punctuation">:</span> <span class=3D"hljs-st=
+ring">"studied"</span><span class=3D"hljs-punctuation">,</span> <span class=
+=3D"hljs-attr">"target"</span><span class=3D"hljs-punctuation">:</span> <sp=
+an class=3D"hljs-string">"Physics"</span><span class=3D"hljs-punctuation">}=
+</span><span class=3D"hljs-punctuation">,</span> </code></span></strong></p=
+>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);">&nbsp; &nbsp;&nbsp; &nbsp; <code><span class=3D"hljs-punc=
+tuation">{</span><span class=3D"hljs-attr">"source"</span><span class=3D"hl=
+js-punctuation">:</span> <span class=3D"hljs-string">"Einstein"</span><span=
+ class=3D"hljs-punctuation">,</span> <span class=3D"hljs-attr">"relation"</=
+span><span class=3D"hljs-punctuation">:</span> <span class=3D"hljs-string">=
+"developed"</span><span class=3D"hljs-punctuation">,</span> <span class=3D"=
+hljs-attr">"target"</span><span class=3D"hljs-punctuation">:</span> <span c=
+lass=3D"hljs-string">"Theory of Relativity"</span><span class=3D"hljs-punct=
+uation">}</span> </code></span></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);">&nbsp; &nbsp;<code><span class=3D"hljs-punctuation">]</sp=
+an> </code></span></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);"><code><span class=3D"hljs-punctuation">}</span></code></s=
+pan></strong></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=D9=86=D9=85=D8=A7=DB=8C=D8=B4=D8=A8=D9=87=D8=B5=D9=88=D8=B1=D8=AA=
+=D9=85=D8=B3=DB=8C=D8=B1=D9=87=D8=A7:"><span style=3D"color: rgb(255,102,0)=
+;"><strong>=E2=9C=85 =D9=86=D9=85=D8=A7=DB=8C=D8=B4 =D8=A8=D9=87 =D8=B5=D9=
+=88=D8=B1=D8=AA =D9=85=D8=B3=DB=8C=D8=B1=D9=87=D8=A7:</strong></span></h3>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);"><code><span class=3D"hljs-attribute">Einstein</span> =E2=
+=86=92 studied =E2=86=92 Physics Einstein =E2=86=92 developed =E2=86=92 The=
+ory of Relativity</code></span></strong></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<p><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =DA=A9=D8=AF =
+=D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=AF=D8=
+=B1 =D9=BE=D8=A7=DB=8C=D8=AA=D9=88=D9=86</strong></span></p>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p class=3D"hidden-dir-p" style=3D"direction: ltr;text-align: left;"><br></=
+p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Midnight" data-theme=3D"Midnight">def graph_to_=
+paths(graph):
+    paths =3D []
+    for edge in graph["edges"]:
+        paths.append(f"{edge['source']} =E2=86=92 {edge['relation']} =E2=86=
+=92 {edge['target']}")
+    return "\n".join(paths)
+
+print(graph_to_paths(graph_data))
+
+</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF:</strong> =D8=
+=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4 =D8=A8=D8=B1=D8=A7=DB=8C <strong>=DB=8C=
+=D8=A7=D9=81=D8=AA=D9=86 =D8=A7=D8=B1=D8=AA=D8=A8=D8=A7=D8=B7=D8=A7=D8=AA =
+=D9=85=D8=B9=D9=86=D8=A7=DB=8C=DB=8C =D8=A8=DB=8C=D9=86 =DA=AF=D8=B1=D9=87=
+=E2=80=8C=D9=87=D8=A7</strong> =D9=88 <strong>=D8=AA=D9=88=D8=B5=DB=8C=D9=
+=81 =D9=85=D8=B3=DB=8C=D8=B1=D9=87=D8=A7=DB=8C =D8=A7=D8=AD=D8=AA=D9=85=D8=
+=A7=D9=84=DB=8C</strong> =D8=A8=DB=8C=D9=86 =D9=85=D9=88=D8=AC=D9=88=D8=AF=
+=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7 =D9=85=D9=86=D8=A7=D8=B3=D8=A8 =D8=A7=D8=
+=B3=D8=AA.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=94=B9=DB=B7.=D9=86=D9=85=D8=A7=DB=8C=D8=B4=DA=AF=D8=B1=D8=A7=D9=81=
+=D8=A8=D9=87=D8=B9=D9=86=D9=88=D8=A7=D9=86=D8=AF=D8=B1=D8=AE=D8=AA=D8=AC=D9=
+=85=D9=84=D9=87(Tree-BasedRepresentation)"><span style=3D"color: rgb(51,102=
+,255);"><strong>=F0=9F=94=B9 =DB=B7. =D9=86=D9=85=D8=A7=DB=8C=D8=B4 =DA=AF=
+=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =D8=B9=D9=86=D9=88=D8=A7=D9=86 =D8=AF=D8=B1=
+=D8=AE=D8=AA =D8=AC=D9=85=D9=84=D9=87 (Tree-Based Representation)</strong><=
+/span></h2>
+<p>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4=D8=8C =DA=AF=D8=B1=D8=
+=A7=D9=81 =D8=A8=D9=87 =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1 =D8=AF=D8=B1=D8=
+=AE=D8=AA=DB=8C =D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =D8=B4=D8=AF=D9=87 =D9=88 =
+=D9=85=D8=AF=D9=84 =D8=B2=D8=A8=D8=A7=D9=86=DB=8C =D8=A2=D9=86 =D8=B1=D8=A7=
+ =D9=85=D8=A7=D9=86=D9=86=D8=AF =DB=8C=DA=A9 =D8=AC=D9=85=D9=84=D9=87=E2=80=
+=8C=DB=8C =D8=AA=D9=88=D8=B5=DB=8C=D9=81=DB=8C =D9=BE=D8=B1=D8=AF=D8=A7=D8=
+=B2=D8=B4 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=D8=AA=D8=A8=D8=AF=DB=8C=D9=84=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=
+=D8=AF=D8=B1=D8=AE=D8=AA=DB=8C=D8=A7=D8=B2=D9=85=D9=81=D8=A7=D9=87=DB=8C=D9=
+=85"><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =D8=AA=D8=A8=
+=D8=AF=DB=8C=D9=84 =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =D8=AF=D8=B1=D8=AE=
+=D8=AA=DB=8C =D8=A7=D8=B2 =D9=85=D9=81=D8=A7=D9=87=DB=8C=D9=85</strong></sp=
+an></h3>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);"><code><span class=3D"hljs-attribute">Einstein</span> </co=
+de></span></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);"><code> =E2=94=9C=E2=94=80=E2=94=80 studied =E2=86=92 Phys=
+ics </code></span></strong></p>
+<p style=3D"direction: ltr;text-align: left;"><strong><span style=3D"color:=
+ rgb(0,128,128);"><code> =E2=94=94=E2=94=80=E2=94=80 developed =E2=86=92 Th=
+eory of Relativity</code></span></strong></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<p><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =DA=A9=D8=AF =
+=D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=AF=D8=
+=B1 =D9=BE=D8=A7=DB=8C=D8=AA=D9=88=D9=86</strong></span></p>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p class=3D"hidden-dir-p" style=3D"margin: 0;direction: ltr;text-align: lef=
+t;"><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Midnight" data-theme=3D"Midnight">def graph_to_=
+tree(graph):
+    tree_structure =3D {}
+    for edge in graph["edges"]:
+        if edge["source"] not in tree_structure:
+            tree_structure[edge["source"]] =3D []
+        tree_structure[edge["source"]].append(f"{edge['relation']} =E2=86=
+=92 {edge['target']}")
+   =20
+    text_output =3D ""
+    for node, relations in tree_structure.items():
+        text_output +=3D f"{node}\n"
+        for rel in relations:
+            text_output +=3D f" =E2=94=9C=E2=94=80=E2=94=80 {rel}\n"
+    return text_output.strip()
+
+print(graph_to_tree(graph_data)) &nbsp;</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF:</strong> =D8=
+=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4 =D8=A8=D8=B1=D8=A7=DB=8C <strong>=D9=86=
+=D9=85=D8=A7=DB=8C=D8=B4 =D8=B3=D9=84=D8=B3=D9=84=D9=87=E2=80=8C=D9=85=D8=
+=B1=D8=A7=D8=AA=D8=A8=DB=8C =D9=85=D9=81=D8=A7=D9=87=DB=8C=D9=85 =D8=AF=D8=
+=B1 =D9=BE=D8=A7=DB=8C=DA=AF=D8=A7=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=
+=D8=A7=D9=86=D8=B4</strong> =D9=85=D8=AB=D9=84 =D9=88=DB=8C=DA=A9=DB=8C=E2=
+=80=8C=D8=AF=D8=A7=D8=AF=D9=87 =D9=88 DBpedia =D9=85=D9=81=DB=8C=D8=AF =D8=
+=A7=D8=B3=D8=AA</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 style=3D"text-align: right;" id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=
+=AA=DA=98=DB=8C=E2=80=8C=D9=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=
+=A8=D8=A7=D8=B2=D9=86=D9=85=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=
+=D9=87=D9=85=D8=AF=D9=84-=F0=9F=94=B9=DB=B8.=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=E2=80=8C=D8=B5=D9=88=
+=D8=B1=D8=AA=D8=AC=D8=AF=D9=88=D9=84=D8=B1=D8=A7=D8=A8=D8=B7=D9=87=E2=80=8C=
+=D8=A7=DB=8C(TabularRepresentation)"><span style=3D"color: rgb(51,102,255);=
+"><strong>=F0=9F=94=B9 =DB=B8. =D8=A8=D8=A7=D8=B2=D9=86=D9=85=D8=A7=DB=8C=
+=DB=8C =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87=E2=80=8C=D8=B5=D9=88=D8=B1=D8=
+=AA =D8=AC=D8=AF=D9=88=D9=84 =D8=B1=D8=A7=D8=A8=D8=B7=D9=87=E2=80=8C=D8=A7=
+=DB=8C (Tabular Representation)</strong></span></h2>
+<p style=3D"text-align: right;">=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=B1=D9=
+=88=D8=B4=D8=8C =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =DA=AF=
+=D8=B1=D8=A7=D9=81=DB=8C =D8=AF=D8=B1 =D9=82=D8=A7=D9=84=D8=A8 <strong>=D8=
+=AC=D8=AF=D9=88=D9=84 =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1=DB=8C=D8=A7=D9=
+=81=D8=AA=D9=87</strong> =D9=86=D9=85=D8=A7=DB=8C=D8=B4 =D8=AF=D8=A7=D8=AF=
+=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D9=86=D8=AF =DA=A9=D9=87 =D9=85=DB=
+=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=A8=D8=B1=D8=A7=DB=8C <strong=
+>=D9=BE=D8=A7=DB=8C=DA=AF=D8=A7=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=D8=
+=A7=D8=AF=D9=87 =D8=B1=D8=A7=D8=A8=D8=B7=D9=87=E2=80=8C=D8=A7=DB=8C =D9=88 =
+=D9=85=D8=AF=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C LLM =DA=A9=D9=87 =D8=AF=D8=A7=
+=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=
+=B1=DB=8C=D8=A7=D9=81=D8=AA=D9=87 =D8=B1=D8=A7 =D8=A8=D9=87=D8=AA=D8=B1 =D9=
+=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D9=86=
+=D8=AF=D8=8C =D9=85=D9=86=D8=A7=D8=B3=D8=A8 =D8=A8=D8=A7=D8=B4=D8=AF.</stro=
+ng></p>
+<h3 style=3D"text-align: right;" id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=
+=AA=DA=98=DB=8C=E2=80=8C=D9=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=
+=A8=D8=A7=D8=B2=D9=86=D9=85=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=
+=D9=87=D9=85=D8=AF=D9=84-=E2=9C=85=D9=86=D9=85=D9=88=D9=86=D9=87=D8=AC=D8=
+=AF=D9=88=D9=84:"><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =
+=D9=86=D9=85=D9=88=D9=86=D9=87 =D8=AC=D8=AF=D9=88=D9=84:</strong></span></h=
+3>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable" style=3D"direction: ltr;text-align=
+: left;margin-left: auto;margin-right: auto;">
+<thead style=3D"direction: ltr;text-align: left;">
+<tr style=3D"direction: ltr;text-align: left;">
+<th style=3D"direction: ltr;text-align: left;" class=3D"confluenceTh">Entit=
+y 1</th>
+<th style=3D"direction: ltr;text-align: left;" class=3D"confluenceTh">Relat=
+ion</th>
+<th style=3D"direction: ltr;text-align: left;" class=3D"confluenceTh">Entit=
+y 2</th>
+</tr>
+</thead>
+<tbody style=3D"direction: ltr;text-align: left;">
+<tr style=3D"direction: ltr;text-align: left;">
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">Einst=
+ein</td>
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">studi=
+ed</td>
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">Physi=
+cs</td>
+</tr>
+<tr style=3D"direction: ltr;text-align: left;">
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">Einst=
+ein</td>
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">devel=
+oped</td>
+<td style=3D"direction: ltr;text-align: left;" class=3D"confluenceTd">Theor=
+y of Relativity</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=DA=A9=D8=AF=D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=
+=B2=DB=8C"><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =DA=A9=
+=D8=AF =D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C</str=
+ong></span></h3>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p class=3D"hidden-dir-p" style=3D"direction: ltr;text-align: left;"><br></=
+p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Midnight" data-theme=3D"Midnight">import pandas=
+ as pd
+
+def graph_to_dataframe(graph):
+    df =3D pd.DataFrame(graph["edges"])
+    return df
+
+print(graph_to_dataframe(graph_data)) &nbsp;</pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF:</strong> =D8=
+=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4 =D8=A8=D8=B1=D8=A7=DB=8C <strong>=D8=AA=
+=D8=AD=D9=84=DB=8C=D9=84 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=
+=8C =DA=AF=D8=B1=D8=A7=D9=81=DB=8C =D8=AF=D8=B1 =D9=82=D8=A7=D9=84=D8=A8 =
+=D9=BE=D8=A7=DB=8C=DA=AF=D8=A7=D9=87 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=
+=87=D8=A7 =D9=88 =D8=AA=D8=AC=D8=B2=DB=8C=D9=87 =D9=88 =D8=AA=D8=AD=D9=84=
+=DB=8C=D9=84 =D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4=DB=8C</strong> =D9=85=D9=
+=81=DB=8C=D8=AF =D8=A7=D8=B3=D8=AA.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=94=B9=DB=B9.=D9=86=D9=85=D8=A7=DB=8C=D8=B4=DA=AF=D8=B1=D8=A7=D9=81=
+=D8=A8=D9=87=D8=B5=D9=88=D8=B1=D8=AA=D8=A8=D8=B1=D8=AF=D8=A7=D8=B1=D8=AA=D9=
+=88=D8=B5=DB=8C=D9=81=DB=8C(Vector-BasedRepresentation)"><span style=3D"col=
+or: rgb(51,102,255);"><strong>=F0=9F=94=B9 =DB=B9. =D9=86=D9=85=D8=A7=DB=8C=
+=D8=B4 =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=AA =D8=
+=A8=D8=B1=D8=AF=D8=A7=D8=B1 =D8=AA=D9=88=D8=B5=DB=8C=D9=81=DB=8C (Vector-Ba=
+sed Representation)</strong></span></h2>
+<p>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4=D8=8C =DA=AF=D8=B1=D9=
+=87=E2=80=8C=D9=87=D8=A7 =D9=88 =DB=8C=D8=A7=D9=84=E2=80=8C=D9=87=D8=A7 =D8=
+=A8=D9=87 =D8=A8=D8=B1=D8=AF=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=DB=8C <strong>=
+=D8=B9=D8=AF=D8=AF=DB=8C</strong> =D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =D8=B4=D8=
+=AF=D9=87 =D9=88 =D8=A8=D9=87 =D8=B9=D9=86=D9=88=D8=A7=D9=86 =D9=88=D8=B1=
+=D9=88=D8=AF=DB=8C =D9=85=D8=AF=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =DB=8C=D8=
+=A7=D8=AF=DA=AF=DB=8C=D8=B1=DB=8C =D8=B9=D9=85=DB=8C=D9=82 =DB=8C=D8=A7 LLM=
+ =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=
+=88=D9=86=D8=AF.</p>
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=D8=B1=D9=88=D8=B4=DA=A9=D8=A7=D8=B1"><span style=3D"color: rgb(25=
+5,102,0);"><strong>=E2=9C=85 =D8=B1=D9=88=D8=B4 =DA=A9=D8=A7=D8=B1</strong>=
+</span></h3>
+<ol>
+<li><strong>=D9=87=D8=B1 =DA=AF=D8=B1=D9=87 =D8=A8=D9=87 embedding =D8=AA=
+=D8=A8=D8=AF=DB=8C=D9=84 =D8=B4=D9=88=D8=AF</strong> (=D9=85=D8=AB=D9=84=D8=
+=A7=D9=8B =D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=
+=B2 OpenAI Embeddings =DB=8C=D8=A7 Ollama).</li>
+<li><strong>=D9=85=D8=AC=D9=85=D9=88=D8=B9=D9=87=E2=80=8C=DB=8C =DA=AF=D8=
+=B1=D9=87=E2=80=8C=D9=87=D8=A7 =D8=B1=D8=A7 =D8=A8=D9=87 =DB=8C=DA=A9 =D8=
+=A8=D8=B1=D8=AF=D8=A7=D8=B1 =D8=AA=D8=B1=DA=A9=DB=8C=D8=A8=DB=8C =D8=AA=D8=
+=A8=D8=AF=DB=8C=D9=84 =DA=A9=D9=86=DB=8C=D9=85.</strong></li>
+<li><strong>=D9=85=D8=AF=D9=84 =D8=B2=D8=A8=D8=A7=D9=86=DB=8C =D8=B1=D8=A7 =
+=D8=A8=D8=B1=D8=A7=DB=8C =D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4 =D8=A7=DB=8C=
+=D9=86 =D8=A8=D8=B1=D8=AF=D8=A7=D8=B1=D9=87=D8=A7 =D8=A2=D9=85=D8=A7=D8=AF=
+=D9=87 =DA=A9=D9=86=DB=8C=D9=85.</strong></li>
+</ol>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=DA=A9=D8=AF=D9=86=D9=85=D9=88=D9=86=D9=87(=D8=AA=D8=A8=D8=AF=DB=
+=8C=D9=84=DA=AF=D8=B1=D9=87=E2=80=8C=D9=87=D8=A7=D8=A8=D9=87embedding=D9=88=
+=D8=AA=D8=B1=DA=A9=DB=8C=D8=A8=D8=A2=D9=86=E2=80=8C=D9=87=D8=A7)"><span sty=
+le=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =DA=A9=D8=AF =D9=86=D9=85=
+=D9=88=D9=86=D9=87 (=D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =DA=AF=D8=B1=D9=87=E2=80=
+=8C=D9=87=D8=A7 =D8=A8=D9=87 embedding =D9=88 =D8=AA=D8=B1=DA=A9=DB=8C=D8=
+=A8 =D8=A2=D9=86=E2=80=8C=D9=87=D8=A7)</strong></span></h3>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p class=3D"hidden-dir-p" style=3D"margin: 0;direction: ltr;text-align: lef=
+t;"><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Midnight" data-theme=3D"Midnight">import numpy =
+as np
+from llama_index.embeddings.ollama import OllamaEmbedding
+
+ollama_url =3D "http://localhost:11434"
+embedding_model =3D "mistral"
+
+embedder =3D OllamaEmbedding(base_url=3Dollama_url, model_name=3Dembedding_=
+model)
+
+def graph_to_embedding(graph):
+    node_embeddings =3D {node: embedder.get_text_embedding(node) for node i=
+n graph["nodes"]}
+    mean_vector =3D np.mean(list(node_embeddings.values()), axis=3D0)
+    return mean_vector
+
+graph_vector =3D graph_to_embedding(graph_data)
+print(graph_vector)  # =D9=86=D9=85=D8=A7=DB=8C=D8=B4 =D8=A8=D8=B1=D8=AF=D8=
+=A7=D8=B1 =D9=86=D9=87=D8=A7=DB=8C=DB=8C =DA=AF=D8=B1=D8=A7=D9=81 &nbsp;</p=
+re>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF:</strong> =D8=
+=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4 =D8=A8=D8=B1=D8=A7=DB=8C <strong>=DB=8C=
+=D8=A7=D8=AF=DA=AF=DB=8C=D8=B1=DB=8C =D9=85=D8=A7=D8=B4=DB=8C=D9=86 =D9=88 =
+=D9=85=D8=AF=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C RAG =DA=A9=D9=87 =D9=86=DB=8C=
+=D8=A7=D8=B2 =D8=A8=D9=87 =D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4 =D8=B9=D8=AF=
+=D8=AF=DB=8C =D8=AF=D8=A7=D8=B1=D9=86=D8=AF=D8=8C =D9=85=D9=86=D8=A7=D8=B3=
+=D8=A8 =D8=A7=D8=B3=D8=AA.</strong></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=94=B9=DB=B1=DB=B0.=D9=86=D9=85=D8=A7=DB=8C=D8=B4=DA=AF=D8=B1=D8=A7=
+=D9=81=D8=A8=D9=87=D8=B9=D9=86=D9=88=D8=A7=D9=86=D9=85=D8=AA=D9=86=D8=B4=D8=
+=A8=D9=87=E2=80=8C=D8=B7=D8=A8=DB=8C=D8=B9=DB=8C(NaturalLanguageStorytellin=
+g)"><span style=3D"color: rgb(51,102,255);"><strong>=F0=9F=94=B9 =DB=B1=DB=
+=B0. =D9=86=D9=85=D8=A7=DB=8C=D8=B4 =DA=AF=D8=B1=D8=A7=D9=81 =D8=A8=D9=87 =
+=D8=B9=D9=86=D9=88=D8=A7=D9=86 =D9=85=D8=AA=D9=86 =D8=B4=D8=A8=D9=87=E2=80=
+=8C=D8=B7=D8=A8=DB=8C=D8=B9=DB=8C (Natural Language Storytelling)</strong><=
+/span></h2>
+<p>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4=D8=8C =DA=AF=D8=B1=D8=
+=A7=D9=81 =D8=A8=D9=87 =D9=85=D8=AA=D9=86 =D8=B4=D8=A8=D9=87=E2=80=8C=D8=B7=
+=D8=A8=DB=8C=D8=B9=DB=8C =D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =D9=85=DB=8C=E2=80=
+=8C=D8=B4=D9=88=D8=AF =DA=A9=D9=87 =D9=85=D8=AF=D9=84 =D8=B2=D8=A8=D8=A7=D9=
+=86=DB=8C =D8=A2=D9=86 =D8=B1=D8=A7 =D8=A8=D9=87 =D8=B1=D8=A7=D8=AD=D8=AA=
+=DB=8C =D8=AF=D8=B1=DA=A9 =DA=A9=D9=86=D8=AF.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C </strong><strong style=3D"font-size: 16.0px;letter-=
+spacing: -0.006em;text-align: left;text-indent: 1.0em;">=D9=85=D8=AB=D8=A7=
+=D9=84 =D9=88=D8=B1=D9=88=D8=AF=DB=8C:</strong></p>
+<p>=DA=AF=D8=B1=D8=A7=D9=81:</p>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p style=3D"direction: ltr;text-align: left;"><br></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong><code><span class=3D"hljs-punctuation">{</span></code></s=
+trong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong>&nbsp;&nbsp;&nbsp;<code> <span class=3D"hljs-attr">"nodes=
+"</span><span class=3D"hljs-punctuation">:</span> <span class=3D"hljs-punct=
+uation">[</span><span class=3D"hljs-string">"Tesla"</span><span class=3D"hl=
+js-punctuation">,</span> <span class=3D"hljs-string">"Electricity"</span><s=
+pan class=3D"hljs-punctuation">,</span> <span class=3D"hljs-string">"AC Cur=
+rent"</span><span class=3D"hljs-punctuation">]</span><span class=3D"hljs-pu=
+nctuation">,</span> </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong>&nbsp; &nbsp;<code><span class=3D"hljs-attr">"edges"</spa=
+n><span class=3D"hljs-punctuation">:</span> <span class=3D"hljs-punctuation=
+">[</span> </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong>&nbsp; &nbsp;&nbsp; &nbsp;<code><span class=3D"hljs-punct=
+uation">{</span><span class=3D"hljs-attr">"source"</span><span class=3D"hlj=
+s-punctuation">:</span> <span class=3D"hljs-string">"Tesla"</span><span cla=
+ss=3D"hljs-punctuation">,</span> <span class=3D"hljs-attr">"relation"</span=
+><span class=3D"hljs-punctuation">:</span> <span class=3D"hljs-string">"stu=
+died"</span><span class=3D"hljs-punctuation">,</span> <span class=3D"hljs-a=
+ttr">"target"</span><span class=3D"hljs-punctuation">:</span> <span class=
+=3D"hljs-string">"Electricity"</span><span class=3D"hljs-punctuation">}</sp=
+an><span class=3D"hljs-punctuation">,</span> </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong>&nbsp; &nbsp;&nbsp; &nbsp;<code><span class=3D"hljs-punct=
+uation">{</span><span class=3D"hljs-attr">"source"</span><span class=3D"hlj=
+s-punctuation">:</span> <span class=3D"hljs-string">"Tesla"</span><span cla=
+ss=3D"hljs-punctuation">,</span> <span class=3D"hljs-attr">"relation"</span=
+><span class=3D"hljs-punctuation">:</span> <span class=3D"hljs-string">"inv=
+ented"</span><span class=3D"hljs-punctuation">,</span> <span class=3D"hljs-=
+attr">"target"</span><span class=3D"hljs-punctuation">:</span> <span class=
+=3D"hljs-string">"AC Current"</span><span class=3D"hljs-punctuation">}</spa=
+n> </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong>&nbsp;&nbsp;&nbsp;<code> <span class=3D"hljs-punctuation"=
+>]</span> </code></strong></span></p>
+<p style=3D"direction: ltr;text-align: left;"><span style=3D"color: rgb(0,1=
+28,128);"><strong><code><span class=3D"hljs-punctuation">}</span></code></s=
+trong></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C</strong> =D9=85=D8=AA=D9=86 =D8=B4=D8=A8=D9=87=E2=
+=80=8C=D8=B7=D8=A8=DB=8C=D8=B9=DB=8C (=D8=AE=D8=B1=D9=88=D8=AC=DB=8C)</p>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p class=3D"auto-cursor-target" style=3D"direction: ltr;text-align: left;">=
+<br><strong><span style=3D"color: rgb(0,128,128);"><code>Nikola Tesla was a=
+ scientist <span class=3D"hljs-built_in">who</span> studied Electricity. He=
+ later invented AC Current, <span class=3D"hljs-built_in">which</span> revo=
+lutionized energy distribution.</code></span></strong></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout two-left-sidebar" data-layout=3D"two-left-sideba=
+r">=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=E2=9C=85=DA=A9=D8=AF=D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=
+=B2=DB=8C.1"><span style=3D"color: rgb(255,102,0);"><strong>=E2=9C=85 =DA=
+=A9=D8=AF =D9=BE=DB=8C=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C</=
+strong></span></h3>
+</div>=20
+</div>=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p class=3D"hidden-dir-p" style=3D"direction: ltr;text-align: left;"><br></=
+p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Midnight" data-theme=3D"Midnight">def graph_to_=
+story(graph):
+    story =3D []
+    for edge in graph["edges"]:
+        story.append(f"{edge['source']} {edge['relation']} {edge['target']}=
+.")
+    return " ".join(story)
+
+print(graph_to_story(graph_data)) </pre>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=F0=9F=93=8C =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF:</strong> =D8=
+=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4 =D8=A8=D8=B1=D8=A7=DB=8C <strong>=D8=AA=
+=D8=A8=D8=AF=DB=8C=D9=84 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=
+=8C =DA=AF=D8=B1=D8=A7=D9=81=DB=8C =D8=A8=D9=87 =D9=85=D8=AA=D9=86 =D9=82=
+=D8=A7=D8=A8=D9=84 =D9=81=D9=87=D9=85 =D8=A8=D8=B1=D8=A7=DB=8C =D8=A7=D9=86=
+=D8=B3=D8=A7=D9=86 =D9=88 =D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4 =D8=AA=D9=88=
+=D8=B3=D8=B7 =D9=85=D8=AF=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C LLM =D9=85=D9=86=
+=D8=A7=D8=B3=D8=A8 =D8=A7=D8=B3=D8=AA.</strong></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"id-=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C=D8=A8=D8=B1=D8=A7=DB=8C=D8=A8=D8=A7=D8=B2=D9=86=D9=85=
+=D8=A7=DB=8C=DB=8C=DA=AF=D8=B1=D8=A7=D9=81=D8=A8=D9=87=D9=85=D8=AF=D9=84-=
+=F0=9F=93=8C=D9=85=D9=86=D8=A7=D8=A8=D8=B9:"><strong>=F0=9F=93=8C =D9=85=D9=
+=86=D8=A7=D8=A8=D8=B9 :</strong></h3>
+<p><strong><a href=3D"https://web.stanford.edu/class/cs224w/" class=3D"exte=
+rnal-link" rel=3D"nofollow">https://web.stanford.edu/class/cs224w/</a></str=
+ong></p>
+<p><strong><a href=3D"https://www.cs.mcgill.ca/~wlh/grl_book/files/GRL_Book=
+.pdf" class=3D"external-link" rel=3D"nofollow">https://www.cs.mcgill.ca/~wl=
+h/grl_book/files/GRL_Book.pdf</a></strong></p>
+<p><strong><a href=3D"https://arxiv.org/abs/2106.06090" class=3D"external-l=
+ink" rel=3D"nofollow">https://arxiv.org/abs/2106.06090</a></strong></p>
+<p><strong><a href=3D"https://arxiv.org/abs/2010.12812" class=3D"external-l=
+ink" rel=3D"nofollow">https://arxiv.org/abs/2010.12812</a></strong></p>
+<p><strong><a href=3D"https://www.dgl.ai/" class=3D"external-link" rel=3D"n=
+ofollow">https://www.dgl.ai/</a></strong></p>
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_188_1408991721.1786977354771--
