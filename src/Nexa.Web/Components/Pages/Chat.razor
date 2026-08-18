@@ -1,0 +1,142 @@
+@page "/chat"
+@page "/chat/{ConversationId:guid}"
+@attribute [Authorize(Policy = NexaPolicies.CanChat)]
+@inject Nexa.Application.Conversations.IConversationService ConversationService
+@inject Nexa.Application.Agents.IAgentService AgentService
+@inject NavigationManager Navigation
+
+<PageTitle>Chat</PageTitle>
+<h1>Chat</h1>
+
+@if (!string.IsNullOrWhiteSpace(error))
+{
+    <p class="error" role="alert">@error</p>
+}
+
+<div class="chat-shell">
+    <aside class="conversation-list">
+        <label>Agent
+            <select @bind="selectedAgentId">
+                @foreach (var agent in agents)
+                {
+                    <option value="@agent.Id">@agent.Name</option>
+                }
+            </select>
+        </label>
+        <button class="button" @onclick="StartConversationAsync" disabled="@(busy || selectedAgentId == Guid.Empty)">New conversation</button>
+        <ul class="list">
+            @foreach (var conversation in conversations)
+            {
+                <li class="@(conversation.Id == ConversationId ? "active" : null)">
+                    <a href="@($"/chat/{conversation.Id}")">@conversation.Title</a>
+                </li>
+            }
+        </ul>
+    </aside>
+    <section class="transcript" aria-live="polite">
+        @if (detail is null)
+        {
+            <p class="muted">Select or start a conversation.</p>
+        }
+        else
+        {
+            <header class="transcript-header">
+                <h2>@detail.Conversation.Title</h2>
+                <p class="muted">@detail.Conversation.AgentName v@detail.Conversation.AgentVersionNumber</p>
+            </header>
+            <ol class="messages">
+                @foreach (var message in detail.Messages)
+                {
+                    <li class="message @message.Role.ToLowerInvariant()">
+                        <span class="role">@message.Role</span>
+                        <p>@message.Content</p>
+                    </li>
+                }
+            </ol>
+            <form class="composer" @onsubmit="SendAsync" @onsubmit:preventDefault="true">
+                <label class="sr-only" for="prompt">Message</label>
+                <textarea id="prompt" @bind="draft" @bind:event="oninput" rows="3" disabled="@busy"></textarea>
+                <button class="button" type="submit" disabled="@(busy || string.IsNullOrWhiteSpace(draft))">Send</button>
+            </form>
+        }
+    </section>
+</div>
+
+@code {
+    [Parameter] public Guid? ConversationId { get; set; }
+
+    private IReadOnlyList<AgentDto> agents = [];
+    private IReadOnlyList<ConversationDto> conversations = [];
+    private ConversationDetailDto? detail;
+    private Guid selectedAgentId;
+    private string draft = string.Empty;
+    private string? error;
+    private bool busy;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        error = null;
+        agents = await AgentService.ListAsync(false, CancellationToken.None);
+        if (selectedAgentId == Guid.Empty && agents.Count > 0)
+        {
+            selectedAgentId = agents[0].Id;
+        }
+
+        conversations = await ConversationService.ListAsync(false, CancellationToken.None);
+        if (ConversationId is { } id && id != Guid.Empty)
+        {
+            detail = await ConversationService.GetAsync(id, CancellationToken.None);
+        }
+        else
+        {
+            detail = null;
+        }
+    }
+
+    private async Task StartConversationAsync()
+    {
+        busy = true;
+        error = null;
+        try
+        {
+            var created = await ConversationService.CreateAsync(new CreateConversationRequest(selectedAgentId, null), CancellationToken.None);
+            Navigation.NavigateTo($"/chat/{created.Id}");
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+        finally
+        {
+            busy = false;
+        }
+    }
+
+    private async Task SendAsync()
+    {
+        if (ConversationId is not { } id || string.IsNullOrWhiteSpace(draft))
+        {
+            return;
+        }
+
+        busy = true;
+        error = null;
+        var content = draft.Trim();
+        draft = string.Empty;
+        try
+        {
+            await ConversationService.SendMessageAsync(id, new SendMessageRequest(content), CancellationToken.None);
+            detail = await ConversationService.GetAsync(id, CancellationToken.None);
+            conversations = await ConversationService.ListAsync(false, CancellationToken.None);
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+            detail = await ConversationService.GetAsync(id, CancellationToken.None);
+        }
+        finally
+        {
+            busy = false;
+        }
+    }
+}

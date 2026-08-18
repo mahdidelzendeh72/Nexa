@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Nexa.Api/Nexa.Api.csproj" />
+    <Project Path="src/Nexa.Application/Nexa.Application.csproj" />
+    <Project Path="src/Nexa.Contracts/Nexa.Contracts.csproj" />
+    <Project Path="src/Nexa.Domain/Nexa.Domain.csproj" />
+    <Project Path="src/Nexa.Infrastructure/Nexa.Infrastructure.csproj" />
+    <Project Path="src/Nexa.Web/Nexa.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Nexa.Api.Tests/Nexa.Api.Tests.csproj" />
+    <Project Path="tests/Nexa.Application.Tests/Nexa.Application.Tests.csproj" />
+    <Project Path="tests/Nexa.Domain.Tests/Nexa.Domain.Tests.csproj" />
+  </Folder>
+</Solution>

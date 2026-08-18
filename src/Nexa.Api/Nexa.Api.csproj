@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Nexa.Api</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexa.Application\Nexa.Application.csproj" />
+    <ProjectReference Include="..\Nexa.Contracts\Nexa.Contracts.csproj" />
+  </ItemGroup>
+</Project>

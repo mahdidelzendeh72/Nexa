@@ -8,6 +8,29 @@ Nexa is more than a traditional chatbot. It combines **AI Agents, Knowledge, Ski
 
 ---
 
+## Phase 1 — Run locally
+
+Phase 1 is the foundation: Identity, PostgreSQL, Agent CRUD, model profiles, and basic (non-streaming) chat via `IChatClient`. Microsoft Agent Framework, MCP, RAG, and AG-UI are not in this phase.
+
+```bash
+docker compose up -d
+dotnet tool restore
+dotnet restore
+dotnet run --project src/Nexa.Web
+```
+
+- App: `https://localhost:5xxx` (see launchSettings)
+- Health: `/health`
+- OpenAPI: `/openapi/v1.json`
+- Dev login: `admin@nexa.local` / `ChangeMe!Nexa1`
+- Default chat backend: Ollama at `http://localhost:11434/v1` (OpenAI-compatible). Set `ModelConnections:Connections:OpenAI:ApiKey` via user-secrets for OpenAI.
+
+```bash
+dotnet test
+```
+
+---
+
 ## 🎯 Vision
 
 The vision of Nexa is to create an intelligent engineering assistant that can:
@@ -238,8 +261,8 @@ Nexa
 
 ### Phase 1 — Agent Foundation
 
-* [ ] Create Agent Core
-* [ ] Add Chat Interface
+* [x] Create Agent Core
+* [x] Add Chat Interface
 * [ ] Integrate LLM
 * [ ] Implement Tool Calling
 * [ ] Add MCP Integration

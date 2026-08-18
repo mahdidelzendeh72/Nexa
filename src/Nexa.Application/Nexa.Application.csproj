@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Nexa.Application</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexa.Contracts\Nexa.Contracts.csproj" />
+    <ProjectReference Include="..\Nexa.Domain\Nexa.Domain.csproj" />
+  </ItemGroup>
+</Project>

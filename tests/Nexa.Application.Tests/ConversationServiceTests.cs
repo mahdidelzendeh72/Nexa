@@ -1,0 +1,74 @@
+using FluentAssertions;
+using Nexa.Application.Common;
+using Nexa.Application.Conversations;
+using Nexa.Contracts.Conversations;
+using Nexa.Domain.Agents;
+using Nexa.Domain.Conversations;
+
+namespace Nexa.Application.Tests;
+
+public sealed class ConversationServiceTests
+{
+    [Fact]
+    public async Task GetAsync_rejects_conversations_owned_by_another_user()
+    {
+        var owner = new FakeCurrentUser();
+        var stranger = new FakeCurrentUser();
+        var catalog = new InMemoryCatalog();
+        var provider = catalog.AddProvider();
+        var profile = catalog.AddProfile(provider.Id);
+        var agents = new InMemoryAgents();
+        var agent = Agent.Create(owner.UserId, "Support", "", "Help the user.", profile.Id);
+        agents.Add(agent);
+        var conversations = new InMemoryConversations();
+        await conversations.AddAsync(Conversation.Create(owner.UserId, agent.CurrentVersion.Id), CancellationToken.None);
+
+        var ownerService = CreateService(owner, agents, conversations, catalog);
+        var created = await ownerService.CreateAsync(new CreateConversationRequest(agent.Id, "Mine"), CancellationToken.None);
+
+        var strangerService = CreateService(stranger, agents, conversations, catalog);
+        var act = async () => await strangerService.GetAsync(created.Id, CancellationToken.None);
+
+        var exception = await act.Should().ThrowAsync<NexaException>();
+        exception.Which.Code.Should().Be(ErrorCodes.Forbidden);
+    }
+
+    [Fact]
+    public async Task SendMessage_persists_user_and_assistant_turns()
+    {
+        var user = new FakeCurrentUser();
+        var catalog = new InMemoryCatalog();
+        var provider = catalog.AddProvider();
+        var profile = catalog.AddProfile(provider.Id);
+        var agents = new InMemoryAgents();
+        var agent = Agent.Create(user.UserId, "Support", "", "Help the user.", profile.Id);
+        agents.Add(agent);
+        var conversations = new InMemoryConversations();
+        var service = CreateService(user, agents, conversations, catalog);
+
+        var conversation = await service.CreateAsync(new CreateConversationRequest(agent.Id, null), CancellationToken.None);
+        var response = await service.SendMessageAsync(conversation.Id, new SendMessageRequest("Hi"), CancellationToken.None);
+
+        response.UserMessage.Content.Should().Be("Hi");
+        response.AssistantMessage.Content.Should().Be("hello from nexa");
+        var detail = await service.GetAsync(conversation.Id, CancellationToken.None);
+        detail.Messages.Should().HaveCount(2);
+        detail.Conversation.AgentVersionNumber.Should().Be(1);
+    }
+
+    private static ConversationService CreateService(
+        FakeCurrentUser user,
+        InMemoryAgents agents,
+        InMemoryConversations conversations,
+        InMemoryCatalog catalog) =>
+        new(
+            conversations,
+            agents,
+            catalog,
+            new FakeChat(),
+            user,
+            new InMemoryUnitOfWork(),
+            new CreateConversationRequestValidator(),
+            new RenameConversationRequestValidator(),
+            new SendMessageRequestValidator());
+}
