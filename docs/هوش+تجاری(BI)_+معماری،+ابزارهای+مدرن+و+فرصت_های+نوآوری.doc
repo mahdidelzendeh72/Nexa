@@ -1,0 +1,1824 @@
+Date: Mon, 17 Aug 2026 18:53:29 +0330 (GMT+03:30)
+Message-ID: <1603789627.201.1786980209894@AppServer.sadgan.int>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_200_830438088.1786980209893"
+
+------=_Part_200_830438088.1786980209893
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>=D9=87=D9=88=D8=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C(BI): =D9=85=D8=
+=B9=D9=85=D8=A7=D8=B1=DB=8C=D8=8C =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=
+=A7=DB=8C =D9=85=D8=AF=D8=B1=D9=86 =D9=88 =D9=81=D8=B1=D8=B5=D8=AA=E2=80=8C=
+=D9=87=D8=A7=DB=8C =D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=8C</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>=D9=87=D9=88=D8=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C(BI): =D9=85=D8=B9=
+=D9=85=D8=A7=D8=B1=DB=8C=D8=8C =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=
+=DB=8C =D9=85=D8=AF=D8=B1=D9=86 =D9=88 =D9=81=D8=B1=D8=B5=D8=AA=E2=80=8C=D9=
+=87=D8=A7=DB=8C =D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=8C</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" width=3D"1080" src=3D"https://chartio=
+.com/assets/4df74d/tutorials/business-intelligence/business-intelligence-gu=
+ide/1b7294225086577f34a6c22da8014c6e31f167566abc9655407bb15c5c311ab5/what-i=
+s-business-intelligence-bi.png" data-image-src=3D"https://chartio.com/asset=
+s/4df74d/tutorials/business-intelligence/business-intelligence-guide/1b7294=
+225086577f34a6c22da8014c6e31f167566abc9655407bb15c5c311ab5/what-is-business=
+-intelligence-bi.png"></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D9=87=D9=88=D8=B4=D8=AA=D8=AC=D8=A7=D8=B1=DB=8C(BI):=D9=85=D8=
+=B9=D9=85=D8=A7=D8=B1=DB=8C=D8=8C=D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=
+=DB=8C=D9=85=D8=AF=D8=B1=D9=86=D9=88=D9=81=D8=B1=D8=B5=D8=AA=E2=80=8C=D9=87=
+=D8=A7=DB=8C=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=8C-=D9=85=D9=82=D8=AF=D9=85=
+=D9=87"><span style=3D"color: rgb(128,0,128);"><strong class=3D"ng-star-ins=
+erted"><span class=3D"ng-star-inserted">=D9=85=D9=82=D8=AF=D9=85=D9=87</spa=
+n></strong></span></h2>
+<p><span style=3D"color: rgb(0,0,0);"><span class=3D"ng-star-inserted">=D8=
+=AF=D8=B1 =D8=A7=D9=82=D8=AA=D8=B5=D8=A7=D8=AF =D8=AF=D8=A7=D9=86=D8=B4=E2=
+=80=8C=D8=A8=D9=86=DB=8C=D8=A7=D9=86 =D9=82=D8=B1=D9=86 =D8=A8=DB=8C=D8=B3=
+=D8=AA =D9=88 =DB=8C=DA=A9=D9=85=D8=8C =D8=B3=D8=A7=D8=B2=D9=85=D8=A7=D9=86=
+=E2=80=8C=D9=87=D8=A7 =D8=A8=D8=A7 =D8=AD=D8=AC=D9=85=DB=8C =D8=A8=DB=8C=E2=
+=80=8C=D8=B3=D8=A7=D8=A8=D9=82=D9=87 =D8=A7=D8=B2 =D8=AF=D8=A7=D8=AF=D9=87=
+=E2=80=8C=D9=87=D8=A7 =D9=85=D9=88=D8=A7=D8=AC=D9=87 =D9=87=D8=B3=D8=AA=D9=
+=86=D8=AF =DA=A9=D9=87 =D8=A7=D8=B2 =D9=87=D8=B1 =DA=AF=D9=88=D8=B4=D9=87 =
+=D8=B9=D9=85=D9=84=DB=8C=D8=A7=D8=AA =D8=AF=DB=8C=D8=AC=DB=8C=D8=AA=D8=A7=
+=D9=84 =D8=A2=D9=86=E2=80=8C=D9=87=D8=A7 =D8=B3=D8=B1=DA=86=D8=B4=D9=85=D9=
+=87 =D9=85=DB=8C=E2=80=8C=DA=AF=DB=8C=D8=B1=D8=AF. =D8=A7=DB=8C=D9=86 =D8=
+=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=D8=8C =D8=AF=D8=B1 =D8=AD=D8=A7=
+=D9=84=D8=AA =D8=AE=D8=A7=D9=85=D8=8C =D9=87=D9=85=DA=86=D9=88=D9=86 =D9=85=
+=D8=B9=D8=AF=D9=86=DB=8C =DA=A9=D8=B4=D9=81=E2=80=8C=D9=86=D8=B4=D8=AF=D9=
+=87=D8=8C =D9=BE=D8=AA=D8=A7=D9=86=D8=B3=DB=8C=D9=84 =D8=B9=D8=B8=DB=8C=D9=
+=85=DB=8C =D8=B1=D8=A7 =D8=AF=D8=B1 =D8=AE=D9=88=D8=AF =D8=AF=D8=A7=D8=B1=
+=D9=86=D8=AF.&nbsp;</span><strong class=3D"ng-star-inserted"><span class=3D=
+"ng-star-inserted">=D9=87=D9=88=D8=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C (Busin=
+ess Intelligence - BI)</span></strong><span class=3D"ng-star-inserted">=D8=
+=8C =D8=AF=DB=8C=DA=AF=D8=B1 =DB=8C=DA=A9 =DA=AF=D8=B2=DB=8C=D9=86=D9=87 =
+=D9=84=D9=88=DA=A9=D8=B3 =D9=86=DB=8C=D8=B3=D8=AA=D8=8C =D8=A8=D9=84=DA=A9=
+=D9=87 =DB=8C=DA=A9 =D8=B6=D8=B1=D9=88=D8=B1=D8=AA =D8=A7=D8=B3=D8=AA=D8=B1=
+=D8=A7=D8=AA=DA=98=DB=8C=DA=A9 =D8=A8=D8=B1=D8=A7=DB=8C =D8=A8=D9=82=D8=A7 =
+=D9=88 =D8=B1=D9=82=D8=A7=D8=A8=D8=AA =D8=A7=D8=B3=D8=AA. =D9=87=D9=88=D8=
+=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C=D8=8C =DB=8C=DA=A9 =D8=A7=DA=A9=D9=88=D8=
+=B3=DB=8C=D8=B3=D8=AA=D9=85 =DB=8C=DA=A9=D9=BE=D8=A7=D8=B1=DA=86=D9=87 =D8=
+=A7=D8=B2 =D9=81=D9=86=D8=A7=D9=88=D8=B1=DB=8C=E2=80=8C=D9=87=D8=A7=D8=8C =
+=D9=81=D8=B1=D8=A2=DB=8C=D9=86=D8=AF=D9=87=D8=A7 =D9=88 =D9=81=D8=B1=D9=87=
+=D9=86=DA=AF =D8=B3=D8=A7=D8=B2=D9=85=D8=A7=D9=86=DB=8C =D8=A7=D8=B3=D8=AA =
+=DA=A9=D9=87 =D9=87=D8=AF=D9=81 =D8=BA=D8=A7=DB=8C=DB=8C =D8=A2=D9=86 =D8=
+=AA=D8=A8=D8=AF=DB=8C=D9=84 =D8=A7=DB=8C=D9=86 =D8=AF=D8=A7=D8=AF=D9=87=E2=
+=80=8C=D9=87=D8=A7=DB=8C =D8=AE=D8=A7=D9=85 =D9=88 =D8=A8=DB=8C=E2=80=8C=D8=
+=B4=DA=A9=D9=84 =D8=A8=D9=87&nbsp;</span><strong class=3D"ng-star-inserted"=
+><span class=3D"ng-star-inserted">=D8=A8=DB=8C=D9=86=D8=B4=E2=80=8C=D9=87=
+=D8=A7=DB=8C =D8=B9=D9=85=D9=84=DB=8C=D8=A7=D8=AA=DB=8C (Actionable Insight=
+s)</span></strong><span class=3D"ng-star-inserted">&nbsp;=D9=88 =D8=AF=D8=
+=B1 =D9=86=D9=87=D8=A7=DB=8C=D8=AA=D8=8C&nbsp;</span><strong class=3D"ng-st=
+ar-inserted"><span class=3D"ng-star-inserted">=D8=AE=D8=B1=D8=AF =D8=B3=D8=
+=A7=D8=B2=D9=85=D8=A7=D9=86=DB=8C (Organizational Wisdom)</span></strong><s=
+pan class=3D"ng-star-inserted">&nbsp;=D8=A8=D8=B1=D8=A7=DB=8C =D8=A8=D9=87=
+=DB=8C=D9=86=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=AA=D8=B5=D9=85=DB=
+=8C=D9=85=E2=80=8C=DA=AF=DB=8C=D8=B1=DB=8C =D8=AF=D8=B1 =D8=AA=D9=85=D8=A7=
+=D9=85 =D8=B3=D8=B7=D9=88=D8=AD =D8=A7=D8=B3=D8=AA. =D8=A7=DB=8C=D9=86 =D9=
+=85=D8=B3=D8=AA=D9=86=D8=AF =D8=A8=D9=87 =DA=A9=D8=A7=D9=84=D8=A8=D8=AF=D8=
+=B4=DA=A9=D8=A7=D9=81=DB=8C =D8=B9=D9=85=DB=8C=D9=82 =D8=A7=DB=8C=D9=86 =D8=
+=AD=D9=88=D8=B2=D9=87=D8=8C =D8=A7=D8=B2 =D9=85=D8=A8=D8=A7=D9=86=DB=8C =D9=
+=86=D8=B8=D8=B1=DB=8C =D9=88 =D8=A7=D8=AC=D8=B2=D8=A7=DB=8C =D9=81=D9=86=DB=
+=8C =DA=AF=D8=B1=D9=81=D8=AA=D9=87 =D8=AA=D8=A7 =D8=AA=D8=AD=D9=84=DB=8C=D9=
+=84 =D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=DA=A9 =D8=A7=D8=A8=D8=
+=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C =D9=85=D9=88=D8=AC=D9=88=D8=AF =D9=88 =D8=
+=AA=D8=B1=D8=B3=DB=8C=D9=85 =D9=85=D8=B3=DB=8C=D8=B1 =D8=A2=DB=8C=D9=86=D8=
+=AF=D9=87=D8=8C =D9=85=DB=8C=E2=80=8C=D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=AF.<=
+/span></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 class=3D"ng-star-inserted" id=3D"id-=D9=87=D9=88=D8=B4=D8=AA=D8=AC=D8=
+=A7=D8=B1=DB=8C(BI):=D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C=D8=8C=D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=D9=85=D8=AF=D8=B1=D9=86=D9=88=D9=81=D8=
+=B1=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=
+=8C-=D8=A8=D8=AE=D8=B4=D8=A7=D9=88=D9=84:=DA=A9=D8=A7=D9=84=D8=A8=D8=AF=D8=
+=B4=DA=A9=D8=A7=D9=81=DB=8C=D9=87=D9=88=D8=B4=D8=AA=D8=AC=D8=A7=D8=B1=DB=8C=
+(BI)"><span style=3D"color: rgb(128,0,128);"><strong class=3D"ng-star-inser=
+ted"><span class=3D"ng-star-inserted">=D8=A8=D8=AE=D8=B4 =D8=A7=D9=88=D9=84=
+: =DA=A9=D8=A7=D9=84=D8=A8=D8=AF=D8=B4=DA=A9=D8=A7=D9=81=DB=8C =D9=87=D9=88=
+=D8=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C (BI)</span></strong></span></h2>
+<h3 class=3D"ng-star-inserted" id=3D"id-=D9=87=D9=88=D8=B4=D8=AA=D8=AC=D8=
+=A7=D8=B1=DB=8C(BI):=D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C=D8=8C=D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=D9=85=D8=AF=D8=B1=D9=86=D9=88=D9=81=D8=
+=B1=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=
+=8C-=DB=B1.=DB=B1.=D8=AA=D8=B9=D8=B1=DB=8C=D9=81=D9=88=D8=AA=DA=A9=D8=A7=D9=
+=85=D9=84=D9=87=D9=88=D8=B4=D8=AA=D8=AC=D8=A7=D8=B1=DB=8C"><span style=3D"c=
+olor: rgb(51,102,255);"><strong class=3D"ng-star-inserted"><span class=3D"n=
+g-star-inserted">=DB=B1.=DB=B1. =D8=AA=D8=B9=D8=B1=DB=8C=D9=81 =D9=88 =D8=
+=AA=DA=A9=D8=A7=D9=85=D9=84 =D9=87=D9=88=D8=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=
+=8C</span></strong></span></h3>
+<p class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=87=D9=88=
+=D8=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C =D8=AF=D8=B1 =D8=A8=D9=86=DB=8C=D8=A7=
+=D8=AF=DB=8C=E2=80=8C=D8=AA=D8=B1=DB=8C=D9=86 =D8=B3=D8=B7=D8=AD=D8=8C =D9=
+=81=D8=B1=D8=A2=DB=8C=D9=86=D8=AF =D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =D8=AF=D8=
+=A7=D8=AF=D9=87 =D8=A8=D9=87 =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =D9=
+=88 =D8=B3=D9=BE=D8=B3 =D8=A8=D9=87 =D8=A8=DB=8C=D9=86=D8=B4 =D8=A8=D8=B1=
+=D8=A7=DB=8C =D9=87=D8=AF=D8=A7=DB=8C=D8=AA =D8=AA=D8=B5=D9=85=DB=8C=D9=85=
+=D8=A7=D8=AA =DA=A9=D8=B3=D8=A8=E2=80=8C=D9=88=DA=A9=D8=A7=D8=B1 =D8=A7=D8=
+=B3=D8=AA. =D8=A7=D9=85=D8=A7 =D8=A7=DB=8C=D9=86 =D8=AA=D8=B9=D8=B1=DB=8C=
+=D9=81=D8=8C =D8=AA=DA=A9=D8=A7=D9=85=D9=84 =D8=AA=D8=A7=D8=B1=DB=8C=D8=AE=
+=DB=8C =D8=A7=DB=8C=D9=86 =D9=85=D9=81=D9=87=D9=88=D9=85 =D8=B1=D8=A7 =D9=
+=86=D8=A7=D8=AF=DB=8C=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=DA=AF=DB=8C=D8=B1=
+=D8=AF. =D8=B1=DB=8C=D8=B4=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C BI =D8=A8=D9=87=
+<span>&nbsp;</span></span><strong class=3D"ng-star-inserted"><span class=3D=
+"ng-star-inserted">=D8=B3=DB=8C=D8=B3=D8=AA=D9=85=E2=80=8C=D9=87=D8=A7=DB=
+=8C =D9=BE=D8=B4=D8=AA=DB=8C=D8=A8=D8=A7=D9=86 =D8=AA=D8=B5=D9=85=DB=8C=D9=
+=85 (Decision Support Systems - DSS)</span></strong><span class=3D"ng-star-=
+inserted"><span>&nbsp;</span>=D8=AF=D8=B1 =D8=AF=D9=87=D9=87=E2=80=8C=D9=87=
+=D8=A7=DB=8C =DB=B1=DB=B9=DB=B6=DB=B0 =D9=88 =DB=B1=DB=B9=DB=B7=DB=B0 =D8=
+=A8=D8=A7=D8=B2=D9=85=DB=8C=E2=80=8C=DA=AF=D8=B1=D8=AF=D8=AF. =D8=A8=D8=A7 =
+=D8=A7=DB=8C=D9=86 =D8=AD=D8=A7=D9=84=D8=8C =D8=A7=D8=B5=D8=B7=D9=84=D8=A7=
+=D8=AD "=D9=87=D9=88=D8=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C" =D8=AA=D9=88=D8=
+=B3=D8=B7 =D9=87=D9=88=D8=A7=D8=B1=D8=AF =D8=AF=D8=B1=D8=B3=D9=86=D8=B1 =D8=
+=A7=D8=B2 =D9=85=D9=88=D8=B3=D8=B3=D9=87 =DA=AF=D8=A7=D8=B1=D8=AA=D9=86=D8=
+=B1 =D8=AF=D8=B1 =D8=B3=D8=A7=D9=84 =DB=B1=DB=B9=DB=B8=DB=B9 =D8=B1=D8=A7=
+=DB=8C=D8=AC =D8=B4=D8=AF =D8=AA=D8=A7 =DA=86=D8=AA=D8=B1=DB=8C =D8=A8=D8=
+=B1=D8=A7=DB=8C =D9=BE=D9=88=D8=B4=D8=B4 =D9=85=D9=81=D8=A7=D9=87=DB=8C=D9=
+=85=DB=8C =DA=86=D9=88=D9=86 =D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D8=AF=D8=A7=D8=
+=AF=D9=87=E2=80=8C=D9=87=D8=A7=D8=8C =DA=AF=D8=B2=D8=A7=D8=B1=D8=B4=E2=80=
+=8C=DA=AF=DB=8C=D8=B1=DB=8C =D9=88 =D9=BE=D8=B1=D8=B3=E2=80=8C=D9=88=D8=AC=
+=D9=88 =D8=A8=D8=B1=D8=A7=DB=8C =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=A7=D9=86 =
+=D9=86=D9=87=D8=A7=DB=8C=DB=8C =D8=A8=D8=A7=D8=B4=D8=AF.</span></p>
+<p class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=D9=85=
+=D8=B1=D9=88=D8=B2=D9=87 =D9=87=D9=88=D8=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C =
+=D8=B1=D8=A7 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86 =D8=A8=D9=87 =D8=
+=B3=D9=87 =D8=AF=D8=B3=D8=AA=D9=87 =D8=A7=D8=B5=D9=84=DB=8C =D8=AA=D9=82=D8=
+=B3=DB=8C=D9=85 =DA=A9=D8=B1=D8=AF:</span></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">BI =D8=A7=D8=B3=D8=
+=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=DA=A9:</span></strong><span class=3D"ng-s=
+tar-inserted"><span>&nbsp;</span>=D8=AA=D9=85=D8=B1=DA=A9=D8=B2 =D8=A8=D8=
+=B1 =D8=A7=D9=87=D8=AF=D8=A7=D9=81 =D8=A8=D9=84=D9=86=D8=AF=D9=85=D8=AF=D8=
+=AA =D8=B3=D8=A7=D8=B2=D9=85=D8=A7=D9=86=D8=8C =D8=AA=D8=AD=D9=84=DB=8C=D9=
+=84 =D8=B1=D9=88=D9=86=D8=AF=D9=87=D8=A7=DB=8C =DA=A9=D9=84=D8=A7=D9=86 =D8=
+=A8=D8=A7=D8=B2=D8=A7=D8=B1=D8=8C =D9=88 =D8=B9=D9=85=D9=84=DA=A9=D8=B1=D8=
+=AF =DA=A9=D9=84=DB=8C =DA=A9=D8=B3=D8=A8=E2=80=8C=D9=88=DA=A9=D8=A7=D8=B1 =
+=D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=AF=DB=8C=D8=B1=D8=A7=D9=86 =D8=A7=D8=B1=
+=D8=B4=D8=AF (C-Level).</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">BI =D8=AA=D8=A7=DA=
+=A9=D8=AA=DB=8C=DA=A9=DB=8C:</span></strong><span class=3D"ng-star-inserted=
+"><span>&nbsp;</span>=D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D8=B9=D9=85=D9=84=DA=
+=A9=D8=B1=D8=AF =D8=AF=D9=BE=D8=A7=D8=B1=D8=AA=D9=85=D8=A7=D9=86=E2=80=8C=
+=D9=87=D8=A7 =D9=88 =D9=88=D8=A7=D8=AD=D8=AF=D9=87=D8=A7=DB=8C =DA=A9=D8=B3=
+=D8=A8=E2=80=8C=D9=88=DA=A9=D8=A7=D8=B1 =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=
+=AF=DB=8C=D8=B1=D8=A7=D9=86 =D9=85=DB=8C=D8=A7=D9=86=DB=8C =D8=AC=D9=87=D8=
+=AA =D8=A8=D9=87=DB=8C=D9=86=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D9=81=
+=D8=B1=D8=A2=DB=8C=D9=86=D8=AF=D9=87=D8=A7 =D9=88 =D8=AA=D8=AE=D8=B5=DB=8C=
+=D8=B5 =D9=85=D9=86=D8=A7=D8=A8=D8=B9.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">BI =D8=B9=D9=85=D9=
+=84=DB=8C=D8=A7=D8=AA=DB=8C:</span></strong><span class=3D"ng-star-inserted=
+"><span>&nbsp;</span>=D9=85=D8=A7=D9=86=DB=8C=D8=AA=D9=88=D8=B1=DB=8C=D9=86=
+=DA=AF =D8=A2=D9=86=DB=8C =D9=88 =D8=B1=D9=88=D8=B2=D8=A7=D9=86=D9=87 =D9=
+=81=D8=B1=D8=A2=DB=8C=D9=86=D8=AF=D9=87=D8=A7 =D9=88 =D9=81=D8=B9=D8=A7=D9=
+=84=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7 =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=AF=
+=DB=8C=D8=B1=D8=A7=D9=86 =D8=AE=D8=B7 =D9=88 =DA=A9=D8=A7=D8=B1=DA=A9=D9=86=
+=D8=A7=D9=86 =D8=B9=D9=85=D9=84=DB=8C=D8=A7=D8=AA=DB=8C (=D9=85=D8=AB=D9=84=
+=D8=A7=D9=8B=D8=8C =D9=86=D8=B8=D8=A7=D8=B1=D8=AA =D8=A8=D8=B1 =D8=AE=D8=B7=
+ =D8=AA=D9=88=D9=84=DB=8C=D8=AF =DB=8C=D8=A7 =D8=B9=D9=85=D9=84=DA=A9=D8=B1=
+=D8=AF =D9=85=D8=B1=DA=A9=D8=B2 =D8=AA=D9=85=D8=A7=D8=B3).</span></p></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" width=3D"700" src=3D"https://cdn.prod=
+.website-files.com/5ef788f07804fb7d78a4127a/61cc20621f33166101a1472a_decisi=
+on%20support%20system-min.jpeg" data-image-src=3D"https://cdn.prod.website-=
+files.com/5ef788f07804fb7d78a4127a/61cc20621f33166101a1472a_decision%20supp=
+ort%20system-min.jpeg"></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 class=3D"ng-star-inserted" id=3D"id-=D9=87=D9=88=D8=B4=D8=AA=D8=AC=D8=
+=A7=D8=B1=DB=8C(BI):=D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C=D8=8C=D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=D9=85=D8=AF=D8=B1=D9=86=D9=88=D9=81=D8=
+=B1=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=
+=8C-=DB=B1.=DB=B2.=DA=86=D8=B1=D8=AE=D9=87=D8=AD=DB=8C=D8=A7=D8=AA=D8=A7=D8=
+=B1=D8=B2=D8=B4=D8=AF=D8=A7=D8=AF=D9=87:=D8=A7=D8=B2=D8=AF=D8=A7=D8=AF=D9=
+=87=D8=AA=D8=A7=D8=AE=D8=B1=D8=AF(Data>Information>Insight>Wisdom)"><span s=
+tyle=3D"color: rgb(51,102,255);"><strong class=3D"ng-star-inserted"><span c=
+lass=3D"ng-star-inserted">=DB=B1.=DB=B2. =DA=86=D8=B1=D8=AE=D9=87 =D8=AD=DB=
+=8C=D8=A7=D8=AA =D8=A7=D8=B1=D8=B2=D8=B4 =D8=AF=D8=A7=D8=AF=D9=87: =D8=A7=
+=D8=B2 =D8=AF=D8=A7=D8=AF=D9=87 =D8=AA=D8=A7 =D8=AE=D8=B1=D8=AF (Data &gt; =
+Information &gt; Insight &gt; Wisdom)</span></strong></span></h3>
+<p class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=DB=8C=
+=D9=86 =DA=86=D8=B1=D8=AE=D9=87=D8=8C =D9=85=D8=B3=DB=8C=D8=B1 =D8=A7=D8=B1=
+=D8=B2=D8=B4=E2=80=8C=D8=A2=D9=81=D8=B1=DB=8C=D9=86=DB=8C =D8=AF=D8=B1 =D8=
+=A7=DA=A9=D9=88=D8=B3=DB=8C=D8=B3=D8=AA=D9=85 BI =D8=B1=D8=A7 =D8=A8=D9=87 =
+=D8=AA=D8=B5=D9=88=DB=8C=D8=B1 =D9=85=DB=8C=E2=80=8C=DA=A9=D8=B4=D8=AF:</sp=
+an></p>
+<ol class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=AF=D8=A7=D8=AF=
+=D9=87 (Data):</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;=
+</span>=D8=AD=D9=82=D8=A7=DB=8C=D9=82 =D8=AE=D8=A7=D9=85=D8=8C =D8=A7=DB=8C=
+=D8=B2=D9=88=D9=84=D9=87 =D9=88 =D8=A8=D8=AF=D9=88=D9=86 =D8=B2=D9=85=DB=8C=
+=D9=86=D9=87. =D9=85=D8=AC=D9=85=D9=88=D8=B9=D9=87=E2=80=8C=D8=A7=DB=8C =D8=
+=A7=D8=B2 =D8=A7=D8=B9=D8=AF=D8=A7=D8=AF=D8=8C =D9=85=D8=AA=D9=88=D9=86 =D9=
+=88 =D8=B3=DB=8C=DA=AF=D9=86=D8=A7=D9=84=E2=80=8C=D9=87=D8=A7.</span></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=85=D8=AB=D8=A7=
+=D9=84:</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=
+=D8=B1=DA=A9=D9=88=D8=B1=D8=AF =D8=AA=D8=B1=D8=A7=DA=A9=D9=86=D8=B4:<span>&=
+nbsp;</span></span><span class=3D"inline-code ng-star-inserted">(=D8=B4=D9=
+=86=D8=A7=D8=B3=D9=87 =D9=85=D8=B4=D8=AA=D8=B1=DB=8C: 105=D8=8C =DA=A9=D8=
+=AF =D9=85=D8=AD=D8=B5=D9=88=D9=84: P-882=D8=8C =D8=AA=D8=A7=D8=B1=DB=8C=D8=
+=AE: 1402/08/15=D8=8C =D9=85=D8=A8=D9=84=D8=BA: 2,500,000 =D8=B1=DB=8C=D8=
+=A7=D9=84)</span></p></li>
+</ul></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=D8=B7=D9=84=
+=D8=A7=D8=B9=D8=A7=D8=AA (Information):</span></strong><span class=3D"ng-st=
+ar-inserted"><span>&nbsp;</span>=D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=
+=A7=DB=8C =D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4=E2=80=8C=D8=B4=D8=AF=D9=87=
+=D8=8C =D8=B3=D8=A7=D8=B2=D9=85=D8=A7=D9=86=E2=80=8C=D8=AF=D9=87=DB=8C=E2=
+=80=8C=D8=B4=D8=AF=D9=87 =D9=88 =D8=AF=D8=A7=D8=B1=D8=A7=DB=8C =D8=B2=D9=85=
+=DB=8C=D9=86=D9=87. =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=D8=AA =D8=A8=D9=87=
+ =D8=B3=D8=A4=D8=A7=D9=84<span>&nbsp;</span></span><strong class=3D"ng-star=
+-inserted"><span class=3D"ng-star-inserted">"=DA=86=D9=87 =DA=86=DB=8C=D8=
+=B2=DB=8C =D8=B1=D8=AE =D8=AF=D8=A7=D8=AF=D8=9F" (What happened?)</span></s=
+trong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D9=BE=D8=A7=D8=
+=B3=D8=AE =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF.</span></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=85=D8=AB=D8=A7=
+=D9=84:</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=
+"=D9=85=D8=AC=D9=85=D9=88=D8=B9 =D9=81=D8=B1=D9=88=D8=B4 =D9=85=D8=AD=D8=B5=
+=D9=88=D9=84 P-882 =D8=AF=D8=B1 =D8=A2=D8=A8=D8=A7=D9=86 =D9=85=D8=A7=D9=87=
+ 1402 =D8=A8=D8=B1=D8=A7=D8=A8=D8=B1 =D8=A8=D8=A7 450,000,000 =D8=B1=DB=8C=
+=D8=A7=D9=84 =D8=A8=D9=88=D8=AF=D9=87 =D8=A7=D8=B3=D8=AA." =D8=AF=D8=B1 =D8=
+=A7=DB=8C=D9=86=D8=AC=D8=A7 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=
+=DB=8C =D8=AE=D8=A7=D9=85 =D8=AA=D8=AC=D9=85=DB=8C=D8=B9 =D9=88 =D8=AF=D8=
+=B1 =D8=A8=D8=B3=D8=AA=D8=B1 =D8=B2=D9=85=D8=A7=D9=86 =D9=88 =D9=85=D8=AD=
+=D8=B5=D9=88=D9=84 =D9=82=D8=B1=D8=A7=D8=B1 =DA=AF=D8=B1=D9=81=D8=AA=D9=87=
+=E2=80=8C=D8=A7=D9=86=D8=AF.</span></p></li>
+</ul></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A8=DB=8C=D9=86=
+=D8=B4 (Insight):</span></strong><span class=3D"ng-star-inserted"><span>&nb=
+sp;</span>=D8=AF=D8=B1=DA=A9 =D8=B9=D9=85=DB=8C=D9=82 =D8=AD=D8=A7=D8=B5=D9=
+=84 =D8=A7=D8=B2 =D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D8=A7=D8=B7=D9=84=D8=A7=D8=
+=B9=D8=A7=D8=AA. =D8=A8=DB=8C=D9=86=D8=B4 =D8=A8=D9=87 =D8=B3=D8=A4=D8=A7=
+=D9=84<span>&nbsp;</span></span><strong class=3D"ng-star-inserted"><span cl=
+ass=3D"ng-star-inserted">"=DA=86=D8=B1=D8=A7 =D8=B1=D8=AE =D8=AF=D8=A7=D8=
+=AF=D8=9F" (Why did it happen?)</span></strong><span class=3D"ng-star-inser=
+ted"><span>&nbsp;</span>=D9=BE=D8=A7=D8=B3=D8=AE =D9=85=DB=8C=E2=80=8C=D8=
+=AF=D9=87=D8=AF. =D8=A7=DB=8C=D9=86 =D9=85=D8=B1=D8=AD=D9=84=D9=87 =D9=86=
+=DB=8C=D8=A7=D8=B2=D9=85=D9=86=D8=AF =D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D9=87=
+=D9=85=D8=A8=D8=B3=D8=AA=DA=AF=DB=8C=D8=8C =D8=B4=D9=86=D8=A7=D8=B3=D8=A7=
+=DB=8C=DB=8C =D8=A7=D9=84=DA=AF=D9=88 =D9=88 =D8=B1=DB=8C=D8=B4=D9=87=E2=80=
+=8C=DB=8C=D8=A7=D8=A8=DB=8C =D8=A7=D8=B3=D8=AA.</span></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=85=D8=AB=D8=A7=
+=D9=84:</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=
+"=D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D9=86=D8=B4=D8=A7=D9=86 =D9=85=DB=8C=E2=80=
+=8C=D8=AF=D9=87=D8=AF =DA=A9=D9=87 80% =D8=A7=D8=B2 =D9=81=D8=B1=D9=88=D8=
+=B4 =D8=A8=D8=A7=D9=84=D8=A7=DB=8C =D9=85=D8=AD=D8=B5=D9=88=D9=84 P-882 =D8=
+=AF=D8=B1 =D8=A2=D8=A8=D8=A7=D9=86 =D9=85=D8=A7=D9=87=D8=8C =D9=86=D8=A7=D8=
+=B4=DB=8C =D8=A7=D8=B2 =D9=85=D8=B4=D8=AA=D8=B1=DB=8C=D8=A7=D9=86=DB=8C =D8=
+=A8=D9=88=D8=AF=D9=87 =D8=A7=D8=B3=D8=AA =DA=A9=D9=87 =D8=AF=D8=B1 =DA=A9=
+=D9=85=D9=BE=DB=8C=D9=86 =D8=A7=DB=8C=D9=85=DB=8C=D9=84=DB=8C =D8=AA=D8=AE=
+=D9=81=DB=8C=D9=81 20 =D8=AF=D8=B1=D8=B5=D8=AF=DB=8C =D8=B4=D8=B1=DA=A9=D8=
+=AA =DA=A9=D8=B1=D8=AF=D9=87 =D8=A8=D9=88=D8=AF=D9=86=D8=AF. =D8=A7=DB=8C=
+=D9=86 =D9=86=D8=B4=D8=A7=D9=86=E2=80=8C=D8=AF=D9=87=D9=86=D8=AF=D9=87 =D8=
+=A7=D8=AB=D8=B1=D8=A8=D8=AE=D8=B4=DB=8C =D8=A8=D8=A7=D9=84=D8=A7=DB=8C =DA=
+=A9=D9=85=D9=BE=DB=8C=D9=86 =D8=A8=D8=B1=D8=A7=DB=8C =D8=A7=DB=8C=D9=86 =D9=
+=85=D8=AD=D8=B5=D9=88=D9=84 =D8=AE=D8=A7=D8=B5 =D8=A7=D8=B3=D8=AA."</span><=
+/p></li>
+</ul></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=AE=D8=B1=D8=AF (=
+Wisdom):</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span=
+>=D8=A8=D8=A7=D9=84=D8=A7=D8=AA=D8=B1=DB=8C=D9=86 =D8=B3=D8=B7=D8=AD =D8=A7=
+=D8=B2 =D8=AF=D8=B1=DA=A9 =DA=A9=D9=87 =D8=A8=DB=8C=D9=86=D8=B4 =D8=B1=D8=
+=A7 =D8=A8=D8=A7 =D8=AA=D8=AC=D8=B1=D8=A8=D9=87=D8=8C =D9=82=D8=B6=D8=A7=D9=
+=88=D8=AA =D9=88 =D8=B2=D9=85=DB=8C=D9=86=D9=87 =D8=A7=D8=B3=D8=AA=D8=B1=D8=
+=A7=D8=AA=DA=98=DB=8C=DA=A9 =D8=AA=D8=B1=DA=A9=DB=8C=D8=A8 =D9=85=DB=8C=E2=
+=80=8C=DA=A9=D9=86=D8=AF =D8=AA=D8=A7 =D8=A8=D9=87 =D8=A8=D9=87=D8=AA=D8=B1=
+=DB=8C=D9=86 =D8=A7=D9=82=D8=AF=D8=A7=D9=85 =D9=85=D9=85=DA=A9=D9=86 =D9=85=
+=D9=86=D8=AC=D8=B1 =D8=B4=D9=88=D8=AF. =D8=AE=D8=B1=D8=AF =D8=A8=D9=87 =D8=
+=B3=D8=A4=D8=A7=D9=84<span>&nbsp;</span></span><strong class=3D"ng-star-ins=
+erted"><span class=3D"ng-star-inserted">"=DA=86=D9=87 =DA=A9=D8=A7=D8=B1=DB=
+=8C =D8=A8=D8=A7=DB=8C=D8=AF =D8=A7=D9=86=D8=AC=D8=A7=D9=85 =D8=AF=D9=87=DB=
+=8C=D9=85=D8=9F" (What should we do?)</span></strong><span class=3D"ng-star=
+-inserted"><span>&nbsp;</span>=D9=88<span>&nbsp;</span></span><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">"=D8=A8=D9=87=D8=AA=
+=D8=B1=DB=8C=D9=86 =D8=A7=D9=82=D8=AF=D8=A7=D9=85 =DA=A9=D8=AF=D8=A7=D9=85 =
+=D8=A7=D8=B3=D8=AA=D8=9F" (What is the best course of action?)</span></stro=
+ng><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D9=BE=D8=A7=D8=B3=
+=D8=AE =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF.</span></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=85=D8=AB=D8=A7=
+=D9=84:</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=
+"=D8=A8=D8=A7 =D8=AA=D9=88=D8=AC=D9=87 =D8=A8=D9=87 =D9=85=D9=88=D9=81=D9=
+=82=DB=8C=D8=AA =DA=A9=D9=85=D9=BE=DB=8C=D9=86 =D9=82=D8=A8=D9=84=DB=8C =D9=
+=88 =D8=AD=D8=A7=D8=B4=DB=8C=D9=87 =D8=B3=D9=88=D8=AF =D8=A8=D8=A7=D9=84=D8=
+=A7=DB=8C =D9=85=D8=AD=D8=B5=D9=88=D9=84 P-882=D8=8C =D8=A8=D8=A7=DB=8C=D8=
+=AF =DB=8C=DA=A9 =DA=A9=D9=85=D9=BE=DB=8C=D9=86 =D9=85=D8=B4=D8=A7=D8=A8=D9=
+=87 =D9=88 =D9=87=D8=AF=D9=81=D9=85=D9=86=D8=AF =D8=A8=D8=B1=D8=A7=DB=8C =
+=D9=85=D8=AD=D8=B5=D9=88=D9=84=D8=A7=D8=AA =D9=85=DA=A9=D9=85=D9=84 (=D9=85=
+=D8=A7=D9=86=D9=86=D8=AF Q-101) =D8=B7=D8=B1=D8=A7=D8=AD=DB=8C =DA=A9=D9=86=
+=DB=8C=D9=85=D8=8C =D8=A7=D9=85=D8=A7 =D8=A7=DB=8C=D9=86 =D8=A8=D8=A7=D8=B1=
+ =D8=A8=D8=A7 =D9=87=D8=AF=D9=81=E2=80=8C=DA=AF=D8=B0=D8=A7=D8=B1=DB=8C =D9=
+=85=D8=B4=D8=AA=D8=B1=DB=8C=D8=A7=D9=86=DB=8C =DA=A9=D9=87 =D8=AF=D8=B1 6 =
+=D9=85=D8=A7=D9=87 =DA=AF=D8=B0=D8=B4=D8=AA=D9=87 =D8=AE=D8=B1=DB=8C=D8=AF =
+=D9=86=D8=AF=D8=A7=D8=B4=D8=AA=D9=87=E2=80=8C=D8=A7=D9=86=D8=AF =D8=AA=D8=
+=A7 =D9=86=D8=B1=D8=AE =D8=A8=D8=A7=D8=B2=DA=AF=D8=B4=D8=AA =D9=85=D8=B4=D8=
+=AA=D8=B1=DB=8C =D8=B1=D8=A7 =D9=86=DB=8C=D8=B2 =D8=A7=D9=81=D8=B2=D8=A7=DB=
+=8C=D8=B4 =D8=AF=D9=87=DB=8C=D9=85."</span></p></li>
+</ul></li>
+</ol>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" width=3D"700" src=3D"https://i0.wp.co=
+m/cdn.goconqr.com/uploads/media/image/17322876/desktop_976d9df3-92c0-41a9-9=
+39b-2fe6a63e1dcb.png?resize=3D711%2C395&amp;ssl=3D1" data-image-src=3D"http=
+s://i0.wp.com/cdn.goconqr.com/uploads/media/image/17322876/desktop_976d9df3=
+-92c0-41a9-939b-2fe6a63e1dcb.png?resize=3D711%2C395&amp;ssl=3D1"></span></p=
+>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 class=3D"ng-star-inserted" id=3D"id-=D9=87=D9=88=D8=B4=D8=AA=D8=AC=D8=
+=A7=D8=B1=DB=8C(BI):=D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C=D8=8C=D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=D9=85=D8=AF=D8=B1=D9=86=D9=88=D9=81=D8=
+=B1=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=
+=8C-=DB=B1.=DB=B3.=D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C=D9=88=D8=A7=D8=AC=D8=
+=B2=D8=A7=DB=8C=D9=81=D9=86=DB=8C=DB=8C=DA=A9=D8=B3=D8=A7=D9=85=D8=A7=D9=86=
+=D9=87BI"><span style=3D"color: rgb(51,102,255);"><strong class=3D"ng-star-=
+inserted"><span class=3D"ng-star-inserted">=DB=B1.=DB=B3. =D9=85=D8=B9=D9=
+=85=D8=A7=D8=B1=DB=8C =D9=88 =D8=A7=D8=AC=D8=B2=D8=A7=DB=8C =D9=81=D9=86=DB=
+=8C =DB=8C=DA=A9 =D8=B3=D8=A7=D9=85=D8=A7=D9=86=D9=87 BI</span></strong></s=
+pan></h3>
+<p class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=DB=8C=DA=A9=
+ =D8=B3=DB=8C=D8=B3=D8=AA=D9=85 BI =DA=A9=D9=84=D8=A7=D8=B3=DB=8C=DA=A9=D8=
+=8C =D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C =DA=86=D9=86=D8=AF=D9=84=D8=A7=DB=
+=8C=D9=87=E2=80=8C=D8=A7=DB=8C =D8=AF=D8=A7=D8=B1=D8=AF =DA=A9=D9=87 =D9=87=
+=D8=B1 =D9=84=D8=A7=DB=8C=D9=87 =D9=88=D8=B8=DB=8C=D9=81=D9=87 =D9=85=D8=B4=
+=D8=AE=D8=B5=DB=8C =D8=B1=D8=A7 =D8=A8=D8=B1 =D8=B9=D9=87=D8=AF=D9=87 =D8=
+=AF=D8=A7=D8=B1=D8=AF.</span></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=84=D8=A7=DB=8C=
+=D9=87 =D9=85=D9=86=D8=A7=D8=A8=D8=B9 =D8=AF=D8=A7=D8=AF=D9=87 (Data Source=
+s Layer):</span></strong><br class=3D"ng-star-inserted"><span class=3D"ng-s=
+tar-inserted">=D8=B4=D8=A7=D9=85=D9=84 =DA=A9=D9=84=DB=8C=D9=87 =D8=B3=DB=
+=8C=D8=B3=D8=AA=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=D8=A7=D8=AE=D9=84=
+=DB=8C =D9=88 =D8=AE=D8=A7=D8=B1=D8=AC=DB=8C =DA=A9=D9=87 =D8=AF=D8=A7=D8=
+=AF=D9=87 =D8=AA=D9=88=D9=84=DB=8C=D8=AF =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=
+=D9=86=D8=AF: =D9=BE=D8=A7=DB=8C=DA=AF=D8=A7=D9=87=E2=80=8C=D9=87=D8=A7=DB=
+=8C =D8=AF=D8=A7=D8=AF=D9=87 =D8=AA=D8=B1=D8=A7=DA=A9=D9=86=D8=B4=DB=8C (OL=
+TP) =D9=85=D8=A7=D9=86=D9=86=D8=AF SQL Server =D9=88 Oracle=D8=8C =D8=B3=DB=
+=8C=D8=B3=D8=AA=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C ERP =D9=88 CRM=D8=8C =D9=
+=81=D8=A7=DB=8C=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AA=D8=AE=D8=AA (Excel,=
+ CSV)=D8=8C =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D9=88=D8=
+=A8 (Google Analytics)=D8=8C =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=
+=DB=8C =D8=B4=D8=A8=DA=A9=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A7=D8=AC=D8=
+=AA=D9=85=D8=A7=D8=B9=DB=8C =D9=88 =D8=B3=D9=86=D8=B3=D9=88=D8=B1=D9=87=D8=
+=A7=DB=8C IoT.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=84=D8=A7=DB=8C=
+=D9=87 =DB=8C=DA=A9=D9=BE=D8=A7=D8=B1=DA=86=D9=87=E2=80=8C=D8=B3=D8=A7=D8=
+=B2=DB=8C =D8=AF=D8=A7=D8=AF=D9=87 (Data Integration Layer):</span></strong=
+><br class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=DB=
+=8C=D9=86 =D9=84=D8=A7=DB=8C=D9=87=D8=8C =D9=82=D9=84=D8=A8 =D9=81=D9=86=DB=
+=8C =D8=B3=DB=8C=D8=B3=D8=AA=D9=85 =D8=A7=D8=B3=D8=AA =D9=88 =D9=88=D8=B8=
+=DB=8C=D9=81=D9=87 =D8=A7=D9=86=D8=AA=D9=82=D8=A7=D9=84 =D9=88 =D8=A2=D9=85=
+=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=AF=D8=A7=D8=AF=D9=
+=87=E2=80=8C=D9=87=D8=A7 =D8=B1=D8=A7 =D8=A8=D8=B1 =D8=B9=D9=87=D8=AF=D9=87=
+ =D8=AF=D8=A7=D8=B1=D8=AF.</span></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">ETL (Extract, Transf=
+orm, Load):</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</s=
+pan>=D9=85=D8=AF=D9=84 =DA=A9=D9=84=D8=A7=D8=B3=DB=8C=DA=A9.</span></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">Extract:</span></str=
+ong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A7=D8=B3=D8=AA=
+=D8=AE=D8=B1=D8=A7=D8=AC =D8=AF=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D9=85=D9=86=
+=D8=A7=D8=A8=D8=B9 =D9=86=D8=A7=D9=87=D9=85=DA=AF=D9=88=D9=86=D8=8C =DA=A9=
+=D9=87 =DA=86=D8=A7=D9=84=D8=B4=E2=80=8C=D9=87=D8=A7=DB=8C=DB=8C =D9=85=D8=
+=A7=D9=86=D9=86=D8=AF =D8=AF=D8=B3=D8=AA=D8=B1=D8=B3=DB=8C =D8=A8=D9=87 API=
+=D9=87=D8=A7=DB=8C =D9=85=D8=AE=D8=AA=D9=84=D9=81=D8=8C =D9=81=D8=B1=D9=85=
+=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=AA=D9=81=D8=A7=D9=88=D8=AA =D9=
+=88 =D8=AD=D8=AC=D9=85 =D8=AF=D8=A7=D8=AF=D9=87 =D8=B1=D8=A7 =D8=A8=D9=87 =
+=D9=87=D9=85=D8=B1=D8=A7=D9=87 =D8=AF=D8=A7=D8=B1=D8=AF.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">Transform:</span></s=
+trong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D9=BE=DB=8C=DA=
+=86=DB=8C=D8=AF=D9=87=E2=80=8C=D8=AA=D8=B1=DB=8C=D9=86 =D9=85=D8=B1=D8=AD=
+=D9=84=D9=87. =D8=B4=D8=A7=D9=85=D9=84<span>&nbsp;</span></span><strong cla=
+ss=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=BE=D8=A7=DA=A9=
+=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C</span></strong><span class=3D"ng-star-ins=
+erted"><span>&nbsp;</span>(=D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =D9=85=D9=
+=82=D8=A7=D8=AF=DB=8C=D8=B1 =D9=BE=D9=88=DA=86=D8=8C =D8=AD=D8=B0=D9=81 =D8=
+=AA=DA=A9=D8=B1=D8=A7=D8=B1)=D8=8C<span>&nbsp;</span></span><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=D8=B3=D8=AA=
+=D8=A7=D9=86=D8=AF=D8=A7=D8=B1=D8=AF=D8=B3=D8=A7=D8=B2=DB=8C</span></strong=
+><span class=3D"ng-star-inserted"><span>&nbsp;</span>(=DB=8C=DA=A9=D8=B3=D8=
+=A7=D9=86=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D9=88=D8=A7=D8=AD=D8=AF=D9=87=
+=D8=A7=D8=8C =D9=81=D8=B1=D9=85=D8=AA=E2=80=8C=D9=87=D8=A7)=D8=8C<span>&nbs=
+p;</span></span><strong class=3D"ng-star-inserted"><span class=3D"ng-star-i=
+nserted">=D8=BA=D9=86=DB=8C=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C</span></strong=
+><span class=3D"ng-star-inserted"><span>&nbsp;</span>(=D8=AA=D8=B1=DA=A9=DB=
+=8C=D8=A8 =D8=A8=D8=A7 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =
+=D8=AF=DB=8C=DA=AF=D8=B1 =D8=A8=D8=B1=D8=A7=DB=8C =D8=A7=D9=81=D8=B2=D9=88=
+=D8=AF=D9=86 =D8=B2=D9=85=DB=8C=D9=86=D9=87) =D9=88<span>&nbsp;</span></spa=
+n><strong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=
+=A7=D8=B9=D9=85=D8=A7=D9=84 =D9=85=D9=86=D8=B7=D9=82 =DA=A9=D8=B3=D8=A8=E2=
+=80=8C=D9=88=DA=A9=D8=A7=D8=B1</span></strong><span class=3D"ng-star-insert=
+ed"><span>&nbsp;</span>(=D9=85=D8=AD=D8=A7=D8=B3=D8=A8=D9=87 =D9=85=D8=B9=
+=DB=8C=D8=A7=D8=B1=D9=87=D8=A7=DB=8C =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=D9=87 =
+=D9=85=D8=A7=D9=86=D9=86=D8=AF =D8=AD=D8=A7=D8=B4=DB=8C=D9=87 =D8=B3=D9=88=
+=D8=AF).</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">Load:</span></strong=
+><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A8=D8=A7=D8=B1=DA=
+=AF=D8=B0=D8=A7=D8=B1=DB=8C =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=
+=DB=8C =D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4=E2=80=8C=D8=B4=D8=AF=D9=87 =D8=
+=AF=D8=B1 =D8=A7=D9=86=D8=A8=D8=A7=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87.</span></=
+p></li>
+</ul></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">ELT (Extract, Load, =
+Transform):</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</s=
+pan>=D9=85=D8=AF=D9=84 =D9=85=D8=AF=D8=B1=D9=86 =DA=A9=D9=87 =D8=A8=D8=A7 =
+=D8=B8=D9=87=D9=88=D8=B1 =D8=A7=D9=86=D8=A8=D8=A7=D8=B1=D9=87=D8=A7=DB=8C =
+=D8=AF=D8=A7=D8=AF=D9=87 =D8=A7=D8=A8=D8=B1=DB=8C =D9=82=D8=AF=D8=B1=D8=AA=
+=D9=85=D9=86=D8=AF (=D9=85=D8=A7=D9=86=D9=86=D8=AF Snowflake, BigQuery) =D9=
+=85=D8=AD=D8=A8=D9=88=D8=A8 =D8=B4=D8=AF=D9=87 =D8=A7=D8=B3=D8=AA. =D8=AF=
+=D8=B1 =D8=A7=DB=8C=D9=86 =D9=85=D8=AF=D9=84=D8=8C =D8=AF=D8=A7=D8=AF=D9=87=
+=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AE=D8=A7=D9=85 =D8=A7=D8=A8=D8=AA=D8=AF=D8=
+=A7 =D8=AF=D8=B1 =D8=A7=D9=86=D8=A8=D8=A7=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87 =
+=D8=A8=D8=A7=D8=B1=DA=AF=D8=B0=D8=A7=D8=B1=DB=8C =D8=B4=D8=AF=D9=87 =D9=88 =
+=D8=B3=D9=BE=D8=B3 =D9=81=D8=B1=D8=A2=DB=8C=D9=86=D8=AF =D8=AA=D8=A8=D8=AF=
+=DB=8C=D9=84 =D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=
+=D8=B2 =D9=82=D8=AF=D8=B1=D8=AA =D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=B4=DB=8C =
+=D8=A8=D8=A7=D9=84=D8=A7=DB=8C =D8=AE=D9=88=D8=AF =D8=A7=D9=86=D8=A8=D8=A7=
+=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87 =D8=A7=D9=86=D8=AC=D8=A7=D9=85 =D9=85=DB=8C=
+=E2=80=8C=D8=B4=D9=88=D8=AF. =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=DB=8C=DA=A9=D8=
+=B1=D8=AF =D8=A7=D9=86=D8=B9=D8=B7=D8=A7=D9=81=E2=80=8C=D9=BE=D8=B0=DB=8C=
+=D8=B1=DB=8C =D8=A8=DB=8C=D8=B4=D8=AA=D8=B1=DB=8C =D8=B1=D8=A7 =D9=81=D8=B1=
+=D8=A7=D9=87=D9=85 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF.</span></p></li>
+</ul></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=84=D8=A7=DB=8C=
+=D9=87 =D8=B0=D8=AE=DB=8C=D8=B1=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=
+=AF=D8=A7=D8=AF=D9=87 (Data Storage Layer):</span></strong></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=D9=86=D8=A8=
+=D8=A7=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87 (Data Warehouse - DWH):</span></stron=
+g><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D9=85=D8=AE=D8=B2=D9=
+=86 =D9=85=D8=B1=DA=A9=D8=B2=DB=8C =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=
+=D8=A7=DB=8C =D8=AA=D8=A7=D8=B1=DB=8C=D8=AE=DB=8C=D8=8C =DB=8C=DA=A9=D9=BE=
+=D8=A7=D8=B1=DA=86=D9=87 =D9=88 =D9=85=D9=88=D8=B6=D9=88=D8=B9=E2=80=8C=DA=
+=AF=D8=B1=D8=A7 =DA=A9=D9=87 =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D8=AD=D9=84=DB=
+=8C=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=D9=87 =
+=D8=A8=D9=87=DB=8C=D9=86=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=B4=D8=
+=AF=D9=87 =D8=A7=D8=B3=D8=AA. =D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C=E2=80=8C=
+=D9=87=D8=A7=DB=8C =D8=A7=D8=B5=D9=84=DB=8C DWH =D8=B9=D8=A8=D8=A7=D8=B1=D8=
+=AA=D9=86=D8=AF =D8=A7=D8=B2:</span></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=85=D8=AF=D9=84 I=
+nmon (Top-down):</span></strong><span class=3D"ng-star-inserted"><span>&nbs=
+p;</span>=D8=A7=D8=A8=D8=AA=D8=AF=D8=A7 =DB=8C=DA=A9 =D8=A7=D9=86=D8=A8=D8=
+=A7=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87 =D9=85=D8=AA=D9=85=D8=B1=DA=A9=D8=B2 =D9=
+=88 =D9=86=D8=B1=D9=85=D8=A7=D9=84=D8=A7=DB=8C=D8=B2=D8=B4=D8=AF=D9=87 =D8=
+=B3=D8=A7=D8=AE=D8=AA=D9=87 =D8=B4=D8=AF=D9=87 =D9=88 =D8=B3=D9=BE=D8=B3<sp=
+an>&nbsp;</span></span><strong class=3D"ng-star-inserted"><span class=3D"ng=
+-star-inserted">=D8=AF=DB=8C=D8=AA=D8=A7 =D9=85=D8=A7=D8=B1=D8=AA=E2=80=8C=
+=D9=87=D8=A7 (Data Marts)</span></strong><span class=3D"ng-star-inserted"><=
+span>&nbsp;</span>=DA=A9=D9=87 =D8=B2=DB=8C=D8=B1=D9=85=D8=AC=D9=85=D9=88=
+=D8=B9=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D9=88=D8=B6=D9=88=D8=B9=DB=
+=8C (=D9=85=D8=A7=D9=86=D9=86=D8=AF =D9=81=D8=B1=D9=88=D8=B4=D8=8C =D9=85=
+=D8=A7=D9=84=DB=8C) =D9=87=D8=B3=D8=AA=D9=86=D8=AF=D8=8C =D8=A7=D8=B2 =D8=
+=A2=D9=86 =D9=85=D8=B4=D8=AA=D9=82 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D9=86=
+=D8=AF.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=85=D8=AF=D9=84 K=
+imball (Bottom-up):</span></strong><span class=3D"ng-star-inserted"><span>&=
+nbsp;</span>=D8=A7=D8=A8=D8=AA=D8=AF=D8=A7 =D8=AF=DB=8C=D8=AA=D8=A7 =D9=85=
+=D8=A7=D8=B1=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B3=D8=AA=D8=A7=D8=B1=D9=
+=87=E2=80=8C=D8=A7=DB=8C (Star Schema) =D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=
+=AA =D9=85=D8=B3=D8=AA=D9=82=D9=84 =D9=88 =D8=B3=D8=B1=DB=8C=D8=B9 =D8=B3=
+=D8=A7=D8=AE=D8=AA=D9=87 =D8=B4=D8=AF=D9=87 =D9=88 =D8=B3=D9=BE=D8=B3 =D8=
+=A7=D8=B2 =D8=AA=D8=AC=D9=85=DB=8C=D8=B9 =D8=A2=D9=86=E2=80=8C=D9=87=D8=A7 =
+=DB=8C=DA=A9 =D8=A7=D9=86=D8=A8=D8=A7=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87 =D8=B3=
+=D8=A7=D8=B2=D9=85=D8=A7=D9=86=DB=8C =D8=B4=DA=A9=D9=84 =D9=85=DB=8C=E2=80=
+=8C=DA=AF=DB=8C=D8=B1=D8=AF.</span></p></li>
+</ul></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=AF=DB=8C=D8=AA=
+=D8=A7 =D9=85=D8=A7=D8=B1=D8=AA (Data Mart):</span></strong><span class=3D"=
+ng-star-inserted"><span>&nbsp;</span>=DB=8C=DA=A9 =D9=86=D8=B3=D8=AE=D9=87 =
+=DA=A9=D9=88=DA=86=DA=A9=E2=80=8C=D8=AA=D8=B1 =D9=88 =D9=85=D8=AA=D9=85=D8=
+=B1=DA=A9=D8=B2 =D8=A7=D8=B2 DWH =DA=A9=D9=87 =D8=A8=D8=B1=D8=A7=DB=8C =D9=
+=86=DB=8C=D8=A7=D8=B2=D9=87=D8=A7=DB=8C =DB=8C=DA=A9 =D8=AF=D9=BE=D8=A7=D8=
+=B1=D8=AA=D9=85=D8=A7=D9=86 =D8=AE=D8=A7=D8=B5 (=D9=85=D8=AB=D9=84=D8=A7=D9=
+=8B =D8=A8=D8=A7=D8=B2=D8=A7=D8=B1=DB=8C=D8=A7=D8=A8=DB=8C) =D8=B7=D8=B1=D8=
+=A7=D8=AD=DB=8C =D8=B4=D8=AF=D9=87 =D8=A7=D8=B3=D8=AA.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=AF=D8=B1=DB=8C=
+=D8=A7=DA=86=D9=87 =D8=AF=D8=A7=D8=AF=D9=87 (Data Lake):</span></strong><sp=
+an class=3D"ng-star-inserted"><span>&nbsp;</span>=D9=85=D8=AE=D8=B2=D9=86=
+=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D9=86=DA=AF=D9=87=D8=AF=D8=A7=D8=B1=DB=8C =
+=D8=AD=D8=AC=D9=85 =D8=B9=D8=B8=DB=8C=D9=85=DB=8C =D8=A7=D8=B2 =D8=AF=D8=A7=
+=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AE=D8=A7=D9=85 =D8=AF=D8=B1 =D9=
+=81=D8=B1=D9=85=D8=AA =D8=A7=D8=B5=D9=84=DB=8C =D8=AE=D9=88=D8=AF (=D8=B3=
+=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1=DB=8C=D8=A7=D9=81=D8=AA=D9=87=D8=8C =D9=86=
+=DB=8C=D9=85=D9=87=E2=80=8C=D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1=DB=8C=D8=A7=
+=D9=81=D8=AA=D9=87 =D9=88 =D8=A8=D8=AF=D9=88=D9=86 =D8=B3=D8=A7=D8=AE=D8=AA=
+=D8=A7=D8=B1). =D8=AF=D8=B1=DB=8C=D8=A7=DA=86=D9=87 =D8=AF=D8=A7=D8=AF=D9=
+=87 =D8=A7=D9=86=D8=B9=D8=B7=D8=A7=D9=81=E2=80=8C=D9=BE=D8=B0=DB=8C=D8=B1=
+=DB=8C =D8=A8=D8=A7=D9=84=D8=A7=DB=8C=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=
+=D8=AD=D9=84=DB=8C=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A7=DA=A9=D8=AA=D8=
+=B4=D8=A7=D9=81=DB=8C =D9=88 =D8=B9=D9=84=D9=85 =D8=AF=D8=A7=D8=AF=D9=87 =
+=D9=81=D8=B1=D8=A7=D9=87=D9=85 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF =D8=
+=A7=D9=85=D8=A7 =D8=B1=DB=8C=D8=B3=DA=A9 =D8=AA=D8=A8=D8=AF=DB=8C=D9=84 =D8=
+=B4=D8=AF=D9=86 =D8=A8=D9=87 "=D8=A8=D8=A7=D8=AA=D9=84=D8=A7=D9=82 =D8=AF=
+=D8=A7=D8=AF=D9=87" (Data Swamp) =D8=B1=D8=A7 =D9=86=DB=8C=D8=B2 =D8=AF=D8=
+=A7=D8=B1=D8=AF.</span></p></li>
+</ul></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=84=D8=A7=DB=8C=
+=D9=87 =D9=85=D8=AF=D9=84=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D9=88 =D8=A7=D8=
+=B1=D8=A7=D8=A6=D9=87 (Modeling &amp; Presentation Layer):</span></strong><=
+br class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=DB=8C=
+=D9=86 =D9=84=D8=A7=DB=8C=D9=87 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=
+=A7=DB=8C =D9=81=D9=86=DB=8C =D8=B1=D8=A7 =D8=A8=D9=87 =D9=85=D9=81=D8=A7=
+=D9=87=DB=8C=D9=85 =D9=82=D8=A7=D8=A8=D9=84 =D9=81=D9=87=D9=85 =D8=A8=D8=B1=
+=D8=A7=DB=8C =DA=A9=D8=B3=D8=A8=E2=80=8C=D9=88=DA=A9=D8=A7=D8=B1 =D8=AA=D8=
+=A8=D8=AF=DB=8C=D9=84 =DA=A9=D8=B1=D8=AF=D9=87 =D9=88 =D8=A8=D9=87 =D8=AA=
+=D8=B5=D9=88=DB=8C=D8=B1 =D9=85=DB=8C=E2=80=8C=DA=A9=D8=B4=D8=AF.</span></p=
+>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=84=D8=A7=DB=8C=
+=D9=87 =D9=85=D8=B9=D9=86=D8=A7=DB=8C=DB=8C (Semantic Layer):</span></stron=
+g><span class=3D"ng-star-inserted"><span>&nbsp;</span>=DB=8C=DA=A9 =D9=84=
+=D8=A7=DB=8C=D9=87 =D9=85=DB=8C=D8=A7=D9=86=DB=8C =DA=A9=D9=87 =D9=BE=DB=8C=
+=DA=86=DB=8C=D8=AF=DA=AF=DB=8C=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B3=D8=A7=D8=
+=AE=D8=AA=D8=A7=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87 =D8=B1=D8=A7 =D8=A7=D8=B2 =
+=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1 =D9=86=D9=87=D8=A7=DB=8C=DB=8C =D9=BE=D9=86=
+=D9=87=D8=A7=D9=86 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF. =D8=A7=DB=8C=D9=
+=86 =D9=84=D8=A7=DB=8C=D9=87 =D8=AC=D8=AF=D8=A7=D9=88=D9=84 =D9=88 =D9=81=
+=DB=8C=D9=84=D8=AF=D9=87=D8=A7 =D8=B1=D8=A7 =D8=A8=D9=87 =D8=B9=D8=A8=D8=A7=
+=D8=B1=D8=A7=D8=AA =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C =D9=85=D8=A7=D9=86=D9=86=
+=D8=AF "=D8=AF=D8=B1=D8=A2=D9=85=D8=AF"=D8=8C "=D9=85=D8=B4=D8=AA=D8=B1=DB=
+=8C" =D9=88 "=D9=85=D9=86=D8=B7=D9=82=D9=87 =D8=AC=D8=BA=D8=B1=D8=A7=D9=81=
+=DB=8C=D8=A7=DB=8C=DB=8C" =D8=AA=D8=B1=D8=AC=D9=85=D9=87 =D9=85=DB=8C=E2=80=
+=8C=DA=A9=D9=86=D8=AF (=D9=85=D8=AB=D9=84=D8=A7=D9=8B Universe =D8=AF=D8=B1=
+ SAP BO =DB=8C=D8=A7 RPD =D8=AF=D8=B1 Oracle BI).</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=DA=AF=D8=B2=D8=A7=
+=D8=B1=D8=B4=E2=80=8C=D8=B3=D8=A7=D8=B2=D9=87=D8=A7 (Reporting Tools):</spa=
+n></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A8=D8=B1=
+=D8=A7=DB=8C =D8=AA=D9=88=D9=84=DB=8C=D8=AF =DA=AF=D8=B2=D8=A7=D8=B1=D8=B4=
+=E2=80=8C=D9=87=D8=A7=DB=8C<span>&nbsp;</span></span><strong class=3D"ng-st=
+ar-inserted"><span class=3D"ng-star-inserted">=D8=A7=DB=8C=D8=B3=D8=AA=D8=
+=A7 (Static)</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</=
+span>=D9=88 =D9=BE=DB=8C=DA=A9=D8=B3=D9=84=DB=8C (Pixel-perfect) =D9=85=D8=
+=A7=D9=86=D9=86=D8=AF =D9=81=D8=A7=DA=A9=D8=AA=D9=88=D8=B1=D9=87=D8=A7 =DB=
+=8C=D8=A7 =D8=B5=D9=88=D8=B1=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=A7=
+=D9=84=DB=8C (=D9=85=D8=AB=D8=A7=D9=84: Crystal Reports, SSRS).</span></p><=
+/li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=AF=D8=A7=D8=B4=
+=D8=A8=D9=88=D8=B1=D8=AF=D9=87=D8=A7 (Dashboards):</span></strong><span cla=
+ss=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=
+=D9=87=D8=A7=DB=8C =D8=AA=D8=AC=D8=B3=D9=85=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=
+=8C =D8=AA=D8=B9=D8=A7=D9=85=D9=84=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=
+=A7=D9=86=DB=8C=D8=AA=D9=88=D8=B1=DB=8C=D9=86=DA=AF<span>&nbsp;</span></spa=
+n><strong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=
+=B4=D8=A7=D8=AE=D8=B5=E2=80=8C=D9=87=D8=A7=DB=8C =DA=A9=D9=84=DB=8C=D8=AF=
+=DB=8C =D8=B9=D9=85=D9=84=DA=A9=D8=B1=D8=AF (KPIs)</span></strong><span cla=
+ss=3D"ng-star-inserted">. =D8=AF=D8=A7=D8=B4=D8=A8=D9=88=D8=B1=D8=AF=D9=87=
+=D8=A7 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=D9=86=D8=AF =D8=A7=D8=
+=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=DA=A9 (=D8=A8=D8=B1=D8=A7=DB=8C =D9=
+=85=D8=AF=DB=8C=D8=B1=D8=A7=D9=86 =D8=A7=D8=B1=D8=B4=D8=AF)=D8=8C =D8=AA=D8=
+=AD=D9=84=DB=8C=D9=84=DB=8C (=D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D8=AD=D9=84=DB=
+=8C=D9=84=E2=80=8C=DA=AF=D8=B1=D8=A7=D9=86) =DB=8C=D8=A7 =D8=B9=D9=85=D9=84=
+=DB=8C=D8=A7=D8=AA=DB=8C (=D8=A8=D8=B1=D8=A7=DB=8C =DA=A9=D8=A7=D8=B1=DA=A9=
+=D9=86=D8=A7=D9=86 =D8=AE=D8=B7 =D9=85=D9=82=D8=AF=D9=85) =D8=A8=D8=A7=D8=
+=B4=D9=86=D8=AF. =DB=8C=DA=A9 KPI =D9=85=D8=A4=D8=AB=D8=B1 =D8=A8=D8=A7=DB=
+=8C=D8=AF<span>&nbsp;</span></span><strong class=3D"ng-star-inserted"><span=
+ class=3D"ng-star-inserted">SMART</span></strong><span class=3D"ng-star-ins=
+erted"><span>&nbsp;</span>=D8=A8=D8=A7=D8=B4=D8=AF: Specific (=D9=85=D8=B4=
+=D8=AE=D8=B5)=D8=8C Measurable (=D9=82=D8=A7=D8=A8=D9=84 =D8=A7=D9=86=D8=AF=
+=D8=A7=D8=B2=D9=87=E2=80=8C=DA=AF=DB=8C=D8=B1=DB=8C)=D8=8C Achievable (=D8=
+=AF=D8=B3=D8=AA=E2=80=8C=DB=8C=D8=A7=D9=81=D8=AA=D9=86=DB=8C)=D8=8C Relevan=
+t (=D9=85=D8=B1=D8=AA=D8=A8=D8=B7) =D9=88 Time-bound (=D8=B2=D9=85=D8=A7=D9=
+=86=E2=80=8C=D8=A8=D9=86=D8=AF=DB=8C =D8=B4=D8=AF=D9=87).</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=D8=A8=D8=B2=
+=D8=A7=D8=B1=D9=87=D8=A7=DB=8C =D8=AA=D8=AD=D9=84=DB=8C=D9=84 Ad-Hoc:</span=
+></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=DB=8C =DA=A9=D9=87 =D8=A8=D9=87 =DA=A9=
+=D8=A7=D8=B1=D8=A8=D8=B1=D8=A7=D9=86 =D8=A7=D8=AC=D8=A7=D8=B2=D9=87 =D9=85=
+=DB=8C=E2=80=8C=D8=AF=D9=87=D9=86=D8=AF =D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=
+=AA =D8=A2=D8=B2=D8=A7=D8=AF=D8=A7=D9=86=D9=87 =D9=88 =D8=A8=D8=AF=D9=88=D9=
+=86 =DA=AF=D8=B2=D8=A7=D8=B1=D8=B4=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A7=D8=B2 =
+=D9=BE=DB=8C=D8=B4 =D8=AA=D8=B9=D8=B1=DB=8C=D9=81=E2=80=8C=D8=B4=D8=AF=D9=
+=87=D8=8C =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7 =D8=B1=D8=A7 =DA=A9=
+=D8=A7=D9=88=D8=B4 =DA=A9=D8=B1=D8=AF=D9=87 =D9=88 =D8=A8=D9=87 =D8=B3=D8=
+=A4=D8=A7=D9=84=D8=A7=D8=AA =D8=AE=D9=88=D8=AF =D9=BE=D8=A7=D8=B3=D8=AE =D8=
+=AF=D9=87=D9=86=D8=AF.</span></p></li>
+</ul></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=86=D9=82=D8=B4=
+=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A7=D9=86=D8=B3=D8=A7=D9=86=DB=8C =D8=AF=D8=
+=B1 =D8=A7=DA=A9=D9=88=D8=B3=DB=8C=D8=B3=D8=AA=D9=85 BI:</span></strong></p=
+>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=AA=D9=88=D8=B3=
+=D8=B9=D9=87=E2=80=8C=D8=AF=D9=87=D9=86=D8=AF=D9=87 BI (BI Developer):</spa=
+n></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D9=85=D8=AA=
+=D8=AE=D8=B5=D8=B5 =D9=81=D9=86=DB=8C =DA=A9=D9=87 =D9=85=D8=B3=D8=A6=D9=88=
+=D9=84=DB=8C=D8=AA =D8=B7=D8=B1=D8=A7=D8=AD=DB=8C =D9=88 =D9=BE=DB=8C=D8=A7=
+=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D9=81=D8=B1=D8=A2=DB=8C=D9=
+=86=D8=AF=D9=87=D8=A7=DB=8C ETL=D8=8C =D8=A7=D9=86=D8=A8=D8=A7=D8=B1 =D8=AF=
+=D8=A7=D8=AF=D9=87 =D9=88 =DA=AF=D8=B2=D8=A7=D8=B1=D8=B4=E2=80=8C=D9=87=D8=
+=A7=DB=8C =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=D9=87 =D8=B1=D8=A7 =D8=A8=D8=B1 =
+=D8=B9=D9=87=D8=AF=D9=87 =D8=AF=D8=A7=D8=B1=D8=AF.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=AA=D8=AD=D9=84=
+=DB=8C=D9=84=E2=80=8C=DA=AF=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87 (Data Analyst):<=
+/span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D9=BE=
+=D9=84=DB=8C =D9=85=DB=8C=D8=A7=D9=86 =D8=AF=D9=86=DB=8C=D8=A7=DB=8C =D9=81=
+=D9=86=DB=8C =D9=88 =DA=A9=D8=B3=D8=A8=E2=80=8C=D9=88=DA=A9=D8=A7=D8=B1. =
+=D8=A7=DB=8C=D9=86 =D9=81=D8=B1=D8=AF =D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=
+=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=
+=DB=8C BI=D8=8C =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7 =D8=B1=D8=A7 =
+=D8=AA=D8=AD=D9=84=DB=8C=D9=84 =DA=A9=D8=B1=D8=AF=D9=87=D8=8C =D8=A7=D9=84=
+=DA=AF=D9=88=D9=87=D8=A7 =D8=B1=D8=A7 =DA=A9=D8=B4=D9=81 =D9=88 =D9=86=D8=
+=AA=D8=A7=DB=8C=D8=AC =D8=B1=D8=A7 =D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=AA =
+=D8=AF=D8=A7=D8=B3=D8=AA=D8=A7=D9=86=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=D8=
+=A7=D8=AF=D9=87 (Data Stories) =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=AF=DB=8C=
+=D8=B1=D8=A7=D9=86 =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D9=85=DB=8C=E2=80=8C=DA=
+=A9=D9=86=D8=AF.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=DA=A9=D8=A7=D8=B1=
+=D8=A8=D8=B1 =DA=A9=D8=B3=D8=A8=E2=80=8C=D9=88=DA=A9=D8=A7=D8=B1 (Business =
+User):</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=
+=D9=85=D8=B5=D8=B1=D9=81=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF=D9=87 =D9=86=D9=
+=87=D8=A7=DB=8C=DB=8C =D8=AF=D8=A7=D8=B4=D8=A8=D9=88=D8=B1=D8=AF=D9=87=D8=
+=A7 =D9=88 =DA=AF=D8=B2=D8=A7=D8=B1=D8=B4=E2=80=8C=D9=87=D8=A7 =DA=A9=D9=87=
+ =D8=A7=D8=B2 =D8=AE=D8=B1=D9=88=D8=AC=DB=8C=E2=80=8C=D9=87=D8=A7=DB=8C BI =
+=D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D8=B5=D9=85=DB=8C=D9=85=E2=80=8C=DA=AF=DB=
+=8C=D8=B1=DB=8C=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B1=D9=88=D8=B2=D9=85=D8=B1=
+=D9=87 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=DA=
+=A9=D9=86=D8=AF.</span></p></li>
+</ul></li>
+</ul>
+<hr class=3D"ng-star-inserted">
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" alt=3D"Business Intelligence Architec=
+ture" width=3D"700" src=3D"https://www.tutorialspoint.com/business-intellig=
+ence/images/architecture3.jpg" data-image-src=3D"https://www.tutorialspoint=
+.com/business-intelligence/images/architecture3.jpg"></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 class=3D"ng-star-inserted" id=3D"id-=D9=87=D9=88=D8=B4=D8=AA=D8=AC=D8=
+=A7=D8=B1=DB=8C(BI):=D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C=D8=8C=D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=D9=85=D8=AF=D8=B1=D9=86=D9=88=D9=81=D8=
+=B1=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=
+=8C-=D8=A8=D8=AE=D8=B4=D8=AF=D9=88=D9=85:=D8=AA=D8=AD=D9=84=DB=8C=D9=84=D9=
+=85=D9=82=D8=A7=DB=8C=D8=B3=D9=87=E2=80=8C=D8=A7=DB=8C=D8=B9=D9=85=DB=8C=D9=
+=82=D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8CBI=D9=88=D8=B4=D9=86=D8=
+=A7=D8=B3=D8=A7=DB=8C=DB=8C=D9=81=D8=B1=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=
+=8C=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=8C"><span style=3D"color: rgb(128,0,12=
+8);"><strong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=
+=D8=A8=D8=AE=D8=B4 =D8=AF=D9=88=D9=85: =D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D9=
+=85=D9=82=D8=A7=DB=8C=D8=B3=D9=87=E2=80=8C=D8=A7=DB=8C =D8=B9=D9=85=DB=8C=
+=D9=82 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C BI =D9=88 =D8=B4=D9=
+=86=D8=A7=D8=B3=D8=A7=DB=8C=DB=8C =D9=81=D8=B1=D8=B5=D8=AA=E2=80=8C=D9=87=
+=D8=A7=DB=8C =D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=8C</span></strong></span></h=
+2>
+<p class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=87=D8=AF=
+=D9=81 =D8=A7=D8=B2 =D8=A7=DB=8C=D9=86 =D8=A8=D8=AE=D8=B4=D8=8C =D9=85=D9=
+=82=D8=A7=DB=8C=D8=B3=D9=87 =D8=B9=D9=85=D9=84=DA=A9=D8=B1=D8=AF=D8=8C =D9=
+=85=D8=B2=D8=A7=DB=8C=D8=A7 =D9=88 =D9=85=D8=B9=D8=A7=DB=8C=D8=A8 =DA=86=D9=
+=86=D8=AF =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1 =D9=BE=DB=8C=D8=B4=D8=B1=D9=88 =D8=
+=AF=D8=B1 =D8=A8=D8=A7=D8=B2=D8=A7=D8=B1 =D9=88 =D8=B4=D9=86=D8=A7=D8=B3=D8=
+=A7=DB=8C=DB=8C =D9=86=D9=82=D8=A7=D8=B7 =D8=B6=D8=B9=D9=81 =D9=85=D8=B4=D8=
+=AA=D8=B1=DA=A9 =D8=A2=D9=86=E2=80=8C=D9=87=D8=A7 =D8=A7=D8=B3=D8=AA =DA=A9=
+=D9=87 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=B2=D9=85=DB=
+=8C=D9=86=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2 =D8=AA=D9=88=D8=B3=D8=B9=D9=87 =
+=D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AC=D8=
+=AF=DB=8C=D8=AF =D8=A8=D8=A7=D8=B4=D8=AF.</span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" width=3D"700" src=3D"https://www.tech=
+target.com/rms/onlineImages/sCM_Power-BI-Preview_mobile.png" data-image-src=
+=3D"https://www.techtarget.com/rms/onlineImages/sCM_Power-BI-Preview_mobile=
+.png"></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable" style=3D"text-align: right;directi=
+on: rtl;margin-left: auto;">
+<tbody style=3D"direction: rtl;text-align: right;">
+<tr style=3D"direction: rtl;text-align: right;">
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong><span class=3D"ng-star-inserted">=D9=86=D8=A7=D9=85 =D8=A7=D8=A8=D8=B2=
+=D8=A7=D8=B1</span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong><span class=3D"ng-star-inserted">=D8=AF=D8=B3=D8=AA=D9=87=E2=80=8C=D8=
+=A8=D9=86=D8=AF=DB=8C</span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong><span class=3D"ng-star-inserted">=D8=B9=D9=85=D9=84=DA=A9=D8=B1=D8=AF =
+=D8=A7=D8=B5=D9=84=DB=8C</span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong><span class=3D"ng-star-inserted">=D9=85=D8=B2=D8=A7=DB=8C=D8=A7 (Pros)<=
+/span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong><span class=3D"ng-star-inserted">=D9=85=D8=B9=D8=A7=DB=8C=D8=A8 (Cons)<=
+/span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=86=D9=
+=82=D8=B7=D9=87 =D8=B6=D8=B9=D9=81 =DA=A9=D9=84=DB=8C=D8=AF=DB=8C / =D9=81=
+=D8=B1=D8=B5=D8=AA =D8=A8=D8=B1=D8=A7=DB=8C =D9=86=D9=88=D8=A2=D9=88=D8=B1=
+=DB=8C</span></strong></td>
+</tr>
+<tr style=3D"direction: rtl;text-align: right;">
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">Microsoft P=
+ower BI</span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D8=BA=D9=88=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =
+=D9=85=D8=AF=D8=B1=D9=86</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D9=BE=D9=84=D8=AA=D9=81=D8=B1=D9=85 =DA=A9=D8=
+=A7=D9=85=D9=84 BI: =D8=A7=D8=B2 =D8=A7=D8=AA=D8=B5=D8=A7=D9=84 =D9=88 =D9=
+=BE=D8=A7=DA=A9=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=AF=D8=A7=D8=AF=D9=87 (=
+Power Query) =D8=AA=D8=A7 =D9=85=D8=AF=D9=84=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=
+=8C (DAX) =D9=88 =D8=B3=D8=A7=D8=AE=D8=AA =D8=AF=D8=A7=D8=B4=D8=A8=D9=88=D8=
+=B1=D8=AF=D9=87=D8=A7=DB=8C =D8=AA=D8=B9=D8=A7=D9=85=D9=84=DB=8C.</span></t=
+d>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D9=87=D8=B2=DB=8C=D9=86=D9=87 =D8=A8=
+=D8=B3=DB=8C=D8=A7=D8=B1 =D9=BE=D8=A7=DB=8C=DB=8C=D9=86 (=D8=B1=D8=A7=DB=8C=
+=DA=AF=D8=A7=D9=86 =D8=A8=D9=88=D8=AF=D9=86 =D9=86=D8=B3=D8=AE=D9=87 =D8=AF=
+=D8=B3=DA=A9=D8=AA=D8=A7=D9=BE)</span><span class=3D"ng-star-inserted">&lt;=
+br&gt;</span><span class=3D"ng-star-inserted">=DB=B2. =DB=8C=D8=A7=D8=AF=DA=
+=AF=DB=8C=D8=B1=DB=8C =D8=A2=D8=B3=D8=A7=D9=86 =D8=A8=D8=B1=D8=A7=DB=8C =D8=
+=B4=D8=B1=D9=88=D8=B9</span><span class=3D"ng-star-inserted">&lt;br&gt;</sp=
+an><span class=3D"ng-star-inserted">=DB=B3. =D8=AC=D8=A7=D9=85=D8=B9=D9=87 =
+=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=DB=8C =D8=B9=D8=B8=DB=8C=D9=85 =D9=88 =D9=85=
+=D9=86=D8=A7=D8=A8=D8=B9 =D8=A2=D9=85=D9=88=D8=B2=D8=B4=DB=8C =D9=81=D8=B1=
+=D8=A7=D9=88=D8=A7=D9=86</span><span class=3D"ng-star-inserted">&lt;br&gt;<=
+/span><span class=3D"ng-star-inserted">=DB=B4. =DB=8C=DA=A9=D9=BE=D8=A7=D8=
+=B1=DA=86=DA=AF=DB=8C =D8=A8=DB=8C=E2=80=8C=D9=86=D8=B8=DB=8C=D8=B1 =D8=A8=
+=D8=A7 =D8=A7=DA=A9=D9=88=D8=B3=DB=8C=D8=B3=D8=AA=D9=85 =D9=85=D8=A7=DB=8C=
+=DA=A9=D8=B1=D9=88=D8=B3=D8=A7=D9=81=D8=AA</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D8=B2=D8=A8=D8=A7=D9=86 DAX =D8=A8=D8=
+=B1=D8=A7=DB=8C =D9=85=D8=AD=D8=A7=D8=B3=D8=A8=D8=A7=D8=AA =D9=BE=DB=8C=DA=
+=86=DB=8C=D8=AF=D9=87=D8=8C =D9=85=D9=86=D8=AD=D9=86=DB=8C =DB=8C=D8=A7=D8=
+=AF=DA=AF=DB=8C=D8=B1=DB=8C =D8=AA=D9=86=D8=AF=DB=8C =D8=AF=D8=A7=D8=B1=D8=
+=AF.</span><span class=3D"ng-star-inserted">&lt;br&gt;</span><span class=3D=
+"ng-star-inserted">=DB=B2. =D8=A7=D9=86=D8=B9=D8=B7=D8=A7=D9=81=E2=80=8C=D9=
+=BE=D8=B0=DB=8C=D8=B1=DB=8C =D8=AF=D8=B1 =D8=B7=D8=B1=D8=A7=D8=AD=DB=8C =D8=
+=A8=D8=B5=D8=B1=DB=8C =DA=A9=D9=85=D8=AA=D8=B1 =D8=A7=D8=B2 Tableau =D8=A7=
+=D8=B3=D8=AA.</span><span class=3D"ng-star-inserted">&lt;br&gt;</span><span=
+ class=3D"ng-star-inserted">=DB=B3. =D9=88=D8=A7=D8=A8=D8=B3=D8=AA=DA=AF=DB=
+=8C =D8=B2=DB=8C=D8=A7=D8=AF =D8=A8=D9=87 =D9=85=D8=AD=DB=8C=D8=B7 =D9=88=
+=DB=8C=D9=86=D8=AF=D9=88=D8=B2 =D8=A8=D8=B1=D8=A7=DB=8C =D9=86=D8=B3=D8=AE=
+=D9=87 =D8=AF=D8=B3=DA=A9=D8=AA=D8=A7=D9=BE.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=B4=DA=
+=A9=D8=A7=D9=81 =D8=AF=D8=B1 =D8=B3=D8=A7=D8=AF=DA=AF=DB=8C =D9=85=D8=AD=D8=
+=A7=D8=B3=D8=A8=D8=A7=D8=AA:</span></strong><span class=3D"ng-star-inserted=
+"><span>&nbsp;</span>=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=A7=D9=86 =D8=A7=D8=
+=B2 =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=DA=AF=DB=8C DAX =D9=81=D8=B1=D8=A7=D8=B1=
+=DB=8C =D9=87=D8=B3=D8=AA=D9=86=D8=AF.<span>&nbsp;</span></span><strong cla=
+ss=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=81=D8=B1=D8=B5=
+=D8=AA:</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=
+=D8=B3=D8=A7=D8=AE=D8=AA =DB=8C=DA=A9 =D9=85=D9=88=D8=AA=D9=88=D8=B1 =D9=85=
+=D8=AD=D8=A7=D8=B3=D8=A8=D8=A7=D8=AA=DB=8C =D9=87=D9=88=D8=B4=D9=85=D9=86=
+=D8=AF =DA=A9=D9=87 =D8=B2=D8=A8=D8=A7=D9=86 =D8=B7=D8=A8=DB=8C=D8=B9=DB=8C=
+ =D8=B1=D8=A7 =D8=A8=D9=87 =D9=81=D8=B1=D9=85=D9=88=D9=84=E2=80=8C=D9=87=D8=
+=A7=DB=8C =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=D9=87 =D8=AA=D8=A8=D8=AF=DB=8C=D9=
+=84 =DA=A9=D9=86=D8=AF =DB=8C=D8=A7 =DB=8C=DA=A9 =D8=B1=D8=A7=D8=A8=D8=B7 =
+=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=DB=8C =DA=AF=D8=B1=D8=A7=D9=81=DB=8C=DA=A9=
+=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=B3=D8=A7=D8=AE=D8=AA =D9=85=D8=AD=D8=A7=
+=D8=B3=D8=A8=D8=A7=D8=AA =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D8=AF=D9=87=D8=AF.=
+</span></td>
+</tr>
+<tr style=3D"direction: rtl;text-align: right;">
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">Tableau</sp=
+an></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D8=BA=D9=88=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =
+=D9=85=D8=AF=D8=B1=D9=86</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D8=AA=D9=85=D8=B1=DA=A9=D8=B2 =D8=A8=D8=B1 =
+=D8=A8=D8=B5=D8=B1=DB=8C=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=AF=D8=A7=D8=
+=AF=D9=87 (Data Visualization) =D9=88 =D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D8=A7=
+=DA=A9=D8=AA=D8=B4=D8=A7=D9=81=DB=8C. =D8=A7=DB=8C=D8=AC=D8=A7=D8=AF =D8=AF=
+=D8=A7=D8=B4=D8=A8=D9=88=D8=B1=D8=AF=D9=87=D8=A7=DB=8C =D8=A8=D8=B3=DB=8C=
+=D8=A7=D8=B1 =D8=B2=DB=8C=D8=A8=D8=A7 =D9=88 =D8=AA=D8=B9=D8=A7=D9=85=D9=84=
+=DB=8C.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D8=A8=D9=87=D8=AA=D8=B1=DB=8C=D9=86 =
+=D8=AF=D8=B1 =DA=A9=D9=84=D8=A7=D8=B3 =D8=A8=D8=B5=D8=B1=DB=8C=E2=80=8C=D8=
+=B3=D8=A7=D8=B2=DB=8C =D9=88 =D8=B7=D8=B1=D8=A7=D8=AD=DB=8C</span><span cla=
+ss=3D"ng-star-inserted">&lt;br&gt;</span><span class=3D"ng-star-inserted">=
+=DB=B2. =D8=B1=D8=A7=D8=A8=D8=B7 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=DB=8C =D8=
+=A8=D8=B3=DB=8C=D8=A7=D8=B1 =D8=B1=D9=88=D8=A7=D9=86 =D9=88 =D8=B4=D9=87=D9=
+=88=D8=AF=DB=8C (=D8=AD=D8=B3 "=D8=AC=D8=B1=DB=8C=D8=A7=D9=86 =DA=A9=D8=A7=
+=D8=B1")</span><span class=3D"ng-star-inserted">&lt;br&gt;</span><span clas=
+s=3D"ng-star-inserted">=DB=B3. =D8=AC=D8=A7=D9=85=D8=B9=D9=87 =DA=A9=D8=A7=
+=D8=B1=D8=A8=D8=B1=DB=8C =D9=88=D9=81=D8=A7=D8=AF=D8=A7=D8=B1 =D9=88 =D8=AE=
+=D9=84=D8=A7=D9=82 (Tableau Public)</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D9=87=D8=B2=DB=8C=D9=86=D9=87 =D8=A8=
+=D8=B3=DB=8C=D8=A7=D8=B1 =D8=A8=D8=A7=D9=84=D8=A7</span><span class=3D"ng-s=
+tar-inserted">&lt;br&gt;</span><span class=3D"ng-star-inserted">=DB=B2. =D8=
+=A8=D8=AE=D8=B4 =D8=A2=D9=85=D8=A7=D8=AF=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=
+=DB=8C =D8=AF=D8=A7=D8=AF=D9=87 (Tableau Prep) =D8=A8=D9=87 =D8=A7=D9=86=D8=
+=AF=D8=A7=D8=B2=D9=87 Power Query =DB=8C=DA=A9=D9=BE=D8=A7=D8=B1=DA=86=D9=
+=87 =D9=88 =D9=82=D8=AF=D8=B1=D8=AA=D9=85=D9=86=D8=AF =D9=86=DB=8C=D8=B3=D8=
+=AA.</span><span class=3D"ng-star-inserted">&lt;br&gt;</span><span class=3D=
+"ng-star-inserted">=DB=B3. =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=AF=DB=8C=D8=
+=B1=DB=8C=D8=AA =D9=85=D8=AA=D9=85=D8=B1=DA=A9=D8=B2 =D9=85=D9=86=D8=B7=D9=
+=82 =DA=A9=D8=B3=D8=A8=E2=80=8C=D9=88=DA=A9=D8=A7=D8=B1=D8=8C =D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1 =D8=A7=DB=8C=D8=AF=D9=87=E2=80=8C=D8=A2=D9=84=DB=8C =D9=
+=86=DB=8C=D8=B3=D8=AA.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=B4=DA=
+=A9=D8=A7=D9=81 =D8=AF=D8=B1 =D9=82=DB=8C=D9=85=D8=AA =D9=88 =DB=8C=DA=A9=
+=D9=BE=D8=A7=D8=B1=DA=86=DA=AF=DB=8C:</span></strong><span class=3D"ng-star=
+-inserted"><span>&nbsp;</span>=D9=87=D8=B2=DB=8C=D9=86=D9=87=D8=8C =D8=A8=
+=D8=B2=D8=B1=DA=AF=D8=AA=D8=B1=DB=8C=D9=86 =D9=85=D8=A7=D9=86=D8=B9 =D9=88=
+=D8=B1=D9=88=D8=AF =D8=A7=D8=B3=D8=AA.<span>&nbsp;</span></span><strong cla=
+ss=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=81=D8=B1=D8=B5=
+=D8=AA:</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=
+=D8=B3=D8=A7=D8=AE=D8=AA =DB=8C=DA=A9 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1 =D8=A8=
+=D8=A7 =D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D8=
+=A8=D8=B5=D8=B1=DB=8C Tableau =D8=A7=D9=85=D8=A7 =D8=A8=D8=A7 =D9=85=D8=AF=
+=D9=84 =D9=82=DB=8C=D9=85=D8=AA=E2=80=8C=DA=AF=D8=B0=D8=A7=D8=B1=DB=8C Powe=
+r BI. =DB=8C=D8=A7 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=DB=8C =DA=A9=D9=87 =D9=82=
+=D8=AF=D8=B1=D8=AA =D8=A8=D8=B5=D8=B1=DB=8C Tableau =D8=B1=D8=A7 =D8=A8=D8=
+=A7 =D9=82=D8=AF=D8=B1=D8=AA =D9=85=D8=AF=D9=84=E2=80=8C=D8=B3=D8=A7=D8=B2=
+=DB=8C =D8=AF=D8=A7=D8=AF=D9=87 Power BI =D8=AA=D8=B1=DA=A9=DB=8C=D8=A8 =DA=
+=A9=D9=86=D8=AF.</span></td>
+</tr>
+<tr style=3D"direction: rtl;text-align: right;">
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">Qlik Sense<=
+/span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D8=BA=D9=88=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =
+=D9=85=D8=AF=D8=B1=D9=86</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D9=85=D8=A8=D8=AA=D9=86=DB=8C =D8=A8=D8=B1 =
+=D9=85=D9=88=D8=AA=D9=88=D8=B1 Associative =D8=A8=D8=B1=D8=A7=DB=8C =DA=A9=
+=D8=B4=D9=81 =D8=B1=D9=88=D8=A7=D8=A8=D8=B7 =D9=BE=D9=86=D9=87=D8=A7=D9=86 =
+=D8=AF=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7. =D8=AA=D9=85=D8=
+=B1=DA=A9=D8=B2 =D8=A8=D8=B1 =D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D8=A7=DA=A9=D8=
+=AA=D8=B4=D8=A7=D9=81=DB=8C =D8=A2=D8=B2=D8=A7=D8=AF.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D9=85=D9=88=D8=AA=D9=88=D8=B1 Associa=
+tive =D9=85=D9=86=D8=AD=D8=B5=D8=B1 =D8=A8=D9=87 =D9=81=D8=B1=D8=AF =DA=A9=
+=D9=87 "=D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D9=86=D8=A7=D9=
+=85=D8=B1=D8=AA=D8=A8=D8=B7" =D8=B1=D8=A7 =D9=87=D9=85 =D9=86=D8=B4=D8=A7=
+=D9=86 =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF.</span><span class=3D"ng-sta=
+r-inserted">&lt;br&gt;</span><span class=3D"ng-star-inserted">=DB=B2. =D8=
+=B9=D9=85=D9=84=DA=A9=D8=B1=D8=AF =D8=A8=D8=A7=D9=84=D8=A7 =D8=AF=D8=B1 =D8=
+=AA=D8=AD=D9=84=DB=8C=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A2=D8=B2=D8=A7=
+=D8=AF =D9=88 =D8=A8=D8=AF=D9=88=D9=86 =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1=
+.</span><span class=3D"ng-star-inserted">&lt;br&gt;</span><span class=3D"ng=
+-star-inserted">=DB=B3. =D8=A7=D9=86=D8=B9=D8=B7=D8=A7=D9=81=E2=80=8C=D9=BE=
+=D8=B0=DB=8C=D8=B1=DB=8C =D8=A8=D8=A7=D9=84=D8=A7.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D9=85=D9=86=D8=AD=D9=86=DB=8C =DB=8C=
+=D8=A7=D8=AF=DA=AF=DB=8C=D8=B1=DB=8C =D8=AA=D9=86=D8=AF=D8=AA=D8=B1 =D8=A7=
+=D8=B2 =D8=B1=D9=82=D8=A8=D8=A7.</span><span class=3D"ng-star-inserted">&lt=
+;br&gt;</span><span class=3D"ng-star-inserted">=DB=B2. =D8=A8=D8=B1=D8=A7=
+=DB=8C =D8=B3=D8=A7=D8=AE=D8=AA =DA=AF=D8=B2=D8=A7=D8=B1=D8=B4=E2=80=8C=D9=
+=87=D8=A7=DB=8C =D8=B3=D8=A7=D8=AF=D9=87 =D9=88 =D8=AE=D8=B7=DB=8C=D8=8C =
+=D9=85=D9=85=DA=A9=D9=86 =D8=A7=D8=B3=D8=AA =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=
+=D9=87=E2=80=8C=D8=AA=D8=B1 =D8=A8=D8=A7=D8=B4=D8=AF.</span><span class=3D"=
+ng-star-inserted">&lt;br&gt;</span><span class=3D"ng-star-inserted">=DB=B3.=
+ =D8=AC=D8=A7=D9=85=D8=B9=D9=87 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=DB=8C =DA=A9=
+=D9=88=DA=86=DA=A9=D8=AA=D8=B1.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=B4=DA=
+=A9=D8=A7=D9=81 =D8=AF=D8=B1 =D8=AF=D8=B1=DA=A9 =D9=88 =D8=B3=D8=A7=D8=AF=
+=DA=AF=DB=8C:</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;<=
+/span>=D9=85=D9=81=D9=87=D9=88=D9=85 "Associative" =D8=A8=D8=B1=D8=A7=DB=8C=
+ =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=A7=D9=86 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C =
+=DA=AF=DB=8C=D8=AC=E2=80=8C=DA=A9=D9=86=D9=86=D8=AF=D9=87 =D8=A7=D8=B3=D8=
+=AA.<span>&nbsp;</span></span><strong class=3D"ng-star-inserted"><span clas=
+s=3D"ng-star-inserted">=D9=81=D8=B1=D8=B5=D8=AA:</span></strong><span class=
+=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=DB=
+=8C =DA=A9=D9=87 =D9=82=D8=AF=D8=B1=D8=AA =DA=A9=D8=B4=D9=81 =D8=B1=D9=88=
+=D8=A7=D8=A8=D8=B7 Qlik =D8=B1=D8=A7 =D8=AF=D8=A7=D8=B4=D8=AA=D9=87 =D8=A8=
+=D8=A7=D8=B4=D8=AF=D8=8C =D8=A7=D9=85=D8=A7 =D8=A7=DB=8C=D9=86 =DB=8C=D8=A7=
+=D9=81=D8=AA=D9=87=E2=80=8C=D9=87=D8=A7 =D8=B1=D8=A7 =D8=A8=D9=87 =D8=B5=D9=
+=88=D8=B1=D8=AA =D8=AE=D9=88=D8=AF=DA=A9=D8=A7=D8=B1 =D8=A8=D9=87 =D8=B2=D8=
+=A8=D8=A7=D9=86 =D8=B3=D8=A7=D8=AF=D9=87 (=D8=AF=D8=A7=D8=B3=D8=AA=D8=A7=D9=
+=86=E2=80=8C=D8=B3=D8=B1=D8=A7=DB=8C=DB=8C =D8=AE=D9=88=D8=AF=DA=A9=D8=A7=
+=D8=B1) =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=AF=DB=8C=D8=B1=D8=A7=D9=86 =D8=
+=AA=D9=88=D8=B6=DB=8C=D8=AD =D8=AF=D9=87=D8=AF.</span></td>
+</tr>
+<tr style=3D"direction: rtl;text-align: right;">
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">Looker (Goo=
+gle)</span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D9=85=D8=AF=D8=B1=D9=86 =D9=88 =D8=A7=D8=A8=
+=D8=B1=DB=8C</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D9=BE=D9=84=D8=AA=D9=81=D8=B1=D9=85 BI =D9=85=
+=D8=A8=D8=AA=D9=86=DB=8C =D8=A8=D8=B1 =D9=85=D8=AF=D9=84=E2=80=8C=D8=B3=D8=
+=A7=D8=B2=DB=8C (Governance-first). =D8=A7=DB=8C=D8=AC=D8=A7=D8=AF =DB=8C=
+=DA=A9 "=D9=85=D9=86=D8=A8=D8=B9 =D8=AD=D9=82=DB=8C=D9=82=D8=AA =D9=88=D8=
+=A7=D8=AD=D8=AF" =D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =
+=D8=A7=D8=B2 =D8=B2=D8=A8=D8=A7=D9=86 =D9=85=D8=AF=D9=84=E2=80=8C=D8=B3=D8=
+=A7=D8=B2=DB=8C LookML.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D8=AD=D8=A7=DA=A9=D9=85=DB=8C=D8=AA =
+=D8=AF=D8=A7=D8=AF=D9=87 (Data Governance) =D9=88 =D8=AB=D8=A8=D8=A7=D8=AA =
+=D8=A8=DB=8C=E2=80=8C=D9=86=D8=B8=DB=8C=D8=B1.</span><span class=3D"ng-star=
+-inserted">&lt;br&gt;</span><span class=3D"ng-star-inserted">=DB=B2. =D8=AA=
+=D9=85=D8=A7=D9=85 =D9=85=D9=86=D8=B7=D9=82 =DA=A9=D8=B3=D8=A8=E2=80=8C=D9=
+=88=DA=A9=D8=A7=D8=B1 =DB=8C=DA=A9 =D8=A8=D8=A7=D8=B1 =D9=88 =D8=AF=D8=B1 =
+=DB=8C=DA=A9 =D8=AC=D8=A7 =D8=AA=D8=B9=D8=B1=DB=8C=D9=81 =D9=85=DB=8C=E2=80=
+=8C=D8=B4=D9=88=D8=AF (DRY Principle).</span><span class=3D"ng-star-inserte=
+d">&lt;br&gt;</span><span class=3D"ng-star-inserted">=DB=B3. API-first =D9=
+=88 =D8=A8=D8=B3=DB=8C=D8=A7=D8=B1 =D8=AA=D9=88=D8=B3=D8=B9=D9=87=E2=80=8C=
+=D9=BE=D8=B0=DB=8C=D8=B1.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D9=86=DB=8C=D8=A7=D8=B2 =D8=A8=D9=87 =
+=D8=AA=DB=8C=D9=85 =D9=81=D9=86=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D9=86=D9=88=
+=D8=B4=D8=AA=D9=86 =D9=88 =D9=86=DA=AF=D9=87=D8=AF=D8=A7=D8=B1=DB=8C =DA=A9=
+=D8=AF=D9=87=D8=A7=DB=8C LookML.</span><span class=3D"ng-star-inserted">&lt=
+;br&gt;</span><span class=3D"ng-star-inserted">=DB=B2. =DA=AF=D8=B1=D8=A7=
+=D9=86 =D9=88 =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=DB=8C=D9=85=E2=80=8C=D9=87=D8=
+=A7=DB=8C =DA=A9=D9=88=DA=86=DA=A9 =D9=85=D9=86=D8=A7=D8=B3=D8=A8 =D9=86=DB=
+=8C=D8=B3=D8=AA.</span><span class=3D"ng-star-inserted">&lt;br&gt;</span><s=
+pan class=3D"ng-star-inserted">=DB=B3. =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D8=
+=AD=D9=84=DB=8C=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =D8=B3=D8=B1=DB=8C=D8=B9 =
+=D9=88 =DB=8C=DA=A9=E2=80=8C=D8=A8=D8=A7=D8=B1=D9=87 (Ad-hoc) =D8=A7=D9=86=
+=D8=B9=D8=B7=D8=A7=D9=81=E2=80=8C=D9=BE=D8=B0=DB=8C=D8=B1=DB=8C =DA=A9=D9=
+=85=D8=AA=D8=B1=DB=8C =D8=AF=D8=A7=D8=B1=D8=AF.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=B4=DA=
+=A9=D8=A7=D9=81 =D8=A8=DB=8C=D9=86 =DA=A9=D8=AF =D9=88 =D8=A8=D8=AF=D9=88=
+=D9=86-=DA=A9=D8=AF (Code vs. No-Code):</span></strong><span class=3D"ng-st=
+ar-inserted"><span>&nbsp;</span>=D9=86=DB=8C=D8=A7=D8=B2 =D8=A8=D9=87 =DA=
+=A9=D8=AF=D9=86=D9=88=DB=8C=D8=B3=DB=8C LookML =DB=8C=DA=A9 =D9=85=D8=A7=D9=
+=86=D8=B9 =D8=A8=D8=B2=D8=B1=DA=AF =D8=A7=D8=B3=D8=AA.<span>&nbsp;</span></=
+span><strong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=
+=D9=81=D8=B1=D8=B5=D8=AA:</span></strong><span class=3D"ng-star-inserted"><=
+span>&nbsp;</span>=DB=8C=DA=A9 "=D9=85=D8=AA=D8=B1=D8=AC=D9=85 =D9=87=D9=88=
+=D8=B4=D9=85=D9=86=D8=AF" =DA=A9=D9=87 =D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=
+=AA =D8=AE=D9=88=D8=AF=DA=A9=D8=A7=D8=B1 =D8=A7=D8=B2 =D8=B1=D9=88=DB=8C =
+=D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1 =D8=AF=DB=8C=D8=AA=D8=A7=D8=A8=DB=8C=
+=D8=B3=D8=8C =DB=8C=DA=A9 =D9=85=D8=AF=D9=84 =D8=A7=D9=88=D9=84=DB=8C=D9=87=
+ LookML =D8=AA=D9=88=D9=84=DB=8C=D8=AF =DA=A9=D9=86=D8=AF =DB=8C=D8=A7 =DB=
+=8C=DA=A9 =D8=B1=D8=A7=D8=A8=D8=B7 =DA=AF=D8=B1=D8=A7=D9=81=DB=8C=DA=A9=DB=
+=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=B3=D8=A7=D8=AE=D8=AA =D9=85=D8=AF=D9=84 Lo=
+okML =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D8=AF=D9=87=D8=AF.</span></td>
+</tr>
+<tr style=3D"direction: rtl;text-align: right;">
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">ThoughtSpot=
+</span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D9=85=D8=AF=D8=B1=D9=86 =D9=88 =D8=A7=D8=A8=
+=D8=B1=DB=8C (AI-=D9=85=D8=AD=D9=88=D8=B1)</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D9=85=D8=A8=D8=
+=AA=D9=86=DB=8C =D8=A8=D8=B1 =D8=AC=D8=B3=D8=AA=D8=AC=D9=88 (Search-based A=
+nalytics). =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=A7=D9=86 =D8=B3=D9=88=D8=A7=D9=
+=84=D8=A7=D8=AA =D8=AE=D9=88=D8=AF =D8=B1=D8=A7 =D8=A8=D9=87 =D8=B2=D8=A8=
+=D8=A7=D9=86 =D8=B7=D8=A8=DB=8C=D8=B9=DB=8C =D9=85=DB=8C=E2=80=8C=D9=BE=D8=
+=B1=D8=B3=D9=86=D8=AF =D9=88 =D9=BE=D8=A7=D8=B3=D8=AE =D8=B1=D8=A7 =D8=A8=
+=D9=87 =D8=B4=DA=A9=D9=84 =D9=86=D9=85=D9=88=D8=AF=D8=A7=D8=B1 =D9=85=DB=8C=
+=E2=80=8C=DA=AF=DB=8C=D8=B1=D9=86=D8=AF.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D8=AA=D9=88=D8=A7=D9=86=D9=85=D9=86=
+=D8=AF=D8=B3=D8=A7=D8=B2=DB=8C =D9=81=D9=88=D9=82=E2=80=8C=D8=A7=D9=84=D8=
+=B9=D8=A7=D8=AF=D9=87 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=A7=D9=86 =D8=BA=DB=
+=8C=D8=B1=D9=81=D9=86=DB=8C.</span><span class=3D"ng-star-inserted">&lt;br&=
+gt;</span><span class=3D"ng-star-inserted">=DB=B2. =D8=B3=D8=B1=D8=B9=D8=AA=
+ =D8=A8=D8=B3=DB=8C=D8=A7=D8=B1 =D8=A8=D8=A7=D9=84=D8=A7 =D8=AF=D8=B1 =D8=
+=B1=D8=B3=DB=8C=D8=AF=D9=86 =D8=A8=D9=87 =D9=BE=D8=A7=D8=B3=D8=AE.</span><s=
+pan class=3D"ng-star-inserted">&lt;br&gt;</span><span class=3D"ng-star-inse=
+rted">=DB=B3. =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D9=
+=87=D9=88=D8=B4 =D9=85=D8=B5=D9=86=D9=88=D8=B9=DB=8C =D8=A8=D8=B1=D8=A7=DB=
+=8C =D9=BE=DB=8C=D8=B4=D9=86=D9=87=D8=A7=D8=AF =D8=AA=D8=AD=D9=84=DB=8C=D9=
+=84=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=B1=D8=AA=D8=A8=D8=B7.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D8=A8=D8=B3=DB=8C=D8=A7=D8=B1 =DA=AF=
+=D8=B1=D8=A7=D9=86=E2=80=8C=D9=82=DB=8C=D9=85=D8=AA.</span><span class=3D"n=
+g-star-inserted">&lt;br&gt;</span><span class=3D"ng-star-inserted">=DB=B2. =
+=D8=A8=D8=B1=D8=A7=DB=8C =DA=A9=D8=A7=D8=B1=DA=A9=D8=B1=D8=AF =D8=B5=D8=AD=
+=DB=8C=D8=AD=D8=8C =D9=86=DB=8C=D8=A7=D8=B2 =D8=A8=D9=87 =D9=85=D8=AF=D9=84=
+=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D9=88 =D8=A2=D9=85=D8=A7=D8=AF=D9=87=E2=
+=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=AF=D8=A7=D8=AF=D9=87 =D8=A8=D8=B3=DB=8C=
+=D8=A7=D8=B1 =D9=82=D9=88=DB=8C =D8=AF=D8=B1 =D9=BE=D8=B4=D8=AA =D8=B5=D8=
+=AD=D9=86=D9=87 =D8=AF=D8=A7=D8=B1=D8=AF.</span><span class=3D"ng-star-inse=
+rted">&lt;br&gt;</span><span class=3D"ng-star-inserted">=DB=B3. =D8=A8=D8=
+=B1=D8=A7=DB=8C =D8=B3=D8=A7=D8=AE=D8=AA =D8=AF=D8=A7=D8=B4=D8=A8=D9=88=D8=
+=B1=D8=AF=D9=87=D8=A7=DB=8C =D8=AF=D9=82=DB=8C=D9=82 =D9=88 =D8=A7=D8=B2 =
+=D9=BE=DB=8C=D8=B4=E2=80=8C=D8=AA=D8=B9=DB=8C=DB=8C=D9=86=E2=80=8C=D8=B4=D8=
+=AF=D9=87=D8=8C =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1 =D9=85=D9=86=D8=A7=D8=B3=D8=
+=A8=DB=8C =D9=86=DB=8C=D8=B3=D8=AA.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=B4=DA=
+=A9=D8=A7=D9=81 =D8=AF=D8=B1 =D8=B4=D9=81=D8=A7=D9=81=DB=8C=D8=AA =D9=88 =
+=DA=A9=D9=86=D8=AA=D8=B1=D9=84:</span></strong><span class=3D"ng-star-inser=
+ted"><span>&nbsp;</span>=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1 =D9=86=D9=85=DB=8C=
+=E2=80=8C=D8=AF=D8=A7=D9=86=D8=AF =DA=A9=D9=87 =D9=87=D9=88=D8=B4 =D9=85=D8=
+=B5=D9=86=D9=88=D8=B9=DB=8C =D8=AF=D9=82=DB=8C=D9=82=D8=A7=D9=8B =DA=86=DA=
+=AF=D9=88=D9=86=D9=87 =D8=B3=D9=88=D8=A7=D9=84 =D8=A7=D9=88 =D8=B1=D8=A7 =
+=D8=AA=D9=81=D8=B3=DB=8C=D8=B1 =DA=A9=D8=B1=D8=AF=D9=87.<span>&nbsp;</span>=
+</span><strong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=
+=D9=81=D8=B1=D8=B5=D8=AA:</span></strong><span class=3D"ng-star-inserted"><=
+span>&nbsp;</span>=D8=A7=D8=A8=D8=B2=D8=A7=D8=B1 =D8=AC=D8=B3=D8=AA=D8=AC=
+=D9=88=DB=8C=DB=8C =DA=A9=D9=87 =D8=A8=D9=87 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=
+ =D9=86=D8=B4=D8=A7=D9=86 =D8=AF=D9=87=D8=AF "=D9=85=D9=86 =D8=B3=D9=88=D8=
+=A7=D9=84 =D8=B4=D9=85=D8=A7 =D8=B1=D8=A7 =D8=A7=DB=8C=D9=86=E2=80=8C=DA=AF=
+=D9=88=D9=86=D9=87 =D9=81=D9=87=D9=85=DB=8C=D8=AF=D9=85 =D9=88 =D8=A7=DB=8C=
+=D9=86 =DA=A9=D9=88=D8=A6=D8=B1=DB=8C =D8=B1=D8=A7 =D8=A7=D8=AC=D8=B1=D8=A7=
+ =DA=A9=D8=B1=D8=AF=D9=85. =D8=A2=DB=8C=D8=A7 =D8=AA=D8=A7=DB=8C=DB=8C=D8=
+=AF =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=DB=8C=D8=AF=D8=9F" =D9=88 =D8=A7=D8=
+=AC=D8=A7=D8=B2=D9=87 =D9=88=DB=8C=D8=B1=D8=A7=DB=8C=D8=B4 =D8=A2=D9=86 =D8=
+=B1=D8=A7 =D8=A8=D8=AF=D9=87=D8=AF.</span></td>
+</tr>
+<tr style=3D"direction: rtl;text-align: right;">
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">Metabase / =
+Superset</span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D9=85=D8=AA=D9=86=E2=80=8C=D8=A8=D8=A7=D8=B2 =
+(Open-Source)</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=
+=8C =D8=B1=D8=A7=DB=8C=DA=AF=D8=A7=D9=86 =D8=A8=D8=B1=D8=A7=DB=8C =D8=B3=D8=
+=A7=D8=AE=D8=AA =D8=AF=D8=A7=D8=B4=D8=A8=D9=88=D8=B1=D8=AF =D9=88 =DA=AF=D8=
+=B2=D8=A7=D8=B1=D8=B4. =D8=A7=D9=86=D8=B9=D8=B7=D8=A7=D9=81=E2=80=8C=D9=BE=
+=D8=B0=DB=8C=D8=B1=DB=8C =D8=A8=D8=A7=D9=84=D8=A7 =D8=A8=D8=B1=D8=A7=DB=8C =
+=D8=AA=DB=8C=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C =D9=81=D9=86=DB=8C.</span></t=
+d>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D8=B1=D8=A7=DB=8C=DA=AF=D8=A7=D9=86 =
+=D9=88 =D9=85=D8=AA=D9=86=E2=80=8C=D8=A8=D8=A7=D8=B2.</span><span class=3D"=
+ng-star-inserted">&lt;br&gt;</span><span class=3D"ng-star-inserted">=DB=B2.=
+ =D9=86=D8=B5=D8=A8 =D9=88 =D8=B1=D8=A7=D9=87=E2=80=8C=D8=A7=D9=86=D8=AF=D8=
+=A7=D8=B2=DB=8C =D8=B3=D8=B1=DB=8C=D8=B9 (=D8=A8=D9=87 =D8=AE=D8=B5=D9=88=
+=D8=B5 Metabase).</span><span class=3D"ng-star-inserted">&lt;br&gt;</span><=
+span class=3D"ng-star-inserted">=DB=B3. =DA=A9=D9=86=D8=AA=D8=B1=D9=84 =DA=
+=A9=D8=A7=D9=85=D9=84 =D8=A8=D8=B1 =D8=B1=D9=88=DB=8C =D8=A7=D8=A8=D8=B2=D8=
+=A7=D8=B1 =D9=88 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7.</span><span=
+ class=3D"ng-star-inserted">&lt;br&gt;</span><span class=3D"ng-star-inserte=
+d">=DB=B4. =D9=85=D9=82=DB=8C=D8=A7=D8=B3=E2=80=8C=D9=BE=D8=B0=DB=8C=D8=B1=
+=DB=8C =D8=A8=D8=A7=D9=84=D8=A7 (=D8=A8=D9=87 =D8=AE=D8=B5=D9=88=D8=B5 Supe=
+rset).</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA=
+=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A8=D8=B5=D8=B1=DB=8C =D9=88 =D8=AA=D8=B9=D8=
+=A7=D9=85=D9=84=DB=8C =D9=85=D8=AD=D8=AF=D9=88=D8=AF=D8=AA=D8=B1 =D8=A7=D8=
+=B2 =D8=BA=D9=88=D9=84=E2=80=8C=D9=87=D8=A7.</span><span class=3D"ng-star-i=
+nserted">&lt;br&gt;</span><span class=3D"ng-star-inserted">=DB=B2. =D9=86=
+=DB=8C=D8=A7=D8=B2 =D8=A8=D9=87 =D8=AF=D8=A7=D9=86=D8=B4 =D9=81=D9=86=DB=8C=
+ =D8=A8=D8=B1=D8=A7=DB=8C =D9=86=D8=B5=D8=A8=D8=8C =D9=86=DA=AF=D9=87=D8=AF=
+=D8=A7=D8=B1=DB=8C =D9=88 =D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA.</span><span=
+ class=3D"ng-star-inserted">&lt;br&gt;</span><span class=3D"ng-star-inserte=
+d">=DB=B3. =D8=B9=D8=AF=D9=85 =D9=88=D8=AC=D9=88=D8=AF =D9=BE=D8=B4=D8=AA=
+=DB=8C=D8=A8=D8=A7=D9=86=DB=8C =D8=B1=D8=B3=D9=85=DB=8C (=D9=88=D8=A7=D8=A8=
+=D8=B3=D8=AA=D9=87 =D8=A8=D9=87 =D8=AC=D8=A7=D9=85=D8=B9=D9=87 =DA=A9=D8=A7=
+=D8=B1=D8=A8=D8=B1=DB=8C).</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=B4=DA=
+=A9=D8=A7=D9=81 =D8=AF=D8=B1 =D8=AA=D8=AC=D8=B1=D8=A8=D9=87 =DA=A9=D8=A7=D8=
+=B1=D8=A8=D8=B1=DB=8C =D9=88 =D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA:</span></=
+strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A7=DB=8C=D9=
+=86 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7 "=D8=AE=D8=A7=D9=85" =D9=87=
+=D8=B3=D8=AA=D9=86=D8=AF.<span>&nbsp;</span></span><strong class=3D"ng-star=
+-inserted"><span class=3D"ng-star-inserted">=D9=81=D8=B1=D8=B5=D8=AA:</span=
+></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A7=D8=B1=
+=D8=A7=D8=A6=D9=87 =DB=8C=DA=A9 =D9=86=D8=B3=D8=AE=D9=87 =D8=AA=D8=AC=D8=A7=
+=D8=B1=DB=8C (Commercial Version) =D8=A7=D8=B2 =D8=A7=DB=8C=D9=86 =D8=A7=D8=
+=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7 =DA=A9=D9=87 =D8=B4=D8=A7=D9=85=D9=84 =D9=
+=BE=D8=B4=D8=AA=DB=8C=D8=A8=D8=A7=D9=86=DB=8C=D8=8C =D9=86=D8=B5=D8=A8 =D8=
+=A2=D8=B3=D8=A7=D9=86=D8=8C =D9=82=D8=A7=D9=84=D8=A8=E2=80=8C=D9=87=D8=A7=
+=DB=8C =D8=A2=D9=85=D8=A7=D8=AF=D9=87 =D9=88 =D9=82=D8=A7=D8=A8=D9=84=DB=8C=
+=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA=DB=
+=8C =D9=BE=DB=8C=D8=B4=D8=B1=D9=81=D8=AA=D9=87 =D8=A8=D8=A7=D8=B4=D8=AF (=
+=DA=A9=D8=A7=D8=B1=DB=8C =DA=A9=D9=87 =D8=B4=D8=B1=DA=A9=D8=AA=E2=80=8C=D9=
+=87=D8=A7=DB=8C=DB=8C =D9=85=D8=AB=D9=84 Preset =D8=A8=D8=B1=D8=A7=DB=8C Su=
+perset =D8=A7=D9=86=D8=AC=D8=A7=D9=85 =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D9=
+=86=D8=AF).</span></td>
+</tr>
+<tr style=3D"direction: rtl;text-align: right;">
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">Python Libr=
+aries (Plotly Dash, etc.)</span></strong></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D8=A8=D8=B1=D9=86=D8=A7=D9=85=D9=87=E2=80=8C=
+=D9=86=D9=88=DB=8C=D8=B3=DB=8C</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=D8=B3=D8=A7=D8=AE=D8=AA =D8=AF=D8=A7=D8=B4=D8=
+=A8=D9=88=D8=B1=D8=AF=D9=87=D8=A7 =D9=88 =D8=A7=D9=BE=D9=84=DB=8C=DA=A9=DB=
+=8C=D8=B4=D9=86=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=D8=A7=D8=AF=D9=87=E2=80=
+=8C=D9=85=D8=AD=D9=88=D8=B1 =DA=A9=D8=A7=D9=85=D9=84=D8=A7=D9=8B =D8=B3=D9=
+=81=D8=A7=D8=B1=D8=B4=DB=8C =D8=A8=D8=A7 =DA=A9=D8=AF=D9=86=D9=88=DB=8C=D8=
+=B3=DB=8C.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D8=A7=D9=86=D8=B9=D8=B7=D8=A7=D9=81=
+=E2=80=8C=D9=BE=D8=B0=DB=8C=D8=B1=DB=8C =D8=A8=DB=8C=E2=80=8C=D9=86=D9=87=
+=D8=A7=DB=8C=D8=AA.</span><span class=3D"ng-star-inserted">&lt;br&gt;</span=
+><span class=3D"ng-star-inserted">=DB=B2. =DB=8C=DA=A9=D9=BE=D8=A7=D8=B1=DA=
+=86=DA=AF=DB=8C =DA=A9=D8=A7=D9=85=D9=84 =D8=A8=D8=A7 =D9=85=D8=AF=D9=84=E2=
+=80=8C=D9=87=D8=A7=DB=8C =DB=8C=D8=A7=D8=AF=DA=AF=DB=8C=D8=B1=DB=8C =D9=85=
+=D8=A7=D8=B4=DB=8C=D9=86 =D9=88 =D8=B3=D8=A7=DB=8C=D8=B1 =DA=A9=D8=AA=D8=A7=
+=D8=A8=D8=AE=D8=A7=D9=86=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D9=BE=D8=A7=DB=
+=8C=D8=AA=D9=88=D9=86.</span><span class=3D"ng-star-inserted">&lt;br&gt;</s=
+pan><span class=3D"ng-star-inserted">=DB=B3. =DA=A9=D8=A7=D9=85=D9=84=D8=A7=
+=D9=8B =D8=B1=D8=A7=DB=8C=DA=AF=D8=A7=D9=86.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><spa=
+n class=3D"ng-star-inserted">=DB=B1. =D9=86=DB=8C=D8=A7=D8=B2 =D8=A8=D9=87 =
+=D9=85=D9=87=D8=A7=D8=B1=D8=AA =D8=A8=D8=A7=D9=84=D8=A7=DB=8C =D8=A8=D8=B1=
+=D9=86=D8=A7=D9=85=D9=87=E2=80=8C=D9=86=D9=88=DB=8C=D8=B3=DB=8C.</span><spa=
+n class=3D"ng-star-inserted">&lt;br&gt;</span><span class=3D"ng-star-insert=
+ed">=DB=B2. =D8=A8=D8=B3=DB=8C=D8=A7=D8=B1 =D8=B2=D9=85=D8=A7=D9=86=E2=80=
+=8C=D8=A8=D8=B1 =D8=A8=D8=B1=D8=A7=DB=8C =D8=B3=D8=A7=D8=AE=D8=AA =D8=AD=D8=
+=AA=DB=8C =DB=8C=DA=A9 =D8=AF=D8=A7=D8=B4=D8=A8=D9=88=D8=B1=D8=AF =D8=B3=D8=
+=A7=D8=AF=D9=87.</span><span class=3D"ng-star-inserted">&lt;br&gt;</span><s=
+pan class=3D"ng-star-inserted">=DB=B3. =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=DA=AF=
+=DB=8C =D8=AF=D8=B1 =D8=A7=D8=B3=D8=AA=D9=82=D8=B1=D8=A7=D8=B1 (Deployment)=
+ =D9=88 =D9=86=DA=AF=D9=87=D8=AF=D8=A7=D8=B1=DB=8C.</span></td>
+<td style=3D"direction: rtl;text-align: right;" class=3D"confluenceTd"><str=
+ong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=B4=DA=
+=A9=D8=A7=D9=81 =D8=A8=DB=8C=D9=86 =D8=A7=D9=86=D8=B9=D8=B7=D8=A7=D9=81 =D9=
+=88 =D8=B3=D8=B1=D8=B9=D8=AA:</span></strong><span class=3D"ng-star-inserte=
+d"><span>&nbsp;</span>=D8=A8=D8=B1=D9=86=D8=A7=D9=85=D9=87=E2=80=8C=D9=86=
+=D9=88=DB=8C=D8=B3=D8=A7=D9=86 =D8=A2=D8=B2=D8=A7=D8=AF=DB=8C =D9=85=DB=8C=
+=E2=80=8C=D8=AE=D9=88=D8=A7=D9=87=D9=86=D8=AF=D8=8C =D8=A7=D9=85=D8=A7 =D9=
+=86=D9=85=DB=8C=E2=80=8C=D8=AE=D9=88=D8=A7=D9=87=D9=86=D8=AF =D8=A8=D8=B1=
+=D8=A7=DB=8C =D9=87=D8=B1 =D9=86=D9=85=D9=88=D8=AF=D8=A7=D8=B1 =D8=B3=D8=A7=
+=D8=AF=D9=87=D8=8C =D8=B5=D8=AF=D9=87=D8=A7 =D8=AE=D8=B7 =DA=A9=D8=AF =D8=
+=A8=D9=86=D9=88=DB=8C=D8=B3=D9=86=D8=AF.<span>&nbsp;</span></span><strong c=
+lass=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=81=D8=B1=D8=
+=B5=D8=AA:</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</sp=
+an>=DB=8C=DA=A9 =D9=BE=D9=84=D8=AA=D9=81=D8=B1=D9=85 "Low-Code" =DA=A9=D9=
+=87 =D8=A8=D9=87 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1 =D8=A7=D8=AC=D8=A7=D8=B2=D9=
+=87 =D8=AF=D9=87=D8=AF =D8=A8=D8=A7 Drag-and-Drop =D8=A7=D8=B3=DA=A9=D9=84=
+=D8=AA =D8=AF=D8=A7=D8=B4=D8=A8=D9=88=D8=B1=D8=AF =D8=B1=D8=A7 =D8=A8=D8=B3=
+=D8=A7=D8=B2=D8=AF=D8=8C =D8=A7=D9=85=D8=A7 =D9=87=D8=B1=D8=AC=D8=A7 =D9=86=
+=DB=8C=D8=A7=D8=B2 =D8=A8=D9=88=D8=AF=D8=8C =D9=82=D8=B7=D8=B9=D9=87 =DA=A9=
+=D8=AF =D9=BE=D8=A7=DB=8C=D8=AA=D9=88=D9=86 =D8=B3=D9=81=D8=A7=D8=B1=D8=B4=
+=DB=8C =D8=AA=D8=B2=D8=B1=DB=8C=D9=82 =DA=A9=D9=86=D8=AF.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 class=3D"ng-star-inserted" id=3D"id-=D9=87=D9=88=D8=B4=D8=AA=D8=AC=D8=
+=A7=D8=B1=DB=8C(BI):=D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C=D8=8C=D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=D9=85=D8=AF=D8=B1=D9=86=D9=88=D9=81=D8=
+=B1=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=
+=8C-=D8=AA=D8=AD=D9=84=DB=8C=D9=84=D8=A7=D8=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=
+=98=DB=8C=DA=A9=D9=86=D9=82=D8=A7=D8=B7=D8=B6=D8=B9=D9=81=D9=88=D9=81=D8=B1=
+=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=8C=
+"><span style=3D"color: rgb(51,102,255);"><strong class=3D"ng-star-inserted=
+"><span class=3D"ng-star-inserted">=D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D8=A7=D8=
+=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=DA=A9 =D9=86=D9=82=D8=A7=D8=B7 =D8=
+=B6=D8=B9=D9=81 =D9=88 =D9=81=D8=B1=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =
+=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=8C</span></strong></span></h3>
+<p class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=AA=D8=AD=
+=D9=84=DB=8C=D9=84 =D8=B9=D9=85=DB=8C=D9=82 =D8=A7=DB=8C=D9=86 =D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=D8=8C =DA=86=D9=86=D8=AF=DB=8C=D9=86 =D8=B4=
+=DA=A9=D8=A7=D9=81 =D9=88 =DA=86=D8=A7=D9=84=D8=B4 =D8=B3=D8=A7=D8=AE=D8=AA=
+=D8=A7=D8=B1=DB=8C =D8=B1=D8=A7 =D8=AF=D8=B1 =D8=A8=D8=A7=D8=B2=D8=A7=D8=B1=
+ =D9=81=D8=B9=D9=84=DB=8C BI =D8=A2=D8=B4=DA=A9=D8=A7=D8=B1 =D9=85=DB=8C=E2=
+=80=8C=D8=B3=D8=A7=D8=B2=D8=AF =DA=A9=D9=87 =D9=87=D8=B1 =DB=8C=DA=A9 =D9=
+=81=D8=B1=D8=B5=D8=AA=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D9=88=D8=B3=D8=
+=B9=D9=87 =D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =
+=D9=86=D8=B3=D9=84 =D8=A8=D8=B9=D8=AF=DB=8C =D9=87=D8=B3=D8=AA=D9=86=D8=AF:=
+</span></p>
+<p class=3D"ng-star-inserted"><strong class=3D"ng-star-inserted"><span clas=
+s=3D"ng-star-inserted">1. =D8=B4=DA=A9=D8=A7=D9=81 =D8=B9=D9=85=DB=8C=D9=82=
+ =D9=85=DB=8C=D8=A7=D9=86 =D9=85=D9=87=D9=86=D8=AF=D8=B3=DB=8C =D8=AF=D8=A7=
+=D8=AF=D9=87 =D9=88 =D8=AA=D8=AD=D9=84=DB=8C=D9=84 =DA=A9=D8=B3=D8=A8=E2=80=
+=8C=D9=88=DA=A9=D8=A7=D8=B1 (The Data Engineering-Analysis Divide):</span><=
+/strong></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=86=D9=82=D8=B7=
+=D9=87 =D8=B6=D8=B9=D9=81:</span></strong><span class=3D"ng-star-inserted">=
+<span>&nbsp;</span>=D8=A8=D8=A7 =D9=88=D8=AC=D9=88=D8=AF =D8=AA=D9=84=D8=A7=
+=D8=B4=E2=80=8C=D9=87=D8=A7=D8=8C =D9=87=D9=86=D9=88=D8=B2 =DB=8C=DA=A9 =DA=
+=AF=D8=B3=D8=B3=D8=AA =D8=A8=D8=B2=D8=B1=DA=AF =D9=85=DB=8C=D8=A7=D9=86 =D8=
+=AA=DB=8C=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D9=87=D9=86=D8=AF=D8=B3=
+=DB=8C =D8=AF=D8=A7=D8=AF=D9=87 (=DA=A9=D9=87 ETL =D9=88 DWH =D8=B1=D8=A7 =
+=D9=85=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D9=
+=86=D8=AF) =D9=88 =D8=AA=D8=AD=D9=84=DB=8C=D9=84=E2=80=8C=DA=AF=D8=B1=D8=A7=
+=D9=86 =DA=A9=D8=B3=D8=A8=E2=80=8C=D9=88=DA=A9=D8=A7=D8=B1 =D9=88=D8=AC=D9=
+=88=D8=AF =D8=AF=D8=A7=D8=B1=D8=AF. =D8=A7=DB=8C=D9=86 =DA=AF=D8=B3=D8=B3=
+=D8=AA =D8=A8=D8=A7=D8=B9=D8=AB =D8=A7=DB=8C=D8=AC=D8=A7=D8=AF<span>&nbsp;<=
+/span></span><strong class=3D"ng-star-inserted"><span class=3D"ng-star-inse=
+rted">=D8=AA=D9=86=DA=AF=D9=86=D8=A7 (Bottleneck)</span></strong><span clas=
+s=3D"ng-star-inserted">=D8=8C =DA=A9=D8=A7=D9=87=D8=B4 =DA=86=D8=A7=D8=A8=
+=DA=A9=DB=8C =D9=88 =D8=AA=D8=B1=D8=AC=D9=85=D9=87 =D9=86=D8=A7=D8=AF=D8=B1=
+=D8=B3=D8=AA =D9=86=DB=8C=D8=A7=D8=B2=D9=85=D9=86=D8=AF=DB=8C=E2=80=8C=D9=
+=87=D8=A7=DB=8C =DA=A9=D8=B3=D8=A8=E2=80=8C=D9=88=DA=A9=D8=A7=D8=B1 =D8=A8=
+=D9=87 =D9=85=D9=86=D8=B7=D9=82 =D9=81=D9=86=DB=8C =D9=85=DB=8C=E2=80=8C=D8=
+=B4=D9=88=D8=AF.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=81=D8=B1=D8=B5=
+=D8=AA =D8=AA=D9=88=D8=B3=D8=B9=D9=87:</span></strong></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=BE=D9=84=D8=AA=
+=D9=81=D8=B1=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C =DB=8C=DA=A9=D9=BE=D8=A7=D8=
+=B1=DA=86=D9=87 =D9=88=D8=A7=D9=82=D8=B9=DB=8C (True End-to-End Platforms):=
+</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A7=
+=DB=8C=D8=AC=D8=A7=D8=AF =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=DB=8C =DA=A9=D9=87 =
+=D8=AA=D9=85=D8=A7=D9=85 =DA=86=D8=B1=D8=AE=D9=87 =D8=AD=DB=8C=D8=A7=D8=AA =
+=D8=AF=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D8=A7=D8=AA=D8=B5=D8=A7=D9=84 =D8=A8=
+=D9=87 =D9=85=D9=86=D8=A8=D8=B9=D8=8C ELT=D8=8C =D9=85=D8=AF=D9=84=E2=80=8C=
+=D8=B3=D8=A7=D8=B2=DB=8C=D8=8C =D8=AA=D8=B9=D8=B1=DB=8C=D9=81 =D9=85=D8=AA=
+=D8=B1=DB=8C=DA=A9=E2=80=8C=D9=87=D8=A7 =D9=88 =D8=AA=D8=AC=D8=B3=D9=85=E2=
+=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=B1=D8=A7 =D8=AF=D8=B1 =DB=8C=DA=A9 =D9=
+=85=D8=AD=DB=8C=D8=B7 =D9=88=D8=A7=D8=AD=D8=AF =D9=88 =D8=A8=D8=A7 =D8=B1=
+=D8=A7=D8=A8=D8=B7 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=DB=8C =D8=B3=D8=A7=D8=B2=
+=DA=AF=D8=A7=D8=B1 =D8=A8=D8=B1=D8=A7=DB=8C =D9=86=D9=82=D8=B4=E2=80=8C=D9=
+=87=D8=A7=DB=8C =D9=85=D8=AE=D8=AA=D9=84=D9=81 (=D9=81=D9=86=DB=8C =D9=88 =
+=D8=BA=DB=8C=D8=B1=D9=81=D9=86=DB=8C) =D9=81=D8=B1=D8=A7=D9=87=D9=85 =DA=A9=
+=D9=86=D8=AF.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=BE=D8=B4=D8=AA=
+=DB=8C=D8=A8=D8=A7=D9=86=DB=8C =D8=A7=D8=B2 =D9=BE=D8=A7=D8=B1=D8=A7=D8=AF=
+=D8=A7=DB=8C=D9=85 Data Mesh:</span></strong><span class=3D"ng-star-inserte=
+d"><span>&nbsp;</span>=D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D9=82=D8=A7=D8=A8=D9=
+=84=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C=DB=8C =DA=A9=D9=87 =D8=A7=D8=B2 =
+=D8=AD=DA=A9=D9=85=D8=B1=D8=A7=D9=86=DB=8C =D8=BA=DB=8C=D8=B1=D9=85=D8=AA=
+=D9=85=D8=B1=DA=A9=D8=B2 =D8=AF=D8=A7=D8=AF=D9=87 =D9=BE=D8=B4=D8=AA=DB=8C=
+=D8=A8=D8=A7=D9=86=DB=8C =DA=A9=D8=B1=D8=AF=D9=87 =D9=88 =D8=A8=D9=87 =D8=
+=AA=DB=8C=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=AE=D8=AA=D9=84=D9=81 =
+=DA=A9=D8=B3=D8=A8=E2=80=8C=D9=88=DA=A9=D8=A7=D8=B1 =D8=A7=D8=AC=D8=A7=D8=
+=B2=D9=87 =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF "=D9=85=D8=AD=D8=B5=D9=88=
+=D9=84=D8=A7=D8=AA =D8=AF=D8=A7=D8=AF=D9=87" =D8=AE=D9=88=D8=AF =D8=B1=D8=
+=A7 =D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D8=A7=D9=86=D8=AF=D8=A7=D8=B1=D8=AF=D9=
+=87=D8=A7 =D9=88 =DA=A9=DB=8C=D9=81=DB=8C=D8=AA =D8=A8=D8=A7=D9=84=D8=A7 =
+=D8=AA=D9=88=D9=84=DB=8C=D8=AF =D9=88 =D8=A8=D9=87 =D8=A7=D8=B4=D8=AA=D8=B1=
+=D8=A7=DA=A9 =D8=A8=DA=AF=D8=B0=D8=A7=D8=B1=D9=86=D8=AF.</span></p></li>
+</ul></li>
+</ul>
+<p class=3D"ng-star-inserted"><strong class=3D"ng-star-inserted"><span clas=
+s=3D"ng-star-inserted">2. =D8=A8=D8=AD=D8=B1=D8=A7=D9=86 =D8=AD=DA=A9=D9=85=
+=D8=B1=D8=A7=D9=86=DB=8C =D8=AF=D8=B1 =D8=B9=D8=B5=D8=B1 =D8=B3=D9=84=D9=81=
+-=D8=B3=D8=B1=D9=88=DB=8C=D8=B3 (The Governance Crisis in the Self-Service =
+Era):</span></strong></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=86=D9=82=D8=B7=
+=D9=87 =D8=B6=D8=B9=D9=81:</span></strong><span class=3D"ng-star-inserted">=
+<span>&nbsp;</span>=D8=AF=D9=85=D9=88=DA=A9=D8=B1=D8=A7=D8=AA=DB=8C=D8=B2=
+=D9=87 =D8=B4=D8=AF=D9=86 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7 =D9=
+=85=D9=86=D8=AC=D8=B1 =D8=A8=D9=87 =D8=A7=DB=8C=D8=AC=D8=A7=D8=AF "=D8=A8=
+=D8=A7=D8=AA=D9=84=D8=A7=D9=82 =D8=AF=D8=A7=D8=B4=D8=A8=D9=88=D8=B1=D8=AF" =
+(Dashboard Swamp) =D9=88 =DA=86=D9=86=D8=AF=DB=8C=D9=86 "=D9=86=D8=B3=D8=AE=
+=D9=87 =D8=A7=D8=B2 =D8=AD=D9=82=DB=8C=D9=82=D8=AA" (Multiple Versions of t=
+he Truth) =D8=B4=D8=AF=D9=87 =D8=A7=D8=B3=D8=AA. =DB=8C=DA=A9 =D9=85=D8=B9=
+=DB=8C=D8=A7=D8=B1 =D8=B3=D8=A7=D8=AF=D9=87 =D9=85=D8=A7=D9=86=D9=86=D8=AF =
+"=D8=AA=D8=B9=D8=AF=D8=A7=D8=AF =D9=85=D8=B4=D8=AA=D8=B1=DB=8C =D9=81=D8=B9=
+=D8=A7=D9=84" =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=AA=D8=
+=B9=D8=A7=D8=B1=DB=8C=D9=81 =D9=85=D8=AA=D9=81=D8=A7=D9=88=D8=AA=DB=8C =D8=
+=AF=D8=B1 =D8=AF=D9=BE=D8=A7=D8=B1=D8=AA=D9=85=D8=A7=D9=86=E2=80=8C=D9=87=
+=D8=A7=DB=8C =D9=85=D8=AE=D8=AA=D9=84=D9=81 =D8=AF=D8=A7=D8=B4=D8=AA=D9=87 =
+=D8=A8=D8=A7=D8=B4=D8=AF.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=81=D8=B1=D8=B5=
+=D8=AA =D8=AA=D9=88=D8=B3=D8=B9=D9=87:</span></strong></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=84=D8=A7=DB=8C=
+=D9=87 =D9=85=D8=AA=D8=B1=DB=8C=DA=A9 =D8=AC=D9=87=D8=A7=D9=86=DB=8C (Unive=
+rsal Metrics Layer):</span></strong><span class=3D"ng-star-inserted"><span>=
+&nbsp;</span>=D8=AA=D9=88=D8=B3=D8=B9=D9=87 =DB=8C=DA=A9 =D9=84=D8=A7=DB=8C=
+=D9=87 =D9=85=D8=B1=DA=A9=D8=B2=DB=8C =D9=88 =D9=85=D8=B3=D8=AA=D9=82=D9=84=
+ =D8=A7=D8=B2 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1 BI =DA=A9=D9=87 =D8=AF=D8=B1 =
+=D8=A2=D9=86 =D8=AA=D9=85=D8=A7=D9=85 =D8=AA=D8=B9=D8=A7=D8=B1=DB=8C=D9=81=
+=D8=8C =D9=85=D9=86=D8=B7=D9=82 =DA=A9=D8=B3=D8=A8=E2=80=8C=D9=88=DA=A9=D8=
+=A7=D8=B1 =D9=88 KPI=D9=87=D8=A7=DB=8C =D8=B3=D8=A7=D8=B2=D9=85=D8=A7=D9=86=
+ =DB=8C=DA=A9 =D8=A8=D8=A7=D8=B1 =D8=AA=D8=B9=D8=B1=DB=8C=D9=81 =D8=B4=D8=
+=AF=D9=87 =D9=88 =D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=AA =DA=A9=D8=AF =D9=85=
+=D8=AF=DB=8C=D8=B1=DB=8C=D8=AA =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D9=86=D8=
+=AF (=D9=85=D8=A7=D9=86=D9=86=D8=AF =D8=B1=D9=88=DB=8C=DA=A9=D8=B1=D8=AF =
+=D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=DB=8C =DA=86=D9=88=D9=86 d=
+bt =DB=8C=D8=A7 Looker's LookML). =D8=A7=DB=8C=D9=86 =D9=84=D8=A7=DB=8C=D9=
+=87 =D8=A8=D9=87 =D8=B9=D9=86=D9=88=D8=A7=D9=86<span>&nbsp;</span></span><s=
+trong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=AA=D9=
+=86=D9=87=D8=A7 =D9=85=D9=86=D8=A8=D8=B9 =D8=AD=D9=82=DB=8C=D9=82=D8=AA (Si=
+ngle Source of Truth)</span></strong><span class=3D"ng-star-inserted"><span=
+>&nbsp;</span>=D8=B9=D9=85=D9=84 =DA=A9=D8=B1=D8=AF=D9=87 =D9=88 =D8=A7=D8=
+=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C =D9=85=D8=AE=D8=AA=D9=84=D9=81 BI (=
+Power BI, Tableau, etc.) =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=D9=
+=86=D8=AF =D8=A8=D9=87 =D8=A2=D9=86 =D9=85=D8=AA=D8=B5=D9=84 =D8=B4=D9=88=
+=D9=86=D8=AF.</span></p></li>
+</ul></li>
+</ul>
+<p class=3D"ng-star-inserted"><strong class=3D"ng-star-inserted"><span clas=
+s=3D"ng-star-inserted">3. =D8=B4=DA=A9=D8=A7=D9=81 "=D8=A2=D8=AE=D8=B1=DB=
+=8C=D9=86 =D9=85=D8=A7=DB=8C=D9=84" =D8=AA=D8=AD=D9=84=DB=8C=D9=84: =D8=A7=
+=D8=B2 =D8=A8=DB=8C=D9=86=D8=B4 =D8=AA=D8=A7 =D8=A7=D9=82=D8=AF=D8=A7=D9=85=
+ (The Last Mile Problem: From Insight to Action):</span></strong></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=86=D9=82=D8=B7=
+=D9=87 =D8=B6=D8=B9=D9=81:</span></strong><span class=3D"ng-star-inserted">=
+<span>&nbsp;</span>=D8=A7=DA=A9=D8=AB=D8=B1 =D8=AF=D8=A7=D8=B4=D8=A8=D9=88=
+=D8=B1=D8=AF=D9=87=D8=A7 =D8=AF=D8=B1 =D9=86=D9=85=D8=A7=DB=8C=D8=B4 "=DA=
+=86=D9=87 =D8=B4=D8=AF=D8=9F" =D9=88 "=DA=86=D8=B1=D8=A7 =D8=B4=D8=AF=D8=9F=
+" =D9=85=D8=AA=D9=88=D9=82=D9=81 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D9=86=D8=
+=AF. =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1 =D9=BE=D8=B3 =D8=A7=D8=B2 =DA=A9=D8=B4=
+=D9=81 =DB=8C=DA=A9 =D8=A8=DB=8C=D9=86=D8=B4=D8=8C =D8=A8=D8=A7=DB=8C=D8=AF=
+ =D8=A7=D8=B2 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1 BI =D8=AE=D8=A7=D8=B1=D8=AC =
+=D8=B4=D8=AF=D9=87 =D9=88 =D8=A8=D9=87 =D8=B3=D8=B1=D8=A7=D8=BA =D8=B3=DB=
+=8C=D8=B3=D8=AA=D9=85 =D8=AF=DB=8C=DA=AF=D8=B1=DB=8C (=D9=85=D8=A7=D9=86=D9=
+=86=D8=AF CRM =DB=8C=D8=A7 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1 =D8=A8=D8=A7=D8=
+=B2=D8=A7=D8=B1=DB=8C=D8=A7=D8=A8=DB=8C) =D8=A8=D8=B1=D9=88=D8=AF =D8=AA=D8=
+=A7 =D8=A7=D9=82=D8=AF=D8=A7=D9=85=DB=8C =D8=A7=D9=86=D8=AC=D8=A7=D9=85 =D8=
+=AF=D9=87=D8=AF. =D8=A7=DB=8C=D9=86 =DA=AF=D8=B3=D8=B3=D8=AA=D8=8C =D8=A7=
+=D8=B1=D8=B2=D8=B4 =D8=A8=DB=8C=D9=86=D8=B4 =D8=B1=D8=A7 =DA=A9=D8=A7=D9=87=
+=D8=B4 =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=81=D8=B1=D8=B5=
+=D8=AA =D8=AA=D9=88=D8=B3=D8=B9=D9=87:</span></strong></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=87=D9=88=D8=B4 =
+=D8=AA=D8=AC=D8=A7=D8=B1=DB=8C =D8=B9=D9=85=D9=84=DB=8C=D8=A7=D8=AA=DB=8C (=
+Actionable BI):</span></strong><span class=3D"ng-star-inserted"><span>&nbsp=
+;</span>=D8=AC=D8=A7=D8=B3=D8=A7=D8=B2=DB=8C =D9=85=D8=B3=D8=AA=D9=82=DB=8C=
+=D9=85 =D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D8=
+=B9=D9=85=D9=84=DB=8C=D8=A7=D8=AA=DB=8C =D8=AF=D8=B1 =D8=AF=D8=A7=D8=B4=D8=
+=A8=D9=88=D8=B1=D8=AF=D9=87=D8=A7. =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=AB=D8=
+=A7=D9=84=D8=8C =D9=86=D9=85=D8=A7=DB=8C=D8=B4 =D9=84=DB=8C=D8=B3=D8=AA=DB=
+=8C =D8=A7=D8=B2 =D9=85=D8=B4=D8=AA=D8=B1=DB=8C=D8=A7=D9=86=DB=8C =DA=A9=D9=
+=87 =D8=AF=D8=B1 =D8=A2=D8=B3=D8=AA=D8=A7=D9=86=D9=87 =D8=B1=DB=8C=D8=B2=D8=
+=B4 =D9=87=D8=B3=D8=AA=D9=86=D8=AF =D9=87=D9=85=D8=B1=D8=A7=D9=87 =D8=A8=D8=
+=A7 =DB=8C=DA=A9 =D8=AF=DA=A9=D9=85=D9=87 =DA=A9=D9=87 =D8=A8=D8=A7 =DA=A9=
+=D9=84=DB=8C=DA=A9 =D8=A8=D8=B1 =D8=B1=D9=88=DB=8C =D8=A2=D9=86=D8=8C =DB=
+=8C=DA=A9 =DA=A9=D9=85=D9=BE=DB=8C=D9=86 =D8=AA=D8=AE=D9=81=DB=8C=D9=81 =D9=
+=87=D8=AF=D9=81=D9=85=D9=86=D8=AF =D8=A8=D8=B1=D8=A7=DB=8C =D8=A2=D9=86=E2=
+=80=8C=D9=87=D8=A7 =D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=AA =D8=AE=D9=88=D8=AF=
+=DA=A9=D8=A7=D8=B1 =D8=AF=D8=B1 =D8=B3=DB=8C=D8=B3=D8=AA=D9=85 CRM =D9=81=
+=D8=B9=D8=A7=D9=84 =D8=B4=D9=88=D8=AF.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=D8=AF=D8=BA=
+=D8=A7=D9=85 =D8=A8=D8=A7 =D9=BE=D9=84=D8=AA=D9=81=D8=B1=D9=85=E2=80=8C=D9=
+=87=D8=A7=DB=8C =D8=A7=D8=AA=D9=88=D9=85=D8=A7=D8=B3=DB=8C=D9=88=D9=86 (Wor=
+kflow Integration):</span></strong><span class=3D"ng-star-inserted"><span>&=
+nbsp;</span>=D8=A7=DB=8C=D8=AC=D8=A7=D8=AF =DA=A9=D8=A7=D9=86=DA=A9=D8=AA=
+=D9=88=D8=B1=D9=87=D8=A7=DB=8C =D9=82=D8=AF=D8=B1=D8=AA=D9=85=D9=86=D8=AF =
+=D8=A8=D8=A7 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=DB=8C =D9=85=
+=D8=A7=D9=86=D9=86=D8=AF Zapier, Power Automate =DB=8C=D8=A7 =D8=B3=DB=8C=
+=D8=B3=D8=AA=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C BPMS =D8=AA=D8=A7 =D8=A8=DB=
+=8C=D9=86=D8=B4=E2=80=8C=D9=87=D8=A7=DB=8C =DA=A9=D8=B4=D9=81=E2=80=8C=D8=
+=B4=D8=AF=D9=87 =D8=A8=D8=AA=D9=88=D8=A7=D9=86=D9=86=D8=AF =D8=A8=D9=87 =D8=
+=B5=D9=88=D8=B1=D8=AA =D8=AE=D9=88=D8=AF=DA=A9=D8=A7=D8=B1 =D8=AA=D8=B1=DB=
+=8C=DA=AF=D8=B1=D9=87=D8=A7=DB=8C=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D9=81=D8=
+=B1=D8=A2=DB=8C=D9=86=D8=AF=D9=87=D8=A7=DB=8C =DA=A9=D8=B3=D8=A8=E2=80=8C=
+=D9=88=DA=A9=D8=A7=D8=B1 =D8=A8=D8=A7=D8=B4=D9=86=D8=AF.</span></p></li>
+</ul></li>
+</ul>
+<p class=3D"ng-star-inserted"><strong class=3D"ng-star-inserted"><span clas=
+s=3D"ng-star-inserted">4. =D8=AD=D8=B1=DA=A9=D8=AA =D8=A7=D8=B2 =D8=AA=D8=
+=AD=D9=84=DB=8C=D9=84 =D8=A7=D9=86=D8=B3=D8=A7=D9=86=DB=8C =D8=A8=D9=87 =D8=
+=AA=D8=AD=D9=84=DB=8C=D9=84 =D8=A7=D9=81=D8=B2=D9=88=D8=AF=D9=87 (From Huma=
+n-led to Augmented Analytics):</span></strong></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=86=D9=82=D8=B7=
+=D9=87 =D8=B6=D8=B9=D9=81:</span></strong><span class=3D"ng-star-inserted">=
+<span>&nbsp;</span>=D8=AA=D8=AD=D9=84=DB=8C=D9=84 =D8=AF=D8=A7=D8=AF=D9=87=
+=E2=80=8C=D9=87=D8=A7 =D9=87=D9=86=D9=88=D8=B2 =D8=A8=D9=87 =D8=B4=D8=AF=D8=
+=AA =D8=A8=D9=87 =D9=81=D8=B1=D8=B6=DB=8C=D9=87=E2=80=8C=D9=87=D8=A7 =D9=88=
+ =DA=A9=D9=86=D8=AC=DA=A9=D8=A7=D9=88=DB=8C =D8=AA=D8=AD=D9=84=DB=8C=D9=84=
+=E2=80=8C=DA=AF=D8=B1 =D8=A7=D9=86=D8=B3=D8=A7=D9=86=DB=8C =D9=88=D8=A7=D8=
+=A8=D8=B3=D8=AA=D9=87 =D8=A7=D8=B3=D8=AA. =D8=A7=D9=86=D8=B3=D8=A7=D9=86 =
+=D9=85=D9=85=DA=A9=D9=86 =D8=A7=D8=B3=D8=AA =D8=A7=D9=84=DA=AF=D9=88=D9=87=
+=D8=A7=DB=8C =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=D9=87 =DB=8C=D8=A7 =D9=87=D9=85=
+=D8=A8=D8=B3=D8=AA=DA=AF=DB=8C=E2=80=8C=D9=87=D8=A7=DB=8C =D8=BA=DB=8C=D8=
+=B1=D9=85=D9=86=D8=AA=D8=B8=D8=B1=D9=87 =D8=B1=D8=A7 =D9=86=D8=A7=D8=AF=DB=
+=8C=D8=AF=D9=87 =D8=A8=DA=AF=DB=8C=D8=B1=D8=AF.</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=81=D8=B1=D8=B5=
+=D8=AA =D8=AA=D9=88=D8=B3=D8=B9=D9=87:</span></strong></p>
+<ul class=3D"ng-star-inserted">
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=D8=AA=D9=88=
+=D9=85=D8=A7=D8=B3=DB=8C=D9=88=D9=86 =DA=A9=D8=B4=D9=81 =D8=A8=DB=8C=D9=86=
+=D8=B4:</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=
+=D8=AA=D9=88=D8=B3=D8=B9=D9=87 =D8=A7=D9=84=DA=AF=D9=88=D8=B1=DB=8C=D8=AA=
+=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C =D9=87=D9=88=D8=B4 =D9=85=D8=B5=D9=86=D9=
+=88=D8=B9=DB=8C =DA=A9=D9=87 =D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=AA =D8=AE=
+=D9=88=D8=AF=DA=A9=D8=A7=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=
+=A7 =D8=B1=D8=A7 =D8=A7=D8=B3=DA=A9=D9=86 =DA=A9=D8=B1=D8=AF=D9=87 =D9=88 =
+=D9=85=D9=87=D9=85=E2=80=8C=D8=AA=D8=B1=DB=8C=D9=86 =D8=AA=D8=BA=DB=8C=DB=
+=8C=D8=B1=D8=A7=D8=AA=D8=8C =D9=86=D8=A7=D9=87=D9=86=D8=AC=D8=A7=D8=B1=DB=
+=8C=E2=80=8C=D9=87=D8=A7 (Anomalies) =D9=88 =D9=85=D8=AD=D8=B1=DA=A9=E2=80=
+=8C=D9=87=D8=A7=DB=8C =DA=A9=D9=84=DB=8C=D8=AF=DB=8C (Key Drivers) =D8=B1=
+=D8=A7 =D8=B4=D9=86=D8=A7=D8=B3=D8=A7=DB=8C=DB=8C =D9=88 =D8=A8=D9=87 =D8=
+=B2=D8=A8=D8=A7=D9=86 =D8=B7=D8=A8=DB=8C=D8=B9=DB=8C (Natural Language) =D8=
+=A8=D9=87 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1 =DA=AF=D8=B2=D8=A7=D8=B1=D8=B4 =D8=
+=AF=D9=87=D9=86=D8=AF. (=D9=85=D8=AB=D9=84=D8=A7=D9=8B: "=D9=81=D8=B1=D9=88=
+=D8=B4 =D8=AF=D8=B1 =D9=85=D9=86=D8=B7=D9=82=D9=87 =D8=AC=D9=86=D9=88=D8=A8=
+ 30% =DA=A9=D8=A7=D9=87=D8=B4 =DB=8C=D8=A7=D9=81=D8=AA=D9=87 =D8=A7=D8=B3=
+=D8=AA=D8=8C =DA=A9=D9=87 =D8=B9=D9=85=D8=AF=D8=AA=D8=A7=D9=8B =D8=A8=D9=87=
+ =D8=AF=D9=84=DB=8C=D9=84 =DA=A9=D8=A7=D9=87=D8=B4 =D8=B9=D9=85=D9=84=DA=A9=
+=D8=B1=D8=AF =D9=85=D8=AD=D8=B5=D9=88=D9=84 X =D9=88 =D8=A7=D9=81=D8=B2=D8=
+=A7=DB=8C=D8=B4 =D8=B2=D9=85=D8=A7=D9=86 =D8=AA=D8=AD=D9=88=DB=8C=D9=84 =D8=
+=A8=D9=88=D8=AF=D9=87 =D8=A7=D8=B3=D8=AA.")</span></p></li>
+<li class=3D"ng-star-inserted"><p class=3D"ng-star-inserted"><strong class=
+=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D9=BE=D8=B1=D8=B3=
+=E2=80=8C=D9=88=D8=AC=D9=88=DB=8C =D8=B2=D8=A8=D8=A7=D9=86 =D8=B7=D8=A8=DB=
+=8C=D8=B9=DB=8C (NLQ) =D9=BE=DB=8C=D8=B4=D8=B1=D9=81=D8=AA=D9=87:</span></s=
+trong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A8=D9=87=D8=
+=A8=D9=88=D8=AF =D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7=
+=DB=8C=DB=8C =DA=A9=D9=87 =D8=A8=D9=87 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=A7=
+=D9=86 =D8=A7=D8=AC=D8=A7=D8=B2=D9=87 =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=
+=AF =D8=B3=D8=A4=D8=A7=D9=84=D8=A7=D8=AA =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=D9=
+=87 =D8=AE=D9=88=D8=AF =D8=B1=D8=A7 =D8=A8=D9=87 =D8=B2=D8=A8=D8=A7=D9=86 =
+=D9=85=D8=AD=D8=A7=D9=88=D8=B1=D9=87=E2=80=8C=D8=A7=DB=8C =D8=A7=D8=B2 =D8=
+=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7 =D8=A8=D9=BE=D8=B1=D8=B3=D9=86=
+=D8=AF =D9=88 =D9=BE=D8=A7=D8=B3=D8=AE =D8=B1=D8=A7 =D8=A8=D9=87 =D8=B5=D9=
+=88=D8=B1=D8=AA =DB=8C=DA=A9 =D9=86=D9=85=D9=88=D8=AF=D8=A7=D8=B1 =DB=8C=D8=
+=A7 =DA=AF=D8=B2=D8=A7=D8=B1=D8=B4 =D8=AF=D8=B1=DB=8C=D8=A7=D9=81=D8=AA =DA=
+=A9=D9=86=D9=86=D8=AF.</span></p></li>
+</ul></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 class=3D"ng-star-inserted" id=3D"id-=D9=87=D9=88=D8=B4=D8=AA=D8=AC=D8=
+=A7=D8=B1=DB=8C(BI):=D9=85=D8=B9=D9=85=D8=A7=D8=B1=DB=8C=D8=8C=D8=A7=D8=A8=
+=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C=D9=85=D8=AF=D8=B1=D9=86=D9=88=D9=81=D8=
+=B1=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C=D9=86=D9=88=D8=A2=D9=88=D8=B1=DB=
+=8C-=D9=86=D8=AA=DB=8C=D8=AC=D9=87=E2=80=8C=DA=AF=DB=8C=D8=B1=DB=8C"><span =
+style=3D"color: rgb(128,0,128);"><strong class=3D"ng-star-inserted"><span c=
+lass=3D"ng-star-inserted">=D9=86=D8=AA=DB=8C=D8=AC=D9=87=E2=80=8C=DA=AF=DB=
+=8C=D8=B1=DB=8C</span></strong></span></h2>
+<p class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=AF=D9=86=
+=DB=8C=D8=A7=DB=8C =D9=87=D9=88=D8=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C =D8=AF=
+=D8=B1 =D8=AD=D8=A7=D9=84 =DA=AF=D8=B0=D8=A7=D8=B1 =D8=A7=D8=B2<span>&nbsp;=
+</span></span><strong class=3D"ng-star-inserted"><span class=3D"ng-star-ins=
+erted">"BI 2.0" (=D8=B3=D9=84=D9=81-=D8=B3=D8=B1=D9=88=DB=8C=D8=B3 =D9=88 =
+=D8=AA=D8=AC=D8=B3=D9=85=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C)</span></strong><=
+span class=3D"ng-star-inserted"><span>&nbsp;</span>=D8=A8=D9=87<span>&nbsp;=
+</span></span><strong class=3D"ng-star-inserted"><span class=3D"ng-star-ins=
+erted">"BI 3.0" (=D8=A7=D9=81=D8=B2=D9=88=D8=AF=D9=87=D8=8C =DB=8C=DA=A9=D9=
+=BE=D8=A7=D8=B1=DA=86=D9=87 =D9=88 =D8=B9=D9=85=D9=84=DB=8C=D8=A7=D8=AA=DB=
+=8C)</span></strong><span class=3D"ng-star-inserted"><span>&nbsp;</span>=D8=
+=A7=D8=B3=D8=AA. =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C =D9=81=D8=
+=B9=D9=84=DB=8C=D8=8C =D9=87=D8=B1=DA=A9=D8=AF=D8=A7=D9=85 =D8=AF=D8=B1 =D8=
+=A8=D8=AE=D8=B4=DB=8C =D8=A7=D8=B2 =D8=A7=DB=8C=D9=86 =D9=BE=D8=A7=D8=B2=D9=
+=84 =D9=82=D8=AF=D8=B1=D8=AA=D9=85=D9=86=D8=AF =D9=87=D8=B3=D8=AA=D9=86=D8=
+=AF=D8=8C =D8=A7=D9=85=D8=A7 =D9=87=DB=8C=DA=86=E2=80=8C=DA=A9=D8=AF=D8=A7=
+=D9=85 =D9=87=D9=86=D9=88=D8=B2 =DB=8C=DA=A9 =D8=B1=D8=A7=D9=87=DA=A9=D8=A7=
+=D8=B1 =D8=AC=D8=A7=D9=85=D8=B9 =D9=88 =D8=A8=DB=8C=E2=80=8C=D9=86=D9=82=D8=
+=B5 =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D9=86=D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=
+=D8=A7=D9=86=D8=AF. =D9=81=D8=B1=D8=B5=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D8=
+=A8=D8=B2=D8=B1=DA=AF =D8=A8=D8=B9=D8=AF=DB=8C =D8=AF=D8=B1 =D8=A7=DB=8C=D9=
+=86 =D8=A8=D8=A7=D8=B2=D8=A7=D8=B1=D8=8C =D9=86=D9=87 =D8=AF=D8=B1 =D8=B3=
+=D8=A7=D8=AE=D8=AA =DB=8C=DA=A9 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1 =D8=AA=D8=AC=
+=D8=B3=D9=85=E2=80=8C=D8=B3=D8=A7=D8=B2=DB=8C =D8=B2=DB=8C=D8=A8=D8=A7=D8=
+=AA=D8=B1=D8=8C =D8=A8=D9=84=DA=A9=D9=87 =D8=AF=D8=B1 =D8=AD=D9=84 =DA=86=
+=D8=A7=D9=84=D8=B4=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A8=D9=86=DB=8C=D8=A7=D8=
+=AF=DB=8C =D9=86=D9=87=D9=81=D8=AA=D9=87 =D8=A7=D8=B3=D8=AA:<span>&nbsp;</s=
+pan></span><strong class=3D"ng-star-inserted"><span class=3D"ng-star-insert=
+ed">=DB=8C=DA=A9=D9=BE=D8=A7=D8=B1=DA=86=D9=87=E2=80=8C=D8=B3=D8=A7=D8=B2=
+=DB=8C =D9=88=D8=A7=D9=82=D8=B9=DB=8C =D9=81=D8=B1=D8=A2=DB=8C=D9=86=D8=AF =
+=D8=AF=D8=A7=D8=AF=D9=87</span></strong><span class=3D"ng-star-inserted">=
+=D8=8C<span>&nbsp;</span></span><strong class=3D"ng-star-inserted"><span cl=
+ass=3D"ng-star-inserted">=D8=A7=DB=8C=D8=AC=D8=A7=D8=AF =DB=8C=DA=A9 =D9=84=
+=D8=A7=DB=8C=D9=87 =D8=AD=D8=A7=DA=A9=D9=85=DB=8C=D8=AA=DB=8C =D9=87=D9=88=
+=D8=B4=D9=85=D9=86=D8=AF =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D8=B6=D9=85=DB=8C=
+=D9=86 =D8=AD=D9=82=DB=8C=D9=82=D8=AA =D9=88=D8=A7=D8=AD=D8=AF</span></stro=
+ng><span class=3D"ng-star-inserted">=D8=8C<span>&nbsp;</span></span><strong=
+ class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=D8=AA=
+=D8=B5=D8=A7=D9=84 =D9=85=D8=B3=D8=AA=D9=82=DB=8C=D9=85 =D8=A8=DB=8C=D9=86=
+=D8=B4 =D8=A8=D9=87 =D8=A7=D9=82=D8=AF=D8=A7=D9=85</span></strong><span cla=
+ss=3D"ng-star-inserted"><span>&nbsp;</span>=D9=88<span>&nbsp;</span></span>=
+<strong class=3D"ng-star-inserted"><span class=3D"ng-star-inserted">=D8=A7=
+=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D9=87=D9=88=D8=B4 =D9=85=
+=D8=B5=D9=86=D9=88=D8=B9=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=AE=D9=88=D8=AF=
+=DA=A9=D8=A7=D8=B1=D8=B3=D8=A7=D8=B2=DB=8C =D9=81=D8=B1=D8=A2=DB=8C=D9=86=
+=D8=AF =DA=A9=D8=B4=D9=81 =D8=A8=DB=8C=D9=86=D8=B4</span></strong><span cla=
+ss=3D"ng-star-inserted">. =D9=BE=D9=84=D8=AA=D9=81=D8=B1=D9=85=DB=8C =DA=A9=
+=D9=87 =D8=A8=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=A7=DB=8C=D9=86 =DA=86=D9=87=
+=D8=A7=D8=B1 =DA=86=D8=A7=D9=84=D8=B4 =D8=B1=D8=A7 =D8=AF=D8=B1 =DB=8C=DA=
+=A9 =D8=AA=D8=AC=D8=B1=D8=A8=D9=87 =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=DB=8C =D9=
+=85=D9=86=D8=B3=D8=AC=D9=85 =D9=88 =D9=82=D8=AF=D8=B1=D8=AA=D9=85=D9=86=D8=
+=AF =D8=AD=D9=84 =DA=A9=D9=86=D8=AF=D8=8C =D8=B1=D9=87=D8=A8=D8=B1 =D8=A8=
+=D9=84=D8=A7=D9=85=D9=86=D8=A7=D8=B2=D8=B9 =D9=86=D8=B3=D9=84 =D8=A8=D8=B9=
+=D8=AF=DB=8C =D9=87=D9=88=D8=B4 =D8=AA=D8=AC=D8=A7=D8=B1=DB=8C =D8=AE=D9=88=
+=D8=A7=D9=87=D8=AF =D8=A8=D9=88=D8=AF.</span></p>
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_200_830438088.1786980209893--

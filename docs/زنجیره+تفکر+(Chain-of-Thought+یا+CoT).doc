@@ -1,0 +1,938 @@
+Date: Mon, 17 Aug 2026 18:21:48 +0330 (GMT+03:30)
+Message-ID: <1831583735.195.1786978308543@AppServer.sadgan.int>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_194_507026164.1786978308542"
+
+------=_Part_194_507026164.1786978308542
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87 =D8=AA=D9=81=DA=A9=D8=B1 (C=
+hain-of-Thought =DB=8C=D8=A7 CoT)</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87 =D8=AA=D9=81=DA=A9=D8=B1 (Chai=
+n-of-Thought =DB=8C=D8=A7 CoT)</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" width=3D"1080" src=3D"https://miro.me=
+dium.com/v2/resize:fit:2000/1*rQBDIvknlJFCx_4c7PlCJg.png" data-image-src=3D=
+"https://miro.medium.com/v2/resize:fit:2000/1*rQBDIvknlJFCx_4c7PlCJg.png"><=
+/span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><strong>=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87 =D8=AA=D9=81=DA=A9=D8=B1</s=
+trong> =DA=A9=D9=87 =D8=A8=D9=87 =D8=A7=D9=86=DA=AF=D9=84=DB=8C=D8=B3=DB=8C=
+<strong> Chain-of-Thought</strong> =D8=A7=D8=B3=D8=AA =D9=88 =D8=A8=D9=87 =
+=D8=B5=D9=88=D8=B1=D8=AA =D8=A7=D8=AE=D8=AA=D8=B5=D8=A7=D8=B1 <strong>CoT <=
+/strong>=D9=86=D8=A7=D9=85 =D9=85=DB=8C =D8=A8=D8=B1=D9=86=D8=AF=D8=8C =DB=
+=8C=DA=A9 =D8=AA=DA=A9=D9=86=DB=8C=DA=A9 =D8=AF=D8=B1 =D9=85=D8=AF=D9=84 =
+=D9=87=D8=A7=DB=8C =D9=87=D9=88=D8=B4 =D9=85=D8=B5=D9=86=D9=88=D8=B9=DB=8C =
+=DA=A9=D9=87 =D8=A8=D8=A7=D8=B9=D8=AB =D9=85=DB=8C=E2=80=8E=E2=80=8F =D8=B4=
+=D9=88=D8=AF =D8=A8=D9=87 =D8=AC=D8=A7=DB=8C =D9=BE=D8=A7=D8=B3=D8=AE =D9=
+=85=D8=B3=D8=AA=D9=82=DB=8C=D9=85 =D9=85=D8=AF=D9=84 =D9=82=D8=AF=D9=85 =D8=
+=A8=D9=87 =D9=82=D8=AF=D9=85 =D9=85=D9=86=D8=B7=D9=82 =D8=AE=D9=88=D8=AF =
+=D8=B1=D8=A7 =D8=AA=D9=88=D8=B6=DB=8C=D8=AD =D8=AF=D9=87=D8=AF. =D8=A7=DB=
+=8C=D9=86 =DA=A9=D8=A7=D8=B1 =D8=A8=D8=A7=D8=B9=D8=AB =D8=A8=D9=87=D8=A8=D9=
+=88=D8=AF =D8=AF=D9=82=D8=AA =D9=85=D8=AF=D9=84 =D8=AF=D8=B1 =D9=85=D8=B3=
+=D8=A7=D8=A6=D9=84 =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=D9=87 =D9=85=D8=AB=D9=84 =
+=D8=AD=D9=84 =D9=85=D8=B3=D8=A7=D8=A6=D9=84 =D8=B1=DB=8C=D8=A7=D8=B6=DB=8C =
+=DB=8C=D8=A7 =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D9=85=D9=86=D8=B7=
+=D9=82=DB=8C =D9=85=DB=8C =D8=B4=D9=88=D8=AF.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p>=D8=A7=DB=8C=D9=86 =D8=AA=DA=A9=D9=86=DB=8C=DA=A9 =D8=AF=D8=B1 =D8=B3=D8=
+=A7=D9=84 =DB=B2=DB=B0=DB=B2=DB=B2 =D8=AA=D9=88=D8=B3=D8=B7 Wei =D9=88 =D9=
+=87=D9=85=DA=A9=D8=A7=D8=B1=D8=A7=D9=86=D8=B4 =D9=85=D8=B9=D8=B1=D9=81=DB=
+=8C =D8=B4=D8=AF=D9=87 =D8=A7=D8=B3=D8=AA.(<a href=3D"https://arxiv.org/abs=
+/2201.11903" class=3D"external-link" rel=3D"nofollow">=D9=84=DB=8C=D9=86=DA=
+=A9 =D9=85=D9=82=D8=A7=D9=84=D9=87</a>) =D8=A7=DB=8C=D9=86 =D8=AA=DA=A9=D9=
+=86=DB=8C=DA=A9 =D8=A8=D9=87 =D9=85=D8=AF=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =
+=D8=B2=D8=A8=D8=A7=D9=86=DB=8C =D8=A8=D8=B2=D8=B1=DA=AF (LLM) =D8=A7=D9=85=
+=DA=A9=D8=A7=D9=86 =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF =D8=AA=D8=A7 =D8=
+=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D9=85=D8=
+=B1=D8=A7=D8=AD=D9=84 =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D9=88=D8=
+=A7=D8=B3=D8=B7=D9=87=E2=80=8C=D8=A7=DB=8C=D8=8C =D8=AA=D9=88=D8=A7=D9=86=
+=D8=A7=DB=8C=DB=8C =D8=AD=D9=84 =D9=85=D8=B3=D8=A7=D8=A6=D9=84 =D9=BE=DB=8C=
+=DA=86=DB=8C=D8=AF=D9=87 =D8=B1=D8=A7 =D8=A8=D9=87=D8=A8=D9=88=D8=AF =D8=A8=
+=D8=AE=D8=B4=D9=86=D8=AF.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=D8=AA=D9=81=DA=A9=D8=B1(C=
+hainofThought=DB=8C=D8=A7CoT)-=D8=A7=D9=86=D9=88=D8=A7=D8=B9ChainofThought(=
+CoT)"><span style=3D"color: rgb(51,51,153);"><strong>=D8=A7=D9=86=D9=88=D8=
+=A7=D8=B9 Chain of Thought (CoT)</strong></span></h2>
+<p><span style=3D"color: rgb(0,0,0);">=D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=AA=
+ =DA=A9=D9=84=DB=8C CoT =D8=B1=D9=88 =D9=85=DB=8C=D8=AA=D9=88=D8=A7=D9=86 =
+=D8=A8=D9=87 4 =D8=AF=D8=B3=D8=AA=D9=87 =D8=A7=D8=B5=D9=84=DB=8C =D8=AA=D9=
+=82=D8=B3=DB=8C=D9=85 =D8=A8=D9=86=D8=AF=DB=8C =DA=A9=D8=B1=D8=AF:</span></=
+p>
+<ol>
+<li><h3 id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=D8=AA=D9=81=DA=A9=D8=
+=B1(ChainofThought=DB=8C=D8=A7CoT)-BasedonPromptingStrategy"><span style=3D=
+"color: rgb(0,0,0);"><span style=3D"color: rgb(0,0,0);"><strong><span style=
+=3D"color: rgb(128,0,128);">Based on Prompting Strategy</span></strong><br>=
+</span></span></h3><p>=D8=A7=DB=8C=D9=86 =D8=A8=D8=AE=D8=B4 CoT =D8=B1=D8=
+=A7 =D8=A8=D8=B1 =D8=A7=D8=B3=D8=A7=D8=B3 =D9=86=D8=AD=D9=88=D9=87 =D8=AF=
+=D8=B1=D8=AE=D9=88=D8=A7=D8=B3=D8=AA =D9=85=D8=AF=D9=84 =D8=AF=D8=B3=D8=AA=
+=D9=87 =D8=A8=D9=86=D8=AF=DB=8C =D9=85=DB=8C =DA=A9=D9=86=D8=AF =DA=A9=D9=
+=87 =D8=B5=D8=AD=DB=8C=D8=AD =D8=A7=D8=B3=D8=AA.<br><span style=3D"color: r=
+gb(255,0,255);"><strong>=E2=9C=85 Standard CoT:</strong></span></p><p>=D8=
+=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4=D8=8C =D8=A8=D9=87 =D9=85=
+=D8=AF=D9=84 =D9=86=D9=85=D9=88=D9=86=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C=DB=
+=8C =D8=A7=D8=B2 =D8=B3=D9=88=D8=A7=D9=84=D8=A7=D8=AA =D9=88 =D8=AC=D9=88=
+=D8=A7=D8=A8=E2=80=8C=D9=87=D8=A7 =D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D9=86=
+=D8=AF =DA=A9=D9=87 =D8=AF=D8=B1 =D8=A2=D9=86=E2=80=8C=D9=87=D8=A7 =D8=B1=
+=D9=88=D9=86=D8=AF =D8=AA=D9=81=DA=A9=D8=B1 =D9=85=D8=B1=D8=AD=D9=84=D9=87 =
+=D8=A8=D9=87 =D9=85=D8=B1=D8=AD=D9=84=D9=87 =D9=86=D8=B4=D8=A7=D9=86 =D8=AF=
+=D8=A7=D8=AF=D9=87 =D8=B4=D8=AF=D9=87 =D8=A7=D8=B3=D8=AA. =D9=85=D8=AF=D9=
+=84 =DB=8C=D8=A7=D8=AF =D9=85=DB=8C=E2=80=8C=DA=AF=DB=8C=D8=B1=D8=AF =DA=A9=
+=D9=87 =DA=86=DA=AF=D9=88=D9=86=D9=87 =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D9=86=
+=D8=AF =D8=B1=D8=A7 =D8=A8=D8=B1=D8=A7=DB=8C =D8=B3=D9=88=D8=A7=D9=84=D8=A7=
+=D8=AA =D8=AC=D8=AF=DB=8C=D8=AF =D8=AF=D9=86=D8=A8=D8=A7=D9=84 =DA=A9=D9=86=
+=D8=AF<span>.</span></p><p>=D9=85=D8=AB=D9=84=D8=A7=D9=8B =D8=B3=D9=88=D8=
+=A7=D9=84: "=D8=B1=D8=A7=D8=AC=D8=B1 =DB=B5 =D8=AA=D9=88=D9=BE =D8=AA=D9=86=
+=DB=8C=D8=B3 =D8=AF=D8=A7=D8=B1=D8=AF. =D8=A7=D9=88 =DB=B2 =D9=82=D9=88=D8=
+=B7=DB=8C =D8=AF=DB=8C=DA=AF=D8=B1 =D9=85=DB=8C=E2=80=8C=D8=AE=D8=B1=D8=AF.=
+ =D9=87=D8=B1 =D9=82=D9=88=D8=B7=DB=8C =DB=B3 =D8=AA=D9=88=D9=BE =D8=AF=D8=
+=A7=D8=B1=D8=AF. =D8=AD=D8=A7=D9=84=D8=A7 =DA=86=D9=86=D8=AF =D8=AA=D9=88=
+=D9=BE =D8=AF=D8=A7=D8=B1=D8=AF=D8=9F<span>"</span></p><p>=D8=B1=D9=88=D9=
+=86=D8=AF =D8=AA=D9=81=DA=A9=D8=B1: =D8=B1=D8=A7=D8=AC=D8=B1 =DB=B5 =D8=AA=
+=D9=88=D9=BE =D8=AF=D8=A7=D8=B1=D8=AF. =D8=A7=D9=88 =DB=B2 =D9=82=D9=88=D8=
+=B7=DB=8C =D9=85=DB=8C=E2=80=8C=D8=AE=D8=B1=D8=AF =DA=A9=D9=87 =D9=87=D8=B1=
+=DA=A9=D8=AF=D8=A7=D9=85 =DB=B3 =D8=AA=D9=88=D9=BE =D8=AF=D8=A7=D8=B1=D9=86=
+=D8=AF=D8=8C =D9=BE=D8=B3 =DB=B2 =D8=B6=D8=B1=D8=A8=D8=AF=D8=B1 =DB=B3 =D9=
+=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF =DB=B6 =D8=AA=D9=88=D9=BE. =D9=BE=D8=
+=B3 =D9=85=D8=AC=D9=85=D9=88=D8=B9=D8=A7=D9=8B =DB=B5 =D8=AA=D9=88=D9=BE + =
+=DB=B6 =D8=AA=D9=88=D9=BE =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF =DB=B1=DB=
+=B1 =D8=AA=D9=88=D9=BE<span>.</span></p><p>=D8=AC=D9=88=D8=A7=D8=A8: =DB=B1=
+=DB=B1</p><p><br><span style=3D"color: rgb(255,0,255);"><strong>=E2=9C=85 Z=
+ero-Shot CoT (Zero-Shot-CoT):</strong></span></p><p>=D8=AF=D8=B1 =D8=A7=DB=
+=8C=D9=86 =D8=B1=D9=88=D8=B4=D8=8C =D9=87=DB=8C=DA=86 =D9=86=D9=85=D9=88=D9=
+=86=D9=87=E2=80=8C=D8=A7=DB=8C =D8=A7=D8=B2 =D8=B1=D9=88=D9=86=D8=AF =D8=AA=
+=D9=81=DA=A9=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87 =D9=86=D9=85=DB=8C=E2=80=8C=D8=
+=B4=D9=88=D8=AF. =D9=81=D9=82=D8=B7 =D8=A8=D9=87 =D9=85=D8=AF=D9=84 =DA=AF=
+=D9=81=D8=AA=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF =DA=A9=D9=87 "=
+=D9=85=D8=B1=D8=AD=D9=84=D9=87 =D8=A8=D9=87 =D9=85=D8=B1=D8=AD=D9=84=D9=87 =
+=D9=81=DA=A9=D8=B1 =DA=A9=D9=86". =D9=85=D8=AF=D9=84 =D8=A8=D8=A7=DB=8C=D8=
+=AF =D8=AE=D9=88=D8=AF=D8=B4 =D8=B1=D9=88=D9=86=D8=AF =D8=AA=D9=81=DA=A9=D8=
+=B1 =D8=B1=D8=A7 =D9=BE=DB=8C=D8=AF=D8=A7 =DA=A9=D9=86=D8=AF<span>.</span><=
+/p><p>=D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4 =DA=A9=D8=A7=D8=B1=D8=A7=DB=8C=
+=DB=8C =D8=AE=D9=88=D8=A8=DB=8C =D8=AF=D8=A7=D8=B1=D8=AF =D9=88 =D8=AF=D8=
+=B1 =D9=85=D9=88=D8=A7=D9=82=D8=B9=DB=8C =DA=A9=D9=87 =D8=AF=D8=A7=D8=AF=D9=
+=86 =D9=86=D9=85=D9=88=D9=86=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=A8=DB=8C=
+=D8=B4=D8=AA=D8=B1 =D8=B3=D8=AE=D8=AA =D8=A7=D8=B3=D8=AA=D8=8C =D9=85=D9=81=
+=DB=8C=D8=AF =D8=A7=D8=B3=D8=AA<span>.</span></p><p><br><span style=3D"colo=
+r: rgb(255,0,255);"><strong>=E2=9C=85 Few-Shot CoT with Rationale Selection=
+:</strong></span></p><p>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4=
+=D8=8C =D9=85=D8=AF=D9=84 =D8=A8=D9=87 =D8=AC=D8=A7=DB=8C =D9=86=D8=B4=D8=
+=A7=D9=86 =D8=AF=D8=A7=D8=AF=D9=86 =D8=AA=D9=85=D8=A7=D9=85=DB=8C =D9=85=D8=
+=B1=D8=A7=D8=AD=D9=84 =D8=AA=D9=81=DA=A9=D8=B1=D8=8C =DA=86=D9=86=D8=AF =D9=
+=86=D9=85=D9=88=D9=86=D9=87 =D8=A7=D8=B2 =D8=B3=D9=88=D8=A7=D9=84=D8=A7=D8=
+=AA =D9=85=D8=B4=D8=A7=D8=A8=D9=87 =D8=B1=D8=A7 =D9=86=D8=B4=D8=A7=D9=86 =
+=D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF =D9=88 =D8=B3=D9=BE=D8=B3 =D8=A8=D9=
+=87 =D9=85=D8=AF=D9=84 =DA=AF=D9=81=D8=AA=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=
+=D9=88=D8=AF =DA=A9=D9=87 =D8=AA=D9=88=D8=B6=DB=8C=D8=AD=D8=A7=D8=AA =D9=85=
+=D8=B4=D8=A7=D8=A8=D9=87 =D8=B1=D8=A7 =D8=A7=D9=86=D8=AA=D8=AE=D8=A7=D8=A8 =
+=DA=A9=D9=86=D8=AF<span>.</span></p><p>=D8=A7=DB=8C=D9=86 =D8=AA=D8=B1=DA=
+=A9=DB=8C=D8=A8=DB=8C =D8=A7=D8=B2 =D8=B1=D9=88=D8=B4=E2=80=8C=D9=87=D8=A7=
+=DB=8C =D8=A8=D8=A7=D9=84=D8=A7 =D8=A7=D8=B3=D8=AA =DA=A9=D9=87 =D9=87=D9=
+=85 =D9=86=D9=85=D9=88=D9=86=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C=DB=8C =D8=A7=
+=D8=B2 =D8=AA=D9=81=DA=A9=D8=B1 =D9=86=D8=B4=D8=A7=D9=86 =D9=85=DB=8C=E2=80=
+=8C=D8=AF=D9=87=D8=AF =D9=88 =D9=87=D9=85 =D8=A7=D8=AC=D8=A7=D8=B2=D9=87 =
+=D9=85=DB=8C=E2=80=8C=D8=AF=D9=87=D8=AF =D9=85=D8=AF=D9=84 =D8=AE=D9=88=D8=
+=AF=D8=B4 =D8=AA=D9=88=D8=B6=DB=8C=D8=AD=D8=A7=D8=AA =D8=B1=D8=A7 =D8=A7=D9=
+=86=D8=AA=D8=AE=D8=A7=D8=A8 =DA=A9=D9=86=D8=AF<span>.<br></span></p></li>
+<li><h3 id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=D8=AA=D9=81=DA=A9=D8=
+=B1(ChainofThought=DB=8C=D8=A7CoT)-BasedonStructureandFormofReasoningChains=
+"><span style=3D"color: rgb(128,0,128);"><strong>Based on Structure and For=
+m of Reasoning Chains<br></strong></span></h3><p>=D8=A7=DB=8C=D9=86 =D8=B1=
+=D9=88=D8=B4=E2=80=8C=D9=87=D8=A7 =D8=A8=D9=87 =D9=86=D8=AD=D9=88=D9=87=E2=
+=80=8C=D8=A7=DB=8C =DA=A9=D9=87 =D8=AA=D9=81=DA=A9=D8=B1 =D9=85=D8=AF=D9=84=
+ =D8=A7=D8=B2 =D9=86=D8=B8=D8=B1 =D8=B3=D8=A7=D8=AE=D8=AA=D8=A7=D8=B1=DB=8C=
+ =D8=A7=D9=86=D8=AC=D8=A7=D9=85 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF=D8=
+=8C =D8=A8=D8=B3=D8=AA=DA=AF=DB=8C =D8=AF=D8=A7=D8=B1=D9=86=D8=AF<span>.<br=
+><span style=3D"color: rgb(255,0,255);"><strong>=E2=9C=85 Linear CoT:</stro=
+ng></span><br></span></p><p>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=
+=B4=D8=8C =D8=AA=D9=81=DA=A9=D8=B1 =D9=85=D8=AF=D9=84 =D8=A8=D9=87 =D8=B5=
+=D9=88=D8=B1=D8=AA =DA=AF=D8=A7=D9=85 =D8=A8=D9=87 =DA=AF=D8=A7=D9=85 =D8=
+=A7=D8=B3=D8=AA =D9=88 =D9=87=D8=B1 =D9=85=D8=B1=D8=AD=D9=84=D9=87 =D8=A8=
+=D9=87 =D8=B7=D9=88=D8=B1 =D9=85=D8=B3=D8=AA=D9=82=DB=8C=D9=85 =D8=A8=D9=87=
+ =D9=85=D8=B1=D8=AD=D9=84=D9=87 =D8=A8=D8=B9=D8=AF=DB=8C =D9=88=D8=B5=D9=84=
+ =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF<span>.</span></p><p>=D9=85=D8=AB=
+=D9=84=D8=A7=D9=8B =D8=AF=D8=B1 =D9=85=D8=AB=D8=A7=D9=84 =D8=AA=D9=88=D9=BE=
+=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AA=D9=86=DB=8C=D8=B3 =DA=A9=D9=87 =DA=AF=D9=
+=81=D8=AA=DB=8C=D9=85=D8=8C =D8=B1=D9=88=D9=86=D8=AF =D8=AA=D9=81=DA=A9=D8=
+=B1 =D8=A7=D8=B2 =D8=A7=D8=A8=D8=AA=D8=AF=D8=A7 =D8=AA=D8=A7 =D8=A7=D9=86=
+=D8=AA=D9=87=D8=A7 =D8=A8=D9=87 =D8=B7=D9=88=D8=B1 =D9=85=D8=B3=D8=AA=D9=82=
+=DB=8C=D9=85 =D8=AF=D9=86=D8=A8=D8=A7=D9=84 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=
+=88=D8=AF<span>.</span></p><p><span><br><span style=3D"color: rgb(255,0,255=
+);"><strong>=E2=9C=85Branching CoT:</strong></span><br>=D8=AF=D8=B1 =D8=A7=
+=DB=8C=D9=86=D8=AC=D8=A7 =D9=85=D8=AF=D9=84 =D9=85=D9=85=DA=A9=D9=86 =D8=A7=
+=D8=B3=D8=AA =DA=86=D9=86=D8=AF =D9=85=D8=B3=DB=8C=D8=B1 =D9=85=D8=AE=D8=AA=
+=D9=84=D9=81 =D8=A8=D8=B1=D8=A7=DB=8C =D8=B1=D8=B3=DB=8C=D8=AF=D9=86 =D8=A8=
+=D9=87 =D8=AC=D9=88=D8=A7=D8=A8 =D8=A7=D9=85=D8=AA=D8=AD=D8=A7=D9=86 =DA=A9=
+=D9=86=D8=AF. =D9=85=D8=AB=D9=84=D8=A7=D9=8B =D9=85=D9=85=DA=A9=D9=86 =D8=
+=A7=D8=B3=D8=AA =DA=86=D9=86=D8=AF =D9=81=D8=B1=D8=B6=DB=8C=D9=87 =DB=8C=D8=
+=A7 =D8=AA=D9=81=D8=B3=DB=8C=D8=B1 =D9=85=D8=AE=D8=AA=D9=84=D9=81 =D8=B1=D8=
+=A7 =D8=A8=D8=B1=D8=B1=D8=B3=DB=8C =DA=A9=D9=86=D8=AF =D9=88 =D8=A7=D8=B2 =
+=D8=A8=DB=8C=D9=86 =D8=A2=D9=86=E2=80=8C=D9=87=D8=A7 =DB=8C=DA=A9=DB=8C =D8=
+=B1=D8=A7 =D8=A7=D9=86=D8=AA=D8=AE=D8=A7=D8=A8 =DA=A9=D9=86=D8=AF.<br><br><=
+span style=3D"color: rgb(255,0,255);"><strong>=E2=9C=85Tree-of-Thought (ToT=
+):</strong></span><br>=D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4 =D9=BE=DB=8C=D8=
+=B4=D8=B1=D9=81=D8=AA=D9=87=E2=80=8C=D8=AA=D8=B1 =D8=A7=D8=B2 =D8=B4=D8=A7=
+=D8=AE=D9=87=E2=80=8C=D8=A7=DB=8C =D8=A7=D8=B3=D8=AA. =D8=AF=D8=B1 =D8=A7=
+=DB=8C=D9=86=D8=AC=D8=A7 =D9=85=D8=AF=D9=84 =DB=8C=DA=A9 =D8=AF=D8=B1=D8=AE=
+=D8=AA =D8=AA=D8=B5=D9=85=DB=8C=D9=85=E2=80=8C=DA=AF=DB=8C=D8=B1=DB=8C =D8=
+=A7=DB=8C=D8=AC=D8=A7=D8=AF =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF =DA=A9=
+=D9=87 =D9=87=D8=B1 =D8=B4=D8=A7=D8=AE=D9=87 =D9=86=D9=85=D8=A7=DB=8C=D8=A7=
+=D9=86=DA=AF=D8=B1 =DB=8C=DA=A9 =D9=85=D8=B3=DB=8C=D8=B1 =D9=85=D8=AA=D9=81=
+=D8=A7=D9=88=D8=AA =D8=A7=D8=B3=D8=AA. =D9=85=D8=AF=D9=84 =D9=85=DB=8C=E2=
+=80=8C=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=A7=D8=B2 =D8=A7=D9=84=DA=AF=D9=88=
+=D8=B1=DB=8C=D8=AA=D9=85=E2=80=8C=D9=87=D8=A7=DB=8C=DB=8C =D8=A8=D8=B1=D8=
+=A7=DB=8C =D8=AC=D8=B3=D8=AA=D8=AC=D9=88=DB=8C =D8=A8=D9=87=D8=AA=D8=B1=DB=
+=8C=D9=86 =D9=85=D8=B3=DB=8C=D8=B1 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=
+=87 =DA=A9=D9=86=D8=AF.<br><br><span style=3D"color: rgb(255,0,255);"><stro=
+ng>=E2=9C=85CoT =D8=BA=DB=8C=D8=B1=DA=A9=D9=84=D8=A7=D9=85=DB=8C (Non-Verba=
+l CoT) =DB=8C=D8=A7 CoT =D8=A8=D8=B5=D8=B1=DB=8C (Visual CoT):</strong></sp=
+an><br>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4=D8=8C =D9=85=D8=
+=AF=D9=84 =D8=A8=D9=87 =D8=AC=D8=A7=DB=8C =D9=81=D9=82=D8=B7 =D8=A7=D8=B2 =
+=D9=85=D8=AA=D9=86=D8=8C =D8=A7=D8=B2 =D8=A7=D8=B7=D9=84=D8=A7=D8=B9=D8=A7=
+=D8=AA =D8=AA=D8=B5=D9=88=DB=8C=D8=B1=DB=8C =DB=8C=D8=A7 =D8=AF=DB=8C=DA=AF=
+=D8=B1 =D8=AF=D8=A7=D8=AF=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=BA=DB=8C=D8=
+=B1=DA=A9=D9=84=D8=A7=D9=85=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D9=81=DA=
+=A9=D8=B1 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=
+=DA=A9=D9=86=D8=AF. =D9=85=D8=AB=D9=84=D8=A7=D9=8B =D9=85=D9=85=DA=A9=D9=86=
+ =D8=A7=D8=B3=D8=AA =D8=A8=D9=87 =D9=85=D8=AF=D9=84 =D8=AA=D8=B5=D9=88=DB=
+=8C=D8=B1=DB=8C =D8=AF=D8=A7=D8=AF=D9=87 =D8=B4=D9=88=D8=AF =D9=88 =D8=A7=
+=D8=B2 =D8=A2=D9=86 =D8=A8=D8=AE=D9=88=D8=A7=D9=87=D8=AF =DA=A9=D9=87 =D8=
+=AA=D8=AD=D9=84=DB=8C=D9=84 =DA=A9=D9=86=D8=AF.<br><br></span></p></li>
+<li><h3 id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=D8=AA=D9=81=DA=A9=D8=
+=B1(ChainofThought=DB=8C=D8=A7CoT)-BasedontheUseofExternalKnowledgeandTools=
+"><span style=3D"color: rgb(128,0,128);"><strong>Based on the Use of Extern=
+al Knowledge and Tools<br></strong></span></h3><p>=D8=AF=D8=B1 =D8=A7=DB=8C=
+=D9=86=D8=AC=D8=A7 =D9=85=D8=AF=D9=84 =D8=A7=D8=B2 =D9=85=D9=86=D8=A7=D8=A8=
+=D8=B9 =DB=8C=D8=A7 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=8C =D8=A8=
+=DB=8C=D8=B1=D9=88=D9=86=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D8=AA=D9=82=D9=88=
+=DB=8C=D8=AA =D8=AA=D9=81=DA=A9=D8=B1 =D8=AE=D9=88=D8=AF =D8=A7=D8=B3=D8=AA=
+=D9=81=D8=A7=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF<span>.<br>=
+<span style=3D"color: rgb(255,0,255);"><strong>=E2=9C=85Knowledge-Augmented=
+ CoT:<br></strong><span style=3D"color: rgb(0,0,0);">=D8=AF=D8=B1 =D8=A7=DB=
+=8C=D9=86 =D8=B1=D9=88=D8=B4=D8=8C =D9=85=D8=AF=D9=84 =D8=A7=D8=B2 =D9=85=
+=D9=86=D8=A7=D8=A8=D8=B9 =D8=AE=D8=A7=D8=B1=D8=AC=DB=8C =D9=85=D8=A7=D9=86=
+=D9=86=D8=AF =D9=BE=D8=A7=DB=8C=DA=AF=D8=A7=D9=87=E2=80=8C=D9=87=D8=A7=DB=
+=8C =D8=AF=D8=A7=D8=AF=D9=87 =DB=8C=D8=A7 =D9=85=D9=88=D8=AA=D9=88=D8=B1=D9=
+=87=D8=A7=DB=8C =D8=AC=D8=B3=D8=AA=D8=AC=D9=88 =D8=A8=D8=B1=D8=A7=DB=8C =D8=
+=A8=D9=87 =D8=AF=D8=B3=D8=AA =D8=A2=D9=88=D8=B1=D8=AF=D9=86 =D8=A7=D8=B7=D9=
+=84=D8=A7=D8=B9=D8=A7=D8=AA =D8=A7=D8=B6=D8=A7=D9=81=DB=8C =D9=88 =D8=AF=D8=
+=B1=D8=B3=D8=AA=E2=80=8C=D8=AA=D8=B1 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=
+=D9=87 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF. =D9=85=D8=AB=D9=84=D8=A7=D9=
+=8B =D9=85=D9=85=DA=A9=D9=86 =D8=A7=D8=B3=D8=AA =D8=A7=D8=B2 =DB=8C=DA=A9 =
+=D9=BE=D8=A7=DB=8C=DA=AF=D8=A7=D9=87 =D8=AF=D8=A7=D8=AF=D9=87 =D8=A8=D8=B1=
+=D8=A7=DB=8C =D8=AC=D8=B3=D8=AA=D8=AC=D9=88=DB=8C =D8=AA=D8=B9=D8=B1=DB=8C=
+=D9=81=E2=80=8C=D9=87=D8=A7 =DB=8C=D8=A7 =D8=B1=D9=88=D8=A7=D8=A8=D8=B7 =D8=
+=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =DA=A9=D9=86=D8=AF.</span></span><b=
+r><br><span style=3D"color: rgb(255,0,255);"><strong>=E2=9C=85Tool-Augmente=
+d CoT:</strong></span><br>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86=D8=AC=D8=A7 =D9=
+=85=D8=AF=D9=84 =D8=A7=D8=B2 =D8=A7=D8=A8=D8=B2=D8=A7=D8=B1=D9=87=D8=A7=DB=
+=8C =D8=AE=D8=A7=D8=B1=D8=AC=DB=8C =D9=85=D8=A7=D9=86=D9=86=D8=AF =D9=85=D8=
+=A7=D8=B4=DB=8C=D9=86 =D8=AD=D8=B3=D8=A7=D8=A8=E2=80=8C=D9=87=D8=A7 =DB=8C=
+=D8=A7 =DA=A9=D8=AF =D8=A7=D8=AC=D8=B1=D8=A7=DB=8C=DB=8C =D8=A8=D8=B1=D8=A7=
+=DB=8C =D8=AD=D9=84 =D9=85=D8=B3=D8=A7=D8=A6=D9=84 =D8=A7=D8=B3=D8=AA=D9=81=
+=D8=A7=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF. =D9=85=D8=AB=D9=
+=84=D8=A7=D9=8B =D9=85=D8=AF=D9=84 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=
+=D9=86=D8=AF =D8=A7=D8=B2 =DB=8C=DA=A9 =D8=B2=D8=A8=D8=A7=D9=86 =D8=A8=D8=
+=B1=D9=86=D8=A7=D9=85=D9=87=E2=80=8C=D9=86=D9=88=DB=8C=D8=B3=DB=8C =D8=A8=
+=D8=B1=D8=A7=DB=8C =D9=85=D8=AD=D8=A7=D8=B3=D8=A8=D8=A7=D8=AA =D8=A7=D8=B3=
+=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =DA=A9=D9=86=D8=AF.<br><br><span style=3D"co=
+lor: rgb(255,0,255);"><strong>=E2=9C=85Iterative CoT with Feedback:<br></st=
+rong><span style=3D"color: rgb(0,0,0);">=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=
+=B1=D9=88=D8=B4=D8=8C =D9=85=D8=AF=D9=84 =D8=A7=D8=A8=D8=AA=D8=AF=D8=A7 =DB=
+=8C=DA=A9 =D8=B1=D9=88=D9=86=D8=AF =D8=AA=D9=81=DA=A9=D8=B1 =D8=AA=D9=88=D9=
+=84=DB=8C=D8=AF =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF =D9=88 =D8=B3=D9=BE=
+=D8=B3 =D8=A2=D9=86 =D8=B1=D8=A7 =D8=A7=D8=B1=D8=B2=DB=8C=D8=A7=D8=A8=DB=8C=
+ =DA=A9=D8=B1=D8=AF=D9=87 =D9=88 =D8=A8=D8=B1 =D8=A7=D8=B3=D8=A7=D8=B3 =D8=
+=A8=D8=A7=D8=B2=D8=AE=D9=88=D8=B1=D8=AF (=D9=85=D8=AB=D9=84 =D9=86=D8=B8=D8=
+=B1 =D8=A7=D9=86=D8=B3=D8=A7=D9=86 =DB=8C=D8=A7 =D9=85=D8=B9=DB=8C=D8=A7=D8=
+=B1=D9=87=D8=A7=DB=8C =D8=AE=D9=88=D8=AF=DA=A9=D8=A7=D8=B1) =D8=A2=D9=86 =
+=D8=B1=D8=A7 =D8=A7=D8=B5=D9=84=D8=A7=D8=AD =D9=85=DB=8C=E2=80=8C=DA=A9=D9=
+=86=D8=AF.</span><strong><br></strong></span><br></span></p></li>
+<li><h3 id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=D8=AA=D9=81=DA=A9=D8=
+=B1(ChainofThought=DB=8C=D8=A7CoT)-BasedontheGoalofCoT"><span style=3D"colo=
+r: rgb(128,0,128);"><strong>Based on the Goal of CoT<br></strong></span></h=
+3>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86=D8=AC=D8=A7 =D9=85=D8=AF=D9=84 =D8=A8=D8=
+=B3=D8=AA=D9=87 =D8=A8=D9=87 =D9=87=D8=AF=D9=81=DB=8C =DA=A9=D9=87 =D8=A7=
+=D8=B2 =D8=AA=D9=81=DA=A9=D8=B1 =D8=AF=D8=A7=D8=B1=D8=AF=D8=8C =D8=B1=D9=88=
+=D8=B4=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=AE=D8=AA=D9=84=D9=81=DB=8C =D8=
+=B1=D8=A7 =D8=AF=D9=86=D8=A8=D8=A7=D9=84 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=
+=D8=AF<span>.<br><br></span><strong style=3D"color: rgb(128,0,128);font-siz=
+e: 16.0px;letter-spacing: -0.006em;text-align: left;text-indent: 1.0em;"><s=
+pan style=3D"color: rgb(255,0,255);">=E2=9C=85Accuracy-Focused CoT:<br></sp=
+an></strong><span style=3D"color: rgb(0,0,0);">=D8=AF=D8=B1 =D8=A7=DB=8C=D9=
+=86=D8=AC=D8=A7 =D9=85=D8=AF=D9=84 =D8=B3=D8=B9=DB=8C =D8=AF=D8=A7=D8=B1=D8=
+=AF =D8=A8=D9=87 =D8=AC=D9=88=D8=A7=D8=A8 =D8=AF=D9=82=DB=8C=D9=82=E2=80=8C=
+=D8=AA=D8=B1=DB=8C =D8=A8=D8=B1=D8=B3=D8=AF =D9=88 =D8=A8=D8=B1=D8=A7=DB=8C=
+ =D8=A7=DB=8C=D9=86 =DA=A9=D8=A7=D8=B1 =D9=85=D9=85=DA=A9=D9=86 =D8=A7=D8=
+=B3=D8=AA =D8=AA=D9=88=D8=B6=DB=8C=D8=AD=D8=A7=D8=AA =D8=AF=D9=82=DB=8C=D9=
+=82=E2=80=8C=D8=AA=D8=B1=DB=8C =D8=AA=D9=88=D9=84=DB=8C=D8=AF =DA=A9=D9=86=
+=D8=AF. =D8=A7=DB=8C=D9=86 =D8=B1=D9=88=D8=B4 =D9=85=D8=B9=D9=85=D9=88=D9=
+=84=D8=A7=D9=8B =D8=AF=D8=B1 CoT =D8=A7=D8=B3=D8=AA=D8=A7=D9=86=D8=AF=D8=A7=
+=D8=B1=D8=AF =D8=AF=DB=8C=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=
+=AF.<br></span><strong style=3D"color: rgb(128,0,128);font-size: 16.0px;let=
+ter-spacing: -0.006em;text-align: left;text-indent: 1.0em;"><span style=3D"=
+color: rgb(255,0,255);"><br><strong style=3D"text-align: left;">=E2=9C=85Ex=
+plainability-Focused CoT:</strong><br></span></strong><span style=3D"color:=
+ rgb(255,0,255);"><span style=3D"color: rgb(0,0,0);">=D8=AF=D8=B1 =D8=A7=DB=
+=8C=D9=86=D8=AC=D8=A7 =D9=85=D8=AF=D9=84 =D8=A8=DB=8C=D8=B4=D8=AA=D8=B1 =D8=
+=AA=D9=85=D8=B1=DA=A9=D8=B2 =D8=AF=D8=A7=D8=B1=D8=AF =D8=A8=D8=B1 =D8=A7=DB=
+=8C=D9=86=DA=A9=D9=87 =D8=B1=D9=88=D9=86=D8=AF =D8=AA=D9=81=DA=A9=D8=B1 =D8=
+=AE=D9=88=D8=AF =D8=B1=D8=A7 =D9=88=D8=A7=D8=B6=D8=AD =D9=88 =D9=82=D8=A7=
+=D8=A8=D9=84 =D8=AF=D8=B1=DA=A9 =D8=A8=D8=B1=D8=A7=DB=8C =D8=A7=D9=86=D8=B3=
+=D8=A7=D9=86=E2=80=8C=D9=87=D8=A7 =D8=A8=DB=8C=D8=A7=D9=86 =DA=A9=D9=86=D8=
+=AF=D8=8C =D8=AD=D8=AA=DB=8C =D8=A7=DA=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D8=A8=
+=D8=A7=D8=B9=D8=AB =D8=B4=D9=88=D8=AF =DA=A9=D9=87 =D8=AC=D9=88=D8=A7=D8=A8=
+ =D9=86=D9=87=D8=A7=DB=8C=DB=8C =DA=A9=D9=85=DB=8C =D8=A7=D8=B4=D8=AA=D8=A8=
+=D8=A7=D9=87 =D8=A8=D8=A7=D8=B4=D8=AF.</span></span><strong style=3D"color:=
+ rgb(128,0,128);font-size: 16.0px;letter-spacing: -0.006em;text-align: left=
+;text-indent: 1.0em;"><span style=3D"color: rgb(255,0,255);"><br><br><stron=
+g style=3D"text-align: left;">=E2=9C=85Robustness-Focused CoT:</strong><br>=
+</span></strong><span style=3D"color: rgb(0,0,0);">=D9=87=D8=AF=D9=81 =D8=
+=AF=D8=B1 =D8=A7=DB=8C=D9=86=D8=AC=D8=A7 =D8=A7=DB=8C=D9=86 =D8=A7=D8=B3=D8=
+=AA =DA=A9=D9=87 =D9=85=D8=AF=D9=84 =D8=A8=D8=AA=D9=88=D8=A7=D9=86=D8=AF =
+=D8=AF=D8=B1 =D8=A8=D8=B1=D8=A7=D8=A8=D8=B1 =D9=88=D8=B1=D9=88=D8=AF=DB=8C=
+=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=AE=D8=AF=D9=88=D8=B4 =DB=8C=D8=A7 =D8=
+=AD=D9=85=D9=84=D8=A7=D8=AA =D9=85=D9=82=D8=A7=D9=88=D9=85 =D8=A8=D8=A7=D8=
+=B4=D8=AF =D9=88 =D8=B1=D9=88=D9=86=D8=AF =D8=AA=D9=81=DA=A9=D8=B1 =D8=A2=
+=D9=86 =D8=A8=D9=87 =D8=B1=D8=A7=D8=AD=D8=AA=DB=8C =D8=AA=D8=BA=DB=8C=DB=8C=
+=D8=B1 =D9=86=DA=A9=D9=86=D8=AF.</span><strong style=3D"color: rgb(128,0,12=
+8);font-size: 16.0px;letter-spacing: -0.006em;text-align: left;text-indent:=
+ 1.0em;"><span style=3D"color: rgb(255,0,255);"><br><br><strong style=3D"te=
+xt-align: left;">=E2=9C=85Efficiency-Focused CoT:<br></strong></span></stro=
+ng><span style=3D"color: rgb(0,0,0);">=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86=D8=AC=
+=D8=A7 =D9=85=D8=AF=D9=84 =D8=AA=D9=84=D8=A7=D8=B4 =D9=85=DB=8C=E2=80=8C=DA=
+=A9=D9=86=D8=AF =D8=AA=D8=A7 =D8=B3=D8=B1=DB=8C=D8=B9=E2=80=8C=D8=AA=D8=B1 =
+=D9=88 =D8=A8=D8=A7 =D9=85=D9=86=D8=A7=D8=A8=D8=B9 =DA=A9=D9=85=D8=AA=D8=B1=
+=DB=8C =D8=AA=D9=81=DA=A9=D8=B1 =DA=A9=D9=86=D8=AF =D9=88 =D8=A8=D9=87 =D8=
+=AC=D9=88=D8=A7=D8=A8 =D8=A8=D8=B1=D8=B3=D8=AF. =D8=A7=DB=8C=D9=86 =D8=B1=
+=D9=88=D8=B4 =D9=85=D8=B9=D9=85=D9=88=D9=84=D8=A7=D9=8B =D8=AF=D8=B1 Zero-S=
+hot CoT =D8=AF=DB=8C=D8=AF=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF.</=
+span><strong style=3D"color: rgb(128,0,128);font-size: 16.0px;letter-spacin=
+g: -0.006em;text-align: left;text-indent: 1.0em;"><span style=3D"color: rgb=
+(255,0,255);"><br></span></strong></li>
+</ol>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span class=3D"confluence-embedded-file-wrapper image-center-wrapper con=
+fluence-embedded-manual-size"><img class=3D"confluence-embedded-image confl=
+uence-external-resource image-center" width=3D"1080" src=3D"https://miro.me=
+dium.com/v2/resize:fit:700/1*yUqI3h4Td04mrssFiA8-Ow.png" data-image-src=3D"=
+https://miro.medium.com/v2/resize:fit:700/1*yUqI3h4Td04mrssFiA8-Ow.png"></s=
+pan></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=D8=AA=D9=81=DA=A9=D8=B1(C=
+hainofThought=DB=8C=D8=A7CoT)-=D8=A8=D8=B1=D8=B1=D8=B3=DB=8C=D8=A7=D9=86=D9=
+=88=D8=A7=D8=B9ChainofThought(CoT)"><span style=3D"color: rgb(51,51,153);">=
+<strong>=D8=A8=D8=B1=D8=B1=D8=B3=DB=8C =D8=A7=D9=86=D9=88=D8=A7=D8=B9 Chain=
+ of Thought (CoT)</strong></span></h2>
+<p>=D8=A7=D9=86=D9=88=D8=A7=D8=B9 =D9=85=D8=AE=D8=AA=D9=84=D9=81=DB=8C =D8=
+=A7=D8=B2 Chain of Thought =D9=88=D8=AC=D9=88=D8=AF =D8=AF=D8=A7=D8=B1=D8=
+=AF =DA=A9=D9=87 =D8=A7=D8=B2 =D8=AF=DB=8C=D8=AF=DA=AF=D8=A7=D9=87=E2=80=8C=
+=D9=87=D8=A7 =D9=88 =D8=AC=D9=86=D8=A8=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D9=
+=85=D8=AA=D9=81=D8=A7=D9=88=D8=AA=DB=8C =D8=A8=D9=87 =D8=A7=DB=8C=D9=86 =D9=
+=81=D8=B1=D8=A2=DB=8C=D9=86=D8=AF =D9=86=DA=AF=D8=A7=D9=87 =D9=85=DB=8C=E2=
+=80=8C=DA=A9=D9=86=D9=86=D8=AF. =D9=84=D8=A7=D8=B2=D9=85 =D8=A8=D9=87 =D8=
+=B0=DA=A9=D8=B1 =D8=A7=D8=B3=D8=AA =DA=A9=D9=87 =D8=AF=D8=B3=D8=AA=D9=87=E2=
+=80=8C=D8=A8=D9=86=D8=AF=DB=8C=E2=80=8C=D9=87=D8=A7 =D8=A8=D8=B3=D8=AA=D9=
+=87 =D8=A8=D9=87 =D9=85=D9=82=D8=A7=D9=84=D9=87=E2=80=8C=D9=87=D8=A7 =D9=88=
+ =D9=BE=DA=98=D9=88=D9=87=D8=B4=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D8=AE=D8=
+=AA=D9=84=D9=81 =D9=85=D9=85=DA=A9=D9=86 =D8=A7=D8=B3=D8=AA =DA=A9=D9=85=DB=
+=8C =D9=85=D8=AA=D9=81=D8=A7=D9=88=D8=AA =D8=A8=D8=A7=D8=B4=D9=86=D8=AF=D8=
+=9B =D8=A7=D9=85=D8=A7 =D8=A8=D8=B1=D8=AE=DB=8C =D8=A7=D8=B2 =D8=B1=D8=A7=
+=DB=8C=D8=AC=E2=80=8C=D8=AA=D8=B1=DB=8C=D9=86 =D8=A7=D9=86=D9=88=D8=A7=D8=
+=B9 =D8=A8=D9=87=E2=80=8C=D8=B5=D9=88=D8=B1=D8=AA =D8=B2=DB=8C=D8=B1 =D9=87=
+=D8=B3=D8=AA=D9=86=D8=AF:</p>
+<ol>
+<li><p><span style=3D"color: rgb(255,102,0);"><strong>CoT =D8=B5=D8=B1=DB=
+=8C=D8=AD (Explicit) =D8=AF=D8=B1 =D9=85=D9=82=D8=A7=D8=A8=D9=84 =D9=BE=D9=
+=86=D9=87=D8=A7=D9=86 (Implicit):</strong></span></p>
+<ul>
+<li><strong>=D8=B5=D8=B1=DB=8C=D8=AD:</strong> =D9=85=D8=B1=D8=A7=D8=AD=D9=
+=84 =D8=AA=D9=81=DA=A9=D8=B1 =D8=A8=D9=87=E2=80=8C=D8=B5=D9=88=D8=B1=D8=AA =
+=D9=88=D8=A7=D8=B6=D8=AD =D9=88 =D9=82=D8=A7=D8=A8=D9=84 =D9=85=D8=B4=D8=A7=
+=D9=87=D8=AF=D9=87 =D8=A8=D8=B1=D8=A7=DB=8C =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1 =
+=D8=A8=DB=8C=D8=A7=D9=86 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF.</li>
+<li><strong>=D9=BE=D9=86=D9=87=D8=A7=D9=86:</strong> =D9=81=D8=B1=D8=A2=DB=
+=8C=D9=86=D8=AF =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D8=AF=D8=A7=D8=
+=AE=D9=84=DB=8C =D8=A8=D9=88=D8=AF=D9=87 =D9=88 =D8=AA=D9=86=D9=87=D8=A7 =
+=D9=86=D8=AA=DB=8C=D8=AC=D9=87 =D9=86=D9=87=D8=A7=DB=8C=DB=8C =D8=A7=D8=B1=
+=D8=A7=D8=A6=D9=87 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF.</li>
+</ul></li>
+<li><p><span style=3D"color: rgb(255,102,0);"><strong>CoT =D8=AE=D8=B7=DB=
+=8C (Linear) =D8=AF=D8=B1 =D9=85=D9=82=D8=A7=D8=A8=D9=84 =D8=AF=D8=B1=D8=AE=
+=D8=AA=DB=8C/=D8=B3=D9=84=D8=B3=D9=84=D9=87=E2=80=8C=D9=85=D8=B1=D8=A7=D8=
+=AA=D8=A8=DB=8C (Tree-of-Thought):</strong></span></p>
+<ul>
+<li><strong>=D8=AE=D8=B7=DB=8C:</strong> =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=
+=A7=D9=84 =D8=A8=D9=87 =D8=B5=D9=88=D8=B1=D8=AA =DB=8C=DA=A9 =D8=B2=D9=86=
+=D8=AC=DB=8C=D8=B1=D9=87=E2=80=8C=DB=8C =DB=8C=DA=A9=E2=80=8C=D8=A8=D8=B9=
+=D8=AF=DB=8C =D9=88 =D9=BE=DB=8C=D9=88=D8=B3=D8=AA=D9=87 =D9=BE=DB=8C=D8=B4=
+ =D9=85=DB=8C=E2=80=8C=D8=B1=D9=88=D8=AF.</li>
+<li><strong>=D8=AF=D8=B1=D8=AE=D8=AA=DB=8C:</strong> =D9=85=D8=AF=D9=84 =D9=
+=85=D8=B3=DB=8C=D8=B1=D9=87=D8=A7=DB=8C =D9=85=D8=AA=D8=B9=D8=AF=D8=AF=DB=
+=8C =D8=A7=D8=B2 =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D8=B1=D8=A7 =
+=D8=AA=D9=88=D9=84=DB=8C=D8=AF =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF (=D9=
+=85=D8=A7=D9=86=D9=86=D8=AF =D8=B4=D8=A7=D8=AE=D9=87=E2=80=8C=D9=87=D8=A7=
+=DB=8C =DB=8C=DA=A9 =D8=AF=D8=B1=D8=AE=D8=AA) =D9=88 =D8=B3=D9=BE=D8=B3 =D8=
+=A8=D9=87=D8=AA=D8=B1=DB=8C=D9=86 =D9=86=D8=AA=DB=8C=D8=AC=D9=87 =D8=B1=D8=
+=A7 =D8=A7=D9=86=D8=AA=D8=AE=D8=A7=D8=A8 =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=
+=D8=AF.</li>
+</ul></li>
+<li><p><span style=3D"color: rgb(255,102,0);"><strong>CoT =D8=A8=D8=AF=D9=
+=88=D9=86 =D9=86=D9=85=D9=88=D9=86=D9=87 (Zero-shot) =D8=AF=D8=B1 =D9=85=D9=
+=82=D8=A7=D8=A8=D9=84 =D8=A8=D8=A7 =D9=86=D9=85=D9=88=D9=86=D9=87 (Few-shot=
+):</strong></span></p>
+<ul>
+<li><strong>=D8=A8=D8=AF=D9=88=D9=86 =D9=86=D9=85=D9=88=D9=86=D9=87:</stron=
+g> =D8=A8=D8=A7 =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 =D8=
+=AF=D8=B3=D8=AA=D9=88=D8=B1=D8=A7=D8=AA =D9=85=D9=86=D8=A7=D8=B3=D8=A8=D8=
+=8C =D9=85=D8=AF=D9=84 =D8=A8=D8=AF=D9=88=D9=86 =D8=A7=D8=B1=D8=A7=D8=A6=D9=
+=87 =D9=86=D9=85=D9=88=D9=86=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D9=BE=DB=8C=
+=D8=B4=DB=8C=D9=86 =D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87 =D8=AA=D9=81=DA=A9=
+=D8=B1 =D8=AA=D9=88=D9=84=DB=8C=D8=AF =D9=85=DB=8C=E2=80=8C=DA=A9=D9=86=D8=
+=AF.</li>
+<li><strong>=D8=A8=D8=A7 =D9=86=D9=85=D9=88=D9=86=D9=87:</strong> =D8=A8=D8=
+=A7 =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D9=85=D8=AB=D8=A7=D9=84=E2=80=8C=D9=87=
+=D8=A7=DB=8C =D9=82=D8=A8=D9=84=DB=8C =D8=A8=D9=87 =D9=85=D8=AF=D9=84=D8=8C=
+ =D8=A7=D9=84=DA=AF=D9=88=DB=8C =D8=AA=D9=81=DA=A9=D8=B1 =D9=85=D8=B4=D8=AE=
+=D8=B5=DB=8C =D8=A8=D8=B1=D8=A7=DB=8C =D9=85=D8=B3=D8=A6=D9=84=D9=87=E2=80=
+=8C=D9=87=D8=A7=DB=8C =D8=AC=D8=AF=DB=8C=D8=AF =D8=AF=D9=86=D8=A8=D8=A7=D9=
+=84 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF.</li>
+</ul></li>
+<li><p><span style=3D"color: rgb(255,102,0);"><strong>CoT =DA=86=D9=86=D8=
+=AF=D9=85=D8=B3=DB=8C=D8=B1=D9=87 (Multi-path) =DB=8C=D8=A7 =D8=AE=D9=88=D8=
+=AF=D8=B3=D8=A7=D8=B2=D9=85=D8=A7=D9=86=D8=AF=D9=87 (Self-consistent):</str=
+ong></span></p>
+<ul>
+<li>=D8=AF=D8=B1 =D8=A7=DB=8C=D9=86 =D9=86=D9=88=D8=B9=D8=8C =D9=85=D8=AF=
+=D9=84 =DA=86=D9=86=D8=AF=DB=8C=D9=86 =D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=
+=E2=80=8C=DB=8C =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D9=85=D8=B3=D8=
+=AA=D9=82=D9=84 =D8=AA=D9=88=D9=84=DB=8C=D8=AF =DA=A9=D8=B1=D8=AF=D9=87 =D9=
+=88 =D8=A8=D8=A7 =D9=85=D9=82=D8=A7=DB=8C=D8=B3=D9=87=E2=80=8C=DB=8C =D8=A2=
+=D9=86=E2=80=8C=D9=87=D8=A7=D8=8C =D9=BE=D8=A7=D8=B3=D8=AE =D9=86=D9=87=D8=
+=A7=DB=8C=DB=8C =D8=B1=D8=A7 =D8=A7=D9=86=D8=AA=D8=AE=D8=A7=D8=A8 =D9=85=DB=
+=8C=E2=80=8C=DA=A9=D9=86=D8=AF.</li>
+</ul></li>
+<li><p><span style=3D"color: rgb(255,102,0);"><strong>CoT =D8=A8=D8=B1=D9=
+=86=D8=A7=D9=85=D9=87=E2=80=8C=D9=85=D8=AD=D9=88=D8=B1 (Program-of-thought)=
+:</strong></span></p>
+<ul>
+<li>=D9=81=D8=B1=D8=A2=DB=8C=D9=86=D8=AF =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=
+=A7=D9=84 =D8=A8=D9=87=E2=80=8C=D8=B5=D9=88=D8=B1=D8=AA =DA=A9=D8=AF =DB=8C=
+=D8=A7 =D8=AF=D8=B3=D8=AA=D9=88=D8=B1=D8=A7=D8=AA =D8=A8=D8=B1=D9=86=D8=A7=
+=D9=85=D9=87=E2=80=8C=D9=86=D9=88=DB=8C=D8=B3=DB=8C =D8=A8=DB=8C=D8=A7=D9=
+=86 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF =DA=A9=D9=87 =D9=85=DB=8C=E2=80=
+=8C=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=AF=D8=B1 =D9=85=D8=B3=D8=A7=D8=A6=D9=
+=84 =D9=85=D8=AD=D8=A7=D8=B3=D8=A8=D8=A7=D8=AA=DB=8C =D9=88 =D9=85=D9=86=D8=
+=B7=D9=82=DB=8C =D8=AF=D9=82=D8=AA =D8=A8=DB=8C=D8=B4=D8=AA=D8=B1=DB=8C =D8=
+=A8=D9=87 =D9=87=D9=85=D8=B1=D8=A7=D9=87 =D8=AF=D8=A7=D8=B4=D8=AA=D9=87 =D8=
+=A8=D8=A7=D8=B4=D8=AF.</li>
+</ul></li>
+<li><p><span style=3D"color: rgb(255,102,0);"><strong>CoT =D8=AA=D8=B9=D8=
+=A7=D9=85=D9=84=E2=80=8C=D9=85=D8=AD=D9=88=D8=B1 (Interactive) =D8=AF=D8=B1=
+ =D9=85=D9=82=D8=A7=D8=A8=D9=84 =D8=BA=DB=8C=D8=B1=D8=AA=D8=B9=D8=A7=D9=85=
+=D9=84=E2=80=8C=D9=85=D8=AD=D9=88=D8=B1 (Non-interactive):</strong></span><=
+/p>
+<ul>
+<li><strong>=D8=AA=D8=B9=D8=A7=D9=85=D9=84=E2=80=8C=D9=85=D8=AD=D9=88=D8=B1=
+:</strong> =D9=85=D8=AF=D9=84 =D8=AF=D8=B1 =D8=B7=D9=88=D9=84 =D8=AA=D9=88=
+=D9=84=DB=8C=D8=AF =D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87 =D8=AA=D9=81=DA=A9=
+=D8=B1 =D8=A7=D8=B2 =D8=A8=D8=A7=D8=B2=D8=AE=D9=88=D8=B1=D8=AF =D8=AE=D8=A7=
+=D8=B1=D8=AC=DB=8C (=D9=85=D8=AB=D9=84=D8=A7=D9=8B =D8=A7=D8=B2 =DA=A9=D8=
+=A7=D8=B1=D8=A8=D8=B1 =DB=8C=D8=A7 =DB=8C=DA=A9 =D8=B3=DB=8C=D8=B3=D8=AA=D9=
+=85 =DA=A9=D9=85=DA=A9=DB=8C) =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=87 =
+=DA=A9=D8=B1=D8=AF=D9=87 =D9=88 =D9=81=D8=B1=D8=A2=DB=8C=D9=86=D8=AF =D8=A7=
+=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D8=AE=D9=88=D8=AF =D8=B1=D8=A7 =D8=A8=
+=D9=87=D8=A8=D9=88=D8=AF =D9=85=DB=8C=E2=80=8C=D8=A8=D8=AE=D8=B4=D8=AF.</li=
+>
+<li><strong>=D8=BA=DB=8C=D8=B1=D8=AA=D8=B9=D8=A7=D9=85=D9=84=E2=80=8C=D9=85=
+=D8=AD=D9=88=D8=B1:</strong> =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D8=
+=A8=D9=87=E2=80=8C=D8=B5=D9=88=D8=B1=D8=AA =D9=85=D8=B3=D8=AA=D9=82=D9=84 =
+=D9=88 =D8=A8=D8=AF=D9=88=D9=86 =D8=AF=D8=B1=DB=8C=D8=A7=D9=81=D8=AA =D8=A8=
+=D8=A7=D8=B2=D8=AE=D9=88=D8=B1=D8=AF =D8=AE=D8=A7=D8=B1=D8=AC=DB=8C =D8=A7=
+=D9=86=D8=AC=D8=A7=D9=85 =D9=85=DB=8C=E2=80=8C=D8=B4=D9=88=D8=AF.</li>
+</ul></li>
+<li><p><span style=3D"color: rgb(255,102,0);"><strong>CoT =D8=AA=DA=A9=D8=
+=B1=D8=A7=D8=B1=DB=8C/=D8=A8=D8=A7=D8=B2=D9=86=DA=AF=D8=B1=DB=8C (Iterative=
+/Refinement):</strong></span></p>
+<ul>
+<li>=D9=85=D8=AF=D9=84 =D8=A7=D8=A8=D8=AA=D8=AF=D8=A7 =DB=8C=DA=A9 =D8=B2=
+=D9=86=D8=AC=DB=8C=D8=B1=D9=87 =D8=AA=D9=81=DA=A9=D8=B1 =D8=A7=D9=88=D9=84=
+=DB=8C=D9=87 =D8=AA=D9=88=D9=84=DB=8C=D8=AF =DA=A9=D8=B1=D8=AF=D9=87 =D9=88=
+ =D8=B3=D9=BE=D8=B3 =D8=AF=D8=B1 =DA=86=D9=86=D8=AF =D9=85=D8=B1=D8=AD=D9=
+=84=D9=87 =D8=A8=D9=87 =D8=A8=D8=A7=D8=B2=D9=86=DA=AF=D8=B1=DB=8C =D9=88 =
+=D8=A8=D9=87=D8=A8=D9=88=D8=AF =D8=A2=D9=86 =D9=85=DB=8C=E2=80=8C=D9=BE=D8=
+=B1=D8=AF=D8=A7=D8=B2=D8=AF =D8=AA=D8=A7 =D8=A8=D9=87 =D9=BE=D8=A7=D8=B3=D8=
+=AE =D9=86=D9=87=D8=A7=DB=8C=DB=8C =D8=AF=D9=82=DB=8C=D9=82=E2=80=8C=D8=AA=
+=D8=B1=DB=8C =D8=AF=D8=B3=D8=AA =DB=8C=D8=A7=D8=A8=D8=AF.</li>
+</ul></li>
+<li><p><span style=3D"color: rgb(255,102,0);"><strong>CoT =D8=A7=D8=B3=D8=
+=AA=D8=AF=D9=84=D8=A7=D9=84 =D8=AF=D8=B1=D9=88=D9=86=DB=8C (Internal Reason=
+ing) =D8=AF=D8=B1 =D9=85=D9=82=D8=A7=D8=A8=D9=84 =D8=A7=D8=B3=D8=AA=D8=AF=
+=D9=84=D8=A7=D9=84 =D8=A8=DB=8C=D8=B1=D9=88=D9=86=DB=8C (External Explanati=
+on):</strong></span></p>
+<ul>
+<li><strong>=D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D8=AF=D8=B1=D9=88=
+=D9=86=DB=8C:</strong> =D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87 =D8=AA=D9=81=DA=
+=A9=D8=B1 =D8=A8=D9=87=E2=80=8C=D8=B9=D9=86=D9=88=D8=A7=D9=86 =D9=81=D8=B1=
+=D8=A2=DB=8C=D9=86=D8=AF =D8=AF=D8=A7=D8=AE=D9=84=DB=8C =D9=85=D8=AF=D9=84 =
+=D9=86=DA=AF=D9=87 =D8=AF=D8=A7=D8=B4=D8=AA=D9=87 =D9=85=DB=8C=E2=80=8C=D8=
+=B4=D9=88=D8=AF.</li>
+<li><strong>=D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D8=A8=DB=8C=D8=B1=
+=D9=88=D9=86=DB=8C:</strong> =D9=85=D8=AF=D9=84 =D8=B9=D9=84=D8=A7=D9=88=D9=
+=87 =D8=A8=D8=B1 =D8=A7=D8=B1=D8=A7=D8=A6=D9=87 =D9=BE=D8=A7=D8=B3=D8=AE =
+=D9=86=D9=87=D8=A7=DB=8C=DB=8C=D8=8C =D9=85=D8=B1=D8=A7=D8=AD=D9=84 =D8=AA=
+=D9=81=DA=A9=D8=B1 =D9=88 =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84 =D8=AE=
+=D9=88=D8=AF =D8=B1=D8=A7 =D9=86=DB=8C=D8=B2 =D8=A8=D9=87 =DA=A9=D8=A7=D8=
+=B1=D8=A8=D8=B1 =D8=AA=D9=88=D8=B6=DB=8C=D8=AD =D9=85=DB=8C=E2=80=8C=D8=AF=
+=D9=87=D8=AF.</li>
+</ul></li>
+</ol>
+<p>=D8=A7=DB=8C=D9=86 =D8=AF=D8=B3=D8=AA=D9=87=E2=80=8C=D8=A8=D9=86=D8=AF=
+=DB=8C=E2=80=8C=D9=87=D8=A7 =D9=87=D8=B1 =DA=A9=D8=AF=D8=A7=D9=85 =D8=A7=D8=
+=B2 =D8=B2=D9=88=D8=A7=DB=8C=D8=A7=DB=8C =D9=85=D8=AA=D9=81=D8=A7=D9=88=D8=
+=AA=DB=8C =D8=A8=D9=87 =D9=85=D9=81=D9=87=D9=88=D9=85 =D9=88 =DA=A9=D8=A7=
+=D8=B1=D8=A8=D8=B1=D8=AF Chain of Thought =D9=85=DB=8C=E2=80=8C=D9=BE=D8=B1=
+=D8=AF=D8=A7=D8=B2=D9=86=D8=AF =D9=88 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=
+=A7=D9=86=D9=86=D8=AF =D8=AF=D8=B1 =D9=85=D8=B3=D8=A7=D8=A6=D9=84 =D9=88 =
+=DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF=D9=87=D8=A7=DB=8C =DA=AF=D9=88=D9=86=
+=D8=A7=DA=AF=D9=88=D9=86 =D9=85=D9=88=D8=B1=D8=AF =D8=A7=D8=B3=D8=AA=D9=81=
+=D8=A7=D8=AF=D9=87 =D9=82=D8=B1=D8=A7=D8=B1 =DA=AF=DB=8C=D8=B1=D9=86=D8=AF.=
+</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=D8=AA=D9=81=DA=A9=D8=B1(C=
+hainofThought=DB=8C=D8=A7CoT)-=D9=85=D8=B2=D8=A7=DB=8C=D8=A7=D9=88=D9=85=D8=
+=B9=D8=A7=DB=8C=D8=A8ChainofThought(CoT)"><span style=3D"color: rgb(51,51,1=
+53);"><strong>=D9=85=D8=B2=D8=A7=DB=8C=D8=A7 =D9=88 =D9=85=D8=B9=D8=A7=DB=
+=8C=D8=A8 Chain of Thought (CoT)</strong></span></h2>
+<p>=D8=AF=D8=B1 =DA=A9=D9=84=D8=8C =D8=A7=D8=B3=D8=AA=D9=81=D8=A7=D8=AF=D9=
+=87 =D8=A7=D8=B2 Chain of Thought (CoT) =D8=AF=D8=A7=D8=B1=D8=A7=DB=8C =D9=
+=85=D8=B2=D8=A7=DB=8C=D8=A7 =D9=88 =D9=85=D8=B9=D8=A7=DB=8C=D8=A8 =D8=B2=DB=
+=8C=D8=B1 =D8=A7=D8=B3=D8=AA:</p>
+<h3 id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=D8=AA=D9=81=DA=A9=D8=B1(C=
+hainofThought=DB=8C=D8=A7CoT)-=D9=85=D8=B2=D8=A7=DB=8C=D8=A7:"><span style=
+=3D"color: rgb(128,0,0);">=D9=85=D8=B2=D8=A7=DB=8C=D8=A7:</span></h3>
+<ul>
+<li><p><strong>=D8=A7=D9=81=D8=B2=D8=A7=DB=8C=D8=B4 =D8=AF=D9=82=D8=AA =D9=
+=88 =D8=AA=D9=88=D8=A7=D9=86 =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84:</s=
+trong><br>=D8=A8=D8=A7 =D8=AA=D9=82=D8=B3=DB=8C=D9=85 =D9=85=D8=B3=D8=A6=D9=
+=84=D9=87 =D8=A8=D9=87 =D9=85=D8=B1=D8=A7=D8=AD=D9=84 =DA=A9=D9=88=DA=86=DA=
+=A9=D8=AA=D8=B1=D8=8C =D9=85=D8=AF=D9=84 =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=
+=D8=A7=D9=86=D8=AF =D8=A8=D9=87 =D8=B7=D9=88=D8=B1 =D8=AF=D9=82=DB=8C=D9=82=
+=E2=80=8C=D8=AA=D8=B1=DB=8C =D8=A8=D9=87 =D8=B3=D9=88=D8=A7=D9=84=D8=A7=D8=
+=AA =D9=BE=DB=8C=DA=86=DB=8C=D8=AF=D9=87 =D9=BE=D8=A7=D8=B3=D8=AE =D8=AF=D9=
+=87=D8=AF.</p></li>
+<li><p><strong>=D8=B4=D9=81=D8=A7=D9=81=DB=8C=D8=AA =D8=AF=D8=B1 =D9=81=D8=
+=B1=D8=A7=DB=8C=D9=86=D8=AF =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84:</st=
+rong><br>=D9=86=D9=85=D8=A7=DB=8C=D8=B4 =D9=85=D8=B1=D8=A7=D8=AD=D9=84 =D9=
+=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=A8=D9=87 =DA=A9=D8=A7=
+=D8=B1=D8=A8=D8=B1 =DA=A9=D9=85=DA=A9 =DA=A9=D9=86=D8=AF =D8=AA=D8=A7 =D8=
+=B1=D9=88=D9=86=D8=AF =D8=AA=D9=81=DA=A9=D8=B1 =D9=85=D8=AF=D9=84 =D8=B1=D8=
+=A7 =D8=AF=D8=B1=DA=A9 =DA=A9=D8=B1=D8=AF=D9=87 =D9=88 =D8=AF=D8=B1 =D8=B5=
+=D9=88=D8=B1=D8=AA =D9=86=DB=8C=D8=A7=D8=B2 =D8=A8=D9=87 =D8=A8=D8=B1=D8=B1=
+=D8=B3=DB=8C =D8=AE=D8=B7=D8=A7 =D8=A8=D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=AF.=
+</p></li>
+<li><p><strong>=D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA =D8=B9=DB=8C=D8=A8=E2=
+=80=8C=DB=8C=D8=A7=D8=A8=DB=8C =D9=88 =D8=A8=D9=87=D8=A8=D9=88=D8=AF:</stro=
+ng><br>=D8=A8=D8=A7 =D8=AF=D8=A7=D8=B4=D8=AA=D9=86 =D8=B2=D9=86=D8=AC=DB=8C=
+=D8=B1=D9=87=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AA=D9=81=DA=A9=D8=B1=DB=8C =D9=
+=85=D8=B4=D8=AE=D8=B5=D8=8C =D8=A7=D9=85=DA=A9=D8=A7=D9=86 =DB=8C=D8=A7=D9=
+=81=D8=AA=D9=86 =D9=86=D9=82=D8=A7=D8=B7 =D8=B6=D8=B9=D9=81 =D9=88 =D8=A7=
+=D8=B5=D9=84=D8=A7=D8=AD =D8=A2=D9=86=E2=80=8C=D9=87=D8=A7 =D9=88=D8=AC=D9=
+=88=D8=AF =D8=AF=D8=A7=D8=B1=D8=AF.</p></li>
+</ul>
+<h3 id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=D8=AA=D9=81=DA=A9=D8=B1(C=
+hainofThought=DB=8C=D8=A7CoT)-=D9=85=D8=B9=D8=A7=DB=8C=D8=A8:"><span style=
+=3D"color: rgb(128,0,0);">=D9=85=D8=B9=D8=A7=DB=8C=D8=A8:</span></h3>
+<ul>
+<li><p><strong>=D8=A7=D9=81=D8=B2=D8=A7=DB=8C=D8=B4 =D8=B2=D9=85=D8=A7=D9=
+=86 =D9=88 =D9=85=D8=B5=D8=B1=D9=81 =D9=85=D8=AD=D8=A7=D8=B3=D8=A8=D8=A7=D8=
+=AA=DB=8C:</strong><br>=D8=AA=D9=88=D9=84=DB=8C=D8=AF =D9=85=D8=B1=D8=A7=D8=
+=AD=D9=84 =D8=A7=D8=B6=D8=A7=D9=81=DB=8C =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=
+=D8=A7=D9=86=D8=AF =D8=A8=D8=A7=D8=B9=D8=AB =D8=A7=D9=81=D8=B2=D8=A7=DB=8C=
+=D8=B4 =D8=B2=D9=85=D8=A7=D9=86 =D9=BE=D8=A7=D8=B3=D8=AE=E2=80=8C=D8=AF=D9=
+=87=DB=8C =D9=88 =D9=85=D8=B5=D8=B1=D9=81 =D9=85=D9=86=D8=A7=D8=A8=D8=B9 =
+=D8=B4=D9=88=D8=AF.</p></li>
+<li><p><strong>=D8=A7=D9=86=D8=AA=D8=B4=D8=A7=D8=B1 =D8=AE=D8=B7=D8=A7=D9=
+=87=D8=A7=DB=8C =D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=E2=80=8C=D8=A7=DB=8C:<=
+/strong><br>=D8=A7=D8=B4=D8=AA=D8=A8=D8=A7=D9=87 =D8=AF=D8=B1 =DB=8C=DA=A9=
+=DB=8C =D8=A7=D8=B2 =D9=85=D8=B1=D8=A7=D8=AD=D9=84 =D9=85=D9=85=DA=A9=D9=86=
+ =D8=A7=D8=B3=D8=AA =D8=A8=D9=87 =D8=A7=D8=B4=D8=AA=D8=A8=D8=A7=D9=87=D8=A7=
+=D8=AA =D8=A8=D8=B9=D8=AF=DB=8C =D9=85=D9=86=D8=AC=D8=B1 =D8=B4=D9=88=D8=AF=
+ =D9=88 =D9=86=D8=AA=DB=8C=D8=AC=D9=87 =D9=86=D9=87=D8=A7=DB=8C=DB=8C =D8=
+=B1=D8=A7 =D8=AA=D8=AD=D8=AA =D8=AA=D8=A3=D8=AB=DB=8C=D8=B1 =D9=82=D8=B1=D8=
+=A7=D8=B1 =D8=AF=D9=87=D8=AF.</p></li>
+<li><p><strong>=D9=85=D9=85=DA=A9=D9=86 =D8=A7=D8=B3=D8=AA =D8=A7=D8=B7=D9=
+=84=D8=A7=D8=B9=D8=A7=D8=AA =D8=AF=D8=A7=D8=AE=D9=84=DB=8C =D9=85=D8=AF=D9=
+=84 =D9=81=D8=A7=D8=B4 =D8=B4=D9=88=D8=AF:</strong><br>=D9=86=D9=85=D8=A7=
+=DB=8C=D8=B4 =D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87 =D8=AA=D9=81=DA=A9=D8=B1 =
+=D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=A7=D9=86=D8=AF =D8=A7=D8=B7=D9=84=D8=
+=A7=D8=B9=D8=A7=D8=AA =D9=85=D8=B1=D8=A8=D9=88=D8=B7 =D8=A8=D9=87 =D8=A7=D8=
+=B3=D8=AA=D8=B1=D8=A7=D8=AA=DA=98=DB=8C=E2=80=8C=D9=87=D8=A7=DB=8C =D8=AF=
+=D8=A7=D8=AE=D9=84=DB=8C =D9=85=D8=AF=D9=84 =D8=B1=D8=A7 =D8=AF=D8=B1 =D9=
+=85=D8=B9=D8=B1=D8=B6 =D8=AF=DB=8C=D8=AF =D9=82=D8=B1=D8=A7=D8=B1 =D8=AF=D9=
+=87=D8=AF =DA=A9=D9=87 =D8=AF=D8=B1 =D8=A8=D8=B1=D8=AE=DB=8C =D9=85=D9=88=
+=D8=A7=D8=B1=D8=AF =D9=86=D8=A7=D9=85=D8=B7=D9=84=D9=88=D8=A8 =D8=A7=D8=B3=
+=D8=AA.</p></li>
+</ul>
+<p>=D8=A8=D9=87 =D8=B7=D9=88=D8=B1 =DA=A9=D9=84=DB=8C=D8=8C =D8=A7=D8=B3=D8=
+=AA=D9=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 CoT =D9=85=DB=8C=E2=80=8C=D8=AA=D9=
+=88=D8=A7=D9=86=D8=AF =D8=AF=D8=B1 =D9=85=D8=B3=D8=A7=D8=A6=D9=84 =D9=BE=DB=
+=8C=DA=86=DB=8C=D8=AF=D9=87 =D8=A8=D9=87 =D8=A8=D9=87=D8=A8=D9=88=D8=AF =D8=
+=B9=D9=85=D9=84=DA=A9=D8=B1=D8=AF =DA=A9=D9=85=DA=A9 =DA=A9=D9=86=D8=AF=D8=
+=8C =D8=A7=D9=85=D8=A7 =D8=A8=D8=A7=DB=8C=D8=AF =D8=A8=D8=A7 =D8=AA=D9=88=
+=D8=AC=D9=87 =D8=A8=D9=87 =D9=86=DB=8C=D8=A7=D8=B2 =D9=88 =D9=85=D8=AD=D8=
+=AF=D9=88=D8=AF=DB=8C=D8=AA=E2=80=8C=D9=87=D8=A7=DB=8C =D9=85=D9=86=D8=A7=
+=D8=A8=D8=B9=D8=8C =DA=A9=D8=A7=D8=B1=D8=A8=D8=B1=D8=AF =D8=A2=D9=86 =D8=B1=
+=D8=A7 =D8=AA=D9=86=D8=B8=DB=8C=D9=85 =DA=A9=D8=B1=D8=AF.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 style=3D"direction: ltr;" id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=
+=D8=AA=D9=81=DA=A9=D8=B1(ChainofThought=DB=8C=D8=A7CoT)-=D9=86=D8=AA=DB=8C=
+=D8=AC=D9=87=E2=80=8C=DA=AF=DB=8C=D8=B1=DB=8C"><span style=3D"color: rgb(51=
+,51,153);"><strong>=D9=86=D8=AA=DB=8C=D8=AC=D9=87=E2=80=8C=DA=AF=DB=8C=D8=
+=B1=DB=8C</strong></span></h2>
+<p>=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87 =D8=AA=D9=81=DA=A9=D8=B1 (Chain-of-=
+Thought =DB=8C=D8=A7 CoT) =D8=A8=D9=87 =D8=B9=D9=86=D9=88=D8=A7=D9=86 =DB=
+=8C=DA=A9 =D8=B1=D9=88=DB=8C=DA=A9=D8=B1=D8=AF =D9=82=D8=AF=D8=B1=D8=AA=D9=
+=85=D9=86=D8=AF =D8=AF=D8=B1 =D9=85=D8=AF=D9=84=E2=80=8C=D9=87=D8=A7=DB=8C =
+=D9=87=D9=88=D8=B4 =D9=85=D8=B5=D9=86=D9=88=D8=B9=DB=8C=D8=8C =D8=A8=D8=A7 =
+=D8=AA=D9=82=D8=B3=DB=8C=D9=85 =D9=85=D8=B3=D8=A6=D9=84=D9=87 =D8=A8=D9=87 =
+=D9=85=D8=B1=D8=A7=D8=AD=D9=84 =D9=85=D9=86=D8=B7=D9=82=DB=8C =D9=88 =DA=AF=
+=D8=A7=D9=85 =D8=A8=D9=87 =DA=AF=D8=A7=D9=85=D8=8C =D8=A7=D9=85=DA=A9=D8=A7=
+=D9=86 =D8=A8=D9=87=D8=A8=D9=88=D8=AF =D8=AF=D9=82=D8=AA =D9=88 =D8=B4=D9=
+=81=D8=A7=D9=81=DB=8C=D8=AA =D8=AF=D8=B1 =D9=BE=D8=A7=D8=B3=D8=AE=E2=80=8C=
+=D8=AF=D9=87=DB=8C =D8=A8=D9=87 =D9=85=D8=B3=D8=A7=D8=A6=D9=84 =D9=BE=DB=8C=
+=DA=86=DB=8C=D8=AF=D9=87 =D8=B1=D8=A7 =D9=81=D8=B1=D8=A7=D9=87=D9=85 =D9=85=
+=DB=8C=E2=80=8C=DA=A9=D9=86=D8=AF. =D8=A8=D8=A7 =D9=88=D8=AC=D9=88=D8=AF =
+=D9=85=D8=B2=D8=A7=DB=8C=D8=A7=DB=8C=DB=8C =D9=85=D8=A7=D9=86=D9=86=D8=AF =
+=D9=82=D8=A7=D8=A8=D9=84=DB=8C=D8=AA =D8=B9=DB=8C=D8=A8=E2=80=8C=DB=8C=D8=
+=A7=D8=A8=DB=8C =D9=88 =D8=AA=D9=88=D8=B6=DB=8C=D8=AD =D8=B1=D9=88=D9=86=D8=
+=AF =D8=A7=D8=B3=D8=AA=D8=AF=D9=84=D8=A7=D9=84=D8=8C =D8=A7=D8=B3=D8=AA=D9=
+=81=D8=A7=D8=AF=D9=87 =D8=A7=D8=B2 CoT =D9=85=DB=8C=E2=80=8C=D8=AA=D9=88=D8=
+=A7=D9=86=D8=AF =D9=85=D9=86=D8=AC=D8=B1 =D8=A8=D9=87 =D8=A7=D9=81=D8=B2=D8=
+=A7=DB=8C=D8=B4 =D8=B2=D9=85=D8=A7=D9=86 =D9=BE=D8=B1=D8=AF=D8=A7=D8=B2=D8=
+=B4 =D9=88 =D9=85=D8=B5=D8=B1=D9=81 =D9=85=D9=86=D8=A7=D8=A8=D8=B9 =D9=85=
+=D8=AD=D8=A7=D8=B3=D8=A8=D8=A7=D8=AA=DB=8C =D8=B4=D9=88=D8=AF. =D8=A8=D9=86=
+=D8=A7=D8=A8=D8=B1=D8=A7=DB=8C=D9=86=D8=8C =D8=A7=D9=86=D8=AA=D8=AE=D8=A7=
+=D8=A8 =D9=85=D9=86=D8=A7=D8=B3=D8=A8 =D8=B1=D9=88=D8=B4 CoT =D8=A8=D8=A7=
+=DB=8C=D8=AF =D8=A8=D8=A7 =D8=AA=D9=88=D8=AC=D9=87 =D8=A8=D9=87 =D9=86=DB=
+=8C=D8=A7=D8=B2=D9=87=D8=A7=DB=8C =D8=AE=D8=A7=D8=B5 =DA=A9=D8=A7=D8=B1=D8=
+=A8=D8=B1=D8=AF=DB=8C =D9=88 =D9=85=D8=AD=D8=AF=D9=88=D8=AF=DB=8C=D8=AA=E2=
+=80=8C=D9=87=D8=A7=DB=8C =D9=81=D9=86=DB=8C =D8=B5=D9=88=D8=B1=D8=AA =DA=AF=
+=DB=8C=D8=B1=D8=AF =D8=AA=D8=A7 =D8=A7=D8=B2 =D9=85=D8=B2=D8=A7=DB=8C=D8=A7=
+=DB=8C =D8=A2=D9=86 =D8=A8=D9=87 =D8=A8=D9=87=D8=AA=D8=B1=DB=8C=D9=86 =D9=
+=86=D8=AD=D9=88 =D8=A8=D9=87=D8=B1=D9=87=E2=80=8C=D9=85=D9=86=D8=AF =D8=B4=
+=D8=AF.</p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h2 id=3D"id-=D8=B2=D9=86=D8=AC=DB=8C=D8=B1=D9=87=D8=AA=D9=81=DA=A9=D8=B1(C=
+hainofThought=DB=8C=D8=A7CoT)-=D9=85=D9=86=D8=A7=D8=A8=D8=B9"><span style=
+=3D"color: rgb(51,51,153);"><strong>=D9=85=D9=86=D8=A7=D8=A8=D8=B9</strong>=
+</span></h2>
+<p><span style=3D"color: rgb(51,51,153);"><strong><a href=3D"https://www.ib=
+m.com/think/topics/chain-of-thoughts" class=3D"external-link" rel=3D"nofoll=
+ow">https://www.ibm.com/think/topics/chain-of-thoughts</a></strong></span><=
+/p>
+<p><span style=3D"color: rgb(51,51,153);"><strong><a href=3D"https://www.pr=
+omptingguide.ai/techniques/cot" class=3D"external-link" rel=3D"nofollow">ht=
+tps://www.promptingguide.ai/techniques/cot</a></strong></span></p>
+<p><span style=3D"color: rgb(51,51,153);"><strong><a href=3D"https://www.me=
+rcity.ai/blog-post/guide-to-chain-of-thought-prompting#:~:text=3Dthe%20corr=
+ect%20answer.-,Types%20of%20Chain%2Dof%2DThought%20Prompting,and%20least%20=
+to%20most%20prompting" class=3D"external-link" rel=3D"nofollow">https://www=
+.mercity.ai/blog-post/guide-to-chain-of-thought-prompting#:~:text=3Dthe%20c=
+orrect%20answer.-,Types%20of%20Chain%2Dof%2DThought%20Prompting,and%20least=
+%20to%20most%20prompting</a>.</strong></span></p>
+<p><span style=3D"color: rgb(51,51,153);"><strong><a href=3D"https://annota=
+tionbox.com/chain-of-thought-prompting/" class=3D"external-link" rel=3D"nof=
+ollow">https://annotationbox.com/chain-of-thought-prompting/</a></strong></=
+span></p>
+<p><span style=3D"color: rgb(51,51,153);"><strong><a href=3D"https://medium=
+.com/towards-data-science/advanced-prompt-engineering-chain-of-thought-cot-=
+8d8b090bf699" class=3D"external-link" rel=3D"nofollow">https://medium.com/t=
+owards-data-science/advanced-prompt-engineering-chain-of-thought-cot-8d8b09=
+0bf699</a></strong></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><br></p>
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_194_507026164.1786978308542--
