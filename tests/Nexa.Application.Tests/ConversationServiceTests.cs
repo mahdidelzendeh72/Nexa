@@ -1,8 +1,11 @@
 using FluentAssertions;
+using Nexa.Application.Abstractions;
 using Nexa.Application.Common;
 using Nexa.Application.Conversations;
+using Nexa.Application.Tools;
 using Nexa.Contracts.Conversations;
 using Nexa.Domain.Agents;
+using Nexa.Domain.AgentRuntime;
 using Nexa.Domain.Conversations;
 
 namespace Nexa.Application.Tests;
@@ -56,19 +59,83 @@ public sealed class ConversationServiceTests
         detail.Conversation.AgentVersionNumber.Should().Be(1);
     }
 
+    [Fact]
+    public async Task StreamMessage_emits_deltas_then_completes_the_run()
+    {
+        var user = new FakeCurrentUser();
+        var catalog = new InMemoryCatalog();
+        var provider = catalog.AddProvider();
+        var profile = catalog.AddProfile(provider.Id);
+        var agents = new InMemoryAgents();
+        var agent = Agent.Create(user.UserId, "Support", "", "Help the user.", profile.Id);
+        agents.Add(agent);
+        var conversations = new InMemoryConversations();
+        var runs = new InMemoryAgentRuns();
+        var service = CreateService(user, agents, conversations, catalog, new FakeRuntime(), runs);
+
+        var conversation = await service.CreateAsync(new CreateConversationRequest(agent.Id, null), CancellationToken.None);
+        var events = new List<string>();
+        await foreach (var evt in service.StreamMessageAsync(conversation.Id, new SendMessageRequest("Hi"), CancellationToken.None))
+        {
+            events.Add(evt.Kind);
+        }
+
+        events.Should().Equal("RunStarted", "TextDelta", "RunCompleted");
+        var stored = await conversations.GetByIdAsync(conversation.Id, CancellationToken.None);
+        stored!.RuntimeSessionState.Should().Be("""{"ok":true}""");
+        runs.Items.Should().ContainSingle(r => r.Status == AgentRunStatus.Completed);
+    }
+
+    [Fact]
+    public async Task StreamMessage_persists_tool_calls_without_chain_of_thought()
+    {
+        var user = new FakeCurrentUser();
+        var catalog = new InMemoryCatalog();
+        var provider = catalog.AddProvider();
+        var profile = catalog.AddProfile(provider.Id);
+        var agents = new InMemoryAgents();
+        var agent = Agent.Create(user.UserId, "Support", "", "Help the user.", profile.Id);
+        agents.Add(agent);
+        var conversations = new InMemoryConversations();
+        var service = CreateService(user, agents, conversations, catalog, new FakeRuntimeWithTools());
+
+        var conversation = await service.CreateAsync(new CreateConversationRequest(agent.Id, null), CancellationToken.None);
+        await service.SendMessageAsync(conversation.Id, new SendMessageRequest("What time is it?"), CancellationToken.None);
+
+        var detail = await service.GetAsync(conversation.Id, CancellationToken.None);
+        detail.Messages.Select(m => m.Role).Should().Equal("User", "ToolCall", "ToolResult", "Assistant");
+        var runs = await service.ListRunsAsync(conversation.Id, CancellationToken.None);
+        runs.Should().ContainSingle();
+        runs[0].ToolExecutions.Should().ContainSingle(t => t.ToolName == "utc_now" && t.Result != null);
+    }
+
     private static ConversationService CreateService(
         FakeCurrentUser user,
         InMemoryAgents agents,
         InMemoryConversations conversations,
-        InMemoryCatalog catalog) =>
+        InMemoryCatalog catalog,
+        IAgentRuntime? runtime = null,
+        InMemoryAgentRuns? runs = null) =>
         new(
             conversations,
             agents,
             catalog,
-            new FakeChat(),
+            runtime ?? new FakeRuntime(),
+            runs ?? new InMemoryAgentRuns(),
+            new FakeToolRegistry(),
             user,
             new InMemoryUnitOfWork(),
             new CreateConversationRequestValidator(),
             new RenameConversationRequestValidator(),
             new SendMessageRequestValidator());
+}
+
+public sealed class ToolCatalogServiceTests
+{
+    [Fact]
+    public void List_returns_registry_descriptors()
+    {
+        var service = new ToolCatalogService(new FakeToolRegistry());
+        service.List().Should().ContainSingle(t => t.Id == "utc_now" && !t.RequiresApproval);
+    }
 }

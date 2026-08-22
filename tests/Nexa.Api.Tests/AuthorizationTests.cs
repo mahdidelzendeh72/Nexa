@@ -43,6 +43,24 @@ public sealed class AuthorizationTests : IClassFixture<NexaWebFactory>
     }
 
     [Fact]
+    public async Task Tools_api_requires_authentication()
+    {
+        var client = _factory.CreateClient(new WebApplicationFactoryClientOptions { AllowAutoRedirect = false });
+        var response = await client.GetAsync("/api/tools");
+        response.StatusCode.Should().Be(HttpStatusCode.Unauthorized);
+    }
+
+    [Fact]
+    public async Task Login_page_is_anonymous()
+    {
+        var client = _factory.CreateClient(new WebApplicationFactoryClientOptions { AllowAutoRedirect = false });
+        var response = await client.GetAsync("/Identity/Account/Login");
+        var body = await response.Content.ReadAsStringAsync();
+        response.StatusCode.Should().Be(HttpStatusCode.OK, because: body);
+        body.Should().Contain("Log in", because: body);
+    }
+
+    [Fact]
     public async Task Health_is_anonymous()
     {
         var client = _factory.CreateClient();

@@ -122,6 +122,9 @@ input, select, textarea {
 .message { border: 1px solid var(--border); border-radius: 0.5rem; padding: 0.75rem; }
 .message.user { margin-inline-end: 2rem; }
 .message.assistant { margin-inline-start: 2rem; }
+.message.toolcall, .message.toolresult { margin-inline-start: 2rem; border-style: dashed; }
+.message.streaming p { white-space: pre-wrap; }
+.message.error { border-color: var(--danger); }
 .message .role { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; }
 .composer { display: grid; grid-template-columns: 1fr auto; gap: 0.75rem; align-items: end; }
 .sr-only {

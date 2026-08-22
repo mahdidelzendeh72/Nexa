@@ -12,6 +12,7 @@ internal sealed class ConversationConfiguration : IEntityTypeConfiguration<Conve
         builder.HasKey(x => x.Id);
         builder.Property(x => x.Title).HasMaxLength(200).IsRequired();
         builder.Property(x => x.RowVersion).IsConcurrencyToken();
+        builder.Property(x => x.RuntimeSessionState).HasColumnType("text");
         builder.HasIndex(x => x.UserId);
         builder.HasIndex(x => x.AgentVersionId);
         builder.HasIndex(x => x.CreatedAt);

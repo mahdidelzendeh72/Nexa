@@ -1,0 +1,19 @@
+@using Microsoft.AspNetCore.Identity
+@using Nexa.Infrastructure.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<nav class="auth-links">
+@if (SignInManager.IsSignedIn(User))
+{
+    <span class="muted">@User.Identity?.Name</span>
+    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/" method="post">
+        <button type="submit" class="link-button">Sign out</button>
+    </form>
+}
+else
+{
+    <a asp-area="Identity" asp-page="/Account/Register">Register</a>
+    <a asp-area="Identity" asp-page="/Account/Login">Sign in</a>
+}
+</nav>

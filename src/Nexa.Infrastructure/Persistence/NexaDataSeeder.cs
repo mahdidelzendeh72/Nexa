@@ -59,7 +59,7 @@ public sealed class NexaDataSeeder(
             var ollama = ModelProvider.Create("Ollama", ModelProviderKind.Ollama);
             var openAi = ModelProvider.Create("OpenAI", ModelProviderKind.OpenAI);
             db.ModelProviders.AddRange(ollama, openAi);
-            db.ModelProfiles.Add(ModelProfile.Create(ollama.Id, "Local Llama", "llama3.2", 0.7, 2048));
+            db.ModelProfiles.Add(ModelProfile.Create(ollama.Id, "Local Llama", "gpt-oss:20b", 0.7, 2048));
             await db.SaveChangesAsync(cancellationToken);
             logger.LogInformation("Seeded default model providers");
         }

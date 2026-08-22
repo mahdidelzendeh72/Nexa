@@ -1,6 +1,7 @@
 using Nexa.Application.Abstractions;
 using Nexa.Application.Common;
 using Nexa.Domain.Agents;
+using Nexa.Domain.AgentRuntime;
 using Nexa.Domain.Conversations;
 using Nexa.Domain.Models;
 
@@ -115,13 +116,70 @@ internal sealed class InMemoryCatalog : IModelCatalogRepository
     }
 }
 
-internal sealed class FakeChat : IChatCompletionService
+internal sealed class InMemoryAgentRuns : IAgentRunRepository
 {
-    public Task<ChatCompletionResult> CompleteAsync(
-        string instructions,
-        IReadOnlyList<(string Role, string Content)> history,
-        ModelProvider provider,
-        ModelProfile profile,
-        CancellationToken cancellationToken) =>
-        Task.FromResult(new ChatCompletionResult("hello from nexa", 10, 4, 14, 12));
+    public List<AgentRun> Items { get; } = [];
+
+    public Task<AgentRun?> GetByIdAsync(Guid id, CancellationToken cancellationToken) =>
+        Task.FromResult(Items.FirstOrDefault(x => x.Id == id));
+
+    public Task<IReadOnlyList<AgentRun>> ListByConversationAsync(Guid conversationId, CancellationToken cancellationToken) =>
+        Task.FromResult<IReadOnlyList<AgentRun>>(Items.Where(x => x.ConversationId == conversationId).ToList());
+
+    public Task AddAsync(AgentRun run, CancellationToken cancellationToken)
+    {
+        Items.Add(run);
+        return Task.CompletedTask;
+    }
+}
+
+internal sealed class FakeToolRegistry : IToolRegistry
+{
+    public IReadOnlyList<ToolDescriptor> List() =>
+    [
+        new("utc_now", "utc_now", "Returns UTC now.", "BuiltIn", "1.0.0", true, false, "Low")
+    ];
+
+    public IReadOnlyList<ToolDescriptor> ResolveEnabled(IReadOnlyList<string>? selectedIds) => List();
+}
+
+internal sealed class FakeRuntime : IAgentRuntime
+{
+    public async IAsyncEnumerable<AgentRuntimeEvent> RunStreamingAsync(
+        AgentRuntimeRequest request,
+        [System.Runtime.CompilerServices.EnumeratorCancellation] CancellationToken cancellationToken)
+    {
+        cancellationToken.ThrowIfCancellationRequested();
+        yield return new AgentRuntimeEvent(AgentRuntimeEventKind.TextDelta, Text: "hello from nexa");
+        yield return new AgentRuntimeEvent(
+            AgentRuntimeEventKind.RunCompleted,
+            InputTokens: 10,
+            OutputTokens: 4,
+            TotalTokens: 14,
+            LatencyMs: 12,
+            SessionState: """{"ok":true}""");
+        await Task.CompletedTask;
+    }
+}
+
+internal sealed class FakeRuntimeWithTools : IAgentRuntime
+{
+    public async IAsyncEnumerable<AgentRuntimeEvent> RunStreamingAsync(
+        AgentRuntimeRequest request,
+        [System.Runtime.CompilerServices.EnumeratorCancellation] CancellationToken cancellationToken)
+    {
+        yield return new AgentRuntimeEvent(
+            AgentRuntimeEventKind.ToolCallStarted,
+            ToolName: "utc_now",
+            ToolCallId: "call-1",
+            ToolArguments: "{}");
+        yield return new AgentRuntimeEvent(
+            AgentRuntimeEventKind.ToolCallCompleted,
+            ToolName: "utc_now",
+            ToolCallId: "call-1",
+            ToolResult: "2026-08-18T00:00:00.0000000+00:00");
+        yield return new AgentRuntimeEvent(AgentRuntimeEventKind.TextDelta, Text: "It is midnight UTC.");
+        yield return new AgentRuntimeEvent(AgentRuntimeEventKind.RunCompleted, LatencyMs: 20, SessionState: "{}");
+        await Task.CompletedTask;
+    }
 }

@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Nexa.Web\Nexa.Web.csproj" />
+    <ProjectReference Include="..\..\src\Nexa.Infrastructure\Nexa.Infrastructure.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Using Include="Xunit" />

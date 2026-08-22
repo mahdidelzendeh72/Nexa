@@ -12,6 +12,7 @@ public static class EndpointRouteBuilderExtensions
         api.MapAgentEndpoints();
         api.MapModelEndpoints();
         api.MapConversationEndpoints();
+        api.MapToolEndpoints();
         return app;
     }
 }

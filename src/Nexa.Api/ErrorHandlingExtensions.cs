@@ -1,6 +1,10 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Nexa.Application.Common;
 using Nexa.Contracts;
 
@@ -24,6 +28,9 @@ public static class ErrorHandlingExtensions
 
                 var feature = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature>();
                 var exception = feature?.Error;
+                var logger = context.RequestServices.GetService<ILoggerFactory>()?.CreateLogger("Nexa.ExceptionHandler");
+                logger?.LogError(exception, "Unhandled exception {CorrelationId} for {Path}", correlationId, context.Request.Path);
+
                 var (status, code, message) = exception switch
                 {
                     NexaException nexa => (nexa.StatusCode, nexa.Code, nexa.Message),
@@ -32,13 +39,35 @@ public static class ErrorHandlingExtensions
                     _ => (StatusCodes.Status500InternalServerError, "INTERNAL_ERROR", "An unexpected error occurred.")
                 };
 
+                var environment = context.RequestServices.GetService<IWebHostEnvironment>();
+                if (environment?.IsDevelopment() == true && exception is not null && code == "INTERNAL_ERROR")
+                {
+                    message = exception.Message;
+                }
+
                 context.Response.StatusCode = status;
-                context.Response.ContentType = "application/json";
-                await context.Response.WriteAsJsonAsync(new ErrorResponse(code, message, correlationId));
+                var wantsJson = context.Request.Path.StartsWithSegments("/api")
+                    || AcceptsJson(context);
+                if (wantsJson)
+                {
+                    context.Response.ContentType = "application/json";
+                    await context.Response.WriteAsJsonAsync(new ErrorResponse(code, message, correlationId));
+                    return;
+                }
+
+                context.Response.ContentType = "text/plain; charset=utf-8";
+                await context.Response.WriteAsync(message);
             });
         });
 
         return app;
+    }
+
+    private static bool AcceptsJson(HttpContext context)
+    {
+        var accept = context.Request.Headers.Accept.ToString();
+        return accept.Contains("application/json", StringComparison.OrdinalIgnoreCase)
+            && !accept.Contains("text/html", StringComparison.OrdinalIgnoreCase);
     }
 
     public static IApplicationBuilder UseNexaCorrelationId(this IApplicationBuilder app)

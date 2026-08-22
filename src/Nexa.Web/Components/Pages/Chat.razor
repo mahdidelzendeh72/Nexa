@@ -1,6 +1,7 @@
 @page "/chat"
 @page "/chat/{ConversationId:guid}"
 @attribute [Authorize(Policy = NexaPolicies.CanChat)]
+@implements IDisposable
 @inject Nexa.Application.Conversations.IConversationService ConversationService
 @inject Nexa.Application.Agents.IAgentService AgentService
 @inject NavigationManager Navigation
@@ -52,11 +53,42 @@
                         <p>@message.Content</p>
                     </li>
                 }
+                @if (busy && liveTools.Count > 0)
+                {
+                    @foreach (var tool in liveTools)
+                    {
+                        <li class="message toolcall">
+                            <span class="role">Tool</span>
+                            <p>@tool</p>
+                        </li>
+                    }
+                }
+                @if (busy && !string.IsNullOrEmpty(liveText))
+                {
+                    <li class="message assistant streaming">
+                        <span class="role">Assistant</span>
+                        <p>@liveText</p>
+                    </li>
+                }
+                else if (busy && string.IsNullOrEmpty(liveText))
+                {
+                    <li class="message assistant streaming">
+                        <span class="role">Assistant</span>
+                        <p class="muted">Running…</p>
+                    </li>
+                }
             </ol>
             <form class="composer" @onsubmit="SendAsync" @onsubmit:preventDefault="true">
                 <label class="sr-only" for="prompt">Message</label>
                 <textarea id="prompt" @bind="draft" @bind:event="oninput" rows="3" disabled="@busy"></textarea>
-                <button class="button" type="submit" disabled="@(busy || string.IsNullOrWhiteSpace(draft))">Send</button>
+                @if (busy)
+                {
+                    <button class="button" type="button" @onclick="Cancel">Cancel</button>
+                }
+                else
+                {
+                    <button class="button" type="submit" disabled="@string.IsNullOrWhiteSpace(draft)">Send</button>
+                }
             </form>
         }
     </section>
@@ -72,9 +104,16 @@
     private string draft = string.Empty;
     private string? error;
     private bool busy;
+    private string liveText = string.Empty;
+    private readonly List<string> liveTools = [];
+    private CancellationTokenSource? sendCts;
 
     protected override async Task OnParametersSetAsync()
     {
+        if (busy)
+        {
+            return;
+        }
         error = null;
         agents = await AgentService.ListAsync(false, CancellationToken.None);
         if (selectedAgentId == Guid.Empty && agents.Count > 0)
@@ -119,15 +158,50 @@
             return;
         }
 
+        sendCts?.Dispose();
+        sendCts = new CancellationTokenSource();
         busy = true;
         error = null;
+        liveText = string.Empty;
+        liveTools.Clear();
         var content = draft.Trim();
         draft = string.Empty;
+        var userMessage = new ConversationMessageDto(Guid.Empty, "User", content, null, null, null, null, DateTimeOffset.UtcNow);
+        if (detail is not null)
+        {
+            detail = detail with { Messages = detail.Messages.Append(userMessage).ToList() };
+        }
+
         try
         {
-            await ConversationService.SendMessageAsync(id, new SendMessageRequest(content), CancellationToken.None);
+            await foreach (var evt in ConversationService.StreamMessageAsync(id, new SendMessageRequest(content), sendCts.Token))
+            {
+                switch (evt.Kind)
+                {
+                    case "TextDelta":
+                        liveText += evt.Text;
+                        break;
+                    case "ToolCallStarted":
+                        liveTools.Add($"{evt.ToolName}: {evt.ToolArguments}");
+                        break;
+                    case "ToolCallCompleted":
+                        liveTools.Add($"{evt.ToolName ?? "tool"} result: {evt.ToolResult}");
+                        break;
+                    case "Error":
+                        error = evt.ErrorMessage;
+                        break;
+                }
+
+                await InvokeAsync(StateHasChanged);
+            }
+
             detail = await ConversationService.GetAsync(id, CancellationToken.None);
             conversations = await ConversationService.ListAsync(false, CancellationToken.None);
+        }
+        catch (OperationCanceledException)
+        {
+            error = "The run was cancelled.";
+            detail = await ConversationService.GetAsync(id, CancellationToken.None);
         }
         catch (Exception ex)
         {
@@ -136,7 +210,19 @@
         }
         finally
         {
+            liveText = string.Empty;
+            liveTools.Clear();
             busy = false;
+            sendCts?.Dispose();
+            sendCts = null;
         }
+    }
+
+    private void Cancel() => sendCts?.Cancel();
+
+    public void Dispose()
+    {
+        sendCts?.Cancel();
+        sendCts?.Dispose();
     }
 }

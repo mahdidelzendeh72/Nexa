@@ -22,6 +22,7 @@ public sealed class Conversation
     public DateTimeOffset CreatedAt { get; private set; }
     public DateTimeOffset UpdatedAt { get; private set; }
     public uint RowVersion { get; private set; }
+    public string? RuntimeSessionState { get; private set; }
 
     public IReadOnlyCollection<ConversationMessage> Messages => _messages;
 
@@ -78,6 +79,12 @@ public sealed class Conversation
     public void SetFavorite(bool isFavorite)
     {
         IsFavorite = isFavorite;
+        Touch();
+    }
+
+    public void SetRuntimeSessionState(string? sessionState)
+    {
+        RuntimeSessionState = string.IsNullOrWhiteSpace(sessionState) ? null : sessionState;
         Touch();
     }
 

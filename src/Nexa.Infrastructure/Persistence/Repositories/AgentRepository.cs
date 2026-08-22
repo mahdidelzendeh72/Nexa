@@ -21,7 +21,10 @@ internal sealed class AgentRepository(NexaDbContext db) : IAgentRepository
             query = query.Where(x => !x.IsArchived);
         }
 
-        return await query.OrderByDescending(x => x.UpdatedAt).ToListAsync(cancellationToken);
+        return await query
+            .AsNoTracking()
+            .OrderByDescending(x => x.UpdatedAt)
+            .ToListAsync(cancellationToken);
     }
 
     public async Task<IReadOnlyList<Agent>> ListByVersionIdsAsync(IReadOnlyCollection<Guid> versionIds, CancellationToken cancellationToken)
@@ -32,6 +35,7 @@ internal sealed class AgentRepository(NexaDbContext db) : IAgentRepository
         }
 
         return await Query()
+            .AsNoTracking()
             .Where(a => a.Versions.Any(v => versionIds.Contains(v.Id)))
             .ToListAsync(cancellationToken);
     }

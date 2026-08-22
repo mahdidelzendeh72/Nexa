@@ -1,28 +1,25 @@
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+using System.Text;
 using FluentValidation;
 using Nexa.Application.Abstractions;
 using Nexa.Application.Agents;
 using Nexa.Application.Common;
 using Nexa.Contracts.Conversations;
+using Nexa.Contracts.Runtime;
 using Nexa.Domain.Agents;
+using Nexa.Domain.AgentRuntime;
 using Nexa.Domain.Conversations;
 
 namespace Nexa.Application.Conversations;
-
-public interface IConversationService
-{
-    Task<IReadOnlyList<ConversationDto>> ListAsync(bool includeArchived, CancellationToken cancellationToken);
-    Task<ConversationDetailDto> GetAsync(Guid id, CancellationToken cancellationToken);
-    Task<ConversationDto> CreateAsync(CreateConversationRequest request, CancellationToken cancellationToken);
-    Task<ConversationDto> RenameAsync(Guid id, RenameConversationRequest request, CancellationToken cancellationToken);
-    Task ArchiveAsync(Guid id, CancellationToken cancellationToken);
-    Task<SendMessageResponse> SendMessageAsync(Guid conversationId, SendMessageRequest request, CancellationToken cancellationToken);
-}
 
 public sealed class ConversationService(
     IConversationRepository conversations,
     IAgentRepository agents,
     IModelCatalogRepository models,
-    IChatCompletionService chat,
+    IAgentRuntime runtime,
+    IAgentRunRepository runs,
+    IToolRegistry tools,
     ICurrentUser currentUser,
     IUnitOfWork unitOfWork,
     IValidator<CreateConversationRequest> createValidator,
@@ -92,6 +89,36 @@ public sealed class ConversationService(
 
     public async Task<SendMessageResponse> SendMessageAsync(Guid conversationId, SendMessageRequest request, CancellationToken cancellationToken)
     {
+        AgentStreamEventDto? error = null;
+        await foreach (var evt in StreamMessageAsync(conversationId, request, cancellationToken))
+        {
+            if (evt.Kind == nameof(AgentRuntimeEventKind.Error))
+            {
+                error = evt;
+            }
+        }
+
+        if (error is not null)
+        {
+            throw new NexaException(
+                error.ErrorCode ?? ErrorCodes.ChatFailed,
+                error.ErrorMessage ?? "The agent run failed.",
+                502);
+        }
+
+        var detail = await GetAsync(conversationId, cancellationToken);
+        var user = detail.Messages.LastOrDefault(m => m.Role == nameof(MessageRole.User))
+            ?? throw new NexaException(ErrorCodes.ChatFailed, "The user message was not persisted.", 500);
+        var assistant = detail.Messages.LastOrDefault(m => m.Role is nameof(MessageRole.Assistant) or nameof(MessageRole.Error))
+            ?? throw new NexaException(ErrorCodes.ChatFailed, "The assistant message was not persisted.", 502);
+        return new SendMessageResponse(user, assistant);
+    }
+
+    public async IAsyncEnumerable<AgentStreamEventDto> StreamMessageAsync(
+        Guid conversationId,
+        SendMessageRequest request,
+        [EnumeratorCancellation] CancellationToken cancellationToken)
+    {
         await sendValidator.EnsureValidAsync(request, cancellationToken);
         var conversation = await GetOwnedAsync(conversationId, cancellationToken);
         if (conversation.IsArchived)
@@ -99,41 +126,249 @@ public sealed class ConversationService(
             throw new NexaException(ErrorCodes.ValidationFailed, "Archived conversations cannot accept messages.");
         }
 
-        var userMessage = conversation.AddMessage(MessageRole.User, request.Content);
-        await unitOfWork.SaveChangesAsync(cancellationToken);
-
-        var (_, version) = await ResolveAgentAsync(conversation.AgentVersionId, cancellationToken);
+        var userId = currentUser.RequireUserId();
+        conversation.AddMessage(MessageRole.User, request.Content);
+        var (agent, version) = await ResolveAgentAsync(conversation.AgentVersionId, cancellationToken);
         var profile = await models.GetProfileAsync(version.ModelProfileId, cancellationToken)
             ?? throw NexaException.NotFound("Model profile was not found.");
         var provider = await models.GetProviderAsync(profile.ProviderId, cancellationToken)
             ?? throw NexaException.NotFound("Model provider was not found.");
 
+        var run = AgentRun.Start(conversation.Id, version.Id, userId, Activity.Current?.Id ?? Guid.NewGuid().ToString("N"));
+        await runs.AddAsync(run, cancellationToken);
+        await unitOfWork.SaveChangesAsync(cancellationToken);
+
+        yield return new AgentStreamEventDto(nameof(AgentRuntimeEventKind.RunStarted), RunId: run.Id);
+
+        using var linked = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+        if (version.MaxDurationSeconds is int seconds)
+        {
+            linked.CancelAfter(TimeSpan.FromSeconds(seconds));
+        }
+
         var history = conversation.Messages
             .OrderBy(m => m.CreatedAt)
-            .Where(m => m.Role is MessageRole.User or MessageRole.Assistant)
-            .Select(m => (m.Role.ToString(), m.Content))
+            .Where(m => m.Role is MessageRole.User or MessageRole.Assistant or MessageRole.System)
+            .Select(m => new AgentRuntimeMessage(m.Role.ToString(), m.Content))
             .ToList();
 
-        ChatCompletionResult completion;
+        var maxOutputTokens = profile.MaxTokens;
+        if (version.TokenBudget is int budget)
+        {
+            maxOutputTokens = maxOutputTokens is int existing ? Math.Min(existing, budget) : budget;
+        }
+
+        var runtimeRequest = new AgentRuntimeRequest(
+            agent.Name,
+            version.Instructions,
+            history,
+            provider,
+            profile,
+            conversation.RuntimeSessionState,
+            tools.List().Select(t => t.Id).ToList(),
+            maxOutputTokens);
+
+        var assistantText = new StringBuilder();
+        var clock = Stopwatch.StartNew();
+        var completed = false;
+
+        IAsyncEnumerator<AgentRuntimeEvent>? enumerator = null;
         try
         {
-            completion = await chat.CompleteAsync(version.Instructions, history, provider, profile, cancellationToken);
+            enumerator = runtime.RunStreamingAsync(runtimeRequest, linked.Token).GetAsyncEnumerator(linked.Token);
+            while (true)
+            {
+                AgentRuntimeEvent? evt = null;
+                var timedOut = false;
+                try
+                {
+                    if (!await enumerator.MoveNextAsync())
+                    {
+                        break;
+                    }
+
+                    evt = enumerator.Current;
+                }
+                catch (OperationCanceledException)
+                {
+                    clock.Stop();
+                    if (run.Status == AgentRunStatus.Running)
+                    {
+                        if (cancellationToken.IsCancellationRequested)
+                        {
+                            run.Cancel((int)clock.ElapsedMilliseconds);
+                            conversation.AddMessage(MessageRole.Error, "The run was cancelled.");
+                        }
+                        else
+                        {
+                            run.Fail(ErrorCodes.ChatFailed, "The run exceeded the maximum duration.", (int)clock.ElapsedMilliseconds);
+                            conversation.AddMessage(MessageRole.Error, "The run exceeded the maximum duration.");
+                        }
+
+                        await unitOfWork.SaveChangesAsync(CancellationToken.None);
+                    }
+
+                    if (cancellationToken.IsCancellationRequested)
+                    {
+                        throw;
+                    }
+
+                    timedOut = true;
+                }
+
+                if (timedOut)
+                {
+                    yield return new AgentStreamEventDto(
+                        nameof(AgentRuntimeEventKind.Error),
+                        RunId: run.Id,
+                        ErrorCode: ErrorCodes.ChatFailed,
+                        ErrorMessage: "The run exceeded the maximum duration.",
+                        LatencyMs: (int)clock.ElapsedMilliseconds);
+                    yield break;
+                }
+
+                switch (evt!.Kind)
+                {
+                    case AgentRuntimeEventKind.TextDelta when !string.IsNullOrEmpty(evt.Text):
+                        assistantText.Append(evt.Text);
+                        yield return new AgentStreamEventDto(
+                            nameof(AgentRuntimeEventKind.TextDelta),
+                            RunId: run.Id,
+                            Text: evt.Text);
+                        break;
+
+                    case AgentRuntimeEventKind.ToolCallStarted:
+                        run.RecordToolStart(evt.ToolName ?? "unknown", evt.ToolCallId, evt.ToolArguments);
+                        conversation.AddMessage(
+                            MessageRole.ToolCall,
+                            FormatToolPayload(evt.ToolName, evt.ToolArguments));
+                        await unitOfWork.SaveChangesAsync(linked.Token);
+                        yield return new AgentStreamEventDto(
+                            nameof(AgentRuntimeEventKind.ToolCallStarted),
+                            RunId: run.Id,
+                            ToolName: evt.ToolName,
+                            ToolCallId: evt.ToolCallId,
+                            ToolArguments: evt.ToolArguments);
+                        break;
+
+                    case AgentRuntimeEventKind.ToolCallCompleted:
+                        CompleteToolExecution(run, evt);
+                        conversation.AddMessage(
+                            MessageRole.ToolResult,
+                            FormatToolPayload(evt.ToolName, evt.ToolResult));
+                        await unitOfWork.SaveChangesAsync(linked.Token);
+                        yield return new AgentStreamEventDto(
+                            nameof(AgentRuntimeEventKind.ToolCallCompleted),
+                            RunId: run.Id,
+                            ToolName: evt.ToolName,
+                            ToolCallId: evt.ToolCallId,
+                            ToolResult: evt.ToolResult);
+                        break;
+
+                    case AgentRuntimeEventKind.RunCompleted:
+                        clock.Stop();
+                        PersistAssistant(conversation, assistantText.ToString(), evt);
+                        conversation.SetRuntimeSessionState(evt.SessionState);
+                        run.Complete(
+                            evt.InputTokens,
+                            evt.OutputTokens,
+                            evt.TotalTokens,
+                            evt.LatencyMs ?? (int)clock.ElapsedMilliseconds);
+                        await unitOfWork.SaveChangesAsync(linked.Token);
+                        completed = true;
+                        yield return new AgentStreamEventDto(
+                            nameof(AgentRuntimeEventKind.RunCompleted),
+                            RunId: run.Id,
+                            InputTokens: evt.InputTokens,
+                            OutputTokens: evt.OutputTokens,
+                            TotalTokens: evt.TotalTokens,
+                            LatencyMs: evt.LatencyMs ?? (int)clock.ElapsedMilliseconds);
+                        break;
+
+                    case AgentRuntimeEventKind.Error:
+                        clock.Stop();
+                        if (run.Status == AgentRunStatus.Running)
+                        {
+                            run.Fail(
+                                evt.ErrorCode ?? ErrorCodes.ChatFailed,
+                                evt.ErrorMessage ?? "The agent run failed.",
+                                evt.LatencyMs ?? (int)clock.ElapsedMilliseconds);
+                            conversation.AddMessage(MessageRole.Error, evt.ErrorMessage ?? "The agent run failed.");
+                            await unitOfWork.SaveChangesAsync(CancellationToken.None);
+                        }
+
+                        yield return new AgentStreamEventDto(
+                            nameof(AgentRuntimeEventKind.Error),
+                            RunId: run.Id,
+                            ErrorCode: evt.ErrorCode ?? ErrorCodes.ChatFailed,
+                            ErrorMessage: evt.ErrorMessage ?? "The agent run failed.",
+                            LatencyMs: evt.LatencyMs ?? (int)clock.ElapsedMilliseconds);
+                        completed = true;
+                        yield break;
+                }
+            }
         }
-        catch (NexaException)
+        finally
         {
-            conversation.AddMessage(MessageRole.Error, "The model could not complete this turn.");
-            await unitOfWork.SaveChangesAsync(cancellationToken);
-            throw;
+            if (enumerator is not null)
+            {
+                await enumerator.DisposeAsync();
+            }
         }
 
-        var assistant = conversation.AddMessage(
-            MessageRole.Assistant,
-            completion.Text,
-            new TokenUsage(completion.InputTokens, completion.OutputTokens, completion.TotalTokens),
-            completion.LatencyMs);
+        if (!completed && run.Status == AgentRunStatus.Running)
+        {
+            clock.Stop();
+            run.Fail(ErrorCodes.ChatFailed, "The agent run ended without a completion event.", (int)clock.ElapsedMilliseconds);
+            conversation.AddMessage(MessageRole.Error, "The agent run ended without a completion event.");
+            await unitOfWork.SaveChangesAsync(CancellationToken.None);
+            yield return new AgentStreamEventDto(
+                nameof(AgentRuntimeEventKind.Error),
+                RunId: run.Id,
+                ErrorCode: ErrorCodes.ChatFailed,
+                ErrorMessage: "The agent run ended without a completion event.",
+                LatencyMs: (int)clock.ElapsedMilliseconds);
+        }
+    }
 
-        await unitOfWork.SaveChangesAsync(cancellationToken);
-        return new SendMessageResponse(ConversationMapper.ToDto(userMessage), ConversationMapper.ToDto(assistant));
+    public async Task<IReadOnlyList<AgentRunDto>> ListRunsAsync(Guid conversationId, CancellationToken cancellationToken)
+    {
+        await GetOwnedAsync(conversationId, cancellationToken);
+        var list = await runs.ListByConversationAsync(conversationId, cancellationToken);
+        return list.Select(AgentRunMapper.ToDto).ToList();
+    }
+
+    private static void PersistAssistant(Conversation conversation, string text, AgentRuntimeEvent evt)
+    {
+        var content = string.IsNullOrWhiteSpace(text)
+            ? "The agent completed without a text reply."
+            : text;
+        conversation.AddMessage(
+            MessageRole.Assistant,
+            content,
+            new TokenUsage(evt.InputTokens, evt.OutputTokens, evt.TotalTokens),
+            evt.LatencyMs);
+    }
+
+    private static void CompleteToolExecution(AgentRun run, AgentRuntimeEvent evt)
+    {
+        var pending = run.ToolExecutions.LastOrDefault(t =>
+                          t.CompletedAt is null
+                          && (evt.ToolCallId is null || t.CallId == evt.ToolCallId))
+                      ?? run.ToolExecutions.LastOrDefault(t => t.CompletedAt is null && t.ToolName == evt.ToolName);
+
+        if (pending is null)
+        {
+            pending = run.RecordToolStart(evt.ToolName ?? "unknown", evt.ToolCallId, evt.ToolArguments);
+        }
+
+        pending.Complete(evt.ToolResult, DateTimeOffset.UtcNow);
+    }
+
+    private static string FormatToolPayload(string? name, string? payload)
+    {
+        var text = $"{name ?? "tool"}: {payload ?? "(empty)"}";
+        return text.Length <= 100_000 ? text : text[..100_000];
     }
 
     private async Task<Conversation> GetOwnedAsync(Guid id, CancellationToken cancellationToken)

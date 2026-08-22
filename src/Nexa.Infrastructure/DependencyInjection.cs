@@ -96,8 +96,12 @@ public static class DependencyInjection
         services.AddScoped<IAgentRepository, AgentRepository>();
         services.AddScoped<IConversationRepository, ConversationRepository>();
         services.AddScoped<IModelCatalogRepository, ModelCatalogRepository>();
+        services.AddScoped<IAgentRunRepository, AgentRunRepository>();
         services.AddScoped<IProviderConnectionResolver, ProviderConnectionResolver>();
-        services.AddScoped<IChatCompletionService, ChatCompletionService>();
+        services.AddScoped<IChatClientFactory, OpenAiCompatibleChatClientFactory>();
+        services.AddSingleton<BuiltInToolCatalog>();
+        services.AddSingleton<IToolRegistry>(sp => sp.GetRequiredService<BuiltInToolCatalog>());
+        services.AddScoped<IAgentRuntime, AgentFrameworkRuntime>();
         services.AddScoped<NexaDataSeeder>();
         return services;
     }
