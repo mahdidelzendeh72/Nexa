@@ -1,0 +1,5 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Nexa.Contracts</RootNamespace>
+  </PropertyGroup>
+</Project>

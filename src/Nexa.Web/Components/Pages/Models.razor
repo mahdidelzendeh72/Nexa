@@ -1,0 +1,121 @@
+@page "/models"
+@attribute [Authorize(Policy = NexaPolicies.CanManageModels)]
+@inject Nexa.Application.Models.IModelProfileService ModelService
+
+<PageTitle>Models</PageTitle>
+<h1>Model profiles</h1>
+
+@if (!string.IsNullOrWhiteSpace(error))
+{
+    <p class="error" role="alert">@error</p>
+}
+
+<div class="split">
+    <section>
+        <h2>Profiles</h2>
+        <ul class="list">
+            @foreach (var profile in profiles)
+            {
+                <li>
+                    <strong>@profile.Name</strong>
+                    <span class="muted">@profile.ProviderName / @profile.ModelId</span>
+                    <button class="link-button" @onclick="() => Edit(profile)">Edit</button>
+                </li>
+            }
+        </ul>
+    </section>
+    <section>
+        <h2>@(editingId is null ? "Create profile" : "Edit profile")</h2>
+        <label>Provider
+            <select @bind="form.ProviderId">
+                @foreach (var provider in providers)
+                {
+                    <option value="@provider.Id">@provider.Name</option>
+                }
+            </select>
+        </label>
+        <label>Name <input @bind="form.Name" /></label>
+        <label>Model id <input @bind="form.ModelId" /></label>
+        <label>Temperature <input type="number" step="0.1" @bind="form.Temperature" /></label>
+        <label>Max tokens <input type="number" @bind="form.MaxTokens" /></label>
+        <label class="inline"><input type="checkbox" @bind="form.IsEnabled" /> Enabled</label>
+        <button class="button" @onclick="SaveAsync" disabled="@busy">Save</button>
+    </section>
+</div>
+
+@code {
+    private IReadOnlyList<ModelProfileDto> profiles = [];
+    private IReadOnlyList<ModelProviderDto> providers = [];
+    private Guid? editingId;
+    private ProfileForm form = new();
+    private string? error;
+    private bool busy;
+
+    protected override async Task OnInitializedAsync()
+    {
+        providers = await ModelService.ListProvidersAsync(CancellationToken.None);
+        profiles = await ModelService.ListProfilesAsync(CancellationToken.None);
+        if (providers.Count > 0)
+        {
+            form.ProviderId = providers[0].Id;
+        }
+    }
+
+    private void Edit(ModelProfileDto profile)
+    {
+        editingId = profile.Id;
+        form = new ProfileForm
+        {
+            ProviderId = profile.ProviderId,
+            Name = profile.Name,
+            ModelId = profile.ModelId,
+            Temperature = profile.Temperature,
+            MaxTokens = profile.MaxTokens,
+            IsEnabled = profile.IsEnabled
+        };
+    }
+
+    private async Task SaveAsync()
+    {
+        busy = true;
+        error = null;
+        try
+        {
+            if (editingId is null)
+            {
+                await ModelService.CreateProfileAsync(
+                    new CreateModelProfileRequest(form.ProviderId, form.Name, form.ModelId, form.Temperature, form.MaxTokens, form.IsEnabled),
+                    CancellationToken.None);
+            }
+            else
+            {
+                await ModelService.UpdateProfileAsync(
+                    editingId.Value,
+                    new UpdateModelProfileRequest(form.Name, form.ModelId, form.Temperature, form.MaxTokens, form.IsEnabled),
+                    CancellationToken.None);
+            }
+
+            profiles = await ModelService.ListProfilesAsync(CancellationToken.None);
+            editingId = null;
+            form = new ProfileForm { ProviderId = providers.FirstOrDefault()?.Id ?? Guid.Empty, IsEnabled = true };
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+        finally
+        {
+            busy = false;
+        }
+    }
+
+    private sealed class ProfileForm
+    {
+        public Guid ProviderId { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string ModelId { get; set; } = string.Empty;
+        public double? Temperature { get; set; } = 0.7;
+        public int? MaxTokens { get; set; } = 2048;
+        public bool IsEnabled { get; set; } = true;
+    }
+}

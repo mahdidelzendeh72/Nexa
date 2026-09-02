@@ -1,0 +1,139 @@
+@page "/agents"
+@page "/agents/{AgentId:guid}"
+@attribute [Authorize(Policy = NexaPolicies.CanManageAgents)]
+@inject Nexa.Application.Agents.IAgentService AgentService
+@inject Nexa.Application.Models.IModelProfileService ModelService
+
+<PageTitle>Agents</PageTitle>
+<h1>Agents</h1>
+
+@if (!string.IsNullOrWhiteSpace(error))
+{
+    <p class="error" role="alert">@error</p>
+}
+
+<div class="split">
+    <section>
+        <h2>Your agents</h2>
+        @if (agents is null)
+        {
+            <p>Loading…</p>
+        }
+        else if (agents.Count == 0)
+        {
+            <p class="muted">No agents yet.</p>
+        }
+        else
+        {
+            <ul class="list">
+                @foreach (var agent in agents)
+                {
+                    <li>
+                        <a href="@($"/agents/{agent.Id}")">@agent.Name</a>
+                        <span class="muted">v@agent.CurrentVersionNumber</span>
+                    </li>
+                }
+            </ul>
+        }
+    </section>
+    <section>
+        <h2>@(selected is null ? "Create agent" : $"Edit {selected.Name}")</h2>
+        <EditForm Model="form" OnValidSubmit="SaveAsync">
+            <DataAnnotationsValidator />
+            <label>Name <InputText @bind-Value="form.Name" /></label>
+            <label>Description <InputTextArea @bind-Value="form.Description" /></label>
+            <label>Instructions <InputTextArea @bind-Value="form.Instructions" rows="8" /></label>
+            <label>Model profile
+                <InputSelect @bind-Value="form.ModelProfileId">
+                    @foreach (var profile in profiles)
+                    {
+                        <option value="@profile.Id">@profile.Name (@profile.ProviderName)</option>
+                    }
+                </InputSelect>
+            </label>
+            <button type="submit" class="button" disabled="@busy">Save</button>
+        </EditForm>
+    </section>
+</div>
+
+@code {
+    [Parameter] public Guid? AgentId { get; set; }
+
+    private IReadOnlyList<AgentDto> agents = [];
+    private IReadOnlyList<ModelProfileDto> profiles = [];
+    private AgentDto? selected;
+    private AgentForm form = new();
+    private string? error;
+    private bool busy;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        try
+        {
+            profiles = await ModelService.ListProfilesAsync(CancellationToken.None);
+            agents = await AgentService.ListAsync(false, CancellationToken.None);
+            if (AgentId is { } id && id != Guid.Empty)
+            {
+                selected = await AgentService.GetAsync(id, CancellationToken.None);
+                form = new AgentForm
+                {
+                    Name = selected.Name,
+                    Description = selected.Description,
+                    Instructions = selected.Instructions,
+                    ModelProfileId = selected.ModelProfileId
+                };
+            }
+            else if (profiles.Count > 0)
+            {
+                selected = null;
+                form = new AgentForm { ModelProfileId = profiles[0].Id };
+            }
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+    }
+
+    private async Task SaveAsync()
+    {
+        busy = true;
+        error = null;
+        try
+        {
+            if (selected is null)
+            {
+                var created = await AgentService.CreateAsync(new CreateAgentRequest(form.Name, form.Description, form.Instructions, form.ModelProfileId, null, null, null), CancellationToken.None);
+                agents = await AgentService.ListAsync(false, CancellationToken.None);
+                selected = created;
+            }
+            else
+            {
+                await AgentService.UpdateAsync(selected.Id, new UpdateAgentRequest(form.Name, form.Description), CancellationToken.None);
+                if (form.Instructions != selected.Instructions || form.ModelProfileId != selected.ModelProfileId)
+                {
+                    await AgentService.PublishVersionAsync(selected.Id, new PublishAgentVersionRequest(form.Instructions, form.ModelProfileId, null, null, null), CancellationToken.None);
+                }
+
+                selected = await AgentService.GetAsync(selected.Id, CancellationToken.None);
+                agents = await AgentService.ListAsync(false, CancellationToken.None);
+            }
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+        finally
+        {
+            busy = false;
+        }
+    }
+
+    private sealed class AgentForm
+    {
+        public string Name { get; set; } = string.Empty;
+        public string? Description { get; set; }
+        public string Instructions { get; set; } = "You are a helpful engineering assistant.";
+        public Guid ModelProfileId { get; set; }
+    }
+}

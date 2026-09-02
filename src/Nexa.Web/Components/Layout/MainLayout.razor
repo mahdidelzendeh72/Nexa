@@ -1,0 +1,42 @@
+﻿@inherits LayoutComponentBase
+@using Microsoft.AspNetCore.Components.Authorization
+
+<div class="app-shell">
+    <header class="top-bar">
+        <a class="brand" href="/">Nexa</a>
+        <nav class="nav">
+            <AuthorizeView>
+                <Authorized>
+                    <NavLink href="/chat">Chat</NavLink>
+                    <NavLink href="/agents">Agents</NavLink>
+                    <NavLink href="/models">Models</NavLink>
+                </Authorized>
+            </AuthorizeView>
+        </nav>
+        <div class="auth-links">
+            <AuthorizeView>
+                <Authorized>
+                    <span class="muted">@context.User.Identity?.Name</span>
+                    <form action="/Identity/Account/Logout" method="post">
+                        <AntiforgeryToken />
+                        <input type="hidden" name="returnUrl" value="/" />
+                        <button type="submit" class="link-button">Sign out</button>
+                    </form>
+                </Authorized>
+                <NotAuthorized>
+                    <a href="/Identity/Account/Login">Sign in</a>
+                    <a href="/Identity/Account/Register">Register</a>
+                </NotAuthorized>
+            </AuthorizeView>
+        </div>
+    </header>
+    <main class="content">
+        @Body
+    </main>
+</div>
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
