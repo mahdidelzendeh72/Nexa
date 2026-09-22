@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AICodeFunction/AICodeFunction.csproj" />
+  <Project Path="ollama/ollama.csproj" />
+  <Project Path="OllamaChat.Api/OllamaChat.Api.csproj" />
+  <Project Path="WeatherMcpServer/WeatherMcpServer.csproj" />
+</Solution>
