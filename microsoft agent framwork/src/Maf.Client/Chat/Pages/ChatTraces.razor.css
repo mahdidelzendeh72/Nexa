@@ -1,0 +1,255 @@
+.trace-shell {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.trace-list {
+    width: 20rem;
+    flex: 0 0 20rem;
+}
+
+.trace-list-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.trace-list-head h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.trace-note {
+    font-size: 0.85rem;
+}
+
+.trace-run {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.65rem 0.75rem;
+    text-align: right;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.trace-run.active {
+    border-color: #0d6efd;
+    background: #f4f8ff;
+}
+
+.trace-run-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    font-weight: 500;
+}
+
+.trace-run-meta {
+    color: #6c757d;
+    font-size: 0.8rem;
+    direction: ltr;
+    text-align: right;
+}
+
+.trace-badge {
+    border-radius: 999px;
+    padding: 0.05rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.trace-badge.success {
+    background: #e7f6ee;
+    color: #0f7b4c;
+}
+
+.trace-badge.open {
+    background: #eef1f4;
+    color: #495057;
+}
+
+.trace-badge.other {
+    background: #fdecea;
+    color: #b42318;
+}
+
+.trace-main {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.trace-run-block {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.trace-run-block:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.trace-run-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.trace-run-heading h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.trace-run-facts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem 1rem;
+    margin: 0 0 1rem;
+}
+
+.trace-run-facts dt {
+    color: #6c757d;
+    font-size: 0.75rem;
+}
+
+.trace-run-facts dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.trace-header h2 {
+    margin-bottom: 0.15rem;
+    font-size: 1.35rem;
+}
+
+.trace-id {
+    margin-bottom: 0.75rem;
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+.trace-header dl {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem 1rem;
+    margin: 0 0 1.5rem;
+}
+
+.trace-header dt {
+    color: #6c757d;
+    font-size: 0.75rem;
+}
+
+.trace-header dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0.45rem;
+    bottom: 0.45rem;
+    right: 0.4rem;
+    width: 2px;
+    background: #d0d7de;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 1.8rem 1.15rem 0;
+}
+
+.timeline-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 0.35rem;
+    right: 0.1rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #1b6ec2;
+    box-shadow: 0 0 0 2px #1b6ec2;
+}
+
+.timeline-item.tool .timeline-dot {
+    background: #b86e00;
+    box-shadow: 0 0 0 2px #b86e00;
+}
+
+.timeline-item.message .timeline-dot {
+    background: #0f7b4c;
+    box-shadow: 0 0 0 2px #0f7b4c;
+}
+
+.timeline-item.reasoning .timeline-dot {
+    background: #6f42c1;
+    box-shadow: 0 0 0 2px #6f42c1;
+}
+
+.timeline-item.end.open .timeline-dot {
+    background: #6c757d;
+    box-shadow: 0 0 0 2px #6c757d;
+}
+
+.timeline-item.end.success .timeline-dot {
+    background: #0f7b4c;
+    box-shadow: 0 0 0 2px #0f7b4c;
+}
+
+.timeline-item.end.other .timeline-dot {
+    background: #b42318;
+    box-shadow: 0 0 0 2px #b42318;
+}
+
+.timeline-name {
+    font-weight: 500;
+}
+
+.timeline-meta,
+.timeline-ref,
+.timeline-item time {
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+    .trace-shell {
+        flex-direction: column;
+    }
+
+    .trace-list {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .trace-run-facts {
+        grid-template-columns: 1fr;
+    }
+}

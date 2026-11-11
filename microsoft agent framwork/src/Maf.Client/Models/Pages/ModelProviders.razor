@@ -1,0 +1,152 @@
+@page "/model-providers"
+@attribute [Authorize(Roles = "ModelManager")]
+@inject ModelProviderApiClient Providers
+@inject NavigationManager Navigation
+
+<PageTitle>ارائه‌دهندگان مدل</PageTitle>
+
+<div dir="rtl">
+    <h1>لیست ارائه‌دهنده مدل</h1>
+    <p><a href="model-defaults">مدل‌های پیش‌فرض</a></p>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="h5">ارائه‌دهنده مدل جدید</h2>
+            <p class="text-muted">پس از ذخیره، مدل‌های موجود از نشانی پایه خوانده می‌شوند.</p>
+            <ModelProviderEditor Prefix="create"
+                                 @bind-Name="_name"
+                                 @bind-Kind="_kind"
+                                 @bind-BaseAddress="_baseAddress"
+                                 @bind-ApiKey="_apiKey"
+                                 @bind-Protocol="_protocol" />
+            <button class="btn btn-primary mt-3" disabled="@(_busy || !CanSave)" @onclick="CreateAsync">
+                ذخیره
+            </button>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(_message))
+    {
+        <div class="alert @(_failed ? "alert-danger" : "alert-info")">@_message</div>
+    }
+
+    @if (_loading)
+    {
+        <p>در حال دریافت ارائه‌دهنده‌ها...</p>
+    }
+    else if (_providers.Length == 0)
+    {
+        <p>هنوز ارائه‌دهنده‌ای ثبت نشده است.</p>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped align-middle">
+                <thead>
+                    <tr>
+                        <th>نام</th>
+                        <th>نوع</th>
+                        <th>پروتکل</th>
+                        <th>مدل‌ها</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (ModelProviderSummary provider in _providers)
+                    {
+                        <tr>
+                            <td>
+                                <a href="@($"model-providers/{provider.Id}")">@provider.Name</a>
+                                <div class="text-muted small">@provider.BaseAddress</div>
+                                @if (!string.IsNullOrWhiteSpace(provider.DiscoveryError))
+                                {
+                                    <div class="text-danger small">@provider.DiscoveryError</div>
+                                }
+                            </td>
+                            <td>@KindText(provider.Kind)</td>
+                            <td>@ProtocolText(provider.Protocol)</td>
+                            <td>@provider.ModelCount</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private ModelProviderSummary[] _providers = [];
+    private string _name = "";
+    private string _kind = "OpenAI";
+    private string? _baseAddress;
+    private string? _apiKey;
+    private string _protocol = "Responses";
+    private bool _loading = true;
+    private bool _busy;
+    private bool _failed;
+    private string? _message;
+
+    private bool CanSave =>
+        !string.IsNullOrWhiteSpace(_name) &&
+        !string.IsNullOrWhiteSpace(_baseAddress);
+
+    protected override async Task OnInitializedAsync() => await RefreshAsync();
+
+    private async Task CreateAsync()
+    {
+        if (!CanSave)
+        {
+            return;
+        }
+
+        _busy = true;
+        _failed = false;
+        _message = null;
+        try
+        {
+            ModelProviderDetails created = await Providers.CreateAsync(new SaveModelProviderRequest(
+                _name.Trim(),
+                _kind,
+                _baseAddress!.Trim(),
+                string.IsNullOrWhiteSpace(_apiKey) ? null : _apiKey.Trim(),
+                _protocol));
+            Navigation.NavigateTo($"model-providers/{created.Id}");
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+
+    private async Task RefreshAsync()
+    {
+        try
+        {
+            _providers = await Providers.ListAsync();
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private static string KindText(string kind) => kind switch
+    {
+        "OpenAI" => "OpenAI",
+        "OpenAICompatible" => "سازگار با OpenAI",
+        "Ollama" => "Ollama",
+        _ => kind,
+    };
+
+    private static string ProtocolText(string protocol) =>
+        protocol == "Responses" ? "Responses API" : "Chat Completions";
+}

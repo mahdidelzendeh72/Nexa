@@ -1,0 +1,742 @@
+@page "/chat"
+@attribute [Authorize]
+@using AGUI.Abstractions
+@using Microsoft.Extensions.AI
+@inject IChatClient ChatClient
+@inject HttpClient Backend
+@inject ChatSelection Selection
+@inject PageCaptureJsInterop PageCapture
+@implements IDisposable
+
+<PageTitle>گفتگوی عمومی</PageTitle>
+
+<div class="chat-shell" dir="rtl">
+    <aside class="history">
+        <button class="btn btn-outline-secondary w-100 mb-3" @onclick="NewChat" disabled="@_busy">گفتگوی جدید</button>
+        @if (_history.Length == 0)
+        {
+            <p class="text-muted">گفتگویی ذخیره نشده است.</p>
+        }
+        else
+        {
+            @foreach (ChatSummary item in _history)
+            {
+                <button class="history-item @(item.ThreadId == _threadId ? "active" : "")" @onclick="() => OpenAsync(item.ThreadId)" disabled="@_busy">
+                    <span>@item.Title</span>
+                </button>
+            }
+        }
+    </aside>
+
+    <section class="chat-main">
+        <h1>گفتگوی عمومی</h1>
+
+        @if (_loading)
+        {
+            <p>در حال دریافت مدل‌ها...</p>
+        }
+        else if (_choices.Length == 0)
+        {
+            <div class="alert alert-warning">
+                هنوز مدلی برای گفتگو ثبت نشده است.
+                <a href="model-providers">ارائه‌دهندگان مدل</a>
+            </div>
+        }
+        else
+        {
+            <div class="chat-toolbar">
+                <div>
+                    <label class="form-label" for="chat-model">مدل</label>
+                    <select id="chat-model" class="form-select" @bind="_selected" disabled="@_busy">
+                        <option value="">یک مدل انتخاب کنید</option>
+                        @foreach (IGrouping<string, ChatModelChoice> group in _choices.GroupBy(choice => choice.ProviderName))
+                        {
+                            <optgroup label="@group.Key">
+                                @foreach (ChatModelChoice choice in group)
+                                {
+                                    <option value="@Key(choice)">@choice.ModelName</option>
+                                }
+                            </optgroup>
+                        }
+                    </select>
+                </div>
+
+                <div>
+                    <label class="form-label" for="chat-tools">ابزارها</label>
+                    @if (_tools.Length == 0)
+                    {
+                        <p id="chat-tools" class="text-muted mb-0">ابزاری از سرورهای MCP شناسایی نشده است.</p>
+                    }
+                    else
+                    {
+                        <details class="tool-picker">
+                            <summary id="chat-tools" class="form-select">@ToolSummary</summary>
+                            <div class="tool-menu">
+                                @foreach (IGrouping<Guid, ChatToolChoice> group in _tools.GroupBy(tool => tool.ServerId))
+                                {
+                                    <div class="tool-group">@group.First().ServerName</div>
+                                    @foreach (ChatToolChoice tool in group)
+                                    {
+                                        string key = ToolKey(tool);
+                                        <label class="tool-option" title="@tool.Description">
+                                            <input type="checkbox" checked="@_selectedTools.Contains(key)" disabled="@_busy" @onchange="eventArgs => ToggleTool(key, eventArgs.Value is true)" />
+                                            <span>@tool.Name</span>
+                                        </label>
+                                    }
+                                }
+                            </div>
+                        </details>
+                    }
+                </div>
+            </div>
+
+            <div class="mb-3">
+                @foreach (ChatLine line in _lines)
+                {
+                    <div class="mb-2 @(line.Role == ChatRole.User ? "user-message" : null)">
+                        @if (line.Turn is AssistantTurn turn)
+                        {
+                            <AssistantTurnView Turn="turn" />
+                        }
+                        else if (!string.IsNullOrWhiteSpace(line.Text))
+                        {
+                            <div class="transcript">@line.Text</div>
+                        }
+                        @if (line.Attachments.Count > 0)
+                        {
+                            <div class="attachments">
+                                @foreach (ChatAttachmentView file in line.Attachments)
+                                {
+                                    <div>
+                                        @if (LinkAddress(file) is string link)
+                                        {
+                                            <a href="@link" target="_blank" rel="noopener noreferrer">@link</a>
+                                        }
+                                        else
+                                        {
+                                            @if (IsPreviewableImage(file.MediaType))
+                                            {
+                                                <img class="attachment-preview" alt="@file.FileName" src="@DataUrl(file)" />
+                                            }
+                                            <a href="@DataUrl(file)" download="@file.FileName">@file.FileName</a>
+                                        }
+                                    </div>
+                                }
+                            </div>
+                        }
+                        @if (line.Turn is not null && !string.IsNullOrWhiteSpace(_threadId) && !string.IsNullOrWhiteSpace(line.Turn.AnswerText))
+                        {
+                            <div class="mt-1">
+                                <button class="btn btn-sm @(line.Reaction == "Like" ? "btn-success" : "btn-outline-success")" @onclick="() => LikeAsync(line)" disabled="@_busy">پسندیدم</button>
+                                <button class="btn btn-sm @(line.Reaction == "Dislike" ? "btn-danger" : "btn-outline-danger")" @onclick="() => DislikeAsync(line)" disabled="@_busy">نپسندیدم</button>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+            @if (!string.IsNullOrWhiteSpace(_error))
+            {
+                <div class="alert alert-danger">@_error</div>
+            }
+            @if (_files.Count > 0)
+            {
+                <ul class="pending-files">
+                    @foreach (PendingFile file in _files)
+                    {
+                        <li>
+                            @if (!string.IsNullOrEmpty(file.PreviewUrl))
+                            {
+                                <img class="attachment-preview" alt="@file.Name" src="@file.PreviewUrl" />
+                            }
+                            <span>@file.Name</span>
+                            <button type="button" class="btn btn-sm btn-link" @onclick="() => RemoveFile(file)" disabled="@_busy">حذف</button>
+                        </li>
+                    }
+                </ul>
+            }
+            <div class="composer">
+                <textarea class="form-control" rows="3" @bind="_draft" @bind:event="oninput" disabled="@(_busy || !HasSelection)"></textarea>
+                <label class="btn btn-outline-secondary @(_busy || !HasSelection ? "disabled" : "")">
+                    افزودن فایل
+                    <InputFile @key="_fileInputKey" class="visually-hidden" multiple disabled="@(_busy || !HasSelection)" OnChange="AddFilesAsync" />
+                </label>
+            </div>
+            <div class="d-flex gap-2">
+                <button class="btn btn-primary" disabled="@(_busy || !HasSelection || (string.IsNullOrWhiteSpace(_draft) && _files.Count == 0))" @onclick="SendAsync">ارسال</button>
+                @if (_busy)
+                {
+                    <button type="button" class="btn btn-outline-danger" @onclick="CancelResponse">لغو</button>
+                }
+            </div>
+        }
+    </section>
+    @if (_questions is { Count: > 0 } questions)
+    {
+        <QuestionForm Questions="questions" OnCompleted="AcceptAnswers" OnDismissed="DismissAnswers" />
+    }
+</div>
+
+@code {
+    private const string Surface = "general";
+
+    private readonly List<ChatLine> _lines = [];
+    private ChatModelChoice[] _choices = [];
+    private ChatToolChoice[] _tools = [];
+    private readonly HashSet<string> _selectedTools = new(StringComparer.Ordinal);
+    private ChatSummary[] _history = [];
+    private string _selected = "";
+    private const int MaxFilesPerMessage = 4;
+
+    private const int MaxFileBytes = 4 * 1024 * 1024;
+
+    private readonly List<PendingFile> _files = [];
+    private string _draft = "";
+    private int _fileInputKey;
+    private string? _threadId;
+    private string? _error;
+    private bool _loading = true;
+    private bool _busy;
+    private CancellationTokenSource? _send;
+    private AITool? _pageCaptureTool;
+    private AITool? _askUserTool;
+    private IReadOnlyList<UserQuestion>? _questions;
+    private TaskCompletionSource<IReadOnlyList<UserAnswer>?>? _answerWait;
+
+    private bool HasSelection => !string.IsNullOrWhiteSpace(_selected);
+
+    private string ToolSummary => _selectedTools.Count == 0 ? "ابزاری انتخاب نشده" : $"{_selectedTools.Count} ابزار";
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _choices = await Backend.GetFromJsonAsync<ChatModelChoice[]>("api/chat/models") ?? [];
+            await LoadHistoryAsync();
+            try
+            {
+                _tools = await Backend.GetFromJsonAsync<ChatToolChoice[]>("api/chat/tools") ?? [];
+            }
+            catch (Exception toolException) when (toolException is not OperationCanceledException)
+            {
+                _tools = [];
+            }
+        }
+        catch (Exception exception)
+        {
+            _error = exception.Message;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private async Task LoadHistoryAsync()
+    {
+        _history = await Backend.GetFromJsonAsync<ChatSummary[]>($"api/chat/conversations?surface={Surface}") ?? [];
+    }
+
+    private async Task StampUsageAsync()
+    {
+        if (string.IsNullOrWhiteSpace(_threadId))
+        {
+            return;
+        }
+
+        try
+        {
+            ChatTranscript? transcript = await Backend.GetFromJsonAsync<ChatTranscript>(
+                $"api/chat/conversations/{Uri.EscapeDataString(_threadId)}");
+            if (transcript is null)
+            {
+                return;
+            }
+
+            foreach (ChatTranscriptMessage message in transcript.Messages)
+            {
+                ChatLine? line = _lines.FirstOrDefault(item => item.Sequence == message.Sequence);
+                if (line is not null && message.Attachments is { Length: > 0 } attachments)
+                {
+                    line.SetAttachments(attachments
+                        .Select(file => new ChatAttachmentView(file.FileName, file.MediaType, file.ContentBase64))
+                        .ToArray());
+                }
+
+                if (line?.Turn is not null && message.Usage is ChatTranscriptUsage usage)
+                {
+                    line.Turn.SetUsage(
+                        usage.InputTokens,
+                        usage.OutputTokens,
+                        usage.ReasoningTokens,
+                        usage.CachedInputTokens,
+                        usage.TotalTokens,
+                        usage.CacheWriteInputTokens);
+                }
+            }
+        }
+        catch (Exception exception) when (exception is not OperationCanceledException)
+        {
+            _ = exception;
+        }
+    }
+
+    private async Task RefreshHistoryAsync()
+    {
+        try
+        {
+            await LoadHistoryAsync();
+        }
+        catch (Exception loadException) when (loadException is not OperationCanceledException)
+        {
+            _error = loadException.Message;
+        }
+    }
+
+    private void NewChat()
+    {
+        _lines.Clear();
+        _threadId = null;
+        _draft = "";
+        _files.Clear();
+        _error = null;
+        _selectedTools.Clear();
+        Selection.ToolKeys = [];
+    }
+
+    private async Task OpenAsync(string threadId)
+    {
+        _error = null;
+        try
+        {
+            ChatTranscript? transcript = await Backend.GetFromJsonAsync<ChatTranscript>(
+                $"api/chat/conversations/{Uri.EscapeDataString(threadId)}");
+            if (transcript is null)
+            {
+                return;
+            }
+
+            if (transcript.ThreadId != _threadId)
+            {
+                _selectedTools.Clear();
+                Selection.ToolKeys = [];
+            }
+
+            _threadId = transcript.ThreadId;
+            _files.Clear();
+            _lines.Clear();
+            foreach (ChatTranscriptMessage message in transcript.Messages)
+            {
+                bool assistant = message.Role != "User";
+                _lines.Add(new ChatLine(
+                    assistant ? ChatRole.Assistant : ChatRole.User,
+                    message.Text,
+                    message.Sequence,
+                    message.Reaction,
+                    message.Attachments?
+                        .Select(file => new ChatAttachmentView(file.FileName, file.MediaType, file.ContentBase64))
+                        .ToArray(),
+                    assistant
+                        ? AssistantTurn.FromStored(
+                            message.Text,
+                            message.Usage?.InputTokens,
+                            message.Usage?.OutputTokens,
+                            message.Usage?.ReasoningTokens,
+                            message.Usage?.CachedInputTokens,
+                            message.Usage?.TotalTokens,
+                            message.Usage?.CacheWriteInputTokens)
+                        : null));
+            }
+
+            if (transcript.ProviderId is Guid providerId && !string.IsNullOrWhiteSpace(transcript.ModelName))
+            {
+                _selected = $"{providerId:D}|{transcript.ModelName}";
+            }
+        }
+        catch (Exception exception)
+        {
+            _error = exception.Message;
+        }
+    }
+
+    private Task LikeAsync(ChatLine line) => ReactAsync(line, "Like");
+
+    private Task DislikeAsync(ChatLine line) => ReactAsync(line, "Dislike");
+
+    private async Task ReactAsync(ChatLine line, string reaction)
+    {
+        if (string.IsNullOrWhiteSpace(_threadId))
+        {
+            return;
+        }
+
+        string next = line.Reaction == reaction ? "None" : reaction;
+        try
+        {
+            HttpResponseMessage response = await Backend.PutAsJsonAsync(
+                $"api/chat/conversations/{Uri.EscapeDataString(_threadId)}/entries/{line.Sequence}/reaction",
+                new ReactionRequest(next));
+            response.EnsureSuccessStatusCode();
+            line.Reaction = next;
+        }
+        catch (Exception exception)
+        {
+            _error = exception.Message;
+        }
+    }
+
+    private async Task AddFilesAsync(InputFileChangeEventArgs args)
+    {
+        _error = null;
+        foreach (IBrowserFile browserFile in args.GetMultipleFiles(MaxFilesPerMessage + 1))
+        {
+            if (_files.Count >= MaxFilesPerMessage)
+            {
+                _error = "حداکثر ۴ فایل در هر پیام.";
+                break;
+            }
+
+            if (browserFile.Size <= 0)
+            {
+                _error = "فایل خالی است.";
+                continue;
+            }
+
+            if (browserFile.Size > MaxFileBytes)
+            {
+                _error = "حجم فایل بیش از ۴ مگابایت است.";
+                continue;
+            }
+
+            try
+            {
+                await using Stream stream = browserFile.OpenReadStream(MaxFileBytes);
+                using MemoryStream memory = new();
+                await stream.CopyToAsync(memory);
+                _files.Add(new PendingFile(browserFile.Name, MediaTypeOf(browserFile.ContentType), memory.ToArray()));
+            }
+            catch (Exception exception) when (exception is not OperationCanceledException)
+            {
+                _error = "خواندن فایل انجام نشد.";
+            }
+        }
+
+        _fileInputKey++;
+    }
+
+    private void RemoveFile(PendingFile file) => _files.Remove(file);
+
+    private async Task SendAsync()
+    {
+        string text = _draft.Trim();
+        if ((text.Length == 0 && _files.Count == 0) || !TryParse(_selected, out Guid providerId, out string? modelName))
+        {
+            return;
+        }
+
+        PendingFile[] files = _files.ToArray();
+        Selection.ProviderId = providerId;
+        Selection.ModelName = modelName;
+        Selection.ToolKeys = _selectedTools.ToArray();
+        _send = new CancellationTokenSource();
+        _busy = true;
+        _error = null;
+        _draft = "";
+        _files.Clear();
+        _lines.Add(new ChatLine(
+            ChatRole.User,
+            text,
+            _lines.Count + 1,
+            attachments: files.Select(file => new ChatAttachmentView(file.Name, file.MediaType, Convert.ToBase64String(file.Bytes))).ToArray()));
+        AssistantTurn turn = new();
+        ChatLine response = new(ChatRole.Assistant, "", _lines.Count + 1, turn: turn);
+        _lines.Add(response);
+        try
+        {
+            List<AIContent> contents = [];
+            if (text.Length > 0)
+            {
+                contents.Add(new TextContent(text));
+            }
+
+            foreach (PendingFile file in files)
+            {
+                contents.Add(new DataContent(file.Bytes, file.MediaType) { Name = file.Name });
+            }
+
+            List<ChatMessage> messages = [new ChatMessage(ChatRole.User, contents)];
+            ChatOptions options = new()
+            {
+                Tools = [PageCaptureTool, AskUserTool],
+                RawRepresentationFactory = _ => new RunAgentInput { ThreadId = _threadId ?? "" },
+            };
+            await foreach (ChatResponseUpdate update in ChatClient.GetStreamingResponseAsync(messages, options, _send.Token))
+            {
+                if (update.RawRepresentation is RunStartedEvent started &&
+                    !string.IsNullOrWhiteSpace(started.ThreadId))
+                {
+                    _threadId = started.ThreadId;
+                }
+
+                turn.Apply(update);
+                StateHasChanged();
+            }
+
+            turn.Finish();
+            await LoadHistoryAsync();
+            await StampUsageAsync();
+        }
+        catch (OperationCanceledException)
+        {
+            turn.ShowOutcome("عملیات توسط کاربر لغو شد");
+            await RefreshHistoryAsync();
+            await StampUsageAsync();
+        }
+        catch (Exception)
+        {
+            turn.ShowOutcome("خطا نامشخص رخ داد");
+            await RefreshHistoryAsync();
+            await StampUsageAsync();
+        }
+        finally
+        {
+            _busy = false;
+            _send.Dispose();
+            _send = null;
+        }
+    }
+
+    private void KeepScreenshotForNextSend(byte[] bytes)
+    {
+        _ = InvokeAsync(() =>
+        {
+            if (bytes.Length == 0)
+            {
+                return;
+            }
+
+            if (bytes.Length > MaxFileBytes)
+            {
+                _error = "حجم فایل بیش از ۴ مگابایت است.";
+                return;
+            }
+
+            if (_files.Count >= MaxFilesPerMessage)
+            {
+                _error = "حداکثر ۴ فایل در هر پیام.";
+                return;
+            }
+
+            int taken = _files.Count(file => file.Name.StartsWith("screenshot", StringComparison.Ordinal));
+            string name = taken == 0 ? "screenshot.png" : $"screenshot-{taken + 1}.png";
+            _files.Add(new PendingFile(name, "image/png", bytes));
+            StateHasChanged();
+        });
+    }
+
+    private AITool PageCaptureTool =>
+        _pageCaptureTool ??= PageCaptureAgentTool.Create(PageCapture, KeepScreenshotForNextSend);
+
+    private AITool AskUserTool =>
+        _askUserTool ??= AskUserAgentTool.Create(AskUserAsync);
+
+    private async Task<IReadOnlyList<UserAnswer>?> AskUserAsync(
+        IReadOnlyList<UserQuestion> questions,
+        CancellationToken cancellationToken)
+    {
+        TaskCompletionSource<IReadOnlyList<UserAnswer>?> done = new(TaskCreationOptions.RunContinuationsAsynchronously);
+        await InvokeAsync(() =>
+        {
+            _answerWait = done;
+            _questions = questions;
+            StateHasChanged();
+        });
+
+        await using CancellationTokenRegistration registration = cancellationToken.Register(() => done.TrySetCanceled(cancellationToken));
+        try
+        {
+            return await done.Task;
+        }
+        finally
+        {
+            try
+            {
+                await InvokeAsync(() =>
+                {
+                    if (_answerWait == done)
+                    {
+                        _answerWait = null;
+                        _questions = null;
+                    }
+
+                    StateHasChanged();
+                });
+            }
+            catch (InvalidOperationException)
+            {
+            }
+        }
+    }
+
+    private void AcceptAnswers(IReadOnlyList<UserAnswer> answers) => _answerWait?.TrySetResult(answers);
+
+    private void DismissAnswers() => _answerWait?.TrySetResult(null);
+
+    private static string Key(ChatModelChoice choice) => $"{choice.ProviderId:D}|{choice.ModelName}";
+
+    private static string ToolKey(ChatToolChoice tool) => $"{tool.ServerId:D}|{Uri.EscapeDataString(tool.Name)}";
+
+    private void ToggleTool(string key, bool selected)
+    {
+        if (selected)
+        {
+            _selectedTools.Add(key);
+        }
+        else
+        {
+            _selectedTools.Remove(key);
+        }
+    }
+
+    private static bool TryParse(string selected, out Guid providerId, out string modelName)
+    {
+        providerId = Guid.Empty;
+        modelName = "";
+        int split = selected.IndexOf('|');
+        if (split <= 0)
+        {
+            return false;
+        }
+
+        modelName = selected[(split + 1)..];
+        return Guid.TryParse(selected[..split], out providerId) && !string.IsNullOrWhiteSpace(modelName);
+    }
+
+    private void CancelResponse() => _send?.Cancel();
+
+    public void Dispose() => _send?.Cancel();
+
+    private static string MediaTypeOf(string? contentType)
+    {
+        if (string.IsNullOrWhiteSpace(contentType))
+        {
+            return "application/octet-stream";
+        }
+
+        string type = contentType.Trim();
+        int separator = type.IndexOf(';');
+        if (separator >= 0)
+        {
+            type = type[..separator].Trim();
+        }
+
+        return string.IsNullOrWhiteSpace(type) ? "application/octet-stream" : type;
+    }
+
+    private static bool IsPreviewableImage(string mediaType) =>
+        mediaType is "image/png" or "image/jpeg" or "image/gif" or "image/webp";
+
+    private static string DataUrl(ChatAttachmentView file) =>
+        $"data:{file.MediaType};base64,{file.ContentBase64}";
+
+    private static string? LinkAddress(ChatAttachmentView file)
+    {
+        if (file.MediaType != "text/uri-list")
+        {
+            return null;
+        }
+
+        try
+        {
+            string text = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(file.ContentBase64));
+            return Uri.TryCreate(text, UriKind.Absolute, out Uri? uri) && uri.Scheme is "http" or "https"
+                ? uri.AbsoluteUri
+                : null;
+        }
+        catch (FormatException)
+        {
+            return null;
+        }
+    }
+
+    private sealed class PendingFile(string name, string mediaType, byte[] bytes)
+    {
+        public string Name { get; } = name;
+
+        public string MediaType { get; } = mediaType;
+
+        public byte[] Bytes { get; } = bytes;
+
+        public string PreviewUrl { get; } = IsPreviewableImage(mediaType)
+            ? $"data:{mediaType};base64,{Convert.ToBase64String(bytes)}"
+            : "";
+    }
+
+    private sealed class ChatLine(
+        ChatRole role,
+        string text,
+        int sequence,
+        string reaction = "None",
+        IReadOnlyList<ChatAttachmentView>? attachments = null,
+        AssistantTurn? turn = null)
+    {
+        public ChatRole Role { get; } = role;
+
+        public string Text { get; set; } = text;
+
+        public int Sequence { get; } = sequence;
+
+        public string Reaction { get; set; } = reaction;
+
+        public AssistantTurn? Turn { get; } = turn;
+
+        public IReadOnlyList<ChatAttachmentView> Attachments { get; private set; } = attachments ?? [];
+
+        public void SetAttachments(IReadOnlyList<ChatAttachmentView> files) => Attachments = files;
+    }
+
+    private sealed record ChatAttachmentView(string FileName, string MediaType, string ContentBase64);
+
+    private sealed record ChatModelChoice(Guid ProviderId, string ProviderName, string ModelName);
+
+    private sealed record ChatToolChoice(
+        Guid ServerId,
+        string ServerName,
+        string Name,
+        string? Title,
+        string? Description);
+
+    private sealed record ChatSummary(
+        string ThreadId,
+        string Title,
+        Guid? ProviderId,
+        string? ModelName,
+        DateTimeOffset UpdatedAt);
+
+    private sealed record ChatTranscriptAttachment(string FileName, string MediaType, string ContentBase64);
+
+    private sealed record ChatTranscriptUsage(
+        long? InputTokens,
+        long? OutputTokens,
+        long? ReasoningTokens,
+        long? CachedInputTokens,
+        long? TotalTokens,
+        long? CacheWriteInputTokens);
+
+    private sealed record ChatTranscriptMessage(
+        int Sequence,
+        string Role,
+        string Text,
+        string Reaction,
+        ChatTranscriptAttachment[]? Attachments,
+        ChatTranscriptUsage? Usage);
+
+    private sealed record ChatTranscript(
+        string ThreadId,
+        string Surface,
+        string Title,
+        Guid? ProviderId,
+        string? ModelName,
+        ChatTranscriptMessage[] Messages);
+
+    private sealed record ReactionRequest(string Reaction);
+}

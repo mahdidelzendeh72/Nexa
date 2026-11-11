@@ -1,0 +1,131 @@
+<div class="row g-3">
+    <div class="col-md-6">
+        <label class="form-label" for="@($"{Prefix}-name")">نام</label>
+        <input id="@($"{Prefix}-name")" class="form-control" @bind="Name" @bind:after="NotifyName" maxlength="200" />
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="@($"{Prefix}-transport")">نوع انتقال</label>
+        <select id="@($"{Prefix}-transport")" class="form-select" @bind="Transport" @bind:after="NotifyTransport">
+            <option value="HttpStreamable">HTTP جریان‌پذیر</option>
+            <option value="Stdio">Stdio</option>
+        </select>
+    </div>
+
+    @if (Transport == "Stdio")
+    {
+        <div class="col-12">
+            <label class="form-label" for="@($"{Prefix}-command")">دستور</label>
+            <input id="@($"{Prefix}-command")" class="form-control" @bind="Command" @bind:after="NotifyCommand" placeholder="npx" />
+        </div>
+        <div class="col-12">
+            <label class="form-label" for="@($"{Prefix}-arguments")">آرگومان‌ها (JSON)</label>
+            <textarea id="@($"{Prefix}-arguments")" class="form-control" rows="2" @bind="ArgumentsJson" @bind:after="NotifyArguments" placeholder='["-y","server-filesystem","."]'></textarea>
+        </div>
+        <div class="col-12">
+            <label class="form-label" for="@($"{Prefix}-environment")">متغیرهای محیطی (JSON)</label>
+            <textarea id="@($"{Prefix}-environment")" class="form-control" rows="2" @bind="EnvironmentJson" @bind:after="NotifyEnvironment" placeholder='{"API_KEY":"..."}'></textarea>
+        </div>
+    }
+    else
+    {
+        <div class="col-12">
+            <label class="form-label" for="@($"{Prefix}-endpoint")">آدرس</label>
+            <input id="@($"{Prefix}-endpoint")" class="form-control" @bind="Endpoint" @bind:after="NotifyEndpoint" placeholder="https://learn.microsoft.com/api/mcp" />
+        </div>
+        <div class="col-12">
+            <label class="form-label" for="@($"{Prefix}-headers")">هدرها (JSON)</label>
+            <textarea id="@($"{Prefix}-headers")" class="form-control" rows="3" @bind="HeadersJson" @bind:after="NotifyHeaders" placeholder='{"Authorization":"Bearer ..."}'></textarea>
+        </div>
+    }
+
+    <div class="col-12">
+        <label class="form-label" for="@($"{Prefix}-description")">توضیحات</label>
+        <input id="@($"{Prefix}-description")" class="form-control" @bind="Description" @bind:after="NotifyDescription" maxlength="2000" />
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" for="@($"{Prefix}-timeout")">مهلت زمانی (ثانیه)</label>
+        <input id="@($"{Prefix}-timeout")" type="number" class="form-control" @bind="TimeoutSeconds" @bind:after="NotifyTimeout" min="1" max="300" />
+    </div>
+    <div class="col-md-4 d-flex align-items-end">
+        <div class="form-check">
+            <input id="@($"{Prefix}-enabled")" class="form-check-input" type="checkbox" @bind="IsEnabled" @bind:after="NotifyEnabled" />
+            <label class="form-check-label" for="@($"{Prefix}-enabled")">فعال</label>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Prefix { get; set; } = "mcp";
+
+    [Parameter]
+    public string Name { get; set; } = "";
+
+    [Parameter]
+    public EventCallback<string> NameChanged { get; set; }
+
+    [Parameter]
+    public string? Description { get; set; }
+
+    [Parameter]
+    public EventCallback<string?> DescriptionChanged { get; set; }
+
+    [Parameter]
+    public string Transport { get; set; } = "HttpStreamable";
+
+    [Parameter]
+    public EventCallback<string> TransportChanged { get; set; }
+
+    [Parameter]
+    public string? Endpoint { get; set; }
+
+    [Parameter]
+    public EventCallback<string?> EndpointChanged { get; set; }
+
+    [Parameter]
+    public string? HeadersJson { get; set; }
+
+    [Parameter]
+    public EventCallback<string?> HeadersJsonChanged { get; set; }
+
+    [Parameter]
+    public string? Command { get; set; }
+
+    [Parameter]
+    public EventCallback<string?> CommandChanged { get; set; }
+
+    [Parameter]
+    public string? ArgumentsJson { get; set; }
+
+    [Parameter]
+    public EventCallback<string?> ArgumentsJsonChanged { get; set; }
+
+    [Parameter]
+    public string? EnvironmentJson { get; set; }
+
+    [Parameter]
+    public EventCallback<string?> EnvironmentJsonChanged { get; set; }
+
+    [Parameter]
+    public int TimeoutSeconds { get; set; } = 30;
+
+    [Parameter]
+    public EventCallback<int> TimeoutSecondsChanged { get; set; }
+
+    [Parameter]
+    public bool IsEnabled { get; set; } = true;
+
+    [Parameter]
+    public EventCallback<bool> IsEnabledChanged { get; set; }
+
+    private Task NotifyName() => NameChanged.InvokeAsync(Name);
+    private Task NotifyDescription() => DescriptionChanged.InvokeAsync(Description);
+    private Task NotifyTransport() => TransportChanged.InvokeAsync(Transport);
+    private Task NotifyEndpoint() => EndpointChanged.InvokeAsync(Endpoint);
+    private Task NotifyHeaders() => HeadersJsonChanged.InvokeAsync(HeadersJson);
+    private Task NotifyCommand() => CommandChanged.InvokeAsync(Command);
+    private Task NotifyArguments() => ArgumentsJsonChanged.InvokeAsync(ArgumentsJson);
+    private Task NotifyEnvironment() => EnvironmentJsonChanged.InvokeAsync(EnvironmentJson);
+    private Task NotifyTimeout() => TimeoutSecondsChanged.InvokeAsync(TimeoutSeconds);
+    private Task NotifyEnabled() => IsEnabledChanged.InvokeAsync(IsEnabled);
+}

@@ -1,0 +1,43 @@
+@using Maf.Client.Identity
+
+<div class="roles">
+    @foreach (AccountRoleChoice role in Roles)
+    {
+        string inputId = $"{Prefix}-{role.Name}";
+        <label class="choice" for="@inputId">
+            <input id="@inputId"
+                   type="checkbox"
+                   checked="@Selected.Contains(role.Name)"
+                   @onchange="args => Toggle(role.Name, args)" />
+            <span>@role.Title</span>
+        </label>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string Prefix { get; set; } = "roles";
+
+    [Parameter]
+    public IReadOnlyList<AccountRoleChoice> Roles { get; set; } = [];
+
+    [Parameter]
+    public HashSet<string> Selected { get; set; } = [];
+
+    [Parameter]
+    public EventCallback<HashSet<string>> SelectedChanged { get; set; }
+
+    private Task Toggle(string name, ChangeEventArgs change)
+    {
+        if (change.Value is true)
+        {
+            Selected.Add(name);
+        }
+        else
+        {
+            Selected.Remove(name);
+        }
+
+        return SelectedChanged.InvokeAsync(Selected);
+    }
+}

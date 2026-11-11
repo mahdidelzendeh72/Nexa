@@ -1,0 +1,224 @@
+@page "/knowledge/documents"
+@attribute [Authorize(Roles = "KnowledgeManager")]
+@implements IDisposable
+@inject KnowledgeApiClient Knowledge
+
+<PageTitle>مدیریت دانش</PageTitle>
+
+<h1>مدیریت اسناد دانش</h1>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h2 class="h5">افزودن سند</h2>
+        <p class="text-muted">PDF، DOCX، XLSX، Markdown یا TXT؛ حداکثر ۱۰۰ مگابایت</p>
+        <InputFile OnChange="SelectFile" accept=".pdf,.docx,.xlsx,.md,.markdown,.txt" />
+        <button class="btn btn-primary mt-3" disabled="@(_selectedFile is null || _busy)" @onclick="UploadAsync">
+            بارگذاری
+        </button>
+    </div>
+</div>
+
+@if (!string.IsNullOrWhiteSpace(_message))
+{
+    <div class="alert @(_failed ? "alert-danger" : "alert-info")">@_message</div>
+}
+
+@if (_loading)
+{
+    <p>در حال دریافت اسناد...</p>
+}
+else if (_documents.Length == 0)
+{
+    <p>هنوز سندی ثبت نشده است.</p>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>فایل</th>
+                    <th>وضعیت</th>
+                    <th>اندازه</th>
+                    <th>قطعه‌ها</th>
+                    <th>مدل embedding</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (KnowledgeDocument document in _documents)
+                {
+                    <tr>
+                        <td>
+                            <div>@document.FileName</div>
+                            <small class="text-muted">@document.CreatedAt.LocalDateTime</small>
+                            @if (!string.IsNullOrWhiteSpace(document.Error))
+                            {
+                                <div class="text-danger small">@document.Error</div>
+                            }
+                        </td>
+                        <td>@StatusText(document.Status)</td>
+                        <td>@FormatSize(document.Size)</td>
+                        <td>@document.ChunkCount</td>
+                        <td>@(document.EmbeddingModel ?? "بدون embedding")</td>
+                        <td class="text-nowrap">
+                            <button class="btn btn-sm btn-outline-primary me-1" @onclick="() => DownloadAsync(document)">دانلود</button>
+                            <button class="btn btn-sm btn-outline-secondary me-1" disabled="@_busy" @onclick="() => RetryAsync(document.Id)">پردازش مجدد</button>
+                            <button class="btn btn-sm btn-outline-danger" disabled="@_busy" @onclick="() => DeleteAsync(document)">حذف</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    private const long MaxUploadBytes = 100L * 1024L * 1024L;
+    private readonly CancellationTokenSource _disposeTokenSource = new();
+    private KnowledgeDocument[] _documents = [];
+    private IBrowserFile? _selectedFile;
+    private bool _loading = true;
+    private bool _busy;
+    private bool _failed;
+    private string? _message;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshAsync();
+        _ = PollWhileProcessingAsync();
+    }
+
+    private void SelectFile(InputFileChangeEventArgs args)
+    {
+        _selectedFile = args.File;
+        _failed = _selectedFile.Size > MaxUploadBytes;
+        _message = _failed ? "اندازه فایل بیشتر از ۱۰۰ مگابایت است." : null;
+    }
+
+    private async Task UploadAsync()
+    {
+        if (_selectedFile is null || _selectedFile.Size > MaxUploadBytes)
+        {
+            return;
+        }
+
+        await RunAsync(async () =>
+        {
+            await using Stream stream = _selectedFile.OpenReadStream(MaxUploadBytes);
+            KnowledgeUploadResult result = await Knowledge.UploadAsync(
+                stream,
+                _selectedFile.Name,
+                _selectedFile.ContentType);
+            _message = result.AlreadyExisted
+                ? "این فایل قبلاً ثبت شده بود و رکورد موجود برگردانده شد."
+                : "فایل ثبت شد و در صف پردازش قرار گرفت.";
+            _selectedFile = null;
+        });
+    }
+
+    private Task RetryAsync(Guid id) =>
+        RunAsync(() => Knowledge.RetryAsync(id));
+
+    private async Task DownloadAsync(KnowledgeDocument document)
+    {
+        await RunAsync(() => Knowledge.DownloadAsync(document), refresh: false);
+    }
+
+    private async Task DeleteAsync(KnowledgeDocument document)
+    {
+        if (!await JS.InvokeAsync<bool>("confirm", $"سند «{document.FileName}» حذف شود؟"))
+        {
+            return;
+        }
+
+        await RunAsync(() => Knowledge.DeleteAsync(document.Id));
+    }
+
+    [Inject]
+    private IJSRuntime JS { get; set; } = default!;
+
+    private async Task RunAsync(Func<Task> operation, bool refresh = true)
+    {
+        _busy = true;
+        _failed = false;
+        _message = null;
+        try
+        {
+            await operation();
+            if (refresh)
+            {
+                await RefreshAsync();
+            }
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+
+    private async Task RefreshAsync()
+    {
+        try
+        {
+            _documents = await Knowledge.ListDocumentsAsync(_disposeTokenSource.Token);
+        }
+        catch (OperationCanceledException) when (_disposeTokenSource.IsCancellationRequested)
+        {
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private async Task PollWhileProcessingAsync()
+    {
+        try
+        {
+            while (!_disposeTokenSource.IsCancellationRequested)
+            {
+                await Task.Delay(TimeSpan.FromSeconds(3), _disposeTokenSource.Token);
+                if (_documents.Any(item => item.Status is "Pending" or "Processing"))
+                {
+                    await RefreshAsync();
+                    await InvokeAsync(StateHasChanged);
+                }
+            }
+        }
+        catch (OperationCanceledException) when (_disposeTokenSource.IsCancellationRequested)
+        {
+        }
+    }
+
+    private static string StatusText(string status) => status switch
+    {
+        "Pending" => "در صف",
+        "Processing" => "در حال پردازش",
+        "Ready" => "آماده",
+        "ReadyWithoutEmbedding" => "آماده (جست‌وجوی واژگانی)",
+        "Failed" => "ناموفق",
+        _ => status,
+    };
+
+    private static string FormatSize(long bytes) =>
+        bytes >= 1024 * 1024
+            ? $"{bytes / (1024d * 1024d):N1} MB"
+            : $"{bytes / 1024d:N1} KB";
+
+    public void Dispose()
+    {
+        _disposeTokenSource.Cancel();
+        _disposeTokenSource.Dispose();
+    }
+}

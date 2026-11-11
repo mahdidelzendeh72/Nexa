@@ -1,0 +1,160 @@
+@using System.Text.Json
+<form class="ask-backdrop" dir="rtl" @onsubmit="Submit" @onsubmit:preventDefault>
+    <div class="ask-dialog" role="dialog" aria-modal="true" aria-labelledby="ask-title">
+        <h2 id="ask-title">پاسخ به سؤال‌ها</h2>
+        <div class="ask-questions">
+            @for (int index = 0; index < Questions.Count; index++)
+            {
+                UserQuestion question = Questions[index];
+                int questionIndex = index;
+                <section class="ask-question">
+                    <h3>@question.Question</h3>
+                    @if (question.CanChooseMultiple)
+                    {
+                        @for (int choiceIndex = 0; choiceIndex < question.Choices.Count; choiceIndex++)
+                        {
+                            int selectedIndex = choiceIndex;
+                            <label class="ask-choice">
+                                <input type="checkbox" checked="@_many[questionIndex].Contains(selectedIndex)" @onchange="eventArgs => Toggle(questionIndex, selectedIndex, eventArgs.Value is true)" />
+                                <span>@question.Choices[selectedIndex].Title</span>
+                            </label>
+                        }
+                    }
+                    else
+                    {
+                        @for (int choiceIndex = 0; choiceIndex < question.Choices.Count; choiceIndex++)
+                        {
+                            int selectedIndex = choiceIndex;
+                            <label class="ask-choice">
+                                <input type="radio" name="@($"ask-{questionIndex}")" checked="@(_one[questionIndex] == selectedIndex)" @onchange="() => ChooseOne(questionIndex, selectedIndex)" />
+                                <span>@question.Choices[selectedIndex].Title</span>
+                            </label>
+                        }
+                    }
+                    @if (question.HasUserOption)
+                    {
+                        <label class="ask-other">
+                            <span>@OtherLabel(question)</span>
+                            <input class="form-control" value="@_typed[questionIndex]" placeholder="@OtherPlaceholder(question)" @oninput="eventArgs => Type(questionIndex, TextOf(eventArgs))" />
+                        </label>
+                    }
+                    @if (_missing[questionIndex])
+                    {
+                        <p class="ask-missing">به این سؤال پاسخ بدهید.</p>
+                    }
+                </section>
+            }
+        </div>
+        <div class="ask-actions">
+            <button type="submit" class="btn btn-primary">ثبت</button>
+            <button type="button" class="btn btn-outline-secondary" @onclick="Dismiss">انصراف</button>
+        </div>
+    </div>
+</form>
+
+@code {
+    private IReadOnlyList<UserQuestion>? _seen;
+    private int[] _one = [];
+    private HashSet<int>[] _many = [];
+    private string[] _typed = [];
+    private bool[] _missing = [];
+
+    [Parameter]
+    public IReadOnlyList<UserQuestion> Questions { get; set; } = [];
+
+    [Parameter]
+    public EventCallback<IReadOnlyList<UserAnswer>> OnCompleted { get; set; }
+
+    [Parameter]
+    public EventCallback OnDismissed { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        if (ReferenceEquals(_seen, Questions))
+        {
+            return;
+        }
+
+        _seen = Questions;
+        _one = new int[Questions.Count];
+        Array.Fill(_one, -1);
+        _many = new HashSet<int>[Questions.Count];
+        _typed = new string[Questions.Count];
+        _missing = new bool[Questions.Count];
+        for (int index = 0; index < Questions.Count; index++)
+        {
+            _many[index] = [];
+            _typed[index] = "";
+        }
+    }
+
+    private void ChooseOne(int questionIndex, int choiceIndex)
+    {
+        _one[questionIndex] = choiceIndex;
+        _typed[questionIndex] = "";
+        _missing[questionIndex] = false;
+    }
+
+    private void Toggle(int questionIndex, int choiceIndex, bool selected)
+    {
+        if (selected)
+        {
+            _many[questionIndex].Add(choiceIndex);
+        }
+        else
+        {
+            _many[questionIndex].Remove(choiceIndex);
+        }
+
+        _missing[questionIndex] = false;
+    }
+
+    private void Type(int questionIndex, string value)
+    {
+        _typed[questionIndex] = value;
+        if (!Questions[questionIndex].CanChooseMultiple && !string.IsNullOrWhiteSpace(value))
+        {
+            _one[questionIndex] = -1;
+        }
+
+        _missing[questionIndex] = false;
+    }
+
+    private async Task Submit()
+    {
+        List<UserAnswer> answers = [];
+        bool complete = true;
+        for (int index = 0; index < Questions.Count; index++)
+        {
+            IEnumerable<int> selected = Questions[index].CanChooseMultiple
+                ? _many[index]
+                : _one[index] < 0 ? [] : [_one[index]];
+            if (UserQuestions.Answer(Questions[index], selected, _typed[index]) is not List<JsonElement> answer)
+            {
+                _missing[index] = true;
+                complete = false;
+                continue;
+            }
+
+            _missing[index] = false;
+            answers.Add(new UserAnswer { Question = Questions[index].Question, Answer = answer });
+        }
+
+        if (!complete)
+        {
+            return;
+        }
+
+        await OnCompleted.InvokeAsync(answers);
+    }
+
+    private Task Dismiss() => OnDismissed.InvokeAsync();
+
+    private static string OtherLabel(UserQuestion question) =>
+        question.Choices.Count == 0 ? "پاسخ" : "گزینه دیگر";
+
+    private static string OtherPlaceholder(UserQuestion question) =>
+        question.Choices.Count == 0 ? "پاسخ را بنویسید" : "اگر گزینه مناسب نیست بنویسید";
+
+    private static string TextOf(ChangeEventArgs eventArgs) => eventArgs.Value as string ?? "";
+}

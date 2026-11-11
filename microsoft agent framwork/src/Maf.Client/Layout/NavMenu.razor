@@ -1,0 +1,166 @@
+﻿@inject AuthService AuthService
+@inject NavigationManager Navigation
+@inject PageCaptureJsInterop PageCapture
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">MAF</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="nav flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> خانه
+            </NavLink>
+        </div>
+
+        <AuthorizeView Roles="KnowledgeReader,KnowledgeManager">
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="knowledge/search">
+                        <span class="bi bi-search" aria-hidden="true"></span> جست‌وجوی دانش
+                    </NavLink>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+
+        <AuthorizeView Roles="KnowledgeManager">
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="knowledge/documents">
+                        <span class="bi bi-database-fill-gear" aria-hidden="true"></span> مدیریت دانش
+                    </NavLink>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+
+        <AuthorizeView Roles="ModelManager">
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="model-providers">
+                        <span class="bi bi-cpu-nav-menu" aria-hidden="true"></span> ارائه‌دهندگان مدل
+                    </NavLink>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+
+        <AuthorizeView Roles="UserAdministrator">
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="users">
+                        <span class="bi bi-people-nav-menu" aria-hidden="true"></span> کاربران
+                    </NavLink>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+
+        <AuthorizeView Roles="McpManager">
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="mcp/servers">
+                        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> سرورهای MCP
+                    </NavLink>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+
+        <AuthorizeView>
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="chat" Match="NavLinkMatch.All">
+                        <span class="bi bi-chat-nav-menu" aria-hidden="true"></span> گفتگوی عمومی
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="chat/prompt">
+                        <span class="bi bi-prompt-nav-menu" aria-hidden="true"></span> گفتگو با دستور
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="chat/workflow">
+                        <span class="bi bi-workflow-nav-menu" aria-hidden="true"></span> گفتگوی گردش‌کار
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="chat/traces">
+                        <span class="bi bi-trace-nav-menu" aria-hidden="true"></span> رد گفتگو
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <button type="button" class="nav-link btn btn-link text-start" @onclick="CapturePageAsync" @onclick:stopPropagation="true" disabled="@_capturing">
+                        <span class="bi bi-camera-nav-menu" aria-hidden="true"></span> Capture page screenshot and save
+                    </button>
+                    @if (!string.IsNullOrWhiteSpace(_captureNote))
+                    {
+                        <p class="capture-note">@_captureNote</p>
+                    }
+                </div>
+                <div class="nav-item px-3">
+                    <button class="nav-link btn btn-link text-start" @onclick="LogoutAsync">
+                        <span class="bi bi-box-arrow-left" aria-hidden="true"></span> خروج
+                    </button>
+                </div>
+            </Authorized>
+            <NotAuthorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="login">
+                        <span class="bi bi-box-arrow-in-right" aria-hidden="true"></span> ورود
+                    </NavLink>
+                </div>
+            </NotAuthorized>
+        </AuthorizeView>
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+    private bool _capturing;
+    private string? _captureNote;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private async Task CapturePageAsync()
+    {
+        _captureNote = null;
+        _capturing = true;
+        try
+        {
+            await PageCapture.CaptureScreenshotBrowserAsync();
+        }
+        catch (JSException exception) when (IsCaptureDismissed(exception))
+        {
+        }
+        catch (JSException)
+        {
+            _captureNote = "گرفتن تصویر صفحه انجام نشد.";
+        }
+        finally
+        {
+            _capturing = false;
+        }
+    }
+
+    private static bool IsCaptureDismissed(JSException exception)
+    {
+        string message = exception.Message;
+        return message.Contains("NotAllowedError", StringComparison.OrdinalIgnoreCase)
+            || message.Contains("Permission denied", StringComparison.OrdinalIgnoreCase)
+            || message.Contains("not allowed", StringComparison.OrdinalIgnoreCase);
+    }
+
+    private async Task LogoutAsync()
+    {
+        await AuthService.LogoutAsync();
+        Navigation.NavigateTo("/login");
+    }
+}

@@ -1,0 +1,31 @@
+<details class="turn-tool">
+    <summary>
+        <span>ابزار: @Name</span>
+        @if (Result is null)
+        {
+            <span class="turn-status">@(NeedsApproval ? "منتظر تأیید" : "در حال اجرا")</span>
+        }
+    </summary>
+    @if (!string.IsNullOrWhiteSpace(Arguments))
+    {
+        <pre>@Arguments</pre>
+    }
+    @if (Result is not null)
+    {
+        <div class="turn-plain">@Result</div>
+    }
+</details>
+
+@code {
+    [Parameter]
+    public string Name { get; set; } = "";
+
+    [Parameter]
+    public string Arguments { get; set; } = "";
+
+    [Parameter]
+    public string? Result { get; set; }
+
+    [Parameter]
+    public bool NeedsApproval { get; set; }
+}

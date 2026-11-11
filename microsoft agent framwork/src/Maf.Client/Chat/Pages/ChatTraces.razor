@@ -1,0 +1,295 @@
+@page "/chat/traces"
+@attribute [Authorize]
+@inject ChatTraceApiClient Traces
+
+<PageTitle>رد گفتگو</PageTitle>
+
+<div class="trace-shell" dir="rtl">
+    <aside class="trace-list">
+        <div class="trace-list-head">
+            <h1>رد گفتگو</h1>
+            <button class="btn btn-outline-secondary btn-sm" @onclick="LoadAsync" disabled="@_loading">تازه‌سازی</button>
+        </div>
+        <p class="text-muted trace-note">هر مورد یک گفتگو است. اجراهای آن جدا از هم نشان داده می‌شوند.</p>
+
+        @if (_loading && _threads.Length == 0)
+        {
+            <p>در حال دریافت گفتگوها...</p>
+        }
+        else if (!string.IsNullOrWhiteSpace(_error) && _threads.Length == 0)
+        {
+            <div class="alert alert-danger">@_error</div>
+        }
+        else if (_threads.Length == 0)
+        {
+            <p>هنوز گفتگویی برای حساب شما ثبت نشده است.</p>
+        }
+        else
+        {
+            @foreach (ChatTraceThreadView item in _threads)
+            {
+                <button type="button"
+                        class="trace-run @(item.ThreadId == _selectedThreadId ? "active" : "")"
+                        @onclick="() => OpenAsync(item.ThreadId)">
+                    <span class="trace-run-title">
+                        <span>@FormatTime(item.LastRunAt)</span>
+                        <span class="trace-badge @ThreadClass(item)">@ThreadOutcome(item)</span>
+                    </span>
+                    <span class="trace-run-meta">@ThreadSummary(item)</span>
+                </button>
+            }
+        }
+    </aside>
+
+    <section class="trace-main">
+        @if (!string.IsNullOrWhiteSpace(_error) && _threads.Length > 0)
+        {
+            <div class="alert alert-danger">@_error</div>
+        }
+        else if (_runsLoading)
+        {
+            <p>در حال دریافت اجراها...</p>
+        }
+        else if (_selectedThreadId is not null && _runs.Length == 0)
+        {
+            <p class="text-muted">برای این گفتگو هنوز اجرایی ثبت نشده است.</p>
+        }
+        else if (_runs.Length > 0)
+        {
+            <header class="trace-header">
+                <h2>@_runs.Length اجرا</h2>
+                <p class="trace-id" dir="ltr">@_selectedThreadId</p>
+            </header>
+
+            @for (int index = 0; index < _runs.Length; index++)
+            {
+                ChatTraceRunView run = _runs[index];
+                <article class="trace-run-block">
+                    <header class="trace-run-heading">
+                        <div>
+                            <h3>اجرای @(index + 1)</h3>
+                            <time>@FormatTime(run.StartedAt)</time>
+                            @if (run.FinishedAt is DateTimeOffset finished)
+                            {
+                                <span class="timeline-meta">تا @FormatTime(finished)</span>
+                            }
+                        </div>
+                        <span class="trace-badge @OutcomeClass(run)">@OutcomeText(run)</span>
+                    </header>
+                    <dl class="trace-run-facts">
+                        <div>
+                            <dt>مدل</dt>
+                            <dd dir="ltr">@(string.IsNullOrWhiteSpace(run.Model) ? "—" : run.Model)</dd>
+                        </div>
+                        <div>
+                            <dt>مدت</dt>
+                            <dd>@(Duration(run) ?? "هنوز باز است")</dd>
+                        </div>
+                        <div>
+                            <dt>توکن</dt>
+                            <dd>@TokenText(run)</dd>
+                        </div>
+                    </dl>
+
+                    <ol class="timeline">
+                        <li class="timeline-item start">
+                            <span class="timeline-dot"></span>
+                            <div>
+                                <strong>شروع</strong>
+                                <time>@FormatTime(run.StartedAt)</time>
+                            </div>
+                        </li>
+
+                        @foreach (ChatTraceStepView step in run.Steps.OrderBy(item => item.Sequence))
+                        {
+                            <li class="timeline-item @step.Kind">
+                                <span class="timeline-dot"></span>
+                                <div>
+                                    <strong>@StepKind(step)</strong>
+                                    @if (!string.IsNullOrWhiteSpace(step.Name))
+                                    {
+                                        <span class="timeline-name" dir="ltr">@step.Name</span>
+                                    }
+                                    <span class="timeline-meta">اندازه @step.Size.ToString("N0")</span>
+                                </div>
+                            </li>
+                        }
+
+                        <li class="timeline-item end @OutcomeClass(run)">
+                            <span class="timeline-dot"></span>
+                            <div>
+                                <strong>@(run.FinishedAt is null ? "هنوز تمام نشده" : "پایان")</strong>
+                                @if (run.FinishedAt is DateTimeOffset end)
+                                {
+                                    <time>@FormatTime(end)</time>
+                                }
+                                <span class="timeline-meta">@OutcomeText(run)</span>
+                            </div>
+                        </li>
+                    </ol>
+                </article>
+            }
+        }
+    </section>
+</div>
+
+@code {
+    private ChatTraceThreadView[] _threads = [];
+    private ChatTraceRunView[] _runs = [];
+    private string? _selectedThreadId;
+    private bool _loading = true;
+    private bool _runsLoading;
+    private string? _error;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAsync();
+    }
+
+    private async Task LoadAsync()
+    {
+        _loading = true;
+        _error = null;
+        try
+        {
+            _threads = await Traces.ListThreadsAsync();
+            if (_selectedThreadId is null || _threads.All(thread => thread.ThreadId != _selectedThreadId))
+            {
+                _selectedThreadId = _threads.FirstOrDefault()?.ThreadId;
+            }
+
+            if (_selectedThreadId is string threadId)
+            {
+                await LoadRunsAsync(threadId);
+            }
+            else
+            {
+                _runs = [];
+            }
+        }
+        catch (HttpRequestException)
+        {
+            _error = "رد گفتگو دریافت نشد.";
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private async Task OpenAsync(string threadId)
+    {
+        if (threadId == _selectedThreadId && _runs.Length > 0)
+        {
+            return;
+        }
+
+        _selectedThreadId = threadId;
+        _error = null;
+        await LoadRunsAsync(threadId);
+    }
+
+    private async Task LoadRunsAsync(string threadId)
+    {
+        _runsLoading = true;
+        try
+        {
+            _runs = await Traces.GetThreadAsync(threadId);
+        }
+        catch (HttpRequestException)
+        {
+            _runs = [];
+            _error = "اجراهای این گفتگو دریافت نشد.";
+        }
+        finally
+        {
+            _runsLoading = false;
+        }
+    }
+
+    private static string FormatTime(DateTimeOffset value) =>
+        value.ToLocalTime().ToString("yyyy/MM/dd HH:mm:ss");
+
+    private static string? Duration(ChatTraceRunView run)
+    {
+        if (run.FinishedAt is not DateTimeOffset finished)
+        {
+            return null;
+        }
+
+        TimeSpan span = finished - run.StartedAt;
+        if (span < TimeSpan.Zero)
+        {
+            span = TimeSpan.Zero;
+        }
+
+        if (span.TotalHours >= 1)
+        {
+            return $"{(int)span.TotalHours}:{span.Minutes:00}:{span.Seconds:00}";
+        }
+
+        if (span.TotalMinutes >= 1)
+        {
+            return $"{(int)span.TotalMinutes}:{span.Seconds:00}";
+        }
+
+        return span.TotalSeconds < 10
+            ? $"{span.TotalSeconds:0.0} ثانیه"
+            : $"{span.TotalSeconds:0} ثانیه";
+    }
+
+    private static string OutcomeText(ChatTraceRunView run) =>
+        run.FinishedAt is null
+            ? "در جریان"
+            : run.Outcome switch
+            {
+                "success" => "موفق",
+                null or "" => "تمام‌شده",
+                _ => run.Outcome,
+            };
+
+    private static string OutcomeClass(ChatTraceRunView run) =>
+        run.FinishedAt is null ? "open" : run.Outcome == "success" ? "success" : "other";
+
+    private static string ThreadOutcome(ChatTraceThreadView thread) =>
+        thread.Open
+            ? "در جریان"
+            : thread.LastOutcome switch
+            {
+                "success" => "موفق",
+                null or "" => "تمام‌شده",
+                _ => thread.LastOutcome,
+            };
+
+    private static string ThreadClass(ChatTraceThreadView thread) =>
+        thread.Open ? "open" : thread.LastOutcome == "success" ? "success" : "other";
+
+    private static string ThreadSummary(ChatTraceThreadView thread)
+    {
+        string model = string.IsNullOrWhiteSpace(thread.Model) ? "بدون مدل" : thread.Model;
+        return $"{model} · {thread.RunCount} اجرا";
+    }
+
+    private static string TokenText(ChatTraceRunView run)
+    {
+        if (run.InputTokens is null &&
+            run.OutputTokens is null &&
+            run.ReasoningTokens is null &&
+            run.TotalTokens is null)
+        {
+            return "—";
+        }
+
+        return $"ورودی {Count(run.InputTokens)} · خروجی {Count(run.OutputTokens)} · استدلال {Count(run.ReasoningTokens)} · جمع {Count(run.TotalTokens)}";
+    }
+
+    private static string Count(long? value) => value?.ToString("N0") ?? "—";
+
+    private static string StepKind(ChatTraceStepView step) => step.Kind switch
+    {
+        "tool" => "ابزار",
+        "message" => "پیام",
+        "reasoning" => "استدلال",
+        _ => "رویداد",
+    };
+}

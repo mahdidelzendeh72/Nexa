@@ -1,0 +1,115 @@
+@page "/knowledge/search"
+@attribute [Authorize(Roles = "KnowledgeReader,KnowledgeManager")]
+@inject KnowledgeApiClient Knowledge
+
+<PageTitle>جست‌وجوی دانش</PageTitle>
+
+<h1>آزمایش جست‌وجوی دانش</h1>
+
+<div class="row g-3 align-items-end mb-4">
+    <div class="col-md-8">
+        <label class="form-label" for="knowledge-query">عبارت جست‌وجو</label>
+        <input id="knowledge-query" class="form-control" @bind="_query" @onkeydown="HandleKeyDown" />
+    </div>
+    <div class="col-md-2">
+        <label class="form-label" for="knowledge-limit">تعداد نتایج</label>
+        <input id="knowledge-limit" class="form-control" type="number" min="1" max="50" @bind="_limit" />
+    </div>
+    <div class="col-md-2">
+        <button class="btn btn-primary w-100" disabled="@(_busy || string.IsNullOrWhiteSpace(_query))" @onclick="SearchAsync">
+            جست‌وجو
+        </button>
+    </div>
+</div>
+
+@if (!string.IsNullOrWhiteSpace(_error))
+{
+    <div class="alert alert-danger">@_error</div>
+}
+
+@if (_response is not null)
+{
+    <div class="alert alert-secondary">
+        حالت اجرا:
+        <strong>@(_response.Mode == KnowledgeSearchMode.Hybrid ? "ترکیبی (واژگانی + برداری)" : "جایگزین واژگانی")</strong>
+        @if (!string.IsNullOrWhiteSpace(_response.EmbeddingError))
+        {
+            <div class="small mt-1">علت غیرفعال بودن embedding: @_response.EmbeddingError</div>
+        }
+    </div>
+
+    @if (_response.Results.Length == 0)
+    {
+        <p>نتیجه‌ای پیدا نشد.</p>
+    }
+    else
+    {
+        @foreach (KnowledgeSearchResult result in _response.Results)
+        {
+            <article class="card mb-3">
+                <div class="card-header d-flex justify-content-between">
+                    <span>@result.FileName</span>
+                    <small>امتیاز RRF: @result.Score.ToString("0.0000")</small>
+                </div>
+                <div class="card-body">
+                    <p class="card-text" style="white-space: pre-wrap">@result.Content</p>
+                    <div class="text-muted small">
+                        استناد: قطعه @result.Ordinal
+                        @if (result.PageNumber is not null)
+                        {
+                            <span>، صفحه @result.PageNumber</span>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(result.SheetName))
+                        {
+                            <span>، برگه @result.SheetName</span>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(result.Section))
+                        {
+                            <span>، بخش @result.Section</span>
+                        }
+                        <span> — سند @result.DocumentId</span>
+                    </div>
+                </div>
+            </article>
+        }
+    }
+}
+
+@code {
+    private string _query = string.Empty;
+    private int _limit = 8;
+    private bool _busy;
+    private string? _error;
+    private KnowledgeSearchResponse? _response;
+
+    private async Task SearchAsync()
+    {
+        if (string.IsNullOrWhiteSpace(_query))
+        {
+            return;
+        }
+
+        _busy = true;
+        _error = null;
+        try
+        {
+            _response = await Knowledge.SearchAsync(_query, Math.Clamp(_limit, 1, 50));
+        }
+        catch (Exception exception)
+        {
+            _error = exception.Message;
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+
+    private async Task HandleKeyDown(KeyboardEventArgs args)
+    {
+        if (args.Key == "Enter")
+        {
+            await SearchAsync();
+        }
+    }
+}

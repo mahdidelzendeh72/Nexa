@@ -1,0 +1,19 @@
+.roles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.choice input {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+}

@@ -1,0 +1,279 @@
+@page "/model-providers/{ProviderId:guid}"
+@attribute [Authorize(Roles = "ModelManager")]
+@inject ModelProviderApiClient Providers
+@inject NavigationManager Navigation
+@inject IJSRuntime JS
+
+<PageTitle>ارائه‌دهنده مدل</PageTitle>
+
+<div dir="rtl">
+    @if (_loading)
+    {
+        <p>در حال دریافت ارائه‌دهنده...</p>
+    }
+    else if (_provider is null)
+    {
+        <div class="alert alert-danger">@_message</div>
+        <a href="model-providers">بازگشت به لیست</a>
+    }
+    else
+    {
+        <p><a href="model-providers">لیست ارائه‌دهنده مدل</a></p>
+        <h1>@_provider.Name</h1>
+
+        @if (!string.IsNullOrWhiteSpace(_message))
+        {
+            <div class="alert @(_failed ? "alert-danger" : "alert-info")">@_message</div>
+        }
+
+        @if (_editing)
+        {
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="h5">ویرایش</h2>
+                    <ModelProviderEditor Prefix="edit"
+                                         KeyPlaceholder="خالی بماند تا کلید فعلی حفظ شود"
+                                         @bind-Name="_name"
+                                         @bind-Kind="_kind"
+                                         @bind-BaseAddress="_baseAddress"
+                                         @bind-ApiKey="_apiKey"
+                                         @bind-Protocol="_protocol" />
+                    <button class="btn btn-primary mt-3" disabled="@_busy" @onclick="SaveAsync">ذخیره</button>
+                    <button class="btn btn-outline-secondary mt-3" disabled="@_busy" @onclick="CancelEdit">انصراف</button>
+                </div>
+            </div>
+        }
+        else
+        {
+            <dl class="row">
+                <dt class="col-sm-3">نام</dt>
+                <dd class="col-sm-9">@_provider.Name</dd>
+                <dt class="col-sm-3">نوع ارائه‌دهنده</dt>
+                <dd class="col-sm-9">@KindText(_provider.Kind)</dd>
+                <dt class="col-sm-3">نشانی پایه</dt>
+                <dd class="col-sm-9">@_provider.BaseAddress</dd>
+                <dt class="col-sm-3">کلید API</dt>
+                <dd class="col-sm-9">@(_provider.HasApiKey ? "بله" : "خیر")</dd>
+                <dt class="col-sm-3">پروتکل</dt>
+                <dd class="col-sm-9">@ProtocolText(_provider.Protocol)</dd>
+            </dl>
+
+            @if (!string.IsNullOrWhiteSpace(_provider.DiscoveryError))
+            {
+                <div class="alert alert-warning">@_provider.DiscoveryError</div>
+            }
+
+            <button class="btn btn-outline-primary me-2" disabled="@_busy" @onclick="DiscoverAsync">خواندن مجدد مدل‌ها</button>
+            <button class="btn btn-outline-secondary me-2" disabled="@_busy" @onclick="BeginEdit">ویرایش</button>
+            <button class="btn btn-outline-danger" disabled="@_busy" @onclick="DeleteAsync">حذف</button>
+        }
+
+        <h2 class="h5 mt-4">مدل‌ها</h2>
+        @if (_provider.Models.Length == 0)
+        {
+            <p>مدلی خوانده نشده است.</p>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-striped align-middle">
+                    <thead>
+                        <tr>
+                            <th>نام مدل</th>
+                            <th>زمان آخرین تغییر</th>
+                            <th>طول زمینه</th>
+                            <th>قابلیت‌ها</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (ProviderModelDetails model in _provider.Models)
+                        {
+                            <tr>
+                                <td><code>@model.Name</code></td>
+                                <td>@(model.LastChangedAt?.LocalDateTime.ToString("yyyy-MM-dd HH:mm") ?? "—")</td>
+                                <td>@model.MaxTokens</td>
+                                <td>
+                                    @if (model.Capabilities.Length == 0)
+                                    {
+                                        <span>—</span>
+                                    }
+                                    else
+                                    {
+                                        @foreach (string capability in model.Capabilities)
+                                        {
+                                            <span class="badge text-bg-secondary me-1">@CapabilityText(capability)</span>
+                                        }
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    [Parameter]
+    public Guid ProviderId { get; set; }
+
+    private ModelProviderDetails? _provider;
+    private Guid _loadedId;
+    private string _name = "";
+    private string _kind = "OpenAI";
+    private string? _baseAddress;
+    private string? _apiKey;
+    private string _protocol = "Responses";
+    private bool _editing;
+    private bool _loading = true;
+    private bool _busy;
+    private bool _failed;
+    private string? _message;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (_loadedId == ProviderId && _provider is not null)
+        {
+            return;
+        }
+
+        _loadedId = ProviderId;
+        _editing = false;
+        await LoadAsync();
+    }
+
+    private async Task LoadAsync()
+    {
+        _loading = _provider is null;
+        _failed = false;
+        _message = null;
+        try
+        {
+            _provider = await Providers.GetAsync(ProviderId);
+            CopyForm(_provider);
+        }
+        catch (Exception exception)
+        {
+            _provider = null;
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private void BeginEdit()
+    {
+        if (_provider is not null)
+        {
+            CopyForm(_provider);
+        }
+
+        _apiKey = null;
+        _editing = true;
+    }
+
+    private void CancelEdit() => _editing = false;
+
+    private void CopyForm(ModelProviderDetails provider)
+    {
+        _name = provider.Name;
+        _kind = provider.Kind;
+        _baseAddress = provider.BaseAddress;
+        _protocol = provider.Protocol;
+        _apiKey = null;
+    }
+
+    private async Task SaveAsync()
+    {
+        await RunAsync(async () =>
+        {
+            _provider = await Providers.UpdateAsync(ProviderId, new SaveModelProviderRequest(
+                _name.Trim(),
+                _kind,
+                _baseAddress?.Trim() ?? "",
+                string.IsNullOrWhiteSpace(_apiKey) ? null : _apiKey.Trim(),
+                _protocol));
+            _editing = false;
+            _message = _provider.DiscoveryError is null
+                ? $"{_provider.Models.Length} مدل خوانده شد."
+                : null;
+        });
+    }
+
+    private async Task DiscoverAsync()
+    {
+        await RunAsync(async () =>
+        {
+            _provider = await Providers.DiscoverAsync(ProviderId);
+            _message = _provider.DiscoveryError is null
+                ? $"{_provider.Models.Length} مدل خوانده شد."
+                : null;
+        });
+    }
+
+    private async Task DeleteAsync()
+    {
+        if (_provider is null)
+        {
+            return;
+        }
+
+        if (!await JS.InvokeAsync<bool>("confirm", $"ارائه‌دهنده «{_provider.Name}» حذف شود؟"))
+        {
+            return;
+        }
+
+        await RunAsync(async () =>
+        {
+            await Providers.DeleteAsync(ProviderId);
+            Navigation.NavigateTo("model-providers");
+        });
+    }
+
+    private async Task RunAsync(Func<Task> operation)
+    {
+        _busy = true;
+        _failed = false;
+        _message = null;
+        try
+        {
+            await operation();
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+
+    private static string KindText(string kind) => kind switch
+    {
+        "OpenAICompatible" => "سازگار با OpenAI",
+        "Ollama" => "Ollama",
+        _ => kind,
+    };
+
+    private static string ProtocolText(string protocol) =>
+        protocol == "Responses" ? "Responses API" : "Chat Completions";
+
+    private static string CapabilityText(string capability) => capability switch
+    {
+        "LargeLanguage" => "مدل زبانی",
+        "Vision" => "بینایی",
+        "ImageGeneration" => "تولید تصویر",
+        "ToolCalling" => "فراخوانی ابزار",
+        "Reasoning" => "استدلال",
+        "AudioInput" => "ورودی صوتی",
+        "AudioOutput" => "خروجی صوتی",
+        "TextEmbedding" => "جاسازی متن",
+        _ => capability,
+    };
+}

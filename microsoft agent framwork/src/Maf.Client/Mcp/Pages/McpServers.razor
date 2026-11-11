@@ -1,0 +1,184 @@
+@page "/mcp/servers"
+@attribute [Authorize(Roles = "McpManager")]
+@inject McpApiClient Mcp
+@inject NavigationManager Navigation
+
+<PageTitle>سرورهای MCP</PageTitle>
+
+<div dir="rtl">
+    <h1>لیست سرور MCP</h1>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="h5">افزودن سرور</h2>
+            <p class="text-muted">پس از ذخیره، ابزارهای سرور شناسایی و ذخیره می‌شوند.</p>
+            <McpServerEditor Prefix="create"
+                             @bind-Name="_name"
+                             @bind-Description="_description"
+                             @bind-Transport="_transport"
+                             @bind-Endpoint="_endpoint"
+                             @bind-HeadersJson="_headersJson"
+                             @bind-Command="_command"
+                             @bind-ArgumentsJson="_argumentsJson"
+                             @bind-EnvironmentJson="_environmentJson"
+                             @bind-TimeoutSeconds="_timeoutSeconds"
+                             @bind-IsEnabled="_isEnabled" />
+            <button class="btn btn-primary mt-3" disabled="@(_busy || !CanSave)" @onclick="CreateAsync">
+                افزودن و شناسایی ابزارها
+            </button>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(_message))
+    {
+        <div class="alert @(_failed ? "alert-danger" : "alert-info")">@_message</div>
+    }
+
+    @if (_loading)
+    {
+        <p>در حال دریافت سرورها...</p>
+    }
+    else if (_servers.Length == 0)
+    {
+        <p>هنوز سرور MCP ثبت نشده است.</p>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped align-middle">
+                <thead>
+                    <tr>
+                        <th>نام</th>
+                        <th>نوع اتصال</th>
+                        <th>فعال</th>
+                        <th>ابزارها</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (McpServerSummary server in _servers)
+                    {
+                        <tr>
+                            <td>
+                                <a href="@($"mcp/servers/{server.Id}")">@server.Name</a>
+                                <div class="text-muted small">@ConnectionText(server)</div>
+                                @if (!string.IsNullOrWhiteSpace(server.DiscoveryError))
+                                {
+                                    <div class="text-danger small">@server.DiscoveryError</div>
+                                }
+                            </td>
+                            <td>@TransportText(server.Transport)</td>
+                            <td>@(server.IsEnabled ? "بله" : "خیر")</td>
+                            <td>@server.ToolCount</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private McpServerSummary[] _servers = [];
+    private string _name = "";
+    private string? _description;
+    private string _transport = "HttpStreamable";
+    private string? _endpoint;
+    private string? _headersJson;
+    private string? _command;
+    private string? _argumentsJson;
+    private string? _environmentJson;
+    private int _timeoutSeconds = 30;
+    private bool _isEnabled = true;
+    private bool _loading = true;
+    private bool _busy;
+    private bool _failed;
+    private string? _message;
+
+    private bool CanSave =>
+        !string.IsNullOrWhiteSpace(_name) &&
+        _timeoutSeconds is >= 1 and <= 300 &&
+        (_transport == "Stdio"
+            ? !string.IsNullOrWhiteSpace(_command)
+            : !string.IsNullOrWhiteSpace(_endpoint));
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshAsync();
+    }
+
+    private async Task CreateAsync()
+    {
+        if (!CanSave)
+        {
+            return;
+        }
+
+        await RunAsync(async () =>
+        {
+            McpServerDetails created = await Mcp.CreateAsync(Request());
+            Navigation.NavigateTo($"mcp/servers/{created.Id}");
+        }, refresh: false);
+    }
+
+    private SaveMcpServerRequest Request() =>
+        new(
+            _name.Trim(),
+            _description,
+            _transport,
+            _endpoint,
+            _headersJson,
+            _command,
+            _argumentsJson,
+            _environmentJson,
+            _timeoutSeconds,
+            _isEnabled);
+
+    private async Task RunAsync(Func<Task> operation, bool refresh)
+    {
+        _busy = true;
+        _failed = false;
+        _message = null;
+        try
+        {
+            await operation();
+            if (refresh)
+            {
+                await RefreshAsync();
+            }
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+
+    private async Task RefreshAsync()
+    {
+        try
+        {
+            _servers = await Mcp.ListAsync();
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private static string TransportText(string transport) =>
+        transport == "HttpStreamable" ? "HTTP جریان‌پذیر" : "Stdio";
+
+    private static string ConnectionText(McpServerSummary server) =>
+        server.Transport == "Stdio"
+            ? server.Command ?? ""
+            : server.Endpoint ?? "";
+}

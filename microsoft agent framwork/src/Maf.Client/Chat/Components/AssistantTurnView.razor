@@ -1,0 +1,34 @@
+@if (Turn.Waiting)
+{
+    <WaitingView />
+}
+
+@foreach (TurnPart part in Turn.Parts)
+{
+    @switch (part)
+    {
+        case AnswerPart answer:
+            <MarkdownView Text="@answer.Text" />
+            break;
+        case ReasoningPart reasoning:
+            <ReasoningView Text="@reasoning.Text" Closed="@reasoning.Closed" />
+            break;
+        case ToolPart tool:
+            <ToolCallView Name="@tool.Name" Arguments="@tool.Arguments" Result="@tool.Result" NeedsApproval="@tool.NeedsApproval" />
+            break;
+        case UsagePart usage:
+            <UsageView Text="@usage.Text" />
+            break;
+        case NoticePart notice:
+            <NoticeView Text="@notice.Text" />
+            break;
+        case MediaPart media:
+            <MediaView Source="@media.Source" Alt="@media.Alt" />
+            break;
+    }
+}
+
+@code {
+    [Parameter, EditorRequired]
+    public AssistantTurn Turn { get; set; } = new();
+}

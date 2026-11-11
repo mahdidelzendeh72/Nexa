@@ -1,0 +1,85 @@
+@page "/login"
+@using Microsoft.AspNetCore.Authorization
+@attribute [AllowAnonymous]
+@inject AuthService AuthService
+@inject NavigationManager Navigation
+
+<PageTitle>ورود</PageTitle>
+
+<div class="login-page" dir="rtl">
+    <div class="login-card">
+        <h1>ورود به سامانه</h1>
+        <p class="text-secondary">برای ادامه، اطلاعات حساب خود را وارد کنید.</p>
+
+        <EditForm Model="_model" OnValidSubmit="LoginAsync" FormName="login">
+            <DataAnnotationsValidator />
+
+            @if (!string.IsNullOrWhiteSpace(_error))
+            {
+                <div class="alert alert-danger" role="alert">@_error</div>
+            }
+
+            <div class="mb-3">
+                <label for="email" class="form-label">ایمیل</label>
+                <InputText id="email"
+                           class="form-control"
+                           type="email"
+                           autocomplete="username"
+                           @bind-Value="_model.Email" />
+                <ValidationMessage For="@(() => _model.Email)" />
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="form-label">رمز عبور</label>
+                <InputText id="password"
+                           class="form-control"
+                           type="password"
+                           autocomplete="current-password"
+                           @bind-Value="_model.Password" />
+                <ValidationMessage For="@(() => _model.Password)" />
+            </div>
+
+            <button class="btn btn-primary w-100" type="submit" disabled="@_isSubmitting">
+                @(_isSubmitting ? "در حال ورود..." : "ورود")
+            </button>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private readonly LoginRequest _model = new();
+    private bool _isSubmitting;
+    private string? _error;
+
+    [SupplyParameterFromQuery]
+    public string? ReturnUrl { get; set; }
+
+    private async Task LoginAsync()
+    {
+        _isSubmitting = true;
+        _error = null;
+
+        try
+        {
+            LoginResult result = await AuthService.LoginAsync(_model);
+            if (!result.Succeeded)
+            {
+                _error = result.Error;
+                return;
+            }
+
+            string destination = string.IsNullOrWhiteSpace(ReturnUrl)
+                ? "/"
+                : $"/{ReturnUrl.TrimStart('/')}";
+            Navigation.NavigateTo(destination);
+        }
+        catch (HttpRequestException)
+        {
+            _error = "ارتباط با سرویس ورود برقرار نشد.";
+        }
+        finally
+        {
+            _isSubmitting = false;
+        }
+    }
+}

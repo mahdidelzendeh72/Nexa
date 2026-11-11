@@ -1,0 +1,15 @@
+<details class="turn-reasoning" open="@(!Closed)">
+    <summary>استدلال</summary>
+    @if (!string.IsNullOrEmpty(Text))
+    {
+        <div class="turn-plain">@Text</div>
+    }
+</details>
+
+@code {
+    [Parameter]
+    public string? Text { get; set; }
+
+    [Parameter]
+    public bool Closed { get; set; }
+}

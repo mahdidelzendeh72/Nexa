@@ -1,0 +1,73 @@
+<div class="row g-3">
+    <div class="col-md-6">
+        <label class="form-label" for="@($"{Prefix}-name")">نام</label>
+        <input id="@($"{Prefix}-name")" class="form-control" maxlength="200" @bind="Name" @bind:after="NotifyName" />
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="@($"{Prefix}-kind")">نوع ارائه‌دهنده</label>
+        <select id="@($"{Prefix}-kind")" class="form-select" @bind="Kind" @bind:after="NotifyKind">
+            <option value="OpenAI">OpenAI</option>
+            <option value="OpenAICompatible">سازگار با OpenAI</option>
+            <option value="Ollama">Ollama</option>
+        </select>
+    </div>
+    <div class="col-12">
+        <label class="form-label" for="@($"{Prefix}-base")">نشانی پایه</label>
+        <input id="@($"{Prefix}-base")" class="form-control" @bind="BaseAddress" @bind:after="NotifyBase" placeholder="https://api.openai.com" />
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="@($"{Prefix}-key")">کلید API</label>
+        <input id="@($"{Prefix}-key")" type="password" class="form-control" autocomplete="off" @bind="ApiKey" @bind:after="NotifyKey" placeholder="@KeyPlaceholder" />
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="@($"{Prefix}-protocol")">پروتکل</label>
+        <select id="@($"{Prefix}-protocol")" class="form-select" @bind="Protocol" @bind:after="NotifyProtocol">
+            <option value="Responses">Responses API</option>
+            <option value="ChatCompletions">Chat Completions</option>
+        </select>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Prefix { get; set; } = "provider";
+
+    [Parameter]
+    public string? KeyPlaceholder { get; set; }
+
+    [Parameter]
+    public string Name { get; set; } = "";
+
+    [Parameter]
+    public EventCallback<string> NameChanged { get; set; }
+
+    [Parameter]
+    public string Kind { get; set; } = "OpenAI";
+
+    [Parameter]
+    public EventCallback<string> KindChanged { get; set; }
+
+    [Parameter]
+    public string? BaseAddress { get; set; }
+
+    [Parameter]
+    public EventCallback<string?> BaseAddressChanged { get; set; }
+
+    [Parameter]
+    public string? ApiKey { get; set; }
+
+    [Parameter]
+    public EventCallback<string?> ApiKeyChanged { get; set; }
+
+    [Parameter]
+    public string Protocol { get; set; } = "Responses";
+
+    [Parameter]
+    public EventCallback<string> ProtocolChanged { get; set; }
+
+    private Task NotifyName() => NameChanged.InvokeAsync(Name);
+    private Task NotifyKind() => KindChanged.InvokeAsync(Kind);
+    private Task NotifyBase() => BaseAddressChanged.InvokeAsync(BaseAddress);
+    private Task NotifyKey() => ApiKeyChanged.InvokeAsync(ApiKey);
+    private Task NotifyProtocol() => ProtocolChanged.InvokeAsync(Protocol);
+}

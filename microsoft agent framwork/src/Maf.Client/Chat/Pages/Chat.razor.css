@@ -1,0 +1,135 @@
+.chat-shell {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.chat-main {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.chat-toolbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.history {
+    width: 16rem;
+    flex: 0 0 16rem;
+}
+
+.history-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    text-align: right;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    background: #fff;
+}
+
+.history-item.active {
+    border-color: #0d6efd;
+}
+
+.user-message {
+    padding: 0.65rem 0.9rem;
+    border-radius: 0.75rem;
+    background: #e7f1ff;
+}
+
+.transcript {
+    white-space: pre-wrap;
+}
+
+.composer {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.composer textarea {
+    flex: 1 1 auto;
+}
+
+.pending-files,
+.attachments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0 0 0.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.pending-files li,
+.attachments div {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.attachment-preview {
+    display: block;
+    max-width: 16rem;
+    max-height: 12rem;
+}
+
+.tool-picker {
+    width: 100%;
+}
+
+.tool-picker summary {
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.tool-picker summary::-webkit-details-marker {
+    display: none;
+}
+
+.tool-menu {
+    margin-top: 0.25rem;
+    max-height: 14rem;
+    overflow: auto;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    background: #fff;
+}
+
+.tool-group {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.tool-option {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.25rem 0;
+}
+
+@media (max-width: 800px) {
+    .chat-shell {
+        flex-direction: column;
+    }
+
+    .history {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .chat-toolbar {
+        grid-template-columns: 1fr;
+    }
+}

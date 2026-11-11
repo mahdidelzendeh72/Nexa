@@ -1,0 +1,105 @@
+@page "/users/{UserId}"
+@attribute [Authorize(Roles = "UserAdministrator")]
+@using Maf.Client.Identity
+@inject AccountApiClient Accounts
+
+<PageTitle>کاربر</PageTitle>
+
+<div dir="rtl">
+    @if (_loading)
+    {
+        <p>در حال دریافت کاربر...</p>
+    }
+    else if (_user is null)
+    {
+        <div class="alert alert-danger">@_message</div>
+        <a href="users">بازگشت به لیست</a>
+    }
+    else
+    {
+        <p><a href="users">لیست کاربران</a></p>
+        <h1>@_user.Email</h1>
+        <p class="hint">نقش تازه بعد از ورود دوبارهٔ همین کاربر اعمال می‌شود. رمز را خالی بگذارید تا عوض نشود.</p>
+
+        @if (!string.IsNullOrWhiteSpace(_message))
+        {
+            <div class="alert @(_failed ? "alert-danger" : "alert-info")">@_message</div>
+        }
+
+        <form class="account" @onsubmit="SaveAsync" @onsubmit:preventDefault="true">
+            <div>
+                <div class="label">نقش‌ها</div>
+                <AccountRolePicker Prefix="edit" Roles="_roles" @bind-Selected="_selected" />
+            </div>
+            <label class="choice">
+                <input type="checkbox" @bind="_locked" />
+                <span>ورود قفل باشد</span>
+            </label>
+            <div class="field">
+                <label for="user-password">رمز عبور تازه</label>
+                <input id="user-password" type="password" autocomplete="new-password" @bind="_password" />
+            </div>
+            <button class="btn btn-primary" type="submit" disabled="@_busy">ذخیره</button>
+        </form>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string UserId { get; set; } = "";
+
+    private AccountUserResponse? _user;
+    private AccountRoleChoice[] _roles = [];
+    private HashSet<string> _selected = [];
+    private bool _locked;
+    private string _password = "";
+    private bool _loading = true;
+    private bool _busy;
+    private bool _failed;
+    private string? _message;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _roles = await Accounts.RolesAsync();
+            _user = await Accounts.GetAsync(UserId);
+            _selected = _user.Roles.ToHashSet(StringComparer.Ordinal);
+            _locked = _user.IsLocked;
+        }
+        catch (Exception exception)
+        {
+            _message = exception.Message;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private async Task SaveAsync()
+    {
+        _busy = true;
+        _failed = false;
+        _message = null;
+        try
+        {
+            _user = await Accounts.UpdateAsync(
+                UserId,
+                new UpdateAccountRequest(_selected.ToArray(), _locked, string.IsNullOrWhiteSpace(_password) ? null : _password));
+            _selected = _user.Roles.ToHashSet(StringComparer.Ordinal);
+            _locked = _user.IsLocked;
+            _password = "";
+            _message = "ذخیره شد.";
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.ask-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1.5rem;
+    border: 0;
+    background: rgba(15, 23, 42, 0.45);
+}
+
+.ask-dialog {
+    display: flex;
+    flex-direction: column;
+    width: min(36rem, 100%);
+    max-height: min(80vh, 44rem);
+    padding: 1.1rem 1.2rem 1rem;
+    border-radius: 0.75rem;
+    background: #fff;
+    box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.18);
+    direction: rtl;
+    text-align: right;
+}
+
+.ask-dialog h2 {
+    margin: 0 0 0.9rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.ask-questions {
+    overflow: auto;
+    min-height: 0;
+}
+
+.ask-question + .ask-question {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eef0f2;
+}
+
+.ask-question h3 {
+    margin: 0 0 0.55rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.ask-choice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin: 0.35rem 0;
+    cursor: pointer;
+}
+
+.ask-choice input {
+    margin-top: 0.35rem;
+}
+
+.ask-other {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 0.7rem;
+    font-size: 0.875rem;
+    color: #495057;
+}
+
+.ask-missing {
+    margin: 0.4rem 0 0;
+    color: #b02a37;
+    font-size: 0.875rem;
+}
+
+.ask-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}

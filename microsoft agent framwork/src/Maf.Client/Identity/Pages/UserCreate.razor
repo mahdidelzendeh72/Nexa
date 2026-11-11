@@ -1,0 +1,90 @@
+@page "/users/new"
+@attribute [Authorize(Roles = "UserAdministrator")]
+@using Maf.Client.Identity
+@inject AccountApiClient Accounts
+@inject NavigationManager Navigation
+
+<PageTitle>کاربر جدید</PageTitle>
+
+<div dir="rtl">
+    <p><a href="users">لیست کاربران</a></p>
+    <h1>کاربر جدید</h1>
+    <p class="hint">رمز باید حداقل ۶ نویسه باشد و حرف بزرگ، حرف کوچک، عدد و یک نشانه مثل ! داشته باشد.</p>
+
+    @if (!string.IsNullOrWhiteSpace(_message))
+    {
+        <div class="alert alert-danger">@_message</div>
+    }
+
+    <form class="account" @onsubmit="CreateAsync" @onsubmit:preventDefault="true">
+        <div class="field">
+            <label for="user-email">ایمیل</label>
+            <input id="user-email" @bind="_email" @bind:event="oninput" />
+        </div>
+        <div class="field">
+            <label for="user-password">رمز عبور</label>
+            <input id="user-password" type="password" autocomplete="new-password" @bind="_password" @bind:event="oninput" />
+        </div>
+        <div class="field">
+            <label for="user-password-again">تکرار رمز عبور</label>
+            <input id="user-password-again" type="password" autocomplete="new-password" @bind="_passwordAgain" @bind:event="oninput" />
+        </div>
+        <div>
+            <div class="label">نقش‌ها</div>
+            <AccountRolePicker Prefix="create" Roles="_roles" @bind-Selected="_selected" />
+        </div>
+        <button class="btn btn-primary" type="submit" disabled="@(_busy || !CanSave)">ذخیره</button>
+    </form>
+</div>
+
+@code {
+    private AccountRoleChoice[] _roles = [];
+    private HashSet<string> _selected = [];
+    private string _email = "";
+    private string _password = "";
+    private string _passwordAgain = "";
+    private bool _busy;
+    private string? _message;
+
+    private bool CanSave =>
+        _email.Contains('@', StringComparison.Ordinal) &&
+        _password.Length > 0 &&
+        _password == _passwordAgain;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _roles = await Accounts.RolesAsync();
+        }
+        catch (Exception exception)
+        {
+            _message = exception.Message;
+        }
+    }
+
+    private async Task CreateAsync()
+    {
+        if (!CanSave)
+        {
+            return;
+        }
+
+        _busy = true;
+        _message = null;
+        try
+        {
+            AccountUserResponse created = await Accounts.CreateAsync(
+                new SaveAccountRequest(_email.Trim(), _password, _selected.ToArray()));
+            Navigation.NavigateTo($"users/{created.Id}");
+        }
+        catch (Exception exception)
+        {
+            _message = exception.Message;
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+}

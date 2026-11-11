@@ -1,0 +1,85 @@
+@page "/users"
+@attribute [Authorize(Roles = "UserAdministrator")]
+@using Maf.Client.Identity
+@inject AccountApiClient Accounts
+
+<PageTitle>کاربران</PageTitle>
+
+<div dir="rtl">
+    <div class="heading">
+        <h1>کاربران</h1>
+        <a class="btn btn-primary" href="users/new">کاربر جدید</a>
+    </div>
+    <p class="hint">گفتگو برای هر کاربر واردشده باز است. بقیهٔ صفحه‌ها با نقش باز می‌شوند.</p>
+
+    @if (!string.IsNullOrWhiteSpace(_message))
+    {
+        <div class="alert alert-danger">@_message</div>
+    }
+
+    @if (_loading)
+    {
+        <p>در حال دریافت کاربران...</p>
+    }
+    else if (_users.Length == 0)
+    {
+        <p>هنوز کاربری ثبت نشده است.</p>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped align-middle">
+                <thead>
+                    <tr>
+                        <th>ایمیل</th>
+                        <th>نقش‌ها</th>
+                        <th>ورود</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (AccountUserResponse user in _users)
+                    {
+                        <tr>
+                            <td><a href="@($"users/{user.Id}")">@user.Email</a></td>
+                            <td>@RoleText(user.Roles)</td>
+                            <td>@(user.IsLocked ? "قفل" : "آزاد")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private AccountUserResponse[] _users = [];
+    private Dictionary<string, string> _titles = [];
+    private bool _loading = true;
+    private string? _message;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            AccountRoleChoice[] roles = await Accounts.RolesAsync();
+            _titles = roles.ToDictionary(role => role.Name, role => role.Title, StringComparer.Ordinal);
+            _users = await Accounts.ListAsync();
+        }
+        catch (Exception exception)
+        {
+            _message = exception.Message;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private string RoleText(IEnumerable<string> roles)
+    {
+        string[] titles = roles
+            .Select(role => _titles.TryGetValue(role, out string? title) ? title : role)
+            .ToArray();
+        return titles.Length == 0 ? "بدون نقش" : string.Join("، ", titles);
+    }
+}

@@ -1,0 +1,171 @@
+@page "/model-defaults"
+@attribute [Authorize(Roles = "ModelManager")]
+@inject ModelProviderApiClient Providers
+
+<PageTitle>مدل‌های پیش‌فرض</PageTitle>
+
+<div dir="rtl">
+    <p><a href="model-providers">لیست ارائه‌دهنده مدل</a></p>
+    <h1>مدل‌های پیش‌فرض</h1>
+    <p class="text-muted">برای هر عملیات فقط مدل‌هایی دیده می‌شوند که همان قابلیت را دارند. اگر چیزی انتخاب نشود، پیش‌فرض خالی می‌ماند.</p>
+
+    @if (!string.IsNullOrWhiteSpace(_message))
+    {
+        <div class="alert @(_failed ? "alert-danger" : "alert-info")">@_message</div>
+    }
+
+    @if (_loading)
+    {
+        <p>در حال دریافت مدل‌های پیش‌فرض...</p>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th>عملیات</th>
+                        <th>مدل پیش‌فرض</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (DefaultRow row in _rows)
+                    {
+                        <tr>
+                            <td>@row.Title</td>
+                            <td>
+                                <select class="form-select" @bind="row.Selected" disabled="@(_busy || row.Choices.Length == 0)">
+                                    <option value="">انتخاب نشده</option>
+                                    @foreach (IGrouping<string, ModelDefaultChoiceResponse> group in row.Choices.GroupBy(choice => choice.ProviderName))
+                                    {
+                                        <optgroup label="@group.Key">
+                                            @foreach (ModelDefaultChoiceResponse choice in group)
+                                            {
+                                                <option value="@Key(choice)">@choice.ModelName</option>
+                                            }
+                                        </optgroup>
+                                    }
+                                </select>
+                                @if (row.Choices.Length == 0)
+                                {
+                                    <div class="text-muted small">مدل سازگاری ثبت نشده است.</div>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <button class="btn btn-primary" disabled="@_busy" @onclick="SaveAsync">ذخیره</button>
+    }
+</div>
+
+@code {
+    private readonly List<DefaultRow> _rows = [];
+    private bool _loading = true;
+    private bool _busy;
+    private bool _failed;
+    private string? _message;
+
+    protected override async Task OnInitializedAsync() => await LoadAsync();
+
+    private async Task LoadAsync()
+    {
+        try
+        {
+            ModelDefaultsResponse response = await Providers.GetDefaultsAsync();
+            Show(response);
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private async Task SaveAsync()
+    {
+        _busy = true;
+        _failed = false;
+        _message = null;
+        try
+        {
+            ModelDefaultsResponse response = await Providers.SaveDefaultsAsync(new SaveModelDefaultsRequest(
+                _rows.Select(row =>
+                {
+                    (Guid? providerId, string? modelName) = Parse(row.Selected);
+                    return new SaveModelDefaultRequest(row.Operation, providerId, modelName);
+                }).ToArray()));
+            Show(response);
+            _message = "مدل‌های پیش‌فرض ذخیره شد.";
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+
+    private void Show(ModelDefaultsResponse response)
+    {
+        _rows.Clear();
+        foreach (ModelDefaultResponse operation in response.Operations)
+        {
+            ModelDefaultChoiceResponse? selected = operation.Choices.FirstOrDefault(choice =>
+                choice.ProviderId == operation.ProviderId &&
+                choice.ModelName == operation.ModelName);
+            _rows.Add(new DefaultRow
+            {
+                Operation = operation.Operation,
+                Title = Title(operation.Operation),
+                Selected = selected is null ? "" : Key(selected),
+                Choices = operation.Choices,
+            });
+        }
+    }
+
+    private static string Key(ModelDefaultChoiceResponse choice) =>
+        $"{choice.ProviderId:D}|{choice.ModelName}";
+
+    private static (Guid? ProviderId, string? ModelName) Parse(string selected)
+    {
+        if (string.IsNullOrWhiteSpace(selected))
+        {
+            return (null, null);
+        }
+
+        int split = selected.IndexOf('|');
+        return split <= 0
+            ? (null, null)
+            : (Guid.Parse(selected[..split]), selected[(split + 1)..]);
+    }
+
+    private static string Title(string operation) => operation switch
+    {
+        "Vision" => "بینایی",
+        "Embedding" => "جاسازی متن",
+        "SpeechToText" => "گفتار به متن",
+        "TextToSpeech" => "متن به گفتار",
+        "ImageGeneration" => "تولید تصویر",
+        _ => operation,
+    };
+
+    private sealed class DefaultRow
+    {
+        public string Operation { get; set; } = "";
+
+        public string Title { get; set; } = "";
+
+        public string Selected { get; set; } = "";
+
+        public ModelDefaultChoiceResponse[] Choices { get; set; } = [];
+    }
+}

@@ -1,0 +1,326 @@
+@page "/mcp/servers/{ServerId:guid}"
+@attribute [Authorize(Roles = "McpManager")]
+@inject McpApiClient Mcp
+@inject NavigationManager Navigation
+@inject IJSRuntime JS
+
+<PageTitle>سرور MCP</PageTitle>
+
+<div dir="rtl">
+    @if (_loading)
+    {
+        <p>در حال دریافت سرور...</p>
+    }
+    else if (_server is null)
+    {
+        <div class="alert alert-danger">@_message</div>
+        <a href="mcp/servers">بازگشت به لیست</a>
+    }
+    else
+    {
+        <p><a href="mcp/servers">لیست سرور MCP</a></p>
+        <h1>@_server.Name</h1>
+
+        @if (!string.IsNullOrWhiteSpace(_message))
+        {
+            <div class="alert @(_failed ? "alert-danger" : "alert-info")">@_message</div>
+        }
+
+        @if (_editing)
+        {
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="h5">ویرایش اتصال</h2>
+                    <McpServerEditor Prefix="edit"
+                                     @bind-Name="_name"
+                                     @bind-Description="_description"
+                                     @bind-Transport="_transport"
+                                     @bind-Endpoint="_endpoint"
+                                     @bind-HeadersJson="_headersJson"
+                                     @bind-Command="_command"
+                                     @bind-ArgumentsJson="_argumentsJson"
+                                     @bind-EnvironmentJson="_environmentJson"
+                                     @bind-TimeoutSeconds="_timeoutSeconds"
+                                     @bind-IsEnabled="_isEnabled" />
+                    <button class="btn btn-primary mt-3" disabled="@_busy" @onclick="SaveAsync">ذخیره و شناسایی</button>
+                    <button class="btn btn-outline-secondary mt-3" disabled="@_busy" @onclick="CancelEdit">انصراف</button>
+                </div>
+            </div>
+        }
+        else
+        {
+            <dl class="row">
+                <dt class="col-sm-3">نام</dt>
+                <dd class="col-sm-9">@_server.Name</dd>
+                <dt class="col-sm-3">توضیحات</dt>
+                <dd class="col-sm-9">@(_server.Description ?? "—")</dd>
+                <dt class="col-sm-3">نوع انتقال</dt>
+                <dd class="col-sm-9">@TransportText(_server.Transport)</dd>
+                @if (_server.Transport == "Stdio")
+                {
+                    <dt class="col-sm-3">دستور</dt>
+                    <dd class="col-sm-9">@_server.Command</dd>
+                    <dt class="col-sm-3">آرگومان‌ها</dt>
+                    <dd class="col-sm-9"><pre class="mb-0">@(_server.ArgumentsJson ?? "[]")</pre></dd>
+                    <dt class="col-sm-3">متغیرهای محیطی</dt>
+                    <dd class="col-sm-9"><pre class="mb-0">@(_server.EnvironmentJson ?? "{}")</pre></dd>
+                }
+                else
+                {
+                    <dt class="col-sm-3">آدرس</dt>
+                    <dd class="col-sm-9">@_server.Endpoint</dd>
+                    <dt class="col-sm-3">هدرها</dt>
+                    <dd class="col-sm-9"><pre class="mb-0">@(_server.HeadersJson ?? "{}")</pre></dd>
+                }
+                <dt class="col-sm-3">مهلت زمانی (ثانیه)</dt>
+                <dd class="col-sm-9">@_server.TimeoutSeconds</dd>
+                <dt class="col-sm-3">فعال</dt>
+                <dd class="col-sm-9">@(_server.IsEnabled ? "بله" : "خیر")</dd>
+                <dt class="col-sm-3">آخرین شناسایی موفق</dt>
+                <dd class="col-sm-9">@(_server.LastDiscoveredAt?.LocalDateTime.ToString("yyyy-MM-dd HH:mm") ?? "—")</dd>
+            </dl>
+
+            @if (!string.IsNullOrWhiteSpace(_server.DiscoveryError))
+            {
+                <div class="alert alert-warning">@_server.DiscoveryError</div>
+            }
+
+            @if (!_server.IsEnabled)
+            {
+                <div class="alert alert-secondary">این سرور غیرفعال است.</div>
+            }
+
+            <button class="btn btn-outline-primary me-2" disabled="@_busy" @onclick="DiscoverAsync">شناسایی مجدد</button>
+            <button class="btn btn-outline-secondary me-2" disabled="@_busy" @onclick="BeginEdit">ویرایش</button>
+            <button class="btn btn-outline-danger" disabled="@_busy" @onclick="DeleteAsync">حذف</button>
+        }
+
+        <h2 class="h4 mt-4">ابزارها</h2>
+        <p class="text-muted">ابزارهایی که در آخرین شناسایی از سرور خوانده شده‌اند.</p>
+        @if (_server.Tools.Length == 0)
+        {
+            <p>ابزاری شناسایی نشده است.</p>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-striped align-middle">
+                    <thead>
+                        <tr>
+                            <th>نام ابزار</th>
+                            <th>عنوان</th>
+                            <th>توضیحات</th>
+                            <th>تأیید کاربر</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (McpToolDetails tool in _server.Tools)
+                        {
+                            <tr>
+                                <td><code>@tool.Name</code></td>
+                                <td>@(tool.Title ?? "—")</td>
+                                <td>@tool.Description</td>
+                                <td>
+                                    <input type="checkbox" checked="@RequiresApproval(tool.Name)" disabled="@_busy" @onchange="eventArgs => SetApproval(tool.Name, eventArgs.Value is true)" />
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn btn-primary" disabled="@_busy" @onclick="SaveApprovalsAsync">ذخیره تأیید ابزارها</button>
+        }
+    }
+</div>
+
+@code {
+    [Parameter]
+    public Guid ServerId { get; set; }
+
+    private McpServerDetails? _server;
+    private Guid _loadedId;
+    private string _name = "";
+    private string? _description;
+    private string _transport = "HttpStreamable";
+    private string? _endpoint;
+    private string? _headersJson;
+    private string? _command;
+    private string? _argumentsJson;
+    private string? _environmentJson;
+    private int _timeoutSeconds = 30;
+    private bool _isEnabled = true;
+    private Dictionary<string, bool> _approvals = new(StringComparer.Ordinal);
+    private bool _editing;
+    private bool _loading = true;
+    private bool _busy;
+    private bool _failed;
+    private string? _message;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (_loadedId == ServerId && _server is not null)
+        {
+            return;
+        }
+
+        _loadedId = ServerId;
+        _editing = false;
+        await LoadAsync();
+    }
+
+    private async Task LoadAsync()
+    {
+        _loading = _server is null;
+        _failed = false;
+        _message = null;
+        try
+        {
+            Remember(await Mcp.GetAsync(ServerId));
+        }
+        catch (Exception exception)
+        {
+            _server = null;
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private void BeginEdit()
+    {
+        if (_server is not null)
+        {
+            CopyForm(_server);
+        }
+
+        _editing = true;
+    }
+
+    private void CancelEdit() => _editing = false;
+
+    private void CopyForm(McpServerDetails server)
+    {
+        _name = server.Name;
+        _description = server.Description;
+        _transport = server.Transport;
+        _endpoint = server.Endpoint;
+        _headersJson = server.HeadersJson;
+        _command = server.Command;
+        _argumentsJson = server.ArgumentsJson;
+        _environmentJson = server.EnvironmentJson;
+        _timeoutSeconds = server.TimeoutSeconds;
+        _isEnabled = server.IsEnabled;
+        _approvals = server.Tools.ToDictionary(
+            tool => tool.Name,
+            tool => tool.RequiresApproval,
+            StringComparer.Ordinal);
+    }
+
+    private void Remember(McpServerDetails server)
+    {
+        _server = server;
+        CopyForm(server);
+    }
+
+    private bool RequiresApproval(string name) =>
+        _approvals.TryGetValue(name, out bool required) && required;
+
+    private void SetApproval(string name, bool required) => _approvals[name] = required;
+
+    private async Task SaveAsync()
+    {
+        await RunAsync(async () =>
+        {
+            McpServerDetails server = await Mcp.UpdateAsync(ServerId, new SaveMcpServerRequest(
+                _name.Trim(),
+                _description,
+                _transport,
+                _endpoint,
+                _headersJson,
+                _command,
+                _argumentsJson,
+                _environmentJson,
+                _timeoutSeconds,
+                _isEnabled));
+            Remember(server);
+            _editing = false;
+            _message = server.DiscoveryError is null
+                ? $"{server.Tools.Length} ابزار شناسایی شد."
+                : null;
+        });
+    }
+
+    private async Task DiscoverAsync()
+    {
+        await RunAsync(async () =>
+        {
+            McpServerDetails server = await Mcp.DiscoverAsync(ServerId);
+            Remember(server);
+            _message = server.DiscoveryError is null
+                ? $"{server.Tools.Length} ابزار شناسایی شد."
+                : null;
+        });
+    }
+
+    private async Task SaveApprovalsAsync()
+    {
+        if (_server is null)
+        {
+            return;
+        }
+
+        McpToolApprovalRequest[] approvals = _server.Tools
+            .Select(tool => new McpToolApprovalRequest(tool.Name, RequiresApproval(tool.Name)))
+            .ToArray();
+        await RunAsync(async () =>
+        {
+            Remember(await Mcp.SaveToolApprovalsAsync(ServerId, approvals));
+            _message = "تنظیم تأیید ابزارها ذخیره شد.";
+        });
+    }
+
+    private async Task DeleteAsync()
+    {
+        if (_server is null)
+        {
+            return;
+        }
+
+        if (!await JS.InvokeAsync<bool>("confirm", $"سرور «{_server.Name}» حذف شود؟"))
+        {
+            return;
+        }
+
+        await RunAsync(async () =>
+        {
+            await Mcp.DeleteAsync(ServerId);
+            Navigation.NavigateTo("mcp/servers");
+        });
+    }
+
+    private async Task RunAsync(Func<Task> operation)
+    {
+        _busy = true;
+        _failed = false;
+        _message = null;
+        try
+        {
+            await operation();
+        }
+        catch (Exception exception)
+        {
+            _failed = true;
+            _message = exception.Message;
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+
+    private static string TransportText(string transport) =>
+        transport == "HttpStreamable" ? "HTTP جریان‌پذیر" : "Stdio";
+}

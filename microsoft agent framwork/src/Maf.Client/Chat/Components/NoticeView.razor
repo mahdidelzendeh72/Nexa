@@ -1,0 +1,9 @@
+@if (!string.IsNullOrWhiteSpace(Text))
+{
+    <div class="turn-notice">@Text</div>
+}
+
+@code {
+    [Parameter]
+    public string? Text { get; set; }
+}

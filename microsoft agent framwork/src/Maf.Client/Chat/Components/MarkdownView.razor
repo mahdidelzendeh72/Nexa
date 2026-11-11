@@ -1,0 +1,6 @@
+<div class="markdown">@((MarkupString)MarkdownHtml.Render(Text))</div>
+
+@code {
+    [Parameter]
+    public string? Text { get; set; }
+}
