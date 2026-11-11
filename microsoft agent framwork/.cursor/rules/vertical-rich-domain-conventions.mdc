@@ -1,0 +1,36 @@
+---
+description: Enforces rich domain entities, LINQ-first persistence, vertical feature organization, and feature-local registration
+alwaysApply: true
+---
+
+# معماری و قراردادهای توسعه
+
+## Rich Entity
+
+- مدل‌های دامنه را به‌شکل Rich Entity و دارای رفتار بنویس؛ از مدل‌های صرفاً شامل getter/setter و سرویس‌های دامنه‌ی حجیم پرهیز کن.
+- invariantها، validationها و تغییر وضعیت‌های مرتبط را داخل entity و با متدهای معنادار نگه دار.
+- setterهای تغییر‌دهنده وضعیت را تا حد امکان `private` کن و ساخت entity را از constructor یا factory معتبر انجام بده.
+- منطق وابسته به دیتابیس، شبکه، فایل و سایر زیرساخت‌ها را داخل entity قرار نده.
+- aggregate boundary و مسئولیت هر entity را کوچک و شفاف نگه دار.
+
+## EF Core و Queryها
+
+- برای دسترسی به داده، EF Core و LINQ را در اولویت قرار بده.
+- Raw SQL را فقط وقتی استفاده کن که EF Core قابلیت لازم را ندارد یا یک مشکل کارایی با اندازه‌گیری اثبات شده باشد.
+- استفاده استثنایی از Raw SQL باید parameterized، تست‌شده و همراه با توضیح فنی کوتاه باشد.
+- queryها را type-safe بنویس و از نام entity/property به‌شکل string در کد دستی پرهیز کن.
+- فایل‌های migration و model snapshot تولیدشده توسط EF Core را دستی بازنویسی نکن.
+
+## Vertical Architecture
+
+- کدها را براساس feature و قابلیت کسب‌وکار سازمان‌دهی کن، نه صرفاً براساس نوع فنی.
+- تمام اجزای مرتبط با یک قابلیت شامل Domain، Application، Infrastructure، Endpoints، Options و registration را زیر همان vertical نگه دار.
+- قراردادهای عمومی را فقط زمانی به پوشه مشترک منتقل کن که واقعاً توسط چند vertical استفاده شوند.
+- از ایجاد پوشه‌ها و abstractionهای عمومی بدون نیاز واقعی پرهیز کن.
+
+## Feature Registration
+
+- ثبت سرویس‌ها و binding تنظیمات هر vertical را در extension همان feature کپسوله کن.
+- `Program.cs` فقط باید یک فراخوانی سطح‌بالا مانند `builder.AddKnowledgeFeature()` یا `services.AddKnowledgeFeature(configuration)` داشته باشد.
+- خطوط جداگانه `Configure<TOptions>`، `AddScoped`، `AddSingleton`، `AddHostedService` و ثبت implementationهای feature را در `Program.cs` قرار نده.
+- extension ثبت feature باید در vertical مربوطه باشد، وابستگی‌ها و options را validate کند و lifetimeها را آگاهانه انتخاب کند.

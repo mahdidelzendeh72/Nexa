@@ -1,0 +1,36 @@
+---
+description: Use the Microsoft Agent Framework specification and .NET source as the primary references for this project
+alwaysApply: true
+---
+
+# Agent Framework References
+
+Before planning, documenting, implementing, or reviewing this project, consult these primary references:
+
+1. Framework document: `E:\Work\maf\agent-framework.pdf`
+2. Microsoft Agent Framework .NET repository: `E:\Work\microsoft ai\agent-framework\dotnet`
+
+## Target Solution
+
+Build the solution as two .NET projects:
+
+1. An ASP.NET Core backend that hosts and exposes the agent.
+2. A Blazor frontend that acts as the AG-UI client.
+
+Develop both projects using Clean Code principles and a maintainable infrastructure:
+
+- Keep presentation, application, domain, and infrastructure responsibilities clearly separated.
+- Use dependency injection and depend on abstractions at architectural boundaries.
+- Keep business and agent orchestration logic out of UI, endpoint, and infrastructure code.
+- Use clear naming, focused classes and methods, explicit error handling, configuration, logging, and testable components.
+- Avoid unnecessary abstractions; introduce infrastructure only when it supports a concrete requirement.
+
+## Instructions
+
+- Use the PDF for the intended architecture, concepts, terminology, and documented behavior.
+- Use the .NET repository for current APIs, implementation patterns, samples, tests, and package usage.
+- Search the repository for relevant code and read the closest sample or test before writing integrations.
+- Prefer evidence from these references over assumptions or generic Agent Framework knowledge.
+- If the references disagree, clearly report the conflict; use the repository as the source of truth for current executable behavior and the PDF for design intent.
+- Do not invent APIs, classes, options, or package names. State explicitly when something cannot be verified from either reference.
+- Keep new code and documentation consistent with the conventions demonstrated in the referenced .NET repository.

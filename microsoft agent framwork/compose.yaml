@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg18-trixie
+    environment:
+      POSTGRES_DB: maf
+      POSTGRES_USER: maf
+      POSTGRES_PASSWORD: maf_dev
+    ports:
+      - "55432:5432"
+    volumes:
+      - maf-postgres-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U maf -d maf"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  maf-postgres-data:
